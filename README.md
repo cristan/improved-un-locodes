@@ -21,8 +21,7 @@ You can find the improved list as [code-list-improved.csv](data/code-list-improv
 * Choose the first hit from Nominatim
 * When that doesn't exist, choose the result from Wikidata
   
-Other than that, all differences between the UN/LOCODE have been manually (quickly) tested and the correct ones are manually specified
-Differences between Wikidata and this list are also tested and the correct ones manually specified, making this list as reliable as you can reasonably expect.
+Other than that, all differences between the UN/LOCODE have been manually (quickly) tested and the correct ones are manually specified. Differences between Wikidata and this list are also tested and the correct ones manually specified, making this list as reliable as you can reasonably expect.
 
 ## Extra columns
 2 extra columns are created:
