@@ -71,12 +71,15 @@ export const ALIASES = {
     GRSTY: "GRSYS", // Stylinda => Stylis (Stylída)
     GUAGA: "GUHGT", // Agana => Hagatna (should be spelled Hagåtña)
     IDBJU: "IDBNI", // Banjuwangi, Java => Banyuwangi
+    IDSOC: "IDSKT", // Solo City => Surakarta (Solo is its local nickname)
     MASEK: "MAERH", // Ksar Es Souk => Errachidia (that's the new name)
     PKHRU: "PKHPR", // Haripur Hazara => Haripur
     PKJHC: "PKJNG", // Jhang City => Jhang
     PLOAI: "PLLOK", // Omiankim => Lomianki
+    SAEAM: "SANJN", // Nejran => Najran
+    TMCRZ: "TMTK5", // Tchardjou (or Çärjew / Chardzhou) => Türkmenabat (new name)
 
-    // No mistakes, but entries which are parts of another entry
+    // No mistakes, but entries which are parts of another entry, though you could argue against having unlocodes for such small locations
     ZAGTY: "ZAELS", // Gately is in East London (Oos-Londen)
     MYLPK: "MYPKG", // Is the Northport of Port Klang
 }
