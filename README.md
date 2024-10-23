@@ -24,7 +24,8 @@ You can find the improved list as [code-list-improved.csv](data/code-list-improv
 Other than that, all differences between the UN/LOCODE have been manually (quickly) tested and the correct ones are manually specified. Differences between Wikidata and this list are also tested and the correct ones manually specified, making this list as reliable as you can reasonably expect.
 
 ## Extra columns
-2 extra columns are created:
+3 extra columns are created:
+* CoordinatesDecimal: the coordinates in decimal format.
 * A distance column. Either the distance between UN/LOCODE and nominatim, or `"N/A (no UN/LOCODE)"` / `"N/A (no Nominatim)"` / `"N/A"` (when no result is found)
 * Source (either `"N/A"` when no coordinates, `"UN/LOCODE"`, a link to the entry in OpenStreetMap or a link to the entry in Wikidata)
 These columns can be used to determine whether you'd want to have a human doublecheck the coordinates or not.
