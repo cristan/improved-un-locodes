@@ -1,7 +1,20 @@
 const coordinatesRegex = /^(\d{2})(\d{2})([NS])\s+(\d{3})(\d{2})([EW])$/
+const decimalRegex = /^(\d+\.\d+)([NS])\s(\d+\.\d+)([EW])$/
 export function convertToDecimal(input) {
     if (!input) {
         return ""
+    }
+
+    if (input === "2444N 05045") {
+        input = "2444N 05045E"
+    }
+
+    const decimalMatch = input.match(decimalRegex)
+    if (decimalMatch) {
+        return {
+            lat: `${decimalMatch[0] === 'S' ? "-" : ""}${decimalMatch[1]}`,
+            lon: `${decimalMatch[2] === 'W' ? "-" : ""}${decimalMatch[3]}`
+        }
     }
 
     // Extract latitude and longitude parts
@@ -27,7 +40,7 @@ export function convertToDecimal(input) {
             lon: decimalLon
         };
     } else {
-        // console.warn(`Invalid coordinate format ${input}`)
+        console.warn(`Invalid coordinate format ${input}`)
         return undefined
     }
 }

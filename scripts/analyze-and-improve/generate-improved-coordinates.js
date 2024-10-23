@@ -1,5 +1,5 @@
 import {readCsv} from "./util/readCsv.js";
-import {convertToUnlocode, getDistanceFromLatLonInKm} from "./util/coordinatesConverter.js";
+import {convertToDecimal, convertToUnlocode, getDistanceFromLatLonInKm} from "./util/coordinatesConverter.js";
 import fs from "node:fs";
 import {readWikidata} from "./util/wikidata-reader.js";
 import {detectCoordinates} from "./util/coordinate-detector.js";
@@ -11,7 +11,7 @@ async function generateImprovedCoordinates() {
 
     const filename = 'code-list-improved.csv'
     const dataOut = fs.createWriteStream('../../data/' + filename)
-    writeCsv(dataOut, ["Change", "Country", "Location", "Name","NameWoDiacritics","Subdivision","Status","Function","Date","IATA","Coordinates","Remarks","Distance","Source"])
+    writeCsv(dataOut, ["Change", "Country", "Location", "Name","NameWoDiacritics","Subdivision","Status","Function","Date","IATA","Coordinates","Remarks","CoordinatesDecimal","Distance","Source"])
 
     let correctedCoordinates = 0
     let newlyAddedCoordinates = 0
@@ -19,15 +19,15 @@ async function generateImprovedCoordinates() {
         const entry = csvDatabase[unlocode]
         const detectedCoordinates = await detectCoordinates(unlocode, csvDatabase, wikidataDatabase, 100)
 
-        const entries = [entry.change, entry.country, entry.location,entry.city,entry.nameWithoutDiacritics,entry.subdivisionCode,entry.status,entry.function,entry.date,entry.iata,entry.coordinates,entry.remarks]
+        const columns = [entry.change, entry.country, entry.location,entry.city,entry.nameWithoutDiacritics,entry.subdivisionCode,entry.status,entry.function,entry.date,entry.iata,entry.coordinates,entry.remarks]
         if (!detectedCoordinates) {
-            entries.push("N/A", "N/A")
-            writeCsv(dataOut, entries)
+            columns.push("", "N/A", "N/A")
+            writeCsv(dataOut, columns)
         }
         else if (detectedCoordinates.type === "Wikidata") {
             const status = entry.coordinates ? "N/A (hardcoded to Wikidata)" : "N/A (no UN/LOCODE)"
-            const wikiDataEntries = [entry.change, entry.country, entry.location, entry.city, entry.nameWithoutDiacritics, entry.subdivisionCode, entry.status, entry.function, entry.date, entry.iata, convertToUnlocode(detectedCoordinates.lat, detectedCoordinates.lon), entry.remarks, status, detectedCoordinates.sourceUrl]
-            writeCsv(dataOut, wikiDataEntries)
+            const wikiDataColumns = [entry.change, entry.country, entry.location, entry.city, entry.nameWithoutDiacritics, entry.subdivisionCode, entry.status, entry.function, entry.date, entry.iata, convertToUnlocode(detectedCoordinates.lat, detectedCoordinates.lon), entry.remarks, detectedCoordinates.lat +","+detectedCoordinates.lon, status, detectedCoordinates.sourceUrl]
+            writeCsv(dataOut, wikiDataColumns)
             if (entry.coordinates) {
                 correctedCoordinates++
             } else {
@@ -35,16 +35,16 @@ async function generateImprovedCoordinates() {
             }
         } else if (detectedCoordinates.type === "UN/LOCODE") {
             if (!detectedCoordinates.source) {
-                entries.push("N/A (no Nominatim)", "UN/LOCODE")
+                columns.push(detectedCoordinates.decimalCoordinates.lat +","+detectedCoordinates.decimalCoordinates.lon, "N/A (no Nominatim)", "UN/LOCODE")
             } else {
                 const distance = Math.round(getDistanceFromLatLonInKm(detectedCoordinates.decimalCoordinates.lat, detectedCoordinates.decimalCoordinates.lon, detectedCoordinates.source.lat, detectedCoordinates.source.lon));
-                entries.push(distance, "UN/LOCODE")
+                columns.push(detectedCoordinates.decimalCoordinates.lat +","+detectedCoordinates.decimalCoordinates.lon, distance, "UN/LOCODE")
             }
-            writeCsv(dataOut, entries)
+            writeCsv(dataOut, columns)
         } else if (detectedCoordinates.type === "Other UN/LOCODE") {
-            entries.push("N/A (coordinate of another UN/LOCODE used)", detectedCoordinates.source)
-            entries[10] = detectedCoordinates.coordinates
-            writeCsv(dataOut, entries)
+            columns.push(detectedCoordinates.decimalCoordinates.lat +","+detectedCoordinates.decimalCoordinates.lon, "N/A (coordinate of another UN/LOCODE used)", detectedCoordinates.source)
+            columns[10] = detectedCoordinates.coordinates
+            writeCsv(dataOut, columns)
         } else {
             let distance = "N/A (no UN/LOCODE)"
             if (entry.coordinates) {
@@ -61,14 +61,15 @@ async function generateImprovedCoordinates() {
     for (const deletedUnlocode of Object.keys(DELETIONS_STILL_IN_USE)) {
         const newUnlocode = DELETIONS_STILL_IN_USE[deletedUnlocode]
         const entry = csvDatabase[newUnlocode]
-        const entries = ["X", deletedUnlocode.substring(0, 2), deletedUnlocode.substring(2), entry.city, entry.nameWithoutDiacritics, entry.subdivisionCode, "XX", entry.function, entry.date, entry.iata, entry.coordinates, `Use ${newUnlocode}`, "N/A", newUnlocode]
+        const decimalCoordinates = convertToDecimal(entry.coordinates)
+        const entries = ["X", deletedUnlocode.substring(0, 2), deletedUnlocode.substring(2), entry.city, entry.nameWithoutDiacritics, entry.subdivisionCode, "XX", entry.function, entry.date, entry.iata, entry.coordinates, `Use ${newUnlocode}`, decimalCoordinates.lat +","+decimalCoordinates.lon, "N/A", newUnlocode]
         writeCsv(dataOut, entries)
     }
     console.log(`Created ${filename} with ${correctedCoordinates} corrected coordinates and ${newlyAddedCoordinates} new ones`)
 }
 
 function writeNominatimDataToCsv(dataOut, entry, firstNominatimResult, distance) {
-    const nominatimEntries = [entry.change, entry.country, entry.location, entry.city, entry.nameWithoutDiacritics, entry.subdivisionCode, entry.status, entry.function, entry.date, entry.iata, convertToUnlocode(firstNominatimResult.lat, firstNominatimResult.lon), entry.remarks, distance, firstNominatimResult.sourceUrl]
+    const nominatimEntries = [entry.change, entry.country, entry.location, entry.city, entry.nameWithoutDiacritics, entry.subdivisionCode, entry.status, entry.function, entry.date, entry.iata, convertToUnlocode(firstNominatimResult.lat, firstNominatimResult.lon), entry.remarks, firstNominatimResult.lat +","+ firstNominatimResult.lon, distance, firstNominatimResult.sourceUrl]
     writeCsv(dataOut, nominatimEntries)
 }
 

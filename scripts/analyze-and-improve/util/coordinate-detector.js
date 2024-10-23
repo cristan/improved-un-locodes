@@ -24,7 +24,7 @@ export async function detectCoordinates(unlocode, csvDatabase, wikidataDatabase,
             // When we have a Wikidata entry, check if it's close to the original unlocode one. If yes, just go for unlocode
             return getUnlocodeResult(entry, decimalCoordinates)
         }
-        return {...wikiDataEntry, type: "Wikidata"}
+        return {...wikiDataEntry, type: "Wikidata", decimalCoordinates: {lat: wikiDataEntry.lat, lon: wikiDataEntry.lon}}
     }
 
     const nominatimResult = nominatimData?.result
