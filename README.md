@@ -1,5 +1,5 @@
 # UN/LOCODE list with improved coordinates
-The coordinates in [the original UN/LOCODE list](https://github.com/datasets/un-locode) have 2 major problems:
+The coordinates in [the original UN/LOCODE list](https://github.com/datasets/un-locode) has major problems:
 
 **1. Only 80% of locations have coordinates**
 
