@@ -1,5 +1,5 @@
 const coordinatesRegex = /^(\d{2})(\d{2})([NS])\s+(\d{3})(\d{2})([EW])$/
-const decimalRegex = /^(\d+\.\d+)([NS])\s(\d+\.\d+)([EW])$/
+export const decimalRegex = /^(\d+\.\d+)([NS])\s(\d+\.\d+)([EW])$/
 export function convertToDecimal(input) {
     if (!input) {
         return ""

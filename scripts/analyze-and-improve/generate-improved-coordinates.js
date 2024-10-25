@@ -1,5 +1,10 @@
 import {readCsv} from "./util/readCsv.js";
-import {convertToDecimal, convertToUnlocode, getDistanceFromLatLonInKm} from "./util/coordinatesConverter.js";
+import {
+    convertToDecimal,
+    convertToUnlocode,
+    decimalRegex,
+    getDistanceFromLatLonInKm
+} from "./util/coordinatesConverter.js";
 import fs from "node:fs";
 import {readWikidata} from "./util/wikidata-reader.js";
 import {detectCoordinates} from "./util/coordinate-detector.js";
@@ -17,9 +22,19 @@ async function generateImprovedCoordinates() {
     let newlyAddedCoordinates = 0
     for (const unlocode of Object.keys(csvDatabase)) {
         const entry = csvDatabase[unlocode]
-        const detectedCoordinates = await detectCoordinates(unlocode, csvDatabase, wikidataDatabase, 100)
 
-        const columns = [entry.change, entry.country, entry.location,entry.city,entry.nameWithoutDiacritics,entry.subdivisionCode,entry.status,entry.function,entry.date,entry.iata,entry.coordinates,entry.remarks]
+        // Convert all coordinates to UN/LOCODE style degrees coordinates
+        const detectedCoordinates = await detectCoordinates(unlocode, csvDatabase, wikidataDatabase, 100)
+        let degreesCoordinates = entry.coordinates
+        if (entry.coordinates === "2444N 05045") {
+            degreesCoordinates = "2444N 05045E"
+        }
+        if (degreesCoordinates.match(decimalRegex)) {
+            const decimalCoordinates = convertToDecimal(degreesCoordinates)
+            degreesCoordinates = convertToUnlocode(decimalCoordinates.lat, decimalCoordinates.lon)
+        }
+
+        const columns = [entry.change, entry.country, entry.location,entry.city,entry.nameWithoutDiacritics,entry.subdivisionCode,entry.status,entry.function,entry.date,entry.iata,degreesCoordinates,entry.remarks]
         if (!detectedCoordinates) {
             columns.push("", "N/A", "N/A")
             writeCsv(dataOut, columns)
