@@ -3,6 +3,7 @@
 export const ALIASES = {
     SKJAO: "SKJSV", // Jasova => Jasová
     AOVPE: "AONGV", // Ongiva => Ondjiva
+    // Note that these 2 will probably be gone soon
     NLBNK: "NLBUK", // Bunnink => Bunnik
     NLBEW: "NLBLW", // Beiswijk => Bleiswijk
     ZAGNB: "ZAGAA", // Gans Bay => Gansbaai
@@ -78,6 +79,7 @@ export const ALIASES = {
     PLOAI: "PLLOK", // Omiankim => Lomianki
     SAEAM: "SANJN", // Nejran => Najran
     TMCRZ: "TMTK5", // Tchardjou (or Çärjew / Chardzhou) => Türkmenabat (new name)
+    NLMID: "NLMDL", // Middelburg => Middelburg
 
     // No mistakes, but entries which are parts of another entry, though you could argue against having unlocodes for such small locations
     ZAGTY: "ZAELS", // Gately is in East London (Oos-Londen)
