@@ -3,11 +3,11 @@ The coordinates in [the original UN/LOCODE list](https://github.com/datasets/un-
 
 **1. Only 80% of locations have coordinates**
 
-This doesn't just include tiny villages, but major transport hubs like Shanhai Port (CNSHG), Port of Shenzhen (CNSZP), Hong Kong (HKHKG) and Los Angeles (USLAX).
+This doesn't just include tiny villages, but world's most important cities like London (GBLON), Madrid (ESMAD), Luxembourg (LULUX) and Milano (ITMIL).
 
 **2. Many coordinates are just wrong**
 
-Problems like typos (AUMID), pointing to the wrong country (CKPZK) and just flat out being wrong (EGSCN)
+Quite a few coordinates have typos (ATWIS), but many are just flat out wrong (EGSCN)
 
 This project aims to solve most of these cases by combining the data with data from OpenStreetMap's [Nominatim](https://nominatim.org/release-docs/latest/api/Overview/) and [Wikidata](https://www.wikidata.org/).
 
