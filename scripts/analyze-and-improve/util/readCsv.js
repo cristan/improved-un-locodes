@@ -30,7 +30,7 @@ export function readSubdivisionData() {
 export async function readCsv(improved = false) {
     const subdivisionDatabase = readSubdivisionData()
 
-    const countryList = fs.readFileSync(`../../data/country-codes.csv`, 'utf8').split("\n")
+    const countryList = fs.readFileSync(`../../data/country-codes.csv`, 'utf8').split("\r\n")
     // Ignore the first entry: that's the header
     countryList.shift()
     const countries = {}
@@ -39,7 +39,7 @@ export async function readCsv(improved = false) {
         countries[columns[0]] = columns[1]
     }
 
-    const codeList = fs.readFileSync(`../../data/code-list${improved ? '-improved' : ''}.csv`, 'utf8').split("\n")
+    const codeList = fs.readFileSync(`../../data/code-list${improved ? '-improved' : ''}.csv`, 'utf8').split("\r\n")
     // Ignore the first entry: that's the header
     codeList.shift()
     const csvDatabase = {}
