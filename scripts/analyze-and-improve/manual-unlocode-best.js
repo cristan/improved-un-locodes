@@ -211,6 +211,7 @@ export const UNLOCODE_BEST =[
     "USKVW", // Different spelling
     "USNNU", // Different spelling
     "USAN7", // Spelling is probably wrong
+    "US5JD", // Tiny little neighbourhood not found by the current nominatim query, but it is there.
     "USYAJ",
     "USA2N",
     "US9BC", // Spelling is probably wrong
