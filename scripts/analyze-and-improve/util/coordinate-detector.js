@@ -4,7 +4,6 @@ import {UNLOCODE_BEST} from "../manual-unlocode-best.js";
 import {downloadByCityIfNeeded} from "./nominatim-downloader.js";
 import {getNominatimData, readNominatimDataByCity} from "./nominatim-loader.js";
 import {ALIASES} from "../manual-aliases.js";
-import {NO_LOCATION} from "../manual-no-locations.js";
 
 export async function detectCoordinates(unlocode, csvDatabase, wikidataDatabase, maxDistance) {
     if (ALIASES[unlocode]) {
@@ -12,9 +11,6 @@ export async function detectCoordinates(unlocode, csvDatabase, wikidataDatabase,
         detectedCoordinates.type = "Other UN/LOCODE"
         detectedCoordinates.source = ALIASES[unlocode]
         return detectedCoordinates
-    }
-    if (NO_LOCATION.includes(unlocode)) {
-        return undefined
     }
 
     const entry = csvDatabase[unlocode]

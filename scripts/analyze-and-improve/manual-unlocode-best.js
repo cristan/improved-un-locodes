@@ -226,6 +226,7 @@ export const UNLOCODE_BEST =[
     "US4CS", // Spelling is probably wrong
     "USHZG", // Spelling is probably wrong
     "USCLC", // Points to clear lake park. A little weird, but it is in Texas
+    "USHDA", // Nominatim finds something in a completely wrong state. Better have no location than a completely wrong one.
     "USDVM",
     "USDON", // Spelling is probably wrong
     "USDU4", // Spelling is probably wrong
