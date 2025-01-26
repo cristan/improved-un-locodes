@@ -25,7 +25,7 @@ LIMIT 1000
  */
 
 const sparqlQuery = `
-SELECT DISTINCT ?item ?unlocode ?itemLabel ?coords ?subdivisionCode1
+SELECT DISTINCT ?item ?unlocode ?itemLabel ?coords (GROUP_CONCAT(?subdivisionCode1; SEPARATOR=", ") AS ?subdivision1Codes)
 WHERE {
   ?item wdt:P1937 ?unlocode.
   ?item wdt:P625 ?coords.
@@ -35,7 +35,7 @@ WHERE {
   }
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
 }
-ORDER BY ?item
+GROUP BY ?item ?unlocode ?itemLabel ?coords
 `
 /*
 OPTIONAL {
@@ -75,20 +75,24 @@ async function downloadFromWikidata() {
             }
             return true
         })
-        .map(result => ({
-            item: result.item.value,
-            itemLabel: result.itemLabel.value,
-            lat: extractCoordinates(result.coords.value).lat,
-            lon: extractCoordinates(result.coords.value).lon,
-            unlocode: result.unlocode.value,
-            subdivisionCode1: result.subdivisionCode1?.value,
-            subdivisionCode2: result.subdivisionCode2?.value,
-            subdivisionCode3: result.subdivisionCode3?.value,
-        }))
+        .map(result => {
+            const item = {
+                item: result.item.value,
+                itemLabel: result.itemLabel.value,
+                lat: extractCoordinates(result.coords.value).lat,
+                lon: extractCoordinates(result.coords.value).lon,
+                unlocode: result.unlocode.value,
+            }
+            if (result.subdivision1Codes.value) {
+                item.subdivisionCode1 = result.subdivision1Codes.value
+            }
+            return item
+        })
 
 
     // Sort the data, so they will have a consistent order
     // This will help a lot with handling the wikidata dataset in Git
+    // Done client-side to reduce load on the Wikidata server: the query is heavy enough as it is.
     const allDataSorted = simplifiedData.sort(function (a, b) {
         return (a.unlocode + a.item > b.unlocode + a.item) ? 1 : -1
     })

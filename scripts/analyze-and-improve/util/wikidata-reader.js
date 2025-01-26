@@ -5,12 +5,12 @@ export function readWikidata() {
     const wikiData = {}
 
     data.forEach(entry => {
-        const subdivisionCodeRaw = entry.subdivisionCode1 ?? entry.subdivisionCode2 ?? entry.subdivisionCode3
+        const subdivisionCodeRaw = entry.subdivisionCode1
 
         const wikiDataEntry = {
             ...entry,
             sourceUrl: entry.item,
-            subdivisionCode: subdivisionCodeRaw?.substring(3),
+            subdivisionCode: subdivisionCodeRaw?.split(", ")[0].substring(3),
             alternatives: []
         }
 
