@@ -3,9 +3,6 @@
 export const ALIASES = {
     SKJAO: "SKJSV", // Jasova => Jasová
     AOVPE: "AONGV", // Ongiva => Ondjiva
-    // Note that these 2 will probably be gone soon
-    NLBNK: "NLBUK", // Bunnink => Bunnik
-    NLBEW: "NLBLW", // Beiswijk => Bleiswijk
     ZAGNB: "ZAGAA", // Gans Bay => Gansbaai
     PKQCT: "PKBQM", // Qasim International Container Terminal/Karachi => Muhammad Bin Qasim/Karachi
     USLMW: "USXHQ", // Lakemills => Lake Mills
@@ -80,6 +77,11 @@ export const ALIASES = {
     SAEAM: "SANJN", // Nejran => Najran
     TMCRZ: "TMTK5", // Tchardjou (or Çärjew / Chardzhou) => Türkmenabat (new name)
     NLMID: "NLMDL", // Middelburg => Middelburg
+    ITVET: "ITVV2", // Vetrella => Vetralla
+    ITCVT: "ITCCI", // Castelovati => Castelcovati
+    ITCNI: "ITCN2", // Cenia => Cenaia
+    ITMRN: "ITMAR", // Marnello => Maranello
+    ITSGU: "ITSG7", // San Guiseppe => San Giuseppe
 
     // No mistakes, but entries which are parts of another entry, though you could argue against having unlocodes for such small locations
     ZAGTY: "ZAELS", // Gately is in East London (Oos-Londen)
