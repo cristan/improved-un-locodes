@@ -75,7 +75,8 @@ async function validateEntries() {
 
         // TODO: also look at Nominatim
         if (wikiEntry) {
-            if(wikiEntry.itemLabel !== entry.city && !wikiEntry.alternatives.some(a => a.itemLabel !== entry.city) && !wikiEntry.itemLabel.includes(entry.city) && !entry.city.includes(wikiEntry.itemLabel)) {
+            const notSetRegex = /Q\d+/
+            if(wikiEntry.itemLabel !== entry.city && !notSetRegex.test(wikiEntry.itemLabel) && !wikiEntry.alternatives.some(a => a.itemLabel !== entry.city) && !wikiEntry.itemLabel.includes(entry.city) && !entry.city.includes(wikiEntry.itemLabel)) {
                 wrongNameLogs.push(`https://unlocode.info/${unlocode}: (${entry.city}): Name should be set to ${wikiEntry.itemLabel}. Source: ${wikiEntry.sourceUrl}`)
             }
         }
