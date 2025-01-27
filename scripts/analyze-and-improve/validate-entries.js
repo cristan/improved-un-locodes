@@ -151,28 +151,6 @@ async function validateEntries() {
         doLog(noDateLog, useHtml)
     }
 
-    // const coordinateGroups = {}; // Object to store groups of entries with the same coordinates
-    //
-    // // Group entries by coordinates
-    // Object.values(filteredEntries).forEach(entry => {
-    //     const coordinatesString = entry.coordinates.toString();
-    //     if (!coordinateGroups[coordinatesString]) {
-    //         coordinateGroups[coordinatesString] = [];
-    //     }
-    //     coordinateGroups[coordinatesString].push(entry);
-    // });
-    //
-    // // Log entries with duplicate coordinates
-    // console.log(`<h1>Entries with duplicate coordinates</h1>`)
-    // for (const coordinatesString in coordinateGroups) {
-    //     const entries = coordinateGroups[coordinatesString];
-    //     if (entries.length > 1 && coordinatesString.length > 1) {
-    //         const entryLinks = entries.map(entry => `<a href="https://unlocode.info/${entry.unlocode}">${entry.city}</a>`).join(', ');
-    //         const logMessage = `<p>${entryLinks} share the same coordinates (${coordinatesString})</p>`;
-    //         doLog(logMessage, false);
-    //     }
-    // }
-
     // TODO: Split location issues into pressing (1000km off plus) and regular location issues
     // TODO: take into account wikidata for the coordinate suggestions (not for GB, but definitely for IT)
     // TODO: Determine when an entry has been added in case of missing date?
