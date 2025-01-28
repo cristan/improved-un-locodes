@@ -1,13 +1,7 @@
 import {readCsv} from "./util/readCsv.js";
-import {
-    convertToBoth,
-    convertToDecimal,
-    convertToUnlocode,
-    getDistanceFromLatLonInKm
-} from "./util/coordinatesConverter.js";
+import { convertToBoth } from "./util/coordinatesConverter.js";
 import {getNominatimData} from "./util/nominatim-loader.js";
 import {validateCoordinates} from "./util/coordinates-validator.js";
-import {UNLOCODE_BEST} from "./manual-unlocode-best.js";
 import {getInvalidRegionMessage, getNoRegionMessage} from "./util/region-validator.js";
 import {readWikidata} from "./util/wikidata-reader.js";
 import {detectCoordinates} from "./util/coordinate-detector.js";
@@ -114,20 +108,6 @@ async function validateEntries() {
         doLog(entriesToBeDeletedLog, useHtml)
     }
 
-    if (newCoordinateLogs.length > 0) {
-        console.log(`<h1>Suggested new coordinates (${newCoordinateLogs.length})</h1>`)
-    }
-    for (const newCoordinateLog of newCoordinateLogs) {
-        doLog(newCoordinateLog, useHtml)
-    }
-
-    if (wrongNameLogs.length > 0) {
-        console.log(`<h1>Entries with incorrect names (${wrongNameLogs.length})</h1>`)
-    }
-    for (const wrongNameLog of wrongNameLogs) {
-        doLog(wrongNameLog, useHtml)
-    }
-
     if (noSuggestionFoundMessages.length > 0) {
         console.log(`<h1>Entries who could not be found (${noSuggestionFoundMessages.length})</h1>`)
     }
@@ -149,6 +129,20 @@ async function validateEntries() {
     }
     for (const noDateLog of noDateLogs) {
         doLog(noDateLog, useHtml)
+    }
+
+    if (newCoordinateLogs.length > 0) {
+        console.log(`<h1>Suggested new coordinates (${newCoordinateLogs.length})</h1>`)
+    }
+    for (const newCoordinateLog of newCoordinateLogs) {
+        doLog(newCoordinateLog, useHtml)
+    }
+
+    if (wrongNameLogs.length > 0) {
+        console.log(`<h1>Entries with incorrect names (${wrongNameLogs.length})</h1>`)
+    }
+    for (const wrongNameLog of wrongNameLogs) {
+        doLog(wrongNameLog, useHtml)
     }
 
     // TODO: Split location issues into pressing (1000km off plus) and regular location issues
