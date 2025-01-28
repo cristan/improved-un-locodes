@@ -5,6 +5,8 @@ import {delay} from "./util/nominatim-downloader.js";
 
 const unlocodes = ["ESMAD", "USABQ", "USLAX", "TRANK", "USATL", "USAUS", "AZBAK", "GHACC", "USBUF", "ROBUH", "KENBO", "VECCS", "PHCEB", "USCMH", "USDEN", "INHYD", "GBLON", "USLRO", "USBNA", "USMSY", "USOAK", "LULUX", "USMIA", "ITMIL", "USMES", "UYMVD", "IEDUB", "MXGDL", "CNGZG", "FIHEL", "ESBCN", "USCHI", "USPHX", "USPHL", "USSAT", "USDAL", "INDEL", "PKKHI", "PKLHE", "PHMNL", "PELIM", "IDMES", "MYKUL", "KWKWI", "NGLOS", "CDFIH", "ETADD", "SDKRT", "AOLAD", "DELEJ", "USMEM", "USMSY", "HTPAP", "SRPBM", "USSFO", "USSEA", "SGSIN", "MKSKP", "USSLC", "USTPA", "HNTGU", "LBKYE", "CATOR", "TNTUN", "ESVLC", "CAOTT", "CUSCU", "CAQUE", "CAMTR", "CAVAN", "USPIT", "USPQD", "INPNQ", "ZAPLZ", "NGPHC", "MUPLU", "EGPSD", "CZPRG", "ECUIO", "USRAG", "USRCH", "LVRIX", "USROC", "USSAT", "USWAS", "CAWNP", "MMRGN", "ESZAZ", "CHZRH", ]
 let beginning = 16000
+const username = ""
+const email = ""
 
 async function generateDmr() {
     // const csvDatabase = await readCsv()
@@ -13,16 +15,18 @@ async function generateDmr() {
 
     const dataOut = fs.createWriteStream('./dmr.csv')
 
+    const today = new Date().toLocaleDateString("en-US")
+
     for (const unlocode of unlocodes) {
         const entry = csvImprovedDatabase[unlocode]
-        const fromWikiData = wikidataDatabase[unlocode]
+        const wikiDataEntry = wikidataDatabase[unlocode]
         let webLink = undefined
-        if (!fromWikiData) {
+        if (!wikiDataEntry) {
             console.log(`No wikidata entry found for ${unlocode} (${entry.city})`)
         } else {
-            webLink = await getEnWikipediaUrl(fromWikiData.item)
+            webLink = await getEnWikipediaUrl(wikiDataEntry.item)
         }
-        const columns = ["", `UN-2025-${beginning++}`, "|", "",unlocode.substring(0, 2),"",unlocode.substring(2),"","","","","","","","",entry.coordinates, "", "", "", webLink]
+        const columns = ["", `UN-2025-${beginning++}`, "|", "",unlocode.substring(0, 2),"",unlocode.substring(2),"","","","","","","","",entry.coordinates, "", "", "", webLink, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", today, username, email]
         writeCsv(dataOut, columns)
     }
 }
