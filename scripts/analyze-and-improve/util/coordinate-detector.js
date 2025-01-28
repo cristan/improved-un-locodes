@@ -14,21 +14,22 @@ export async function detectCoordinates(unlocode, csvDatabase, wikidataDatabase,
     }
 
     const entry = csvDatabase[unlocode]
+
     const nominatimData = await getNominatimData(entry)
+    const nominatimResult = nominatimData?.result
+    const firstNominatimResult = nominatimResult?.[0]
+
     const decimalCoordinates = convertToDecimal(entry.coordinates)
     const wikiDataEntry = wikidataDatabase[unlocode]
 
-
+    if (wikiDataEntry && decimalCoordinates && getDistanceFromLatLonInKm(decimalCoordinates.lat, decimalCoordinates.lon, wikiDataEntry.lat, wikiDataEntry.lon) < Math.min(10, maxDistance)) {
+        // When we have a Wikidata entry, check if it's close to the original unlocode one. If yes, just believe the UN/LOCODE's location, regardless of what nominatim says
+        return getUnlocodeResult(entry, decimalCoordinates, firstNominatimResult)
+    }
     if (WIKIDATA_BEST.includes(unlocode) || (!decimalCoordinates && !nominatimData && wikiDataEntry)) {
-        if (decimalCoordinates && getDistanceFromLatLonInKm(decimalCoordinates.lat, decimalCoordinates.lon, wikiDataEntry.lat, wikiDataEntry.lon) < Math.min(10, maxDistance)) {
-            // When we have a Wikidata entry, check if it's close to the original unlocode one. If yes, just go for unlocode
-            return getUnlocodeResult(entry, decimalCoordinates)
-        }
         return {...wikiDataEntry, type: "Wikidata", decimalCoordinates: {lat: wikiDataEntry.lat, lon: wikiDataEntry.lon}}
     }
 
-    const nominatimResult = nominatimData?.result
-    const firstNominatimResult = nominatimResult?.[0]
     if (!nominatimData || UNLOCODE_BEST.includes(unlocode)) {
         // When Nominatim can't find it, which most likely means a non-standard name is found.
         // For example ITMND which has the name "Mondello, Palermo" or ITAQW with the name "Acconia Di Curinga"
