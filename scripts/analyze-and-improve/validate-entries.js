@@ -31,7 +31,7 @@ async function validateEntries() {
     const useHtml = true
     const maxDistance = 100
     const filteredEntries = Object.values(csvDatabase).filter(entry => {
-        return entry.country === "IN"
+        return entry.country === "IT"
     })
     for (const entry of Object.values(filteredEntries)) {
         const unlocode = entry.unlocode
@@ -114,18 +114,18 @@ async function validateEntries() {
         doLog(entriesToBeDeletedLog, useHtml)
     }
 
-    if (wrongNameLogs.length > 0) {
-        console.log(`<h1>Entries with incorrect names (${wrongNameLogs.length})</h1>`)
-    }
-    for (const wrongNameLog of wrongNameLogs) {
-        doLog(wrongNameLog, useHtml)
-    }
-
     if (newCoordinateLogs.length > 0) {
         console.log(`<h1>Suggested new coordinates (${newCoordinateLogs.length})</h1>`)
     }
     for (const newCoordinateLog of newCoordinateLogs) {
         doLog(newCoordinateLog, useHtml)
+    }
+
+    if (wrongNameLogs.length > 0) {
+        console.log(`<h1>Entries with incorrect names (${wrongNameLogs.length})</h1>`)
+    }
+    for (const wrongNameLog of wrongNameLogs) {
+        doLog(wrongNameLog, useHtml)
     }
 
     if (noSuggestionFoundMessages.length > 0) {
