@@ -90,7 +90,7 @@ function writeNominatimDataToCsv(dataOut, entry, firstNominatimResult, distance)
 
 function writeCsv(dataOut, entries) {
     const withQuotesIfNeeded = entries.map(entry => {
-        if (typeof entry === "string" && entry.includes(",")) {
+        if (typeof entry === "string" && (entry.includes(",") || entry.includes("\n"))) {
             return `\"${entry}\"`
         } else {
             return entry
