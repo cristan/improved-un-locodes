@@ -164,9 +164,9 @@ export async function validateCoordinates(entry, nominatimData, wikiEntry, maxDi
         // Example: ITAN2: The coordinates point to Antignano,Livorno, but there actually is a village Antignano, Asti. Automatically detect this.
 
         await downloadByCityIfNeeded(entry)
-        // In some super duper rare cases, can we find something by region which and we can't find anything at all when
+        // In some super duper rare cases, can we find something by region, and we can't find anything at all when
         // not searching by region (happens at PKSAW), hence the null check
-        const nominatimDataByCity = readNominatimDataByCity(unlocode)?.result
+        const nominatimDataByCity = readNominatimDataByCity(unlocode, entry.city)?.result
 
         let closestDistance = Number.MAX_VALUE
         let closestInAnyRegion = undefined

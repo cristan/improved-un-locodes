@@ -88,7 +88,7 @@ async function findCloseResult(maxDistance, nominatimResult, decimalCoordinates,
         // We couldn't find any close result by region. Let's scrape by city as well to see if there is a location in another region where the coordinates do match (like ITAN2)
         // This means that either the coordinates are wrong, or the region is wrong.
         await downloadByCityIfNeeded(entry)
-        const nominatimDataByCity = readNominatimDataByCity(unlocode)?.result
+        const nominatimDataByCity = readNominatimDataByCity(unlocode, entry.city)?.result
         const closeResults = nominatimDataByCity?.filter(n => {
             return getDistanceFromLatLonInKm(decimalCoordinates.lat, decimalCoordinates.lon, n.lat, n.lon) < closeDistance
         })

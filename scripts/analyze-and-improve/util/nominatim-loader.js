@@ -42,7 +42,7 @@ async function loadNominatimData(entry) {
 
         // this is why in all cases, we can just return the one via a query
         await downloadByQueryIfNeeded(entry, query)
-        return readNominatimDataByQuery(entry.unlocode)
+        return readNominatimDataByQuery(entry.unlocode, entry.city)
     }
 
     const subdivisionCode = entry.subdivisionCode
@@ -55,7 +55,7 @@ async function loadNominatimData(entry) {
     }
 
     await downloadByCityIfNeeded(entry)
-    return readNominatimDataByCity(entry.unlocode)
+    return readNominatimDataByCity(entry.unlocode, entry.city)
 }
 
 function readNominatimDataByRegion(entry) {
@@ -72,14 +72,14 @@ function readNominatimDataByRegion(entry) {
     // Example: this goes wrong at https://nominatim.openstreetmap.org/search?format=jsonv2&accept-language=en&addressdetails=1&limit=20&city=Laocheng&country=CN&state=CN-HI
     // Which also returns data in HA even though the provided state is CN-HI.
     const parsedAndFiltered = parsed.filter(nm => getSubdivisionCode(nm) === entry.subdivisionCode)
-    const withoutUselessEntries = filterOutUselessEntries(parsedAndFiltered, country)
+    const withoutUselessEntries = filterOutUselessEntries(parsedAndFiltered, country, entry.city)
     if (withoutUselessEntries.length === 0) {
         return undefined
     }
     return withoutUselessEntries
 }
 
-export function readNominatimDataByCity(unlocode) {
+export function readNominatimDataByCity(unlocode, cityName) {
     const country = unlocode.substring(0, 2)
     const location = unlocode.substring(2)
     const directoryRoot = `../../data/nominatim/${country}/${location}`
@@ -88,7 +88,7 @@ export function readNominatimDataByCity(unlocode) {
     if (byCity === "[]") {
         return undefined
     } else {
-        const withoutUselessEntries = filterOutUselessEntries(JSON.parse(byCity), country)
+        const withoutUselessEntries = filterOutUselessEntries(JSON.parse(byCity), country, cityName)
         if (withoutUselessEntries.length === 0) {
             return undefined
         }
@@ -99,7 +99,7 @@ export function readNominatimDataByCity(unlocode) {
     }
 }
 
-export function readNominatimDataByQuery(unlocode) {
+export function readNominatimDataByQuery(unlocode, cityName) {
     const country = unlocode.substring(0, 2)
     const location = unlocode.substring(2)
     const directoryRoot = `../../data/nominatim/${country}/${location}`
@@ -108,7 +108,7 @@ export function readNominatimDataByQuery(unlocode) {
     if (byQuery === "[]") {
         return undefined
     } else {
-        const withoutUselessEntries = filterOutUselessEntries(JSON.parse(byQuery), country)
+        const withoutUselessEntries = filterOutUselessEntries(JSON.parse(byQuery), country, cityName)
         // Let's filter out entries from other countries just in case: who knows what kind of results searching by query returns
         const inCorrectCountry = withoutUselessEntries.filter(nm => nm.address.country_code.toUpperCase() === country)
         if (inCorrectCountry.length === 0) {
@@ -121,12 +121,12 @@ export function readNominatimDataByQuery(unlocode) {
     }
 }
 
-function filterOutUselessEntries(nominatimResult, countryCode) {
+function filterOutUselessEntries(nominatimResult, countryCode, cityName) {
     // Filter out anything which isn't a place, a boundary or a landuse (CNYTN)
     // TODO: this might be problematic! I only detected that I needed landuse by accident
     //  Also, maybe not use all landuses? The ones with type="industrial" we definitely need, but maybe we don't need type="commercial" (AESZS)
     // Alternatively, we can filter out the ones we don't want
-    const filteredByCategory = nominatimResult.filter(n => n.category === "place" || n.category === "boundary" || n.category === "landuse")
+    const filteredByCategory = nominatimResult.filter(n => n.category === "place" || n.category === "boundary" || n.category === "landuse" || cityName.toLowerCase().includes("canal") && n.category === "waterway")
 
     // The isolated dwelling tag is used for named places that are smaller than a hamlet - no more than a few buildings
     // Assume there are no unlocodes for places that small.
