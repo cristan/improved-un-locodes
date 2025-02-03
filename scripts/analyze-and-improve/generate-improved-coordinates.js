@@ -26,7 +26,7 @@ async function generateImprovedCoordinates() {
         // Convert all coordinates to UN/LOCODE style degrees coordinates
         const detectedCoordinates = await detectCoordinates(unlocode, csvDatabase, wikidataDatabase, 100)
         let degreesCoordinates = entry.coordinates
-        if (entry.coordinates === "2444N 05045") {
+        if (entry.coordinates === "2444N 05045") {// The only malformed coordinate in the original UN/LOCODE dataset
             degreesCoordinates = "2444N 05045E"
         }
         if (degreesCoordinates.match(decimalRegex)) {
