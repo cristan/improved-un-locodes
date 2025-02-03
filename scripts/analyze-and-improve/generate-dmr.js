@@ -9,7 +9,7 @@ const username = ""
 const email = ""
 
 async function generateDmr() {
-    // const csvDatabase = await readCsv()
+    const csvDatabase = await readCsv()
     const csvImprovedDatabase = await readCsv(true)
     const wikidataDatabase = readWikidata()
 
@@ -17,21 +17,34 @@ async function generateDmr() {
 
     const today = new Date().toLocaleDateString("en-US")
 
-    for (const unlocode of unlocodes) {
-        const entry = csvImprovedDatabase[unlocode]
+    const filteredEntries = Object.values(csvImprovedDatabase).filter(entry => {
+        return entry.country === "IT"
+    })
+
+    for (const entry of Object.values(filteredEntries)) {
+        const unlocode = entry.unlocode
+        if (csvDatabase[unlocode].coordinates) {
+            // When there already are coordinates, skip it.
+            continue
+        }
+        // const entry = csvImprovedDatabase[unlocode]
         const wikiDataEntry = wikidataDatabase[unlocode]
         let webLink = undefined
         if (!wikiDataEntry) {
             console.log(`No wikidata entry found for ${unlocode} (${entry.city})`)
+            continue
         } else {
-            webLink = await getEnWikipediaUrl(wikiDataEntry.item)
+            webLink = await getWikipediaUrl(wikiDataEntry.item)
+            if (!webLink) {
+                continue
+            }
         }
         const columns = ["", `UN-2025-${beginning++}`, "|", "",unlocode.substring(0, 2),"",unlocode.substring(2),"","","","","","","","",entry.coordinates, "", "", "", webLink, "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", today, username, email]
         writeCsv(dataOut, columns)
     }
 }
 
-async function getEnWikipediaUrl(wikiDataId) {
+async function getWikipediaUrl(wikiDataId) {
     const directory = `../../data/wikidata/wikipedia-urls`
     if (!fs.existsSync(directory)){
         fs.mkdirSync(directory, { recursive: true });
@@ -40,14 +53,20 @@ async function getEnWikipediaUrl(wikiDataId) {
     const fileName = `${directory}/${realWikiDataId}.json`
     const fileAlreadyExists = fs.existsSync(fileName)
     if (!fileAlreadyExists) {
-        const wikiDataQuery = `https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&props=sitelinks&ids=${realWikiDataId}&sitefilter=enwiki`
+        console.log(`Downloading ${realWikiDataId}.`)
+        const wikiDataQuery = `https://www.wikidata.org/w/api.php?action=wbgetentities&format=json&props=sitelinks&ids=${realWikiDataId}`
         await delay(1000)
         const resultAsText = await (await fetch(wikiDataQuery)).text()
         await fs.writeFileSync(fileName, resultAsText)
     }
-    const fileContents = fs.readFileSync(fileName, 'utf8');
-    const enWikiTitle = JSON.parse(fileContents).entities[realWikiDataId].sitelinks.enwiki.title;
-    return `https://en.wikipedia.org/wiki/${enWikiTitle}`.replaceAll(" ", "_")
+    const fileContents = fs.readFileSync(fileName, 'utf8')
+    const sitelinks = JSON.parse(fileContents).entities[realWikiDataId].sitelinks
+    const sitelink = sitelinks.enwiki ?? sitelinks.itwiki
+    if (!sitelink) {
+        console.log(`No enwiki or itwiki entry found for ${wikiDataId}`)
+        return undefined
+    }
+    return `https://${sitelink.site.substring(0, 2)}.wikipedia.org/wiki/${sitelink.title}`.replaceAll(" ", "_")
 }
 
 function writeCsv(dataOut, entries) {
