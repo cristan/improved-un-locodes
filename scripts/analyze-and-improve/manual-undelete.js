@@ -6,4 +6,5 @@ export const DELETIONS_STILL_IN_USE = {
     CNQYN: "CNQGY", // Qingyuan
     THSPR: "THSAP", // Samut Prakan
     CNTIZ: "CNTZO", // Taizhou
+    REPDG: "REPD2", // Pointe des Galets
 }
