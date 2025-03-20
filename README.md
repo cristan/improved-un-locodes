@@ -16,7 +16,7 @@ This project aims to solve most of these cases by combining the data with data f
 Most UN/LOCODES have a specific coordinate format, like USNYC: 4042N 07400W. However, this is not always true. Entries in Bhutan like BTPDL have decimal coordinates: 26.8128N 89.1903E. This project solves this with its 2 columns: the `Coordinates` column has the UN/LOCODE style degrees, while the `CoordinatesDecimal` column has a decimal representation.
 
 ## CSV with improved locations
-You can find the improved list as [code-list-improved.csv](data/code-list-improved.csv). It has both corrected coordinates, as well as just way more of them (98.3%).
+You can find the improved list as [code-list-improved.csv](data/code-list-improved.csv). It has both corrected coordinates, as well as just way more of them (98.4%).
 
 ## Extra columns
 3 extra columns are created:
