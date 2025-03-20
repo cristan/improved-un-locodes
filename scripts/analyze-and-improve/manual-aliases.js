@@ -82,6 +82,8 @@ export const ALIASES = {
     ITCNI: "ITCN2", // Cenia => Cenaia
     ITMRN: "ITMAR", // Marnello => Maranello
     ITSGU: "ITSG7", // San Guiseppe => San Giuseppe
+    USLRJ: "USEMS", // Lemars => Le Mars
+    USWYI: "USWM6", // Wyemills => Wye Mills
 
     // No mistakes, but entries which are parts of another entry, though you could argue against having unlocodes for such small locations
     ZAGTY: "ZAELS", // Gately is in East London (Oos-Londen)
