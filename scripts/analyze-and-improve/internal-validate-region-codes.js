@@ -24,4 +24,4 @@ async function validateRegionCodes() {
 }
 
 validateRegionCodes()
-// I now have to do IDSGO onwards for indonesia, PGGUG onward for Papua New Guinea, IE and IL done, IN and JP, MY ignored// TRERG
+// I now have to do IDSGO onwards for indonesia, PGGUG onward for Papua New Guinea, IE and IL done, IN and JP, MY ignored
