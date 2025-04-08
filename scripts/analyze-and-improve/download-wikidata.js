@@ -51,7 +51,7 @@ OPTIONAL {
 const endpointUrl = `https://query.wikidata.org/sparql?format=json&flavor=dump`
 const coordsRegex = /Point\(([-\d\.]*)\s([-\d\.]*)\)/
 
-async function runWikidataQuery(query) {
+export async function runWikidataQuery(query) {
     const queryUrl = `${endpointUrl}&query=${encodeURIComponent(query)}`
 
     const fromWikidata = await fetch(queryUrl, {
@@ -70,7 +70,7 @@ async function downloadFromWikidata() {
         .filter(result => {
             const match = coordsRegex.exec(result.coords.value)
             if (!match || match.length < 3) {
-                console.warn(JSON.stringify(result))
+                console.warn(`Unexpected coordinates format at ${JSON.stringify(result)}`)
                 return false
             }
             return true
