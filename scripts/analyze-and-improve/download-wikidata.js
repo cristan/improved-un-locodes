@@ -1,4 +1,5 @@
 import fs from "node:fs"
+import {runWikidataQuery} from "./util/wikidata.js";
 
 // TODO: also read the subdivision code via this query: https://w.wiki/9ojz
 // It's slower though
@@ -17,25 +18,12 @@ WHERE {
 GROUP BY ?item ?unlocode ?itemLabel ?coords
 `
 
-const endpointUrl = `https://query.wikidata.org/sparql?format=json&flavor=dump`
 const coordsRegex = /Point\(([-\d\.]*)\s([-\d\.]*)\)/
-
-export async function runWikidataQuery(query) {
-    const queryUrl = `${endpointUrl}&query=${encodeURIComponent(query)}`
-
-    const fromWikidata = await fetch(queryUrl, {
-        headers: {
-            'User-Agent': 'Bot for github.com/cristan/improved-un-locodes'
-        }
-    })
-
-    return await fromWikidata.json();
-}
 
 async function downloadFromWikidata() {
     const response = await runWikidataQuery(sparqlQuery)
 
-    const simplifiedData = response.results.bindings
+    const simplifiedData = response
         .filter(result => {
             const match = coordsRegex.exec(result.coords.value)
             if (!match || match.length < 3) {

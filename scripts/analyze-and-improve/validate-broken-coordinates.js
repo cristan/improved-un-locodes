@@ -1,8 +1,8 @@
 import {convertToDecimal} from "./util/coordinatesConverter.js"
-import {readCsv} from "./util/readCsv.js"
+import {readUnlocodesCsv} from "./util/readUnlocodesCsv.js"
 
 async function validateBrokenCoordinates() {
-    const csvDatabase = await readCsv()
+    const csvDatabase = await readUnlocodesCsv()
     for (const unlocode of Object.keys(csvDatabase)) {
         const entry = csvDatabase[unlocode]
 

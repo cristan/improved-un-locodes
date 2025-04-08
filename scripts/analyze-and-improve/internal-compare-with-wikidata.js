@@ -1,11 +1,11 @@
-import {readCsv} from "./util/readCsv.js";
+import {readUnlocodesCsv} from "./util/readUnlocodesCsv.js";
 import {convertToDecimal, convertToUnlocode, getDistanceFromLatLonInKm} from "./util/coordinatesConverter.js";
 import {readWikidata} from "./util/wikidata-reader.js";
 import {UNLOCODE_BEST} from "./manual-unlocode-best.js";
 
 // Before you run this, make sure to run download-wikidata.js to compare with the latest state at Wikidata
 async function validateAllCoordinates() {
-    const csvDatabase = await readCsv(true)
+    const csvDatabase = await readUnlocodesCsv(true)
     const wikidata = readWikidata();
 
     console.log()

@@ -1,4 +1,4 @@
-import {parseCSV, readCsv} from "./util/readCsv.js";
+import {parseCSV, readUnlocodesCsv} from "./util/readUnlocodesCsv.js";
 import {getNominatimData} from "./util/nominatim-loader.js";
 import {readWikidata} from "./util/wikidata-reader.js";
 import {delay} from "./util/nominatim-downloader.js";
@@ -8,7 +8,7 @@ import fs from "node:fs";
 const municipalityOfTheNetherlands = "Q2039348"
 
 async function createReport() {
-    const csvDatabase = await readCsv()
+    const csvDatabase = await readUnlocodesCsv()
     const wikiData = readWikidata()
 
     const commonUnlocodes = readCommonUnlocodes()

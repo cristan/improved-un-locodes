@@ -1,4 +1,4 @@
-import {readCsv} from "./util/readCsv.js";
+import {readUnlocodesCsv} from "./util/readUnlocodesCsv.js";
 import {convertToDecimal} from "./util/coordinatesConverter.js";
 
 async function fetchAirportInfo(iataCode) {
@@ -30,7 +30,7 @@ async function fetchAirportInfo(iataCode) {
 }
 
 async function checkAirports() {
-    const csvDatabase = await readCsv(true)
+    const csvDatabase = await readUnlocodesCsv(true)
 
     for (const unlocode of Object.keys(csvDatabase)) {
         const entry = csvDatabase[unlocode]

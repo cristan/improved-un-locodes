@@ -1,4 +1,4 @@
-import {readCsv} from "./util/readCsv.js";
+import {readUnlocodesCsv} from "./util/readUnlocodesCsv.js";
 import {readWikidata} from "./util/wikidata-reader.js";
 import fs from "node:fs";
 import {delay} from "./util/nominatim-downloader.js";
@@ -9,8 +9,8 @@ const username = ""
 const email = ""
 
 async function generateDmr() {
-    const csvDatabase = await readCsv()
-    const csvImprovedDatabase = await readCsv(true)
+    const csvDatabase = await readUnlocodesCsv()
+    const csvImprovedDatabase = await readUnlocodesCsv(true)
     const wikidataDatabase = readWikidata()
 
     const dataOut = fs.createWriteStream('./dmr.csv')
@@ -67,17 +67,6 @@ async function getWikipediaUrl(wikiDataId) {
         return undefined
     }
     return `https://${sitelink.site.substring(0, 2)}.wikipedia.org/wiki/${sitelink.title}`.replaceAll(" ", "_")
-}
-
-function writeCsv(dataOut, entries) {
-    const withQuotesIfNeeded = entries.map(entry => {
-        if (typeof entry === "string" && (entry.includes(",") || entry.includes("\n"))) {
-            return `\"${entry}\"`
-        } else {
-            return entry
-        }
-    })
-    dataOut.write(withQuotesIfNeeded.join(",")+ "\n")
 }
 
 generateDmr()

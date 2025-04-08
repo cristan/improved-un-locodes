@@ -1,9 +1,9 @@
-import {readCsv, readSubdivisionData} from "./util/readCsv.js";
+import {readUnlocodesCsv, readSubdivisionData} from "./util/readUnlocodesCsv.js";
 import {getNominatimData} from "./util/nominatim-loader.js";
 
 // TODO: delete me
 async function createReport() {
-    const csvDatabase = await readCsv()
+    const csvDatabase = await readUnlocodesCsv()
     const subdivisions = readSubdivisionData()
 
     for (const unlocode of Object.keys(csvDatabase)) {

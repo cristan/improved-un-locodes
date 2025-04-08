@@ -1,4 +1,4 @@
-import {readCsv} from "./util/readCsv.js";
+import {readUnlocodesCsv} from "./util/readUnlocodesCsv.js";
 import { convertToBoth } from "./util/coordinatesConverter.js";
 import {getNominatimData} from "./util/nominatim-loader.js";
 import {validateCoordinates} from "./util/coordinates-validator.js";
@@ -10,7 +10,7 @@ import {ALIASES} from "./manual-aliases.js";
 async function validateEntries() {
     // console.debug = function() {};
 
-    const csvDatabase = await readCsv()
+    const csvDatabase = await readUnlocodesCsv()
     const wikiData = readWikidata()
 
     console.log()

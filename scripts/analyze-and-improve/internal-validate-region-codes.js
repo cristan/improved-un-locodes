@@ -1,8 +1,8 @@
-import {readCsv, readSubdivisionData} from "./util/readCsv.js";
+import {readUnlocodesCsv, readSubdivisionData} from "./util/readUnlocodesCsv.js";
 import {convertToDecimal} from "./util/coordinatesConverter.js";
 
 async function validateRegionCodes() {
-    const csvDatabase = await readCsv(true)
+    const csvDatabase = await readUnlocodesCsv(true)
     // const subdivisions = readSubdivisionData()
 
     let count = 0

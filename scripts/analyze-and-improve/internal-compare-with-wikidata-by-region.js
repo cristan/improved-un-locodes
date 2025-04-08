@@ -1,4 +1,4 @@
-import {readCsv} from "./util/readCsv.js";
+import {readUnlocodesCsv} from "./util/readUnlocodesCsv.js";
 import {convertToDecimal, convertToUnlocode, getDistanceFromLatLonInKm} from "./util/coordinatesConverter.js";
 import {readWikidata} from "./util/wikidata-reader.js";
 import fs from "node:fs";
@@ -7,7 +7,7 @@ import {getSubdivisionCode} from "./util/nominatim-loader.js";
 // Before you run this, make sure to run download-wikidata.js to compare with the latest state at Wikidata
 // Mostly seems to find problems with region data in either OpenStreetMap or in UN/LOCODE
 async function validateAllCoordinates() {
-    const csvDatabase = await readCsv(true)
+    const csvDatabase = await readUnlocodesCsv(true)
     const wikidata = readWikidata();
 
     console.log()

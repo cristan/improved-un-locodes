@@ -1,4 +1,4 @@
-import {readCsv} from "./util/readCsv.js";
+import {readUnlocodesCsv} from "./util/readUnlocodesCsv.js";
 import {
     convertToDecimal,
     convertToUnlocode,
@@ -9,9 +9,10 @@ import fs from "node:fs";
 import {readWikidata} from "./util/wikidata-reader.js";
 import {detectCoordinates} from "./util/coordinate-detector.js";
 import {DELETIONS_STILL_IN_USE} from "./manual-undelete.js";
+import {writeCsv} from "./util/csv.js";
 
 async function generateImprovedCoordinates() {
-    const csvDatabase = await readCsv()
+    const csvDatabase = await readUnlocodesCsv()
     const wikidataDatabase = readWikidata()
 
     const filename = 'code-list-improved.csv'
@@ -86,17 +87,6 @@ async function generateImprovedCoordinates() {
 function writeNominatimDataToCsv(dataOut, entry, firstNominatimResult, distance) {
     const nominatimEntries = [entry.change, entry.country, entry.location, entry.city, entry.nameWithoutDiacritics, entry.subdivisionCode, entry.status, entry.function, entry.date, entry.iata, convertToUnlocode(firstNominatimResult.lat, firstNominatimResult.lon), entry.remarks, firstNominatimResult.lat +","+ firstNominatimResult.lon, distance, firstNominatimResult.sourceUrl]
     writeCsv(dataOut, nominatimEntries)
-}
-
-function writeCsv(dataOut, entries) {
-    const withQuotesIfNeeded = entries.map(entry => {
-        if (typeof entry === "string" && (entry.includes(",") || entry.includes("\n"))) {
-            return `\"${entry}\"`
-        } else {
-            return entry
-        }
-    })
-    dataOut.write(withQuotesIfNeeded.join(",")+ "\n")
 }
 
 generateImprovedCoordinates()
