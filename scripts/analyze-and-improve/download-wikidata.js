@@ -94,7 +94,7 @@ async function downloadFromWikidata() {
     // This will help a lot with handling the wikidata dataset in Git
     // Done client-side to reduce load on the Wikidata server: the query is heavy enough as it is.
     const allDataSorted = simplifiedData.sort(function (a, b) {
-        return (a.unlocode + a.item > b.unlocode + a.item) ? 1 : -1
+        return a.unlocode.localeCompare(b.unlocode) || a.item.localeCompare(b.item)
     })
 
     await fs.writeFileSync("../../data/wikidata/wikidata.json", JSON.stringify(allDataSorted, null, 2))
