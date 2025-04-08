@@ -2,27 +2,6 @@ import fs from "node:fs"
 
 // TODO: also read the subdivision code via this query: https://w.wiki/9ojz
 // It's slower though
-/*
-SELECT ?item ?locode ?itemLabel ?coords ?subdivisionCode1 ?subdivisionCode2 ?subdivisionCode3
-WHERE {
-  ?item wdt:P1937 ?locode.
-  ?item wdt:P625 ?coords.
-  OPTIONAL {
-    ?item wdt:P131 ?subdivisionEntity1.
-    OPTIONAL { ?subdivisionEntity1 wdt:P300 ?subdivisionCode1. }
-    OPTIONAL {
-      ?subdivisionEntity1 wdt:P131 ?subdivisionEntity2.
-      OPTIONAL { ?subdivisionEntity2 wdt:P300 ?subdivisionCode2. }
-      OPTIONAL {
-        ?subdivisionEntity2 wdt:P131 ?subdivisionEntity3.
-        OPTIONAL { ?subdivisionEntity3 wdt:P300 ?subdivisionCode3. }
-      }
-    }
-  }
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
-}
-LIMIT 1000
- */
 
 const sparqlQuery = `
 SELECT DISTINCT ?item ?unlocode ?itemLabel ?coords (GROUP_CONCAT(?subdivisionCode1; SEPARATOR=", ") AS ?subdivision1Codes)
@@ -37,16 +16,6 @@ WHERE {
 }
 GROUP BY ?item ?unlocode ?itemLabel ?coords
 `
-/*
-OPTIONAL {
-          ?subdivisionEntity1 wdt:P131 ?subdivisionEntity2.
-          OPTIONAL { ?subdivisionEntity2 wdt:P300 ?subdivisionCode2. }
-          OPTIONAL {
-            ?subdivisionEntity2 wdt:P131 ?subdivisionEntity3.
-            OPTIONAL { ?subdivisionEntity3 wdt:P300 ?subdivisionCode3. }
-          }
-        }
- */
 
 const endpointUrl = `https://query.wikidata.org/sparql?format=json&flavor=dump`
 const coordsRegex = /Point\(([-\d\.]*)\s([-\d\.]*)\)/
@@ -94,7 +63,11 @@ async function downloadFromWikidata() {
     // This will help a lot with handling the wikidata dataset in Git
     // Done client-side to reduce load on the Wikidata server: the query is heavy enough as it is.
     const allDataSorted = simplifiedData.sort(function (a, b) {
-        return a.unlocode.localeCompare(b.unlocode) || a.item.localeCompare(b.item)
+        // Sometimes, the same item has multiple coordinates, resulting in the item getting returned multiple times,
+        // hence we also sort on coordinates. Example: https://www.wikidata.org/wiki/Q6799987 or https://www.wikidata.org/wiki/Q3529964
+        // Sorting is more of a hack though: we just want 1 coordinate: the most important one. In the 2 previous example, it can be determined,
+        // but in most cases like https://www.wikidata.org/wiki/Q406639 you just have 2 and both are fine, but we need to pick one (the newest?).
+        return a.unlocode.localeCompare(b.unlocode) || a.item.localeCompare(b.item) || a.item.localeCompare(b.lat) || a.item.localeCompare(b.lon)
     })
 
     await fs.writeFileSync("../../data/wikidata/wikidata.json", JSON.stringify(allDataSorted, null, 2))
