@@ -1,4 +1,4 @@
-An enhanced UN/LOCODE dataset with much better coordinates and more:
+An enhanced UN/LOCODE dataset with significant improvements:
 
 # Significantly better coordinates
 The main reason this project exists: coordinates in [the original UN/LOCODE list](https://github.com/datasets/un-locode) have major problems:
