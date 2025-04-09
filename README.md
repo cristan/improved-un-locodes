@@ -32,9 +32,9 @@ CNPDG,CNSGH
 With this, you can easily find out these are all related.
 
 # Actually working aliases
-Both "Vienna" and "Wien" refer to the same city. How do you find out both are ATVIE? The actual spelling in the dataset is Wein (for some reason), so that's no help. [alias.csv](data/alias.csv) isn't much help either: it doesn't doesn't include "Vienna". It also has other problems like spelling which doesn't match the UN/LOCODE entry, which makes this nigh impossible to use.
+It's impossible to find out that both "Vienna" and "Wien" are in fact the same city with UN/LOCODE [ATVIE](https://unlocode.info/ATVIE). That is, if you use the offical dataset.
 
-Enter [aliases-improved.csv](data/aliases-improved.csv), which looks like this:
+Not so much with [aliases-improved.csv](data/aliases-improved.csv), which looks like this:
 
 ```
 Unlocode,Alias
@@ -42,7 +42,7 @@ ATVIE,Wien
 ATVIE,Vienna
 ```
 
-This is much more useful. Not only because of the easier setup, but mostly because of its sheer size. The official dataset has less than 100 aliases, this one has over 575.000.
+This is much more usable than the [aliases](data/alias.csv) in the original.  Not only because of the improved user-friendlyness, but mostly because of its sheer size. The official dataset has less than 100 aliases, this one has over 575.000.
 
 # About UN/LOCODES
 The United Nations Code for Trade and Transport Locations is a code list mantained by UNECE (a United Nations agency) to facilitate trade. The list is comes from the [UNECE page](http://www.unece.org/cefact/locode/welcome.html), released twice a year. However, this dataset is based on [datasets/un-locode](https://github.com/datasets/un-locode), which is already much better than the original (e.g. no more encoding problems).
