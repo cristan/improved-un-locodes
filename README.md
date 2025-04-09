@@ -1,4 +1,4 @@
-An enhanced UN/LOCODE dataset with significant improvements:
+An enhanced UN/LOCODE dataset with much better coordinates and more:
 
 # Significantly better coordinates
 The main reason this project exists: coordinates in [the original UN/LOCODE list](https://github.com/datasets/un-locode) have major problems:
@@ -45,7 +45,7 @@ ATVIE,Vienna
 This is much more useful. Not only because of the easier setup, but mostly because of its sheer size. The official dataset has less than 100 aliases, this one has over 575.000.
 
 # About UN/LOCODES
-The United Nations Code for Trade and Transport Locations is a code list mantained by UNECE (a United Nations agency) to facilitate trade. The list is comes from the [UNECE page](http://www.unece.org/cefact/locode/welcome.html), released twice a year.
+The United Nations Code for Trade and Transport Locations is a code list mantained by UNECE (a United Nations agency) to facilitate trade. The list is comes from the [UNECE page](http://www.unece.org/cefact/locode/welcome.html), released twice a year. However, this dataset is based on [datasets/un-locode](https://github.com/datasets/un-locode), which is already much better than the original (e.g. no more encoding problems).
 
 # License
 
