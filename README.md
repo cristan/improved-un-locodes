@@ -17,10 +17,11 @@ This project aims to solve most of these cases by combining the data with data f
 
 Most UN/LOCODES coordinates look like USNYC: 4042N 07400W. However, entries in Bhutan like BTPDL have decimal coordinates: 26.8128N 89.1903E. This project solves this with 2 columns: the `Coordinates` column now has only the UN/LOCODE style degrees, while the `CoordinatesDecimal` column has a decimal representation.
 
-You can find the improved list as [code-list-improved.csv](data/code-list-improved.csv). It has both corrected coordinates, as well as just way more of them (98.4%).
+## CSV with improved locations
+This is all solved with [code-list-improved.csv](data/code-list-improved.csv). It has both corrected coordinates, as well as just way more of them (98.4%).
 
 # A defined hierarchy
-For example: [CNSHZ](https://unlocode.info/CNSHA) (Shanghai Hongqiao International Apt), is in Shanghai ([CNSGH](https://unlocode.info/CNSGH)), but how would you know these are essentially the same place? Ideally, you'd want to know the Airport is in Shanghai.
+Another issue is hierarchy. For example: [CNSHZ](https://unlocode.info/CNSHA) (Shanghai Hongqiao International Apt), is in Shanghai ([CNSGH](https://unlocode.info/CNSGH)), but how would you know these are essentially the same place? Ideally, you'd want to know the Airport is in Shanghai.
 
 For this, [parents.csv](data/parents.csv) is created, which looks like this:
 
