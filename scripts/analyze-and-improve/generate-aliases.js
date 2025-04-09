@@ -18,16 +18,17 @@ WHERE {
     ?place skos:altLabel ?spelling.
   }
 }
-ORDER BY ?unlocode
 `;
+    const queried = await runWikidataQuery(sparqlQuery);
+    const dataSorted = queried.sort(function (a, b) {
+        return a.unlocode.value.localeCompare(b.unlocode.value) || a.spelling.value.localeCompare(b.spelling.value)
+    })
 
     const dataOut = fs.createWriteStream('../../data/aliases-improved.csv')
     writeCsv(dataOut, ["Unlocode", "Alias"])
 
-    const queried = await runWikidataQuery(sparqlQuery);
-
     const addedSpellings = {}
-    for (const entry of Object.values(queried)) {
+    for (const entry of Object.values(dataSorted)) {
         const unlocode = entry.unlocode.value
         const spelling = entry.spelling.value
         if (!csvDatabase[unlocode]) {
