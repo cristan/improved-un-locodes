@@ -1,9 +1,10 @@
-import {parseCSV, readUnlocodesCsv} from "./util/readUnlocodesCsv.js";
+import {readUnlocodesCsv} from "./util/readUnlocodesCsv.js";
 import {getNominatimData} from "./util/nominatim-loader.js";
 import {readWikidata} from "./util/wikidata-reader.js";
 import {delay} from "./util/nominatim-downloader.js";
-import {runWikidataQuery} from "./download-wikidata.js";
 import fs from "node:fs";
+import {parseCSV} from "./util/csv.js";
+import {runWikidataQuery} from "./util/wikidata.js";
 
 const municipalityOfTheNetherlands = "Q2039348"
 
@@ -172,7 +173,7 @@ async function queryWikidata(name, countryCode) {
 
     const queried = await runWikidataQuery(sparqlQuery);
     // console.log(JSON.stringify(queried, null, 4))
-    const toReturn = queried.results.bindings.map(result => {
+    const toReturn = queried.map(result => {
         return {
             url: result.item.value,
             name: result.itemLabel.value,
