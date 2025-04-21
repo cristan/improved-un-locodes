@@ -1,16 +1,20 @@
 import {readUnlocodesCsv, readSubdivisionData} from "./util/readUnlocodesCsv.js";
 import {getNominatimData} from "./util/nominatim-loader.js";
 
-// TODO: delete me
+/**
+ * Checks whether region code actually exist in subdivision-codes.csv. If not, it suggests the correct region code.
+ *
+ * A little superfluous: region checking is also done at validate-entries.js.
+ */
 async function createReport() {
     const csvDatabase = await readUnlocodesCsv()
     const subdivisions = readSubdivisionData()
 
     for (const unlocode of Object.keys(csvDatabase)) {
         const entry = csvDatabase[unlocode]
-        if (entry.country !== "CN") {
-            continue
-        }
+        // if (entry.country !== "CN") {
+        //     continue
+        // }
 
         if (entry.subdivisionCode && !entry.subdivisionName) {
             console.log(`https://unlocode.info/${unlocode} (${entry.city}) has a non-existing region ${entry.subdivisionCode}.`)
