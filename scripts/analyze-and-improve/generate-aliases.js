@@ -32,7 +32,9 @@ WHERE {
         const unlocode = entry.unlocode.value
         const spelling = entry.spelling.value
         if (!csvDatabase[unlocode]) {
-            console.log(`Received spelling ${spelling} for unlocode ${unlocode}, but that UN/LOCODE doesn't exist. Skipping.`)
+            if (unlocode.length !== 2) {
+                console.log(`Received spelling ${spelling} for unlocode ${unlocode}, but that UN/LOCODE doesn't exist. Skipping.`)
+            }
             continue
         }
         if (addedSpellings[unlocode +"|"+ spelling]) {
