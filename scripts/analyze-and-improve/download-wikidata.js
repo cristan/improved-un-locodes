@@ -55,7 +55,7 @@ async function downloadFromWikidata() {
         // hence we also sort on coordinates. Example: https://www.wikidata.org/wiki/Q6799987 or https://www.wikidata.org/wiki/Q3529964
         // Sorting is more of a hack though: we just want 1 coordinate: the most important one. In the 2 previous example, it can be determined,
         // but in most cases like https://www.wikidata.org/wiki/Q406639 you just have 2 and both are fine, but we need to pick one (the newest?).
-        return a.unlocode.localeCompare(b.unlocode) || a.item.localeCompare(b.item) || a.item.localeCompare(b.lat) || a.item.localeCompare(b.lon)
+        return a.unlocode.localeCompare(b.unlocode) || a.item.localeCompare(b.item) || a.lat.localeCompare(b.lat) || a.lon.localeCompare(b.lon)
     })
 
     await fs.writeFileSync("../../data/wikidata/wikidata.json", JSON.stringify(allDataSorted, null, 2))
