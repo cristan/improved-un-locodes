@@ -24,4 +24,4 @@ async function validateRegionCodes() {
 }
 
 validateRegionCodes()
-// I now have to do IN, JP, MY
+// I didn't check the /JP items yet: there are a lot of them and few have actually relevant results.
