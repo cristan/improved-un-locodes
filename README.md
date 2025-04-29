@@ -29,7 +29,7 @@ For this, [parents.csv](data/parents.csv) is created, which looks like this:
 Unlocode,Parent
 DEBHQ,DEHAM
 ```
-With this, you can easily find out these are all related.
+With this, you can easily find out these are related.
 
 # Actually working aliases
 It's impossible to find out that both "Vienna" and "Wien" are in fact the same city with UN/LOCODE [ATVIE](https://unlocode.info/ATVIE). That is, if you use the offical dataset.
