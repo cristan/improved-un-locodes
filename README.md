@@ -21,14 +21,13 @@ Most UN/LOCODES coordinates look like USNYC: 4042N 07400W. However, entries in B
 This is all solved with [code-list-improved.csv](data/code-list-improved.csv). It has both corrected coordinates, as well as just way more of them (98.4%).
 
 # A defined hierarchy
-Another issue is hierarchy. For example: [CNSHZ](https://unlocode.info/CNSHA) (Shanghai Hongqiao International Apt), is in Shanghai ([CNSGH](https://unlocode.info/CNSGH)), but how would you know these are essentially the same place? Ideally, you'd want to know the Airport is in Shanghai.
+Another issue is hierarchy. For example: [DEBHQ](https://unlocode.info/DEBHQ) (Bahrenfeld), is in Hamburg ([DEHAM](https://unlocode.info/DEHAM)), but how would you know these are essentially the same place?
 
 For this, [parents.csv](data/parents.csv) is created, which looks like this:
 
 ```
 Unlocode,Parent
-CNSHZ,CNSGH
-CNPDG,CNSGH
+DEBHQ,DEHAM
 ```
 With this, you can easily find out these are all related.
 
