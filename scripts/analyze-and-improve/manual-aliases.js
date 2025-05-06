@@ -86,6 +86,7 @@ export const ALIASES = {
     USWYI: "USWM6", // Wyemills => Wye Mills
     INMAP: "INMAC", // Masulipatnam => Machilipatnam
     INSSE: "INSOL", // Sholapur => Solapur
+    INBRH: "INBRU", // Broach => Bharuch
 
     // No mistakes, but entries which are parts of another entry, though you could argue against having unlocodes for such small locations
     ZAGTY: "ZAELS", // Gately is in East London (Oos-Londen)

@@ -24,4 +24,4 @@ async function validateRegionCodes() {
 }
 
 validateRegionCodes()
-// I didn't check the /JP items yet: there are a lot of them and few have actually relevant results.
+// I didn't check the /JP items yet: there are a lot of them and few have actually relevant results. I did let gemini check them, so there's likely little useful locations left.

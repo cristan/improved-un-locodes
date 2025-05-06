@@ -302,7 +302,6 @@ export const UNLOCODE_BEST =[
     "ZAZEK",
     "INDMA",
     "INSIK", // Probably a typo: Sika vs Sikka
-    "INJAY",
     "AOCUI", // Apparently, the coordinates point to the correct Port of Cuio
     "MYANG", // I'm not actually sure, but I don't see any evidence where else it could be
     "NGANA", // It's an oil terminal: it should be in the middle of the ocean

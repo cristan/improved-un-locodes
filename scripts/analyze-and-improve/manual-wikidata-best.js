@@ -75,6 +75,7 @@ export const WIKIDATA_BEST = [
     "INATT",// Both are possible, but this one is bigger
     "INBDA",// Both equally small, but this has a port
     "INNDC",
+    "INJAY",
     "IRKHS",// At least shows up on Google Maps
     "IRTEW",// Close to Tohid airport
     "ITABO",// Is actually in Parma
