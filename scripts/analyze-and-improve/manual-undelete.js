@@ -7,4 +7,5 @@ export const DELETIONS_STILL_IN_USE = {
     THSPR: "THSAP", // Samut Prakan
     CNTIZ: "CNTZO", // Taizhou
     REPDG: "REPD2", // Pointe des Galets
+    THSGZ: "THSGK", // Songkhla. Still used at https://portcode.net/thailand/songkhla/songkhla-deepsea-port/
 }
