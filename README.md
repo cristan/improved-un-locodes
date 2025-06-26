@@ -59,4 +59,4 @@ ODbL 1.0. http://osm.org/copyright
 CC-0 (No rights reserved)
 
 ### All other contents in this repo
-CC-0 (No rights reserved)
+[ODC Public Domain Dedication and Licence (PDDL)](http://opendatacommons.org/licenses/pddl/1-0/)
