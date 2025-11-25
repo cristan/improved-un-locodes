@@ -48,7 +48,9 @@ This is much more usable than the [aliases](data/alias.csv) in the original.  No
 The United Nations Code for Trade and Transport Locations is a code list mantained by UNECE (a United Nations agency) to facilitate trade. The list is comes from the [UNECE page](http://www.unece.org/cefact/locode/welcome.html), released twice a year. However, this dataset is based on [datasets/un-locode](https://github.com/datasets/un-locode), which is already much better than the original (e.g. no more encoding problems).
 
 # Shameless plug
-[CargoProbe](https://www.cargoprobe.com) offers the functionalities of this dataset [as an API](https://www.cargoprobe.com/service-un-lode-api/). It also has additional nifty things: like when you only have the city name Rotterdam, it's clever enough to return the data of [NLRTM](https://unlocode.info/NLRTM) instead of [USRAJ](https://unlocode.info/USRAJ). Their main product what they offer is essentially track and trace for shipping containers. Check them out if that interests you.
+[CargoProbe](https://www.cargoprobe.com) offers the functionalities of this dataset [as an API](https://www.cargoprobe.com/service-un-lode-api/). This also has additional nifty things: like when you only have the city name Rotterdam, it's clever enough to return the data of [NLRTM](https://unlocode.info/NLRTM) instead of [USRAJ](https://unlocode.info/USRAJ).
+
+Their main product is essentially track and trace for shipping containers. Check them out if that interests you.
 
 # License
 
