@@ -50,6 +50,60 @@ export async function readUnlocodesCsv(improved = false) {
             continue
         }
 
+        const change = ""//columns[UNLOCODE_COLUMN_CHANGE]
+        const country = columns[UNLOCODE_COLUMN_COUNTRY]
+        const countryName = countries[country]
+        const location = columns[UNLOCODE_COLUMN_LOCATION]
+        const unlocode = `${country}${location}`
+        const city = columns[UNLOCODE_COLUMN_CITY]
+        const nameWithoutDiacritics = columns[UNLOCODE_COLUMN_NAME_WITHOUT_DIACRITICS]
+        const subdivisionCode = columns[UNLOCODE_COLUMN_SUBDIVISION]
+        const subdivisionName = subdivisionDatabase[`${country}|${subdivisionCode}`]
+        const status = columns[7/*UNLOCODE_COLUMN_STATUS*/]
+        const function_ = columns[6/*UNLOCODE_COLUMN_FUNCTION*/]
+        const date = columns[UNLOCODE_COLUMN_DATE]
+        const iata = columns[UNLOCODE_COLUMN_IATA]
+        const coordinates = columns[UNLOCODE_COLUMN_COORDINATES]
+        const remarks = columns[UNLOCODE_COLUMN_REMARKS]
+
+        const unlocodeEntry = { change, city, country, countryName, nameWithoutDiacritics, location, subdivisionCode, subdivisionName, status, "function": function_, coordinates, date, iata, unlocode, remarks };
+        if (improved) {
+            const source = columns[13]
+            csvDatabase[unlocode] = {
+                source,
+                ...unlocodeEntry
+            }
+        } else {
+            csvDatabase[unlocode] = unlocodeEntry
+        }
+    }
+    return csvDatabase
+}
+
+export async function readProposalCsv() {
+    const subdivisionDatabase = readSubdivisionData()
+
+    const countryList = fs.readFileSync(`../../data/country-codes.csv`, 'utf8').split("\r\n")
+    // Ignore the first entry: that's the header
+    countryList.shift()
+    const countries = {}
+    for (const record of countryList) {
+        const columns = parseCSV(record)
+        countries[columns[0]] = columns[1]
+    }
+
+    const codeList1 = fs.readFileSync(`../../data/proposed/latest UNLOCODE CodeListPart1.csv`, 'utf8').split("\r\n")
+    const codeList2 = fs.readFileSync(`../../data/proposed/latest UNLOCODE CodeListPart2.csv`, 'utf8').split("\r\n")
+    const codeList3 = fs.readFileSync(`../../data/proposed/latest UNLOCODE CodeListPart3.csv`, 'utf8').split("\r\n")
+    const codeList = [...codeList1, ...codeList2, ...codeList3]
+
+    const csvDatabase = {}
+    for (const record of codeList) {
+        const columns = parseCSV(record)
+        if (!columns[UNLOCODE_COLUMN_LOCATION]) {
+            continue
+        }
+
         const change = columns[UNLOCODE_COLUMN_CHANGE]
         const country = columns[UNLOCODE_COLUMN_COUNTRY]
         const countryName = countries[country]
@@ -67,15 +121,7 @@ export async function readUnlocodesCsv(improved = false) {
         const remarks = columns[UNLOCODE_COLUMN_REMARKS]
 
         const unlocodeEntry = { change, city, country, countryName, nameWithoutDiacritics, location, subdivisionCode, subdivisionName, status, "function": function_, coordinates, date, iata, unlocode, remarks };
-        if (improved) {
-            const source = columns[13]
-            csvDatabase[unlocode] = {
-                source,
-                ...unlocodeEntry
-            }
-        } else {
-            csvDatabase[unlocode] = unlocodeEntry
-        }
+        csvDatabase[unlocode] = unlocodeEntry
     }
     return csvDatabase
 }
