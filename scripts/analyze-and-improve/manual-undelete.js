@@ -8,4 +8,5 @@ export const DELETIONS_STILL_IN_USE = {
     CNTIZ: "CNTZO", // Taizhou
     REPDG: "REPD2", // Pointe des Galets
     THSGZ: "THSGK", // Songkhla. Still used at https://portcode.net/thailand/songkhla/songkhla-deepsea-port/
+    CNZAP: "CNZPU", // Zhapu. Still used at https://www.marinetraffic.com/en/ais/details/ports/17421?name=ZHAPU&country=China
 }
