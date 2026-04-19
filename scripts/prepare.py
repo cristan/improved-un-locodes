@@ -9,6 +9,20 @@ from titlecase import titlecase
 
 data_file_path = os.path.join('data', 'subdivision-codes.csv')
 
+def fix_empty_quotes(file):
+    with open(file, mode="r", encoding="utf-8") as infile:
+        reader = csv.reader(infile)
+        rows = []
+
+        for row in reader:
+            if row and len(row) > 1 and (row[-1] == '""' or row[-1].endswith(('\n', '\r'))):
+                row[-1] = ''
+            rows.append(row)
+
+    with open(file, mode="w", encoding="utf-8", newline="") as outfile:
+        writer = csv.writer(outfile)
+        writer.writerows(rows)
+
 def fix_multiline_csv(file_path):
     with open(file_path, 'r', encoding='utf-8') as infile:
         lines = infile.readlines()
@@ -170,6 +184,8 @@ if __name__ == "__main__":
         remove_double_quotes(file_path)
 
     fix_multiline_csv(data_file_path)
+    # Code-list fix for empty quotes
+    fix_empty_quotes('data/code-list.csv')
 
     for file_path in cleaned_files:
         os.remove(file_path)
