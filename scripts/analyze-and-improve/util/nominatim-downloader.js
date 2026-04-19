@@ -14,7 +14,9 @@ export async function downloadByQueryIfNeeded(entry, query) {
 
     const nominatimUrl = `https://nominatim.openstreetmap.org/search?format=jsonv2&accept-language=en&addressdetails=1&limit=20&q=${encodeURI(query)}`
     await delay(1000)
-    const fromNominatim = await (await fetch(nominatimUrl)).text()
+    const fromNominatim = await (await fetch(nominatimUrl, {
+        headers: { 'User-Agent': 'Bot for github.com/cristan/improved-un-locodes' }
+    })).text()
     await fs.writeFileSync(fileName, fromNominatim)
 }
 
@@ -37,7 +39,9 @@ export async function downloadByRegionIfNeeded(entry) {
 
     const nominatimQuery = `https://nominatim.openstreetmap.org/search?format=jsonv2&accept-language=en&addressdetails=1&limit=20&city=${encodeURI(getDownloadCityName(entry))}&country=${encodeURI(entry.country)}&state=${entry.country}-${region}`
     await delay(1000)
-    const fromNominatim = await (await fetch(nominatimQuery)).text()
+    const fromNominatim = await (await fetch(nominatimQuery, {
+        headers: { 'User-Agent': 'Bot for github.com/cristan/improved-un-locodes' }
+    })).text()
     await fs.writeFileSync(fileName, fromNominatim)
 }
 
@@ -52,7 +56,9 @@ export async function downloadByCityIfNeeded(entry) {
 
     await delay(1000)
     const ogNominatimQuery = `https://nominatim.openstreetmap.org/search?format=jsonv2&accept-language=en&addressdetails=1&limit=20&city=${encodeURI(getDownloadCityName(entry))}&country=${encodeURI(entry.country)}`
-    const fromNominatim2 = await (await fetch(ogNominatimQuery)).text()
+    const fromNominatim2 = await (await fetch(ogNominatimQuery, {
+        headers: { 'User-Agent': 'Bot for github.com/cristan/improved-un-locodes' }
+    })).text()
     if (!fs.existsSync(directory)) {
         fs.mkdirSync(directory, { recursive: true });
     }
