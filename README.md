@@ -5,7 +5,7 @@ The main reason this project exists: coordinates in [the original UN/LOCODE list
 
 **1. Only 80% of locations have coordinates**
 
-This doesn't just include tiny villages, but world's most important cities like London (GBLON), Madrid (ESMAD), Luxembourg (LULUX) and Milano (ITMIL).
+UN/LOCODEs wihtout coordinates don't just include tiny villages, but world's most important cities like London (GBLON), Madrid (ESMAD), Luxembourg (LULUX) and Milano (ITMIL).
 
 **2. Many coordinates are just wrong**
 
