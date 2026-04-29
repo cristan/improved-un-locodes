@@ -20,8 +20,11 @@ Most UN/LOCODES coordinates look like USNYC: 4042N 07400W. However, entries in B
 ## CSV with improved locations
 All this is solved with [code-list-improved.csv](data/code-list-improved.csv). It has corrected coordinates, all in the same format and way more of them (98.4%).
 
-# A defined hierarchy
-Another issue is hierarchy. For example: [DEBHQ](https://unlocode.info/DEBHQ) (Bahrenfeld), is in Hamburg ([DEHAM](https://unlocode.info/DEHAM)), but how would you know these are essentially the same place?
+# Other features
+Next to the improved UN/LOCODEs, there are other nifty things in this repo:
+
+## A defined hierarchy
+An example: [DEBHQ](https://unlocode.info/DEBHQ) (Bahrenfeld), is in Hamburg ([DEHAM](https://unlocode.info/DEHAM)), but how would you know these are essentially the same place?
 
 For this, [parents.csv](data/parents.csv) is created, which looks like this:
 
@@ -31,7 +34,7 @@ DEBHQ,DEHAM
 ```
 With this, you can easily find out these are related.
 
-# Actually working aliases
+## Actually working aliases
 It's impossible to find out that both "Vienna" and "Wien" are in fact the same city with UN/LOCODE [ATVIE](https://unlocode.info/ATVIE). That is, if you use the offical dataset.
 
 Not so much with [aliases-improved.csv](data/aliases-improved.csv), which looks like this:
