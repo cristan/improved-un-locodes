@@ -7,7 +7,6 @@
   },
   "devDependencies": {
     "@types/mocha": "^10.0.6",
-    "jest": "^29.7.0",
     "mocha": "^10.4.0",
     "nyc": "^15.1.0"
   },
