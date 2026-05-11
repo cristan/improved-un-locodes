@@ -20,7 +20,7 @@ describe("EntryValidator", () => {
                 {"place_id":101383207,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"node","osm_id":984555005,"lat":"42.8618513","lon":"10.419662","category":"place","type":"village","place_rank":19,"importance":0.22735449175290195,"addresstype":"village","name":"Cavo","display_name":"Cavo, Rio, Livorno, Tuscany, 57038, Italy","address":{"village":"Cavo","municipality":"Rio","county":"Livorno","ISO3166-2-lvl6":"IT-LI","state":"Tuscany","ISO3166-2-lvl4":"IT-52","postcode":"57038","country":"Italy","country_code":"it"},"boundingbox":["42.8418513","42.8818513","10.3996620","10.4396620"],"subdivisionCode":"LI","sourceUrl":"https://www.openstreetmap.org/node/984555005"}
             ]
         }
-        const validateMessage = await validateCoordinates(csvEntry, nominatimResult)
+        const validateMessage = await validateCoordinates(csvEntry, nominatimResult, undefined, 100)
         expect(validateMessage).equals("https://unlocode.info/ITCVX: (Cavo): There are 2 different results for Cavo in IT. Let's set the region to LI to avoid the confusion. Source: https://www.openstreetmap.org/node/984555005")
     })
     it ("incorrect region is set and multiple close results found", async () => {
@@ -47,7 +47,7 @@ describe("EntryValidator", () => {
                 {"place_id":193513056,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"node","osm_id":3755502219,"lat":"36.2133811","lon":"102.7595497","category":"place","type":"town","place_rank":18,"importance":0.24232784765903637,"addresstype":"town","name":"Bazhou","display_name":"Bazhou, Minhe Hui and Tu Autonomous County, Haidong, Qinghai, China","address":{"town":"Bazhou","county":"Minhe Hui and Tu Autonomous County","region":"Haidong","state":"Qinghai","ISO3166-2-lvl4":"CN-QH","country":"China","country_code":"cn"},"boundingbox":["36.1733811","36.2533811","102.7195497","102.7995497"],"subdivisionCode":"QH","sourceUrl":"https://www.openstreetmap.org/node/3755502219"}
             ]
         }
-        const validateMessage = await validateCoordinates(csvEntry, nominatimResult)
+        const validateMessage = await validateCoordinates(csvEntry, nominatimResult, undefined, 100)
         expect(validateMessage).equals("https://unlocode.info/CNBAZ: (Bazhou): Invalid subdivision code 13! Please change the region to HE. It could also be that Bazhou District in SC (<a href=\"https://www.openstreetmap.org/node/244076793\">3151N 10646E</a>) or Bazhou City in HE (<a href=\"https://www.openstreetmap.org/relation/2989320\">3905N 11636E</a>) or Bazhou in GZ (<a href=\"https://www.openstreetmap.org/node/4916661884\">2620N 10908E</a>) or SX (<a href=\"https://www.openstreetmap.org/node/5244395386\">3736N 11340E</a>) or Bazhou;Pa-chou in GZ (<a href=\"https://www.openstreetmap.org/node/4916658172\">2654N 10909E</a>) or Bazhou in NM (<a href=\"https://www.openstreetmap.org/node/8481597960\">4107N 11259E</a>) or GD (<a href=\"https://www.openstreetmap.org/node/8093022421\">2221N 11247E</a>) or QH (<a href=\"https://www.openstreetmap.org/node/3755502219\">3613N 10246E</a>) is meant.")
     })
     it ("the wrong region is set (a close location is found in another region) - existing wrong location", async () => {
@@ -70,7 +70,7 @@ describe("EntryValidator", () => {
                 {"place_id":96118282,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"node","osm_id":4946937027,"lat":"45.6979964","lon":"9.2355086","category":"place","type":"hamlet","place_rank":20,"importance":0.25000999999999995,"addresstype":"hamlet","name":"Molino Filo","display_name":"Molino Filo, Verano Brianza, Monza and Brianza, Lombardy, 20843, Italy","address":{"hamlet":"Molino Filo","village":"Verano Brianza","county":"Monza and Brianza","ISO3166-2-lvl6":"IT-MB","state":"Lombardy","ISO3166-2-lvl4":"IT-25","postcode":"20843","country":"Italy","country_code":"it"},"boundingbox":["45.6779964","45.7179964","9.2155086","9.2555086"],"subdivisionCode":"MB","sourceUrl":"https://www.openstreetmap.org/node/4946937027"}
             ]
         }
-        const validateMessage = await validateCoordinates(csvEntry, nominatimResult)
+        const validateMessage = await validateCoordinates(csvEntry, nominatimResult, undefined, 100)
         const expected = "https://unlocode.info/ITCFL: (Filo): No Filo found in CR! Molino di Filo (RA) does exist at the provided coordinates, so the region should probably be changed to RA. It could also be that Via del Filo in AR (<a href=\"https://www.openstreetmap.org/node/1434672351\">4317N 01150E</a>) or Molino Filo in MB (<a href=\"https://www.openstreetmap.org/node/4946937027\">4542N 00914E</a>) is meant."
         expect(validateMessage).equals(expected)
     })
@@ -95,7 +95,7 @@ describe("EntryValidator", () => {
             ]
         }
 
-        const validateMessage = await validateCoordinates(csvEntry, nominatimResult)
+        const validateMessage = await validateCoordinates(csvEntry, nominatimResult, undefined, 100)
         expect(validateMessage).undefined
     })
     it ("the coordinates point to a real place, but there's a much bigger one too, which might be the one they mean", async () => {
@@ -119,7 +119,7 @@ describe("EntryValidator", () => {
             ]
         }
 
-        const validateMessage = await validateCoordinates(csvEntry, nominatimResult)
+        const validateMessage = await validateCoordinates(csvEntry, nominatimResult, undefined, 100)
         const expected = "https://unlocode.info/CNSTI: (Shatian): The coordinates do point to Shatian, but it's a small town and you have the bigger town Shatian Town at <a href=\"https://www.openstreetmap.org/relation/5664242\">2255N 11337E</a> (122 km away; source: https://www.openstreetmap.org/relation/5664242). Please doublecheck if this is pointing to the correct location."
         expect(validateMessage).equals(expected)
     })
@@ -145,7 +145,7 @@ describe("EntryValidator", () => {
              ]
         }
 
-        const validateMessage = await validateCoordinates(csvEntry, nominatimResult)
+        const validateMessage = await validateCoordinates(csvEntry, nominatimResult, undefined, 100)
         expect(validateMessage).undefined
     })
     it ("the entry doesn't have a region in Nominatim - 2", async () => {
@@ -166,7 +166,7 @@ describe("EntryValidator", () => {
             ]
         }
 
-        const validateMessage = await validateCoordinates(csvEntry, nominatimResult)
+        const validateMessage = await validateCoordinates(csvEntry, nominatimResult, undefined, 100)
         expect(validateMessage).undefined
     })
     it ("don't return anything when the items are close enough", async () => {
@@ -190,7 +190,7 @@ describe("EntryValidator", () => {
             ]
         }
 
-        const validateMessage = await validateCoordinates(csvEntry, nominatimResult)
+        const validateMessage = await validateCoordinates(csvEntry, nominatimResult, undefined, 100)
         expect(validateMessage).undefined
     })
 })
