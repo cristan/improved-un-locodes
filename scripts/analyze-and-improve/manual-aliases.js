@@ -1,5 +1,9 @@
 // Sometimes you basically have the same unlocode twice. In almost all of these cases, one is correct and the other is incorrectly spelled.
 
+// This list is used to copy the coordinates from 1 to another.
+// For example: USLMW (Lakemills). We can't find a location for it because of its misspelling.
+// Mark that it is a copy of USXHQ (Lake Mills) so we can copy the coordinates from there.
+
 export const ALIASES = {
     SKJAO: "SKJSV", // Jasova => Jasová
     AOVPE: "AONGV", // Ongiva => Ondjiva
