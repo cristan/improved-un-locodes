@@ -132,18 +132,8 @@ function filterOutUselessEntries(nominatimResult, countryCode, cityName) {
     // Assume there are no unlocodes for places that small.
     const withoutIsolatedDwelling = filteredByCategory.filter(n => n.addresstype !== "isolated_dwelling");
 
-    // Example is ITCUZ: https://nominatim.openstreetmap.org/search?format=jsonv2&accept-language=en&addressdetails=1&limit=20&city=Castelletto%20di%20Branduzzo&country=IT&state=PV
-    // In this example, it's tempting to filter out the boundary, as that sounds more vague than a place.
-    // However, we are actually interested in the first result (which is the boundary)
-    // So filter out any lower importance entries which are close (because entries aren't necessarily sorted by importance, see ATPUR).
-    const withoutVeryClosePlaces = withoutIsolatedDwelling.filter(w => {
-        const veryCloseExists = withoutIsolatedDwelling.some(o => o.importance > w.importance && getDistanceFromLatLonInKm(w.lat, w.lon, o.lat, o.lon) < 25)
-
-        return !veryCloseExists
-    })
-
     // The query for MYLPK returns somewhere in New York. Filter out anything which isn't in this country
-    return withoutVeryClosePlaces.filter(n => n.address.country_code.toUpperCase() === countryCode)
+    return withoutIsolatedDwelling.filter(n => n.address.country_code.toUpperCase() === countryCode)
 }
 
 function addConvenienceAttributes(nominatimResult) {
