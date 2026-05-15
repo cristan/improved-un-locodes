@@ -44,4 +44,20 @@ describe("filterOutUselessEntries", () => {
         const result = filterOutUselessEntries([northportNY], "MY", "Northport/Pt Klang")
         expect(result).to.have.lengthOf(0)
     })
+
+    it("promotes the place above the municipality boundary when both are returned", () => {
+        // DKSKV "Skive". Nominatim returns the Skive Municipality boundary (centroid ~10km off the actual town) ahead of
+        // the Skive town node; the town's address.municipality points back to the boundary, so the town gets promoted.
+        const skiveMunicipality = {"place_id":177592175,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"relation","osm_id":1926905,"lat":"56.6459244","lon":"8.932732160154906","category":"boundary","type":"administrative","place_rank":14,"importance":0.45031906120703585,"addresstype":"municipality","name":"Skive Municipality","display_name":"Skive Municipality, Central Denmark Region, Denmark","address":{"municipality":"Skive Municipality","state":"Central Denmark Region","ISO3166-2-lvl4":"DK-82","country":"Denmark","country_code":"dk"},"boundingbox":["56.4892261","56.8465928","8.6748249","9.2955294"]}
+        const skiveTown = {"place_id":178332367,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"node","osm_id":26559171,"lat":"56.5659301","lon":"9.029272","category":"place","type":"town","place_rank":18,"importance":0.4369270653793063,"addresstype":"town","name":"Skive","display_name":"Skive, Skive Municipality, Central Denmark Region, 7800, Denmark","address":{"town":"Skive","municipality":"Skive Municipality","state":"Central Denmark Region","ISO3166-2-lvl4":"DK-82","postcode":"7800","country":"Denmark","country_code":"dk"},"boundingbox":["56.5259301","56.6059301","8.9892720","9.0692720"]}
+        const result = filterOutUselessEntries([skiveMunicipality, skiveTown], "DK", "Skive")
+        expect(result).to.deep.equal([skiveTown, skiveMunicipality])
+    })
+
+    it("keeps a lone municipality boundary when no rival place is present", () => {
+        // ESVGO "Vigo". A municipality boundary alone has nothing to be promoted against, so it passes through.
+        const vigoMunicipality = {"place_id":279963529,"licence":"Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright","osm_type":"relation","osm_id":341381,"lat":"42.2376602","lon":"-8.7247205","category":"boundary","type":"administrative","place_rank":16,"importance":0.5771472471673613,"addresstype":"municipality","name":"Vigo","display_name":"Vigo, Pontevedra, Galicia, Spain","address":{"municipality":"Vigo","county":"Vigo","province":"Pontevedra","ISO3166-2-lvl6":"ES-PO","state":"Galicia","ISO3166-2-lvl4":"ES-GA","country":"Spain","country_code":"es"},"boundingbox":["42.1324303","42.2647043","-8.9182906","-8.6270302"]}
+        const result = filterOutUselessEntries([vigoMunicipality], "ES", "Vigo")
+        expect(result).to.deep.equal([vigoMunicipality])
+    })
 })

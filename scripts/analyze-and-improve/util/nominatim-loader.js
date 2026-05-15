@@ -130,7 +130,29 @@ export function filterOutUselessEntries(nominatimResult, countryCode, cityName) 
     const withoutIsolatedDwelling = filteredByCategory.filter(n => n.addresstype !== "isolated_dwelling");
 
     // The query for MYLPK returns somewhere in New York. Filter out anything which isn't in this country
-    return withoutIsolatedDwelling.filter(n => n.address.country_code.toUpperCase() === countryCode)
+    const inCountry = withoutIsolatedDwelling.filter(n => n.address.country_code.toUpperCase() === countryCode)
+
+    return promotePlaceOverItsMunicipality(inCountry)
+}
+
+/**
+ * Quite often Nominatim returns a municipality boundary alongside a place node inside it with the same name (the actual city).
+ * The place is what we want, so move it above the boundary when Nominatim ranked it below.
+ */
+function promotePlaceOverItsMunicipality(entries) {
+    const result = [...entries]
+    for (const entry of entries) {
+        if (entry.addresstype !== "municipality") continue
+        const placeInMunicipalityWithSameName = result.find(e => e.category === "place" && e.address.municipality === entry.name)
+        if (!placeInMunicipalityWithSameName) continue
+        const municipalityIdx = result.indexOf(entry)
+        const placeIdx = result.indexOf(placeInMunicipalityWithSameName)
+        if (placeIdx > municipalityIdx) {
+            result.splice(placeIdx, 1)
+            result.splice(municipalityIdx, 0, placeInMunicipalityWithSameName)
+        }
+    }
+    return result
 }
 
 function addConvenienceAttributes(nominatimResult) {
