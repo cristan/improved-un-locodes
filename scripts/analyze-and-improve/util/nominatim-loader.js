@@ -121,7 +121,7 @@ export function readNominatimDataByQuery(unlocode, cityName) {
     }
 }
 
-function filterOutUselessEntries(nominatimResult, countryCode, cityName) {
+export function filterOutUselessEntries(nominatimResult, countryCode, cityName) {
     // Filter out anything which isn't a place, a boundary or a landuse (CNYTN)
     // TODO: this might be problematic! I only detected that I needed landuse by accident
     //  Also, maybe not use all landuses? The ones with type="industrial" we definitely need, but maybe we don't need type="commercial" (AESZS)
