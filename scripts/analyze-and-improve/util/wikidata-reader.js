@@ -5,14 +5,7 @@ export function readWikidata() {
     const wikiData = {}
 
     data.forEach(entry => {
-        const subdivisionCodeRaw = entry.subdivisionCode1
-
-        const wikiDataEntry = {
-            ...entry,
-            sourceUrl: entry.item,
-            subdivisionCode: subdivisionCodeRaw?.split(", ")[0].substring(3),
-            alternatives: []
-        }
+        const wikiDataEntry = simplifyWikidata(entry)
 
         if (wikiData[entry.unlocode]) {
             // Whenever there are multiple items with the same UN/LOCODE, the one with the lowest number usually is best, since it was created first
@@ -33,4 +26,13 @@ export function readWikidata() {
     wikiData["CNHUA"] = wikiData["CNGZG"]
 
     return wikiData
+}
+
+export function simplifyWikidata(entry) {
+    return {
+        ...entry,
+        sourceUrl: entry.item,
+        subdivisionCode: entry.subdivisionCode1?.split(", ")[0].substring(3),
+        alternatives: []
+    }
 }
