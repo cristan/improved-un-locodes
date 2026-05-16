@@ -26,6 +26,7 @@ export async function detectCoordinates(unlocode, csvDatabase, wikidataDatabase,
         // When we have a Wikidata entry, check if it's close to the original unlocode one. If yes, just believe the UN/LOCODE's location, regardless of what nominatim says
         return getUnlocodeResult(entry, decimalCoordinates, firstNominatimResult)
     }
+    // When Wikidata is marked as best, or there are no alternatives, choose Wikidata
     if (WIKIDATA_BEST.includes(unlocode) || (!decimalCoordinates && !nominatimData && wikiDataEntry)) {
         return {...wikiDataEntry, type: "Wikidata", decimalCoordinates: {lat: wikiDataEntry.lat, lon: wikiDataEntry.lon}}
     }
@@ -39,10 +40,7 @@ export async function detectCoordinates(unlocode, csvDatabase, wikidataDatabase,
         return getUnlocodeResult(entry, decimalCoordinates, firstNominatimResult)
     }
 
-    // Validate UN/LOCODE coords against Nominatim: trust them if the first hit is within 100 km
-    // or any hit is within 25 km. When validated, the closest Nominatim hit is our best anchor —
-    // use UN/LOCODE coords when it agrees closely (< 10 km), otherwise prefer Nominatim's coords
-    // since UN is rougher than the place node.
+    // Whenever we find something close to the UN/LOCODE coordinates, assume that's the one they meant.
     if (decimalCoordinates) {
         const closestHit = findClosestNominatimHit(nominatimResult, decimalCoordinates)
         const firstDist = getDistanceFromLatLonInKm(decimalCoordinates.lat, decimalCoordinates.lon, firstNominatimResult.lat, firstNominatimResult.lon)
@@ -68,6 +66,13 @@ export async function detectCoordinates(unlocode, csvDatabase, wikidataDatabase,
                 }
             }
         }
+    }
+
+    // Go for Wikidata when its region matches the subdivision of the UN/LOCODE
+    if (nominatimData?.scrapeType !== "byRegion"
+        && entry.subdivisionCode
+        && wikiDataEntry?.subdivisionCodes.includes(entry.subdivisionCode)) {
+        return {...wikiDataEntry, type: "Wikidata", decimalCoordinates: {lat: wikiDataEntry.lat, lon: wikiDataEntry.lon}}
     }
 
     // No overrides encountered, no results found close to the unlocode coordinates
