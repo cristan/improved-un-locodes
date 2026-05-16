@@ -74,7 +74,7 @@ export async function detectCoordinates(unlocode, csvDatabase, wikidataDatabase,
 
 async function findCloseResult(maxDistance, nominatimResult, decimalCoordinates, entry, nominatimData, unlocode) {
     // Use at max 25 km distance, because it's not the first result, so it has to be close to compensate for that
-    const closeDistance = Math.min(25, maxDistance);
+    const closeDistance = 25;
     const closeResults = nominatimResult.filter(n => {
         return getDistanceFromLatLonInKm(decimalCoordinates.lat, decimalCoordinates.lon, n.lat, n.lon) < closeDistance
     })
