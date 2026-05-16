@@ -1,17 +1,16 @@
 import fs from "node:fs"
 import {runWikidataQuery} from "./util/wikidata.js";
 
-// TODO: also read the subdivision code via this query: https://w.wiki/9ojz
-// It's slower though
-
+// P131* walks the admin chain transitively, so we reach the ISO-coded ancestor through
+// municipalities/districts that don't have their own P300 code.
 const sparqlQuery = `
-SELECT DISTINCT ?item ?unlocode ?itemLabel ?coords (GROUP_CONCAT(?subdivisionCode1; SEPARATOR=", ") AS ?subdivision1Codes)
+SELECT DISTINCT ?item ?unlocode ?itemLabel ?coords (GROUP_CONCAT(DISTINCT ?code; SEPARATOR=", ") AS ?subdivisionCodes)
 WHERE {
   ?item wdt:P1937 ?unlocode.
   ?item wdt:P625 ?coords.
   OPTIONAL {
-    ?item wdt:P131 ?subdivisionEntity1.
-    OPTIONAL { ?subdivisionEntity1 wdt:P300 ?subdivisionCode1. }
+    ?item wdt:P131* ?adminEntity.
+    ?adminEntity wdt:P300 ?code.
   }
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
 }
@@ -40,8 +39,9 @@ async function downloadFromWikidata() {
                 lon: extractCoordinates(result.coords.value).lon,
                 unlocode: result.unlocode.value,
             }
-            if (result.subdivision1Codes.value) {
-                item.subdivisionCode1 = result.subdivision1Codes.value
+            if (result.subdivisionCodes.value) {
+                // Sort so the JSON is stable across runs — GROUP_CONCAT's order isn't guaranteed.
+                item.subdivisionCodes = result.subdivisionCodes.value.split(", ").sort()
             }
             return item
         })

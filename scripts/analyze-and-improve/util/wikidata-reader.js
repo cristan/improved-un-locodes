@@ -29,10 +29,16 @@ export function readWikidata() {
 }
 
 export function simplifyWikidata(entry) {
+    // Strip the "XX-" country prefix on each code
+    // Entries without a dash are dropped. These are rare and not ISO 3166-2 anyway.
+    const subdivisionCodes = (entry.subdivisionCodes ?? [])
+        .map(c => c.split("-")[1])
+        .filter(c => c)
+
     return {
         ...entry,
         sourceUrl: entry.item,
-        subdivisionCode: entry.subdivisionCode1?.split(", ")[0].substring(3),
+        subdivisionCodes,
         alternatives: []
     }
 }
