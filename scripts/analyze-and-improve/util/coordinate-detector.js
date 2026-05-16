@@ -75,7 +75,8 @@ export async function detectCoordinates(unlocode, csvDatabase, wikidataDatabase,
         return {...wikiDataEntry, type: "Wikidata", decimalCoordinates: {lat: wikiDataEntry.lat, lon: wikiDataEntry.lon}}
     }
 
-    // No overrides encountered, no results found close to the unlocode coordinates
+    // No overrides encountered, no results found close to the unlocode coordinates.
+    // Return the first nominatim result and ignore Wikidata results (though that would actually be a fine choice at this moment)
     let options = undefined
     if (nominatimResult.length > 1 || wikiDataEntry) {
         options = []
