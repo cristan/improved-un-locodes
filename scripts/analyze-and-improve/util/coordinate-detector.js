@@ -26,6 +26,7 @@ export async function detectCoordinates(unlocode, csvDatabase, wikidataDatabase,
         // When we have a Wikidata entry, check if it's close to the original unlocode one. If yes, just believe the UN/LOCODE's location, regardless of what nominatim says
         return getUnlocodeResult(entry, decimalCoordinates, firstNominatimResult)
     }
+    // When Wikidata is marked as best, or there are no alternatives, choose Wikidata
     if (WIKIDATA_BEST.includes(unlocode) || (!decimalCoordinates && !nominatimData && wikiDataEntry)) {
         return {...wikiDataEntry, type: "Wikidata", decimalCoordinates: {lat: wikiDataEntry.lat, lon: wikiDataEntry.lon}}
     }
@@ -39,21 +40,43 @@ export async function detectCoordinates(unlocode, csvDatabase, wikidataDatabase,
         return getUnlocodeResult(entry, decimalCoordinates, firstNominatimResult)
     }
 
+    // Whenever we find something close to the UN/LOCODE coordinates, assume that's the one they meant.
     if (decimalCoordinates) {
-        const distance = Math.round(getDistanceFromLatLonInKm(decimalCoordinates.lat, decimalCoordinates.lon, firstNominatimResult.lat, firstNominatimResult.lon));
-        if (distance < maxDistance) {
-            // The first result is close enough.
-            return getUnlocodeResult(entry, decimalCoordinates, firstNominatimResult)
+        const closestHit = findClosestNominatimHit(nominatimResult, decimalCoordinates)
+        const firstDist = getDistanceFromLatLonInKm(decimalCoordinates.lat, decimalCoordinates.lon, firstNominatimResult.lat, firstNominatimResult.lon)
+        if (firstDist < 100 || closestHit.distance < 25) {
+            if (closestHit.distance < 10) {
+                return getUnlocodeResult(entry, decimalCoordinates, closestHit.hit)
+            }
+            return {...closestHit.hit, decimalCoordinates, type: "Nominatim", options: undefined}
         }
 
-        // Check if there's another result than the first one who is close. If yes, return that
-        const closeResult = await findCloseResult(maxDistance, nominatimResult, decimalCoordinates, entry, nominatimData, unlocode);
-        if (closeResult) {
-            return closeResult
+        if (nominatimData.scrapeType === "byRegion") {
+            // We couldn't find any close result by region. Let's scrape by city as well to see if there is a location in another region where the coordinates do match (like ITAN2)
+            // This means that either the coordinates are wrong, or the region is wrong.
+            await downloadByCityIfNeeded(entry)
+            const nominatimDataByCity = readNominatimDataByCity(unlocode, entry.city)?.result
+            if (nominatimDataByCity && nominatimDataByCity.length > 0) {
+                const closestByCity = findClosestNominatimHit(nominatimDataByCity, decimalCoordinates)
+                if (closestByCity.distance < 25) {
+                    if (closestByCity.distance < 10) {
+                        return getUnlocodeResult(entry, decimalCoordinates, closestByCity.hit)
+                    }
+                    return {...closestByCity.hit, decimalCoordinates, type: "Nominatim", options: undefined}
+                }
+            }
         }
     }
 
-    // No overrides encountered, no results found close to the unlocode coordinates
+    // Go for Wikidata when its region matches the subdivision of the UN/LOCODE
+    if (nominatimData?.scrapeType !== "byRegion"
+        && entry.subdivisionCode
+        && wikiDataEntry?.subdivisionCodes.includes(entry.subdivisionCode)) {
+        return {...wikiDataEntry, type: "Wikidata", decimalCoordinates: {lat: wikiDataEntry.lat, lon: wikiDataEntry.lon}}
+    }
+
+    // No overrides encountered, no results found close to the unlocode coordinates.
+    // Return the first nominatim result and ignore Wikidata results (though that would actually be a fine choice at this moment)
     let options = undefined
     if (nominatimResult.length > 1 || wikiDataEntry) {
         options = []
@@ -72,36 +95,20 @@ export async function detectCoordinates(unlocode, csvDatabase, wikidataDatabase,
     return {...firstNominatimResult, decimalCoordinates, type: "Nominatim", options}
 }
 
-async function findCloseResult(maxDistance, nominatimResult, decimalCoordinates, entry, nominatimData, unlocode) {
-    // Use at max 25 km distance, because it's not the first result, so it has to be close to compensate for that
-    const closeDistance = Math.min(25, maxDistance);
-    const closeResults = nominatimResult.filter(n => {
-        return getDistanceFromLatLonInKm(decimalCoordinates.lat, decimalCoordinates.lon, n.lat, n.lon) < closeDistance
-    })
-    if (closeResults.length !== 0) {
-        // The first hit isn't close, but there is another one who is. Keep UN/LOCODE
-        return getUnlocodeResult(entry, decimalCoordinates, closeResults[0])
-    }
-
-    const scrapeType = nominatimData.scrapeType
-    if (scrapeType === "byRegion") {
-        // We couldn't find any close result by region. Let's scrape by city as well to see if there is a location in another region where the coordinates do match (like ITAN2)
-        // This means that either the coordinates are wrong, or the region is wrong.
-        await downloadByCityIfNeeded(entry)
-        const nominatimDataByCity = readNominatimDataByCity(unlocode, entry.city)?.result
-        const closeResults = nominatimDataByCity?.filter(n => {
-            return getDistanceFromLatLonInKm(decimalCoordinates.lat, decimalCoordinates.lon, n.lat, n.lon) < closeDistance
-        })
-        if (closeResults !== undefined && closeResults.length !== 0) {
-            return getUnlocodeResult(entry, decimalCoordinates, closeResults[0])
-        }
-    }
-    return undefined
-}
-
 function getUnlocodeResult(entry, decimalCoordinates, source) {
     if (!decimalCoordinates) {
         return undefined
     }
     return {...entry, decimalCoordinates, type: "UN/LOCODE", source}
+}
+
+function findClosestNominatimHit(nominatimResult, decimalCoordinates) {
+    let closest = {hit: nominatimResult[0], distance: Infinity}
+    for (const n of nominatimResult) {
+        const d = getDistanceFromLatLonInKm(decimalCoordinates.lat, decimalCoordinates.lon, n.lat, n.lon)
+        if (d < closest.distance) {
+            closest = {hit: n, distance: d}
+        }
+    }
+    return closest
 }

@@ -25,8 +25,8 @@ export async function validateCoordinates(entry, nominatimData, wikiEntry, maxDi
         const distance = Math.round(getDistanceFromLatLonInKm(decimalCoordinates.lat, decimalCoordinates.lon, wikiEntry.lat, wikiEntry.lon))
         if (distance > maxDistance) {
             let message = `https://unlocode.info/${unlocode}: (${entry.city}): Coordinates ${entry.coordinates} (${decimalCoordinates.lat}, ${decimalCoordinates.lon}) should be changed to ${convertToBoth(wikiEntry.lat, wikiEntry.lon)} = ${distance}km${distance > 1000 ? '(!)' : ""} away; `
-            if (!entry.subdivisionName && wikiEntry.subdivisionCode) {
-                message += `the region should be set to ${wikiEntry.subdivisionCode} `
+            if (!entry.subdivisionName && wikiEntry.subdivisionCodes.length > 0) {
+                message += `the region should be set to ${wikiEntry.subdivisionCodes.join(" or ")} `
             }
             message += `source: ${wikiEntry.sourceUrl}`
             return message

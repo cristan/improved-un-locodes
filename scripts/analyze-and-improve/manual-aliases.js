@@ -69,6 +69,7 @@ export const ALIASES = {
     GBGDF: "GBDRF", // Great Driffield => Driffield
     GBOAK: "GBOKM", // Oakhamness => Oakham
     GBMBN: "GBWIM", // Wimeborne => Wimborne Minster
+    GRKLP: "GRKAL", // Kalampaka => Kalabaka
     GRSOR: "GRTSS", // Soupri => Soúrpi
     GRSTY: "GRSYS", // Stylinda => Stylis (Stylída)
     GUAGA: "GUHGT", // Agana => Hagatna (should be spelled Hagåtña)

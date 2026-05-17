@@ -11,8 +11,10 @@ export const WIKIDATA_BEST = [
     "AUMKR",
     "AUONG",
     "AOJMB",
+    "AOMEG",
     "AURCM",
     "CAZFW",
+    "CDIKL",
     "COCIE",
     "AUWUN",
     "BECLM",// Quite the important one! Nominatim is pointing to the one in the wrong region!

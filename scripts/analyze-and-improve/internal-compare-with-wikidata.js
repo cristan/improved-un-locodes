@@ -2,6 +2,7 @@ import {readUnlocodesCsv} from "./util/readUnlocodesCsv.js";
 import {convertToDecimal, convertToUnlocode, getDistanceFromLatLonInKm} from "./util/coordinatesConverter.js";
 import {readWikidata} from "./util/wikidata-reader.js";
 import {UNLOCODE_BEST} from "./manual-unlocode-best.js";
+import {WIKIDATA_BEST} from "./manual-wikidata-best.js";
 
 // Before you run this, make sure to run download-wikidata.js to compare with the latest state at Wikidata
 async function validateAllCoordinates() {
@@ -22,7 +23,7 @@ async function validateAllCoordinates() {
         }
 
         const distance = Math.round(getDistanceFromLatLonInKm(decimalCoordinates.lat, decimalCoordinates.lon, wikiEntry.lat, wikiEntry.lon))
-        if (distance > 100 && !UNLOCODE_BEST.includes(unlocode)) {
+        if (distance > 100 && !UNLOCODE_BEST.includes(unlocode) && !WIKIDATA_BEST.includes(unlocode)) {
             console.log(`https://unlocode.info/${unlocode} ${entry.city} vs ${wikiEntry.itemLabel} ${distance}km distance between https://www.google.com/maps?z=12&ll=${decimalCoordinates.lat},${decimalCoordinates.lon} and https://www.google.com/maps?z=12&ll=${wikiEntry.lat},${wikiEntry.lon}. ${unlocode},${convertToUnlocode(wikiEntry.lat, wikiEntry.lon)} Source: ${wikiEntry.sourceUrl}`)
             count++
         }

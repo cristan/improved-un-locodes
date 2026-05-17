@@ -121,29 +121,38 @@ export function readNominatimDataByQuery(unlocode, cityName) {
     }
 }
 
-function filterOutUselessEntries(nominatimResult, countryCode, cityName) {
+export function filterOutUselessEntries(nominatimResult, countryCode, cityName) {
     // Filter out anything which isn't a place, a boundary or a landuse (CNYTN)
-    // TODO: this might be problematic! I only detected that I needed landuse by accident
-    //  Also, maybe not use all landuses? The ones with type="industrial" we definitely need, but maybe we don't need type="commercial" (AESZS)
-    // Alternatively, we can filter out the ones we don't want
     const filteredByCategory = nominatimResult.filter(n => n.category === "place" || n.category === "boundary" || n.category === "landuse" || cityName.toLowerCase().includes("canal") && n.category === "waterway")
 
     // The isolated dwelling tag is used for named places that are smaller than a hamlet - no more than a few buildings
     // Assume there are no unlocodes for places that small.
     const withoutIsolatedDwelling = filteredByCategory.filter(n => n.addresstype !== "isolated_dwelling");
 
-    // Example is ITCUZ: https://nominatim.openstreetmap.org/search?format=jsonv2&accept-language=en&addressdetails=1&limit=20&city=Castelletto%20di%20Branduzzo&country=IT&state=PV
-    // In this example, it's tempting to filter out the boundary, as that sounds more vague than a place.
-    // However, we are actually interested in the first result (which is the boundary)
-    // So filter out any lower importance entries which are close (because entries aren't necessarily sorted by importance, see ATPUR).
-    const withoutVeryClosePlaces = withoutIsolatedDwelling.filter(w => {
-        const veryCloseExists = withoutIsolatedDwelling.some(o => o.importance > w.importance && getDistanceFromLatLonInKm(w.lat, w.lon, o.lat, o.lon) < 25)
-
-        return !veryCloseExists
-    })
-
     // The query for MYLPK returns somewhere in New York. Filter out anything which isn't in this country
-    return withoutVeryClosePlaces.filter(n => n.address.country_code.toUpperCase() === countryCode)
+    const inCountry = withoutIsolatedDwelling.filter(n => n.address.country_code.toUpperCase() === countryCode)
+
+    return promotePlaceOverItsMunicipality(inCountry)
+}
+
+/**
+ * Quite often Nominatim returns a municipality boundary alongside a place node inside it with the same name (the actual city).
+ * The place is what we want, so move it above the boundary when Nominatim ranked it below.
+ */
+function promotePlaceOverItsMunicipality(entries) {
+    const result = [...entries]
+    for (const entry of entries) {
+        if (entry.addresstype !== "municipality") continue
+        const placeInMunicipalityWithSameName = result.find(e => e.category === "place" && e.address.municipality === entry.name)
+        if (!placeInMunicipalityWithSameName) continue
+        const municipalityIdx = result.indexOf(entry)
+        const placeIdx = result.indexOf(placeInMunicipalityWithSameName)
+        if (placeIdx > municipalityIdx) {
+            result.splice(placeIdx, 1)
+            result.splice(municipalityIdx, 0, placeInMunicipalityWithSameName)
+        }
+    }
+    return result
 }
 
 function addConvenienceAttributes(nominatimResult) {
