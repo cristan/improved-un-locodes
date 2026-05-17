@@ -69,6 +69,8 @@ export async function detectCoordinates(unlocode, csvDatabase, wikidataDatabase,
     }
 
     // Go for Wikidata when its region matches the subdivision of the UN/LOCODE
+    // Note that there's an argument to be made to always return Wikidata over here (or maybe even as a first choice).
+    // It is very accurate, though it isn't perfect: a lot were tagged by bots. We could decide to investigate and improve Wikidata before we do either.
     if (nominatimData?.scrapeType !== "byRegion"
         && entry.subdivisionCode
         && wikiDataEntry?.subdivisionCodes.includes(entry.subdivisionCode)) {
@@ -76,7 +78,7 @@ export async function detectCoordinates(unlocode, csvDatabase, wikidataDatabase,
     }
 
     // No overrides encountered, no results found close to the unlocode coordinates.
-    // Return the first nominatim result and ignore Wikidata results (though that would actually be a fine choice at this moment)
+    // Return the first nominatim result.
     let options = undefined
     if (nominatimResult.length > 1 || wikiDataEntry) {
         options = []
