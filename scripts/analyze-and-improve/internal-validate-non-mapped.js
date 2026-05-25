@@ -1,7 +1,7 @@
 import {readUnlocodesCsv, readSubdivisionData} from "./util/readUnlocodesCsv.js";
 import {convertToDecimal} from "./util/coordinatesConverter.js";
 
-async function validateRegionCodes() {
+async function validateNonMapped() {
     const csvDatabase = await readUnlocodesCsv(true)
     // const subdivisions = readSubdivisionData()
 
@@ -14,7 +14,7 @@ async function validateRegionCodes() {
 
         const decimalCoordinates = convertToDecimal(entry.coordinates)
         if (!decimalCoordinates) {
-            console.log(`https://unlocode.info/${unlocode} ${unlocode} ${entry.city} https://www.google.com/search?q=${encodeURIComponent(entry.city +", "+ entry.countryName)}`)
+            console.log(`${unlocode} | ${entry.city} | ${entry.subdivisionCode} | ${entry.subdivisionName??""} ${entry["function"]} | ${entry.date} | ${entry.status}`)
             // console.log(entry.iata !== "" ? entry.iata : entry.location)
             count++
             continue
@@ -23,5 +23,5 @@ async function validateRegionCodes() {
     console.log(count +" out of "+ allCount +`(${100-((count / allCount) * 100)}%)`)
 }
 
-validateRegionCodes()
+validateNonMapped()
 // I didn't check the /JP items yet: there are a lot of them and few have actually relevant results. I did let gemini check them, so there's likely little useful locations left.
