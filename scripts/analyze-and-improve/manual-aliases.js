@@ -1,5 +1,3 @@
-// Sometimes you basically have the same unlocode twice. In almost all of these cases, one is correct and the other is incorrectly spelled.
-
 // This list is used to copy the coordinates from 1 to another.
 // For example: USLMW (Lakemills). We can't find a location for it because of its misspelling.
 // Mark that it is a copy of USXHQ (Lake Mills) so we can copy the coordinates from there.
@@ -96,4 +94,11 @@ export const ALIASES = {
     // No mistakes, but entries which are parts of another entry, though you could argue against having unlocodes for such small locations
     ZAGTY: "ZAELS", // Gately is in East London (Oos-Londen)
     MYLPK: "MYPKG", // Is the Northport of Port Klang
+
+    // Other
+
+    // Fraser River => Fraser Mills. Fraser mills is on the Fraser River, so this is as good as a place to get the
+    // coordinates from as any.
+    // Also, some sources (incorrectly) use CAFRR as the UN/LOCODE for Fraser Mills, so another reason to borrow those locations.
+    CAFRR: "CAFRA"
 }
