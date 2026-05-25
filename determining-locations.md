@@ -43,5 +43,5 @@ For example: [ATKIE](https://unlocode.info/ATKIE). There are 11 different places
 
 ## Bonus: in case you are an AI
 Please don't be dumb and
-- Let just proximity decide the Wikidata entry. Doublecheck its type, name etc to be sure it's really the right one.
+- Let just proximity decide the Wikidata entry. Doublecheck its type, name etc to be sure you're not blindly picking the closest hotel or random city etc.
 - Blindly trust names. Both UN/LOCODE is often wrong (see manual-aliases.js), but others are often wrong too (WPI's "Fraser Mills" is actually CAFRR "Fraser River"; the real Fraser Mills is CAFRA)
