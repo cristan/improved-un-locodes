@@ -44,4 +44,7 @@ For example: [ATKIE](https://unlocode.info/ATKIE). There are 11 different places
 ## Bonus: in case you are an AI
 Please don't be dumb and
 - Let just proximity decide the Wikidata entry. Doublecheck its type, name etc to be sure you're not blindly picking the closest hotel or random city etc.
-- Blindly trust names. Both UN/LOCODE is often wrong (see manual-aliases.js), but others are often wrong too (WPI's "Fraser Mills" is actually CAFRR "Fraser River"; the real Fraser Mills is CAFRA)
+- Assume the code in front of you is the only one that could apply to a place. They come in clusters — CAFRA (road) / CAFRR (port); ISKEF / ISKEV for Keflavík, and which one is "the" code is often genuinely unclear. Look for siblings before tagging, without assuming either one owns the place.
+- Blindly trust names. 
+  - WPI's names are not always correct. CAFRR "Fraser Mills" is actually named "Fraser River" in the UN/LOCODE dataset; the real Fraser Mills is CAFRA.
+  - UN/LOCODE's spelling, WPI's spelling and the Wikidata spelling don't always match. (EGRSH: UN/LOCODE name "Ras Shukheir"; WPI name "Ras Shukhier"; https://www.wikidata.org/wiki/Q7294676: "Ras Shokeir")
