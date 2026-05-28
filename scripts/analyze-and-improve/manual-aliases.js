@@ -55,6 +55,8 @@ export const ALIASES = {
     ESDGS: "ESVPR", // Villandangos => Villadangos del Páramo
     ESVAK: "ESEVI", // Visos Del Alcor => El Viso del Alcor
     ESSXX: "ESHVC", // Sangenjo => Sanxenxo
+    DKTYB: "DKTHN", // Tyborøn => Thyborøn
+    DKHUR: "DKAAO", // Hurup => Hurup Thy
     INWGC: "INWRA", // Warrangal => Warangal
     INGGA: "INGHA", // Gogha => Ghogha
     INVIG: "INVTZ", // Vizagapatanam => Visakhapatnam
@@ -101,4 +103,9 @@ export const ALIASES = {
     // coordinates from as any.
     // Also, some sources (incorrectly) use CAFRR as the UN/LOCODE for Fraser Mills, so another reason to borrow those locations.
     CAFRR: "CAFRA"
+}
+
+// Not needed to borrow coordinates from another, just here as reference
+export const DUPLICATES = {
+    DKKK4: "DKAYB"
 }
