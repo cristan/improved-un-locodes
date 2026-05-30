@@ -101,7 +101,7 @@ export const ALIASES = {
 
     // Fraser River => Fraser Mills. Fraser mills is on the Fraser River, so this is as good as a place to get the
     // coordinates from as any.
-    // Also, some sources (incorrectly) use CAFRR as the UN/LOCODE for Fraser Mills, so another reason to borrow those locations.
+    // Also, WPI (IMO incorrectly) uses CAFRR as the UN/LOCODE for Fraser Mills, so another reason to borrow those locations.
     CAFRR: "CAFRA"
 }
 
