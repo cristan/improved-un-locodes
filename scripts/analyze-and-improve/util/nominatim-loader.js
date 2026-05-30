@@ -6,6 +6,7 @@ import {
     getDownloadCityName
 } from "./nominatim-downloader.js";
 import {getDistanceFromLatLonInKm} from "./coordinatesConverter.js";
+import {SUBDIVISION_ALIASES} from "../subdivision-aliases.js";
 
 /**
  * Loads all Nominatim data: it either loads it from cached files or downloads said files when they don't exist yet.
@@ -71,7 +72,8 @@ function readNominatimDataByRegion(entry) {
     // Filter out results which aren't in the region after scraping by region.
     // Example: this goes wrong at https://nominatim.openstreetmap.org/search?format=jsonv2&accept-language=en&addressdetails=1&limit=20&city=Laocheng&country=CN&state=CN-HI
     // Which also returns data in HA even though the provided state is CN-HI.
-    const parsedAndFiltered = parsed.filter(nm => getSubdivisionCode(nm) === entry.subdivisionCode)
+    const expectedCode = SUBDIVISION_ALIASES[`${entry.country}|${entry.subdivisionCode}`] ?? entry.subdivisionCode
+    const parsedAndFiltered = parsed.filter(nm => getSubdivisionCode(nm) === expectedCode)
     const withoutUselessEntries = filterOutUselessEntries(parsedAndFiltered, country, entry.city)
     if (withoutUselessEntries.length === 0) {
         return undefined
