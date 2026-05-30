@@ -7,9 +7,16 @@ Remember that no single field of the UN/LOCODE set is trustworthy. The art is in
 ## The UN/LOCODE itself
 For example: [CNTZO](https://unlocode.info/CNTZO). The coordinates do point to a place matching the name, but in [flexport](https://atlas.flexport.com/oceanport/id:99b6e841-83d1-47f0-a7f1-09c794be7f9a/locode:CNTZO/cbp:/name:taizhou) and [MarineTraffic](https://www.marinetraffic.com/en/ais/home/portid:17437/zoom:13), another location is used. Because the other city is the one used in practice, you could argue this is what the UN/LOCODE means now. 
 
-An example of something to cross-reference is [NGA World Port Index (Pub 150)](https://msi.nga.mil/api/publications/download?type=view&key=16920959/SFH00000/UpdatedPub150.csv) or the port list at [AtoBviaC](https://www.atobviac.com/ReleaseInformation/PortsList) and [Marine traffic](https://www.marinetraffic.com/) (though there is no overview you can access without paying). None of these are perfect, but they are pretty good. 
+Example sources:
+- [NGA World Port Index (Pub 150)](https://msi.nga.mil/api/publications/download?type=view&key=16920959/SFH00000/UpdatedPub150.csv)
+- [Sailing Directions Enroute](https://msi.nga.mil/Publications/SDEnroute)
+- The port list at [AtoBviaC](https://www.atobviac.com/ReleaseInformation/PortsList)
+- [Marine traffic](https://www.marinetraffic.com/) (though there is no overview you can access without paying). 
+- [VesselFinder](https://www.vesselfinder.com/ports/)
 
-Unfortunately, Wikidata doesn't quite count as a primary source: while very accurate, most of them are tagged by bots, so it doesn't mean people actually use this UN/LOCODE.
+None of these are perfect, but they are pretty good 
+
+Unfortunately, Wikidata doesn't quite count as a primary source: while quite accurate, most of them are tagged by (not quite very clever) bots.
 
 ## The types of places who have UN/LOCODEs
 UN/LOCODEs are meant to facilitate international trade. If there are multiple options, it is likely the bigger and/or more notable city of the 2.
