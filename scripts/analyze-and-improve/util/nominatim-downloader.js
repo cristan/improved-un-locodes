@@ -1,4 +1,5 @@
 import fs from "node:fs"
+import {SUBDIVISION_ALIASES} from "../subdivision-aliases.js";
 
 export async function downloadByQueryIfNeeded(entry, query) {
     const directory = `../../data/nominatim/${entry.country}/${entry.location}/byQuery`
@@ -12,7 +13,7 @@ export async function downloadByQueryIfNeeded(entry, query) {
         return
     }
 
-    const nominatimUrl = `https://nominatim.openstreetmap.org/search?format=jsonv2&accept-language=en&addressdetails=1&limit=20&q=${encodeURI(query)}`
+    const nominatimUrl = `https://nominatim.openstreetmap.org/search?format=jsonv2&accept-language=en&addressdetails=1&limit=20&q=${encodeURI(query)}&countrycodes=${entry.country.toLowerCase()}`
     await delay(1000)
     const fromNominatim = await (await fetch(nominatimUrl, {
         headers: { 'User-Agent': 'Bot for github.com/cristan/improved-un-locodes' }
@@ -23,7 +24,7 @@ export async function downloadByQueryIfNeeded(entry, query) {
 export async function downloadByRegionIfNeeded(entry) {
     const region = entry.subdivisionCode
     if (!region) {
-        throw new Error(`${entry} doesn't have a region`)
+        throw new Error(`${entry.unlocode} doesn't have a subdivision — use downloadByCityIfNeeded`)
     }
 
     const directory = `../../data/nominatim/${entry.country}/${entry.location}/byRegion`
@@ -31,14 +32,12 @@ export async function downloadByRegionIfNeeded(entry) {
         fs.mkdirSync(directory, { recursive: true });
     }
     const fileName = `${directory}/${entry.unlocode}.json`
-    const fileAlreadyExists = fs.existsSync(fileName)
-    if (fileAlreadyExists) {
-        // console.log(`${fileName} already exists. Skipping.`)
-        return
-    }
+    if (fs.existsSync(fileName)) return
 
-    const queryString = `${getDownloadCityName(entry)}, ${entry.country}-${region}`
-    const nominatimQuery = `https://nominatim.openstreetmap.org/search?format=jsonv2&accept-language=en&addressdetails=1&limit=20&q=${encodeURI(queryString)}&countrycodes=${entry.country.toLowerCase()}`
+    // Structured city= + country= + state=, where state= uses the current ISO 3166-2 code
+    // (translating retired UN/LOCODE subdivision codes via SUBDIVISION_ALIASES).
+    const isoRegion = SUBDIVISION_ALIASES[`${entry.country}|${region}`] ?? region
+    const nominatimQuery = `https://nominatim.openstreetmap.org/search?format=jsonv2&accept-language=en&addressdetails=1&limit=20&city=${encodeURI(getDownloadCityName(entry))}&country=${encodeURI(entry.country)}&state=${entry.country}-${isoRegion}`
     await delay(1000)
     const fromNominatim = await (await fetch(nominatimQuery, {
         headers: { 'User-Agent': 'Bot for github.com/cristan/improved-un-locodes' }
@@ -47,23 +46,20 @@ export async function downloadByRegionIfNeeded(entry) {
 }
 
 export async function downloadByCityIfNeeded(entry) {
-    const directory = `../../data/nominatim/${entry.country}/${entry.location}/cityOnly`
-    const fileName = `${directory}/${entry.unlocode}.json`
-    const fileAlreadyExists = fs.existsSync(fileName)
-    if (fileAlreadyExists) {
-        // console.log(`${fileName} already exists. Skipping.`)
-        return
-    }
-
-    await delay(1000)
-    const ogNominatimQuery = `https://nominatim.openstreetmap.org/search?format=jsonv2&accept-language=en&addressdetails=1&limit=20&q=${encodeURI(getDownloadCityName(entry))}&countrycodes=${entry.country.toLowerCase()}`
-    const fromNominatim2 = await (await fetch(ogNominatimQuery, {
-        headers: { 'User-Agent': 'Bot for github.com/cristan/improved-un-locodes' }
-    })).text()
-    if (!fs.existsSync(directory)) {
+    const directory = `../../data/nominatim/${entry.country}/${entry.location}/byCity`
+    if (!fs.existsSync(directory)){
         fs.mkdirSync(directory, { recursive: true });
     }
-    await fs.writeFileSync(fileName, fromNominatim2)
+    const fileName = `${directory}/${entry.unlocode}.json`
+    if (fs.existsSync(fileName)) return
+
+    // Structured city= + country=, no region restriction.
+    const nominatimQuery = `https://nominatim.openstreetmap.org/search?format=jsonv2&accept-language=en&addressdetails=1&limit=20&city=${encodeURI(getDownloadCityName(entry))}&country=${encodeURI(entry.country)}`
+    await delay(1000)
+    const fromNominatim = await (await fetch(nominatimQuery, {
+        headers: { 'User-Agent': 'Bot for github.com/cristan/improved-un-locodes' }
+    })).text()
+    await fs.writeFileSync(fileName, fromNominatim)
 }
 
 export function getDownloadCityName(entry) {
