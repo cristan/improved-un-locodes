@@ -7,14 +7,15 @@
 export const SUBDIVISION_ALIASES = {
     // IN — https://en.wikipedia.org/wiki/ISO_3166-2:IN
 
-    // Uttaranchal renamed to Uttarakhand. ISO 2011-12-13.
-    "IN|UL": "UT",
+    // Uttarakhand: UL (Uttaranchal) → UT (2011-12-13) → UK (2023-11-23).
+    "IN|UL": "UK",
+    "IN|UT": "UK",
 
-    // Dadra and Nagar Haveli + Daman and Diu → DH. ISO 2020-11-11.
+    // Dadra and Nagar Haveli + Daman and Diu → DH. ISO 2020-11-11. Pure merger.
     "IN|DN": "DH",
     "IN|DD": "DH",
 
-    // State codes reassigned. ISO 2023-11-23.
+    // State codes reassigned. ISO 2023-11-23. Pure renames.
     "IN|OR": "OD",  // Odisha
     "IN|CT": "CG",  // Chhattīsgarh
     "IN|TG": "TS",  // Telangāna
@@ -27,24 +28,33 @@ export const SUBDIVISION_ALIASES = {
     "NO|23": "50",  // NO-23 → NO-50 code change, 2019-04-09.
 
     // Hedmark + Oppland → Innlandet. ISO 2020-11-24.
-    "NO|04": "34",
-    "NO|05": "34",
+    "NO|04": "34",  // Hedmark
+    "NO|05": "34",  // Oppland — IMPERFECT: Lunner and Jevnaker transferred from Oppland to
+    //                  Viken in 2020 (now NO-32 Akershus), so they will not match this alias.
+    //                  Source: regjeringen.no "Nye kommunenummer for Rindal, Jevnaker og Lunner".
 
     // Aust-Agder + Vest-Agder → Agder. ISO 2020-11-24.
-    "NO|09": "42",
-    "NO|10": "42",
+    "NO|09": "42",  // Aust-Agder
+    "NO|10": "42",  // Vest-Agder
 
     // Hordaland + Sogn og Fjordane → Vestland. ISO 2020-11-24.
-    "NO|12": "46",
-    "NO|14": "46",
+    "NO|12": "46",  // Hordaland
+    "NO|14": "46",  // Sogn og Fjordane — IMPERFECT: Hornindal merged into Volda (Møre og
+    //                  Romsdal NO-15) in 2020. Source: Lovdata "Forskrift om samanslåing av
+    //                  Hornindal kommune og Volda".
 
     // Norway 2024-01-01: the three 2020 merger counties (Viken NO-30, Vestfold og Telemark NO-38,
     // Troms og Finnmark NO-54) were dissolved back into their original pre-merger counties.
-    // Each pre-2020 code aliases to its post-2024 code — same county throughout, only the number changed.
-    "NO|01": "31",  // Østfold
+    // Each pre-2020 code aliases to its post-2024 code. ISO 3166-2 has not been updated for the
+    // 2024 split as of 2026 — Nominatim follows the Norwegian government codes (NO-31, NO-32, etc.).
+    // Source: en.wikipedia.org/wiki/Counties_of_Norway (15 counties table).
+    "NO|01": "31",  // Østfold — IMPERFECT: Rømskog merged into Aurskog-Høland (Akershus NO-32)
+    //                  in 2020. Source: Wikipedia "Aurskog-Høland".
     "NO|02": "32",  // Akershus
-    "NO|06": "33",  // Buskerud
-    "NO|07": "39",  // Vestfold
+    "NO|06": "33",  // Buskerud — IMPERFECT: Hurum + Røyken merged with Asker into new Asker
+    //                  (Akershus NO-32) in 2020. Source: Wikipedia "Hurum", "Asker Municipality".
+    "NO|07": "39",  // Vestfold — IMPERFECT: Svelvik merged into Drammen (Buskerud NO-33) in 2020.
+    //                  Source: Wikipedia "Svelvik Municipality".
     "NO|08": "40",  // Telemark
     "NO|19": "55",  // Troms
     "NO|20": "56",  // Finnmark
@@ -53,12 +63,16 @@ export const SUBDIVISION_ALIASES = {
 
     // Northern Ireland 2015-04-01: 26 district councils consolidated into 11.
     // Local Government Act (Northern Ireland) 2014. ISO deletion announced 2015-11-27.
+    // Source: Wikipedia "Reform of local government in Northern Ireland" (11-district table).
     "GB|ANT": "ANN",  // Antrim → Antrim and Newtownabbey
     "GB|NTA": "ANN",  // Newtownabbey → Antrim and Newtownabbey
     "GB|ARD": "AND",  // Ards → Ards and North Down
-    "GB|NDN": "AND",  // North Down → Ards and North Down
+    "GB|NDN": "AND",  // North Down — IMPERFECT: a small part of the Knocknagoney area
+    //                                 was transferred to Belfast (GB-BFS), not AND.
     "GB|ARM": "ABC",  // Armagh → Armagh City, Banbridge and Craigavon
-    "GB|BNB": "ABC",  // Banbridge → Armagh City, Banbridge and Craigavon
+    "GB|BNB": "ABC",  // Banbridge — IMPERFECT: the Slieve Croob area in eastern Banbridge
+    //                                 was transferred to NMD, not ABC. Source: Wikipedia
+    //                                 "Banbridge (district)".
     "GB|CGV": "ABC",  // Craigavon → Armagh City, Banbridge and Craigavon
     "GB|BLY": "CCG",  // Ballymoney → Causeway Coast and Glens
     "GB|CLR": "CCG",  // Coleraine → Causeway Coast and Glens
@@ -68,8 +82,11 @@ export const SUBDIVISION_ALIASES = {
     "GB|STB": "DRS",  // Strabane → Derry and Strabane
     "GB|FER": "FMO",  // Fermanagh → Fermanagh and Omagh
     "GB|OMH": "FMO",  // Omagh → Fermanagh and Omagh
-    "GB|CSR": "LBC",  // Castlereagh → Lisburn and Castlereagh
-    "GB|LSB": "LBC",  // Lisburn → Lisburn and Castlereagh
+    "GB|CSR": "LBC",  // Castlereagh — IMPERFECT: parts of Castlereagh (Belvoir, Braniel,
+    //                                 Cregagh, Gilnahirk wards etc.) were transferred to
+    //                                 Belfast (GB-BFS), not LBC.
+    "GB|LSB": "LBC",  // Lisburn — IMPERFECT: parts of Lisburn (Dunmurry, Colin Glen,
+    //                                 Kilwee, Lagmore etc.) were transferred to Belfast.
     "GB|BLA": "MEA",  // Ballymena → Mid and East Antrim
     "GB|CKF": "MEA",  // Carrickfergus → Mid and East Antrim
     "GB|LRN": "MEA",  // Larne → Mid and East Antrim
@@ -85,9 +102,11 @@ export const SUBDIVISION_ALIASES = {
     "GB|BMH": "BCP",  // Bournemouth
     "GB|POL": "BCP",  // Poole
 
-    // GR — https://en.wikipedia.org/wiki/ISO_3166-2:GR
-
-    // 2010 Kallikratis reform: 51 prefectures → 13 administrative regions. ISO removed 2016-11-15.
+    // GR — Kallikratis reform (Law 3852/2010): 51 prefectures → 13 administrative regions,
+    // implemented 2011. Each prefecture became one regional unit within exactly one region —
+    // clean consolidation, no splits.
+    // Source: en.wikipedia.org/wiki/ISO_3166-2:GR has an authoritative "In administrative region"
+    // column for every retired GR-XX department code. ISO removed the prefecture codes 2016-11-15.
 
     // → A (Eastern Macedonia and Thrace)
     "GR|52": "A",  // Dráma
