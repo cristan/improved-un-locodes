@@ -143,7 +143,15 @@ export const WIKIDATA_BEST = [
     "PKKHP",
     "NLZHN",
     "CKPZK",
-    "GBPRH"
+
+    // WPI (World Port Index) was used as a source of truth here
+    "GBPRH",
+    "VNPHU",
+    "VNBEN",
+    "SESAK",
+    "CUGYB",
+    "NOBER",
+    "IEKLR"
 ]
 // There are 2 San Martino in Strada's! :O The one of the official coordinates, and the one in https://www.wikidata.org/wiki/Q42950
 // ITSPC https://maps.app.goo.gl/EARFzs2N9RaX3Cbv7 vs https://www.wikidata.org/wiki/Q42950

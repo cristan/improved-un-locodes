@@ -326,4 +326,14 @@ export const UNLOCODE_BEST =[
     "GBNGO",// Two Newingtons in Kent, but the other is next to a rail, so I'd guess it would have gotten Rail as a function if that were the one
     "INISP",
     "THBPG",
+
+    // Places where the official coordinates match the ones at WPI (World Port Index)
+    "IDNPL",  // North Pulau Laut. UN/LOCODE 2.6km from WPI; new picks "Pulau Beeng Laut" 1286km away.
+    "GBSVZ",  // St. Mary's (Scilly). UN/LOCODE 1.2km; new picks St Mary's in Orkney 1022km away.
+    "EGAQU",  // Al Qusayr. UN/LOCODE 0km; new picks Qusayr Abu Tabaq in Western Desert 883km away.
+    "NZMCY",  // Manukau City. UN/LOCODE 4km; new picks Monaco quarter in NZ 505km away.
+    "IDTJB",  // Tanjungbalai. UN/LOCODE 1.9km; new finds wrong Tanjung Balai 460km away.
+    "ESACE",  // Lanzarote. UN/LOCODE 1.9km; new lands 224km away.
+    "MHENT",  // Enewetak Island. UN/LOCODE 1.9km; new 23.5km.
+    "GBHUL",  // Hull. UN/LOCODE 2.9km; new picks Hull boundary admin 14.4km centroid.
 ]

@@ -102,7 +102,11 @@ export const ALIASES = {
     // Fraser River => Fraser Mills. Fraser mills is on the Fraser River, so this is as good as a place to get the
     // coordinates from as any.
     // Also, WPI (IMO incorrectly) uses CAFRR as the UN/LOCODE for Fraser Mills, so another reason to borrow those locations.
-    CAFRR: "CAFRA"
+    CAFRR: "CAFRA",
+
+    // San Lorenzo => Quebracho/San Lorenzo. ARQBR's coordinates also matches the coordinates of ARSLO in WPI
+    // Nominatim finds something 2 houses big, so that's probably not it, even if it's in the correct region.
+    ARSLO: "ARQBR",
 }
 
 // Not needed to borrow coordinates from another, just here as reference
