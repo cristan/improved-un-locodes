@@ -334,4 +334,10 @@ export const UNLOCODE_BEST =[
     "ESACE",  // Lanzarote. UN/LOCODE 1.9km; new lands 224km away.
     "MHENT",  // Enewetak Island. UN/LOCODE 1.9km; new 23.5km.
     "GBHUL",  // Hull. UN/LOCODE 2.9km; new picks Hull boundary admin 14.4km centroid.
+    "NOVAL",  // Valløy. UC 1.1km; new 217km off.
+    "IDSZH",  // Senipah. UC 1.9km; new 176km off.
+    "NGOKN",  // Okono. UC 4.1km; new 153km off.
+
+    // 61 km off the WPI coordinates, but it's at least closer than my algorithm comes up with. Needs more investigation.
+    "ARSPD",
 ]
