@@ -306,14 +306,12 @@ export const UNLOCODE_BEST =[
     "MYANG", // I'm not actually sure, but I don't see any evidence where else it could be
     "NGANA", // It's an oil terminal: it should be in the middle of the ocean
     "MYBGR", // Same here
-    "MXCNT",
     "THERA",
     "MXPIC",
     "CNJLY",
     "CNXIJ", // A little weird, since it's in the middle of the ocean, but it matches https://shipnext.com/port/xijiang-marine-terminal-cnxij-chn and atobviac, so I guess it's fine?
     "CNTZO",
     "USSUT",//atobviac
-    "VNRUB",// oil platform at sea
     "VNRDG",// oil platform at sea
     "CAPTN",
     "MYWSP",// Caused by the hard name Westport/Port Klang
