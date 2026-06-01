@@ -315,6 +315,10 @@ export const UNLOCODE_BEST =[
     "GBNGO",// Two Newingtons in Kent, but the other is next to a rail, so I'd guess it would have gotten Rail as a function if that were the one
     "INISP",
     "THBPG",
+    // The official dataset points to the Alcan border crossing.
+    // WPI points to Alcan Harbor in Aleutians: https://msi.nga.mil/queryBreakout?publications/world-port-index?indexNumber=20170&output=html
+    // No way to know which is correct, but it's not the result from Nominatim
+    "USZAK",
 
     // Places where the official coordinates match the ones at WPI (World Port Index) within 10km. These are probably fine.
     // WPI itself isn't redistributed by this project (NGA Pub 150's "no copyright claimed" notice sounds like a legal landmine).

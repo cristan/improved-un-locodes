@@ -141,6 +141,7 @@ export const WIKIDATA_BEST = [
     "NLZHN",
     "CKPZK",
     "MYMEA",
+    "NGAKP",// 0308S 06049E is a typo: should have been 0308N 00649E
 
     // WPI (World Port Index) was used as a source of truth here
     "GBPRH",
@@ -151,6 +152,14 @@ export const WIKIDATA_BEST = [
     "NOBER",
     "IEKLR",
     "EGMAH",
+    "CGYOM",
+    "IDAJN",
+    "NOHUR",
+    "USPWI",
+    "VNNGT",
+    "PHSCA",
+    "JPHMK",
+    "PHTNU",
 ]
 // There are 2 San Martino in Strada's! :O The one of the official coordinates, and the one in https://www.wikidata.org/wiki/Q42950
 // ITSPC https://maps.app.goo.gl/EARFzs2N9RaX3Cbv7 vs https://www.wikidata.org/wiki/Q42950

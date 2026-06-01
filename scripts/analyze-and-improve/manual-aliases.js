@@ -92,6 +92,7 @@ export const ALIASES = {
     INMAP: "INMAC", // Masulipatnam => Machilipatnam
     INSSE: "INSOL", // Sholapur => Solapur
     INBRH: "INBRU", // Broach => Bharuch
+    COEBQ: "COSPC", // El Bosque port → Sociedad Portuaria Regional Cartagena (COSPC has UN/LOCODE coords matching WPI exactly)
 
     // No mistakes, but entries which are parts of another entry, though you could argue against having unlocodes for such small locations
     ZAGTY: "ZAELS", // Gately is in East London (Oos-Londen)
