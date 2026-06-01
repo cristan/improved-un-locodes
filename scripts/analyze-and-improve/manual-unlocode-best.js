@@ -14,7 +14,6 @@ export const UNLOCODE_BEST =[
     "BOCLN",
     "BOSPD",
     "CAABL",
-    "CANWP",
     "CABEI",
     "CABOD",
     "CASPL",
@@ -29,7 +28,6 @@ export const UNLOCODE_BEST =[
     "CAS8A",
     "CAS7T",
     "CASBT",
-    "CASAT",
     "CANSC",
     "CASCU",
     "CASUG",
@@ -140,7 +138,6 @@ export const UNLOCODE_BEST =[
     "PACBL",
     "PAEGL",
     "PATUW",
-    "PEPUB",
     "PECHO",
     "PEMBA",
     "PKMAN",
@@ -151,7 +148,6 @@ export const UNLOCODE_BEST =[
     "PLNWK",
     "PLPAS",
     "PLSRT",  // Incorrect region, but probably ok
-    "PRARR",
     "PRBOQ",
     "PRFLO",
     "PRLAR",
@@ -163,7 +159,6 @@ export const UNLOCODE_BEST =[
     "PRRGD",
     "PRSAL",
     "PRSGM",
-    "PRSJU",
     "PRSLP",
     "PRSBS",
     "PRSIS",
@@ -181,7 +176,6 @@ export const UNLOCODE_BEST =[
     "RUKRY",
     "RUKU2",
     "RUL3N",
-    "RULES",
     "RULT5",
     "RUMSK",
     "RUMOS",
@@ -304,10 +298,7 @@ export const UNLOCODE_BEST =[
     "INSIK", // Probably a typo: Sika vs Sikka
     "AOCUI", // Apparently, the coordinates point to the correct Port of Cuio
     "MYANG", // I'm not actually sure, but I don't see any evidence where else it could be
-    "NGANA", // It's an oil terminal: it should be in the middle of the ocean
     "MYBGR", // Same here
-    "THERA",
-    "MXPIC",
     "CNJLY",
     "CNXIJ", // A little weird, since it's in the middle of the ocean, but it matches https://shipnext.com/port/xijiang-marine-terminal-cnxij-chn and atobviac, so I guess it's fine?
     "CNTZO",
@@ -325,18 +316,45 @@ export const UNLOCODE_BEST =[
     "INISP",
     "THBPG",
 
-    // Places where the official coordinates match the ones at WPI (World Port Index)
-    "IDNPL",  // North Pulau Laut. UN/LOCODE 2.6km from WPI; new picks "Pulau Beeng Laut" 1286km away.
-    "GBSVZ",  // St. Mary's (Scilly). UN/LOCODE 1.2km; new picks St Mary's in Orkney 1022km away.
-    "EGAQU",  // Al Qusayr. UN/LOCODE 0km; new picks Qusayr Abu Tabaq in Western Desert 883km away.
-    "NZMCY",  // Manukau City. UN/LOCODE 4km; new picks Monaco quarter in NZ 505km away.
-    "IDTJB",  // Tanjungbalai. UN/LOCODE 1.9km; new finds wrong Tanjung Balai 460km away.
-    "ESACE",  // Lanzarote. UN/LOCODE 1.9km; new lands 224km away.
-    "MHENT",  // Enewetak Island. UN/LOCODE 1.9km; new 23.5km.
-    "GBHUL",  // Hull. UN/LOCODE 2.9km; new picks Hull boundary admin 14.4km centroid.
-    "NOVAL",  // Valløy. UC 1.1km; new 217km off.
-    "IDSZH",  // Senipah. UC 1.9km; new 176km off.
-    "NGOKN",  // Okono. UC 4.1km; new 153km off.
+    // Places where the official coordinates match the ones at WPI (World Port Index) within 10km. These are probably fine.
+    // WPI itself isn't redistributed by this project (NGA Pub 150's "no copyright claimed" notice sounds like a legal landmine).
+    "CANWP",  // UC↔WPI 1.3km
+    "CASAT",  // UC↔WPI 3.0km
+    "PEPUB",  // UC↔WPI 2.6km
+    "PRARR",  // UC↔WPI 0.0km
+    "PRSJU",  // UC↔WPI 4.0km
+    "RULES",  // UC↔WPI 2.2km
+    "NGANA",  // UC↔WPI 1.9km (oil terminal, middle of ocean)
+    "THERA",  // UC↔WPI 6.6km
+    "MXPIC",  // UC↔WPI 4.1km
+    "IDNPL",  // UC↔WPI 2.6km
+    "GBSVZ",  // UC↔WPI 1.2km
+    "EGAQU",  // UC↔WPI 0.0km
+    "NZMCY",  // UC↔WPI 4.0km
+    "IDTJB",  // UC↔WPI 1.9km
+    "ESACE",  // UC↔WPI 1.9km
+    "MHENT",  // UC↔WPI 1.9km
+    "GBHUL",  // UC↔WPI 2.9km
+    "NOVAL",  // UC↔WPI 1.1km
+    "IDSZH",  // UC↔WPI 1.9km
+    "NGOKN",  // UC↔WPI 4.1km
+    "CNHNK",  // UC↔WPI 1.6km
+    "RUVIT",  // UC↔WPI 0.7km
+    "PESNX",  // UC↔WPI 1.9km. Two San Nicolas in Peru — this is the one aToBviaC uses.
+    "ARLPG",  // UC↔WPI 1.9km
+    "ARRZA",  // UC↔WPI 7.2km (Puerto Santa Cruz)
+    "CAGOO",  // UC↔WPI 9.6km
+    "CAPNO",  // UC↔WPI 1.9km (Pointe-Noire QC, North Shore)
+    "CIESP",  // UC↔WPI 7.6km
+    "CNFAN",  // UC↔WPI 1.9km
+    "CNLYG",  // UC↔WPI 2.4km
+    "ECPEV",  // UC↔WPI 7.6km (Puerto Marítimo de Guayaquil)
+    "INBOM",  // UC↔WPI 5.3km (Mumbai)
+    "INGGV",  // UC↔WPI 1.9km
+    "NZWRE",  // UC↔WPI 5.8km
+    "SADMM",  // UC↔WPI 0.0km
+    "SYALD",  // UC↔WPI 2.4km
+    "TRBOT",  // UC↔WPI 6.3km
 
     // 61 km off the WPI coordinates, but it's at least closer than my algorithm comes up with. Needs more investigation.
     "ARSPD",
