@@ -1,6 +1,7 @@
 import fs from "node:fs"
 import {
     downloadByCityIfNeeded,
+    downloadByCommaQueryIfNeeded,
     downloadByQueryIfNeeded,
     downloadByRegionIfNeeded,
     getDownloadCityName
@@ -43,6 +44,15 @@ async function loadNominatimData(entry) {
         // this is why in all cases, we can just return the one via a query
         await downloadByQueryIfNeeded(entry, query)
         return readNominatimDataByQuery(entry.unlocode, entry.city)
+    }
+
+    // Search for "/" replaced by ", " for entries like "Tanauan/Tacloban"
+    if (entry.city.includes("/")) {
+        await downloadByCommaQueryIfNeeded(entry)
+        const byCommaQuery = readNominatimDataByCommaQuery(entry.unlocode, entry.city)
+        if (byCommaQuery) {
+            return byCommaQuery
+        }
     }
 
     if (entry.subdivisionCode) {
@@ -103,6 +113,23 @@ export function readNominatimDataByCity(unlocode, cityName) {
     }
     addConvenienceAttributes(withoutUselessEntries)
     return {scrapeType: "byCity", result: withoutUselessEntries}
+}
+
+export function readNominatimDataByCommaQuery(unlocode, cityName) {
+    const country = unlocode.substring(0, 2)
+    const location = unlocode.substring(2)
+    const directoryRoot = `../../data/nominatim/${country}/${location}`
+    const byCommaQueryFileName = `${directoryRoot}/byCommaQuery/${unlocode}.json`
+    const raw = fs.readFileSync(byCommaQueryFileName, 'utf8')
+    if (raw === "[]") {
+        return undefined
+    }
+    const withoutUselessEntries = filterOutUselessEntries(JSON.parse(raw), country, cityName)
+    if (withoutUselessEntries.length === 0) {
+        return undefined
+    }
+    addConvenienceAttributes(withoutUselessEntries)
+    return {scrapeType: "byCommaQuery", result: withoutUselessEntries}
 }
 
 export function readNominatimDataByQuery(unlocode, cityName) {

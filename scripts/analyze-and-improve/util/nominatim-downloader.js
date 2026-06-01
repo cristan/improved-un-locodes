@@ -29,6 +29,18 @@ export async function downloadByCityIfNeeded(entry) {
 }
 
 /**
+ * Replaces "/" by ", " in order to find entries like "Tanauan/Tacloban"
+ */
+export async function downloadByCommaQueryIfNeeded(entry) {
+    const name = entry.city
+        .replace(/\s\(.*\)/, "")
+        .replace(" Apt", " Airport")
+    const query = name.split("/").map(s => s.trim()).join(", ") + ", " + entry.country
+    const url = `${NOMINATIM_BASE}&q=${encodeURI(query)}&countrycodes=${entry.country.toLowerCase()}`
+    return downloadIfNeeded(entry, "byCommaQuery", url)
+}
+
+/**
  * Downloads Nominatim's response for `nominatimUrl` and caches it under
  * `data/nominatim/{country}/{location}/{subdir}/{unlocode}.json`.
  * If the cached file already exists, returns immediately without hitting the network.
