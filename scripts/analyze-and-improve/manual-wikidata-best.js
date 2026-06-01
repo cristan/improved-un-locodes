@@ -140,6 +140,7 @@ export const WIKIDATA_BEST = [
     "PKKHP",
     "NLZHN",
     "CKPZK",
+    "MYMEA",
 
     // WPI (World Port Index) was used as a source of truth here
     "GBPRH",

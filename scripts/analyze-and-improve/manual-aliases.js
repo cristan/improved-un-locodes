@@ -111,5 +111,6 @@ export const ALIASES = {
 
 // Not needed to borrow coordinates from another, just here as reference
 export const DUPLICATES = {
-    DKKK4: "DKAYB"
+    DKKK4: "DKAYB",
+    MYMEA: "MYMKZ",
 }
