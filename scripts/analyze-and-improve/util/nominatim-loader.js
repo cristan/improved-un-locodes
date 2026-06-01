@@ -46,7 +46,7 @@ async function loadNominatimData(entry) {
         return readNominatimDataByQuery(entry.unlocode, entry.city)
     }
 
-    // Search for "/" replaced by ", " for entries like "Tanauan/Tacloban"
+    // Search for "/" replaced by ", " for entries like "Sangi/Cebu"
     if (entry.city.includes("/")) {
         await downloadByCommaQueryIfNeeded(entry)
         const byCommaQuery = readNominatimDataByCommaQuery(entry.unlocode, entry.city)

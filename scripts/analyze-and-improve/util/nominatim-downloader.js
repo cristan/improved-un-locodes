@@ -29,7 +29,7 @@ export async function downloadByCityIfNeeded(entry) {
 }
 
 /**
- * Replaces "/" by ", " in order to find entries like "Tanauan/Tacloban"
+ * Replaces "/" by ", " in order to find entries like "Sangi/Cebu"
  */
 export async function downloadByCommaQueryIfNeeded(entry) {
     const name = entry.city
