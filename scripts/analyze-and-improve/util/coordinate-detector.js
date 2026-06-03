@@ -22,6 +22,11 @@ export async function detectCoordinates(unlocode, csvDatabase, wikidataDatabase,
     const decimalCoordinates = convertToDecimal(entry.coordinates)
     const wikiDataEntry = wikidataDatabase[unlocode]
 
+    // When Wikidata is marked as best, or there are no alternatives, choose Wikidata
+    if (WIKIDATA_BEST.includes(unlocode) || (!decimalCoordinates && !nominatimData && wikiDataEntry)) {
+        return {...wikiDataEntry, type: "Wikidata", decimalCoordinates: {lat: wikiDataEntry.lat, lon: wikiDataEntry.lon}}
+    }
+
     // Function-code position 7 = Fixed Transport Functions (oil platforms, offshore terminals).
     // These are rarely in OpenStreetMap (so Nominatim finds the wrong things).
     // Wikidata unfortunately isn't much better right now, so trust UN/LOCODE first.
@@ -32,10 +37,6 @@ export async function detectCoordinates(unlocode, csvDatabase, wikidataDatabase,
     if (wikiDataEntry && decimalCoordinates && getDistanceFromLatLonInKm(decimalCoordinates.lat, decimalCoordinates.lon, wikiDataEntry.lat, wikiDataEntry.lon) < Math.min(10, maxDistance)) {
         // When we have a Wikidata entry, check if it's close to the original unlocode one. If yes, just believe the UN/LOCODE's location, regardless of what nominatim says
         return getUnlocodeResult(entry, decimalCoordinates, firstNominatimResult)
-    }
-    // When Wikidata is marked as best, or there are no alternatives, choose Wikidata
-    if (WIKIDATA_BEST.includes(unlocode) || (!decimalCoordinates && !nominatimData && wikiDataEntry)) {
-        return {...wikiDataEntry, type: "Wikidata", decimalCoordinates: {lat: wikiDataEntry.lat, lon: wikiDataEntry.lon}}
     }
 
     if (!nominatimData || UNLOCODE_BEST.includes(unlocode)) {

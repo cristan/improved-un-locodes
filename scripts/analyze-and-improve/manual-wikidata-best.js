@@ -142,6 +142,7 @@ export const WIKIDATA_BEST = [
     "CKPZK",
     "MYMEA",
     "NGAKP",// 0308S 06049E is a typo: should have been 0308N 00649E
+    "AEHIL",
 
     // WPI (World Port Index) was used as a source of truth here
     "GBPRH",
