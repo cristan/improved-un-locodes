@@ -57,6 +57,7 @@ export const ALIASES = {
     ESSXX: "ESHVC", // Sangenjo => Sanxenxo
     DKTYB: "DKTHN", // Tyborøn => Thyborøn
     DKHUR: "DKAAO", // Hurup => Hurup Thy
+    DEAUD: "DEME8", // "Anhalt Süd" was Meineweh's official name from 2010-01-01 to 2011-07-31. DEAUD was assigned in 2010-07.
     INWGC: "INWRA", // Warrangal => Warangal
     INGGA: "INGHA", // Gogha => Ghogha
     INVIG: "INVTZ", // Vizagapatanam => Visakhapatnam
@@ -92,6 +93,7 @@ export const ALIASES = {
     INMAP: "INMAC", // Masulipatnam => Machilipatnam
     INSSE: "INSOL", // Sholapur => Solapur
     INBRH: "INBRU", // Broach => Bharuch
+    COEBQ: "COSPC", // El Bosque port → Sociedad Portuaria Regional Cartagena (COSPC has UN/LOCODE coords matching WPI exactly)
 
     // No mistakes, but entries which are parts of another entry, though you could argue against having unlocodes for such small locations
     ZAGTY: "ZAELS", // Gately is in East London (Oos-Londen)
@@ -101,11 +103,16 @@ export const ALIASES = {
 
     // Fraser River => Fraser Mills. Fraser mills is on the Fraser River, so this is as good as a place to get the
     // coordinates from as any.
-    // Also, some sources (incorrectly) use CAFRR as the UN/LOCODE for Fraser Mills, so another reason to borrow those locations.
-    CAFRR: "CAFRA"
+    // Also, WPI (IMO incorrectly) uses CAFRR as the UN/LOCODE for Fraser Mills, so another reason to borrow those locations.
+    CAFRR: "CAFRA",
+
+    // San Lorenzo => Quebracho/San Lorenzo. ARQBR's coordinates also matches the coordinates of ARSLO in WPI
+    // Nominatim finds something 2 houses big, so that's probably not it, even if it's in the correct region.
+    ARSLO: "ARQBR",
 }
 
 // Not needed to borrow coordinates from another, just here as reference
 export const DUPLICATES = {
-    DKKK4: "DKAYB"
+    DKKK4: "DKAYB",
+    MYMEA: "MYMKZ",
 }

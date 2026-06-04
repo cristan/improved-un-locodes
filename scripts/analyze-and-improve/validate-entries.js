@@ -5,7 +5,7 @@ import {validateCoordinates} from "./util/coordinates-validator.js";
 import {getInvalidRegionMessage, getNoRegionMessage} from "./util/region-validator.js";
 import {readWikidata} from "./util/wikidata-reader.js";
 import {detectCoordinates} from "./util/coordinate-detector.js";
-import {ALIASES} from "./manual-aliases.js";
+import {ALIASES, DUPLICATES} from "./manual-aliases.js";
 
 async function validateEntries() {
     // console.debug = function() {};
@@ -30,8 +30,9 @@ async function validateEntries() {
     for (const entry of Object.values(filteredEntries)) {
         const unlocode = entry.unlocode
 
-        if (ALIASES[unlocode]) {
-            entriesToBeDeletedLogs.push(`https://unlocode.info/${unlocode} (${entry.city}) should be deleted in favor of https://unlocode.info/${ALIASES[unlocode]} (${csvDatabase[ALIASES[unlocode]].city})`)
+        if (ALIASES[unlocode] || DUPLICATES[unlocode]) {
+            const targetUnlocode = ALIASES[unlocode] ?? DUPLICATES[unlocode]
+            entriesToBeDeletedLogs.push(`https://unlocode.info/${unlocode} (${entry.city}) should be deleted in favor of https://unlocode.info/${targetUnlocode} (${csvDatabase[targetUnlocode].city})`)
             continue
         }
 

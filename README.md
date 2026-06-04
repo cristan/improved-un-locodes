@@ -18,7 +18,7 @@ This project aims to solve most of these cases by combining the data with data f
 Most UN/LOCODES coordinates look like USNYC: 4042N 07400W. However, entries in Bhutan like BTPDL have decimal coordinates: 26.8128N 89.1903E. This project solves this with 2 columns: the `Coordinates` column now has only the UN/LOCODE style degrees, while the `CoordinatesDecimal` column has a decimal representation.
 
 ## CSV with improved locations
-All this is solved with [code-list-improved.csv](data/code-list-improved.csv). It has corrected coordinates, all in the same format and way more of them (98.4%).
+All this is solved with [code-list-improved.csv](data/code-list-improved.csv). It has corrected coordinates, all in the same format and way more of them (98.6%).
 
 # Other features
 Next to the improved UN/LOCODEs, there are other nifty things in this repo:
@@ -45,7 +45,7 @@ ATVIE,Wien
 ATVIE,Vienna
 ```
 
-This is much more usable than the [aliases](data/alias.csv) in the original.  Not only because of the improved user-friendlyness, but mostly because of its sheer size. The official dataset has less than 100 aliases, this one has over 575.000.
+This is much more usable than the [aliases](data/alias.csv) in the original.  Not only because of the improved user-friendlyness, but mostly because of its sheer size. The official dataset has less than 100 aliases, this one has over 670.000.
 
 # About UN/LOCODES
 The United Nations Code for Trade and Transport Locations is a code list mantained by UNECE (a United Nations agency) to facilitate trade. The list is comes from the [UNECE page](http://www.unece.org/cefact/locode/welcome.html), released twice a year. However, this dataset is based on [datasets/un-locode](https://github.com/datasets/un-locode), which is already much better than the original (e.g. no more encoding problems).

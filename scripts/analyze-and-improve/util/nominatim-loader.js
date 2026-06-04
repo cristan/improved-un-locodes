@@ -1,11 +1,12 @@
 import fs from "node:fs"
 import {
     downloadByCityIfNeeded,
+    downloadByCommaQueryIfNeeded,
     downloadByQueryIfNeeded,
     downloadByRegionIfNeeded,
     getDownloadCityName
 } from "./nominatim-downloader.js";
-import {getDistanceFromLatLonInKm} from "./coordinatesConverter.js";
+import {SUBDIVISION_ALIASES} from "../subdivision-aliases.js";
 
 /**
  * Loads all Nominatim data: it either loads it from cached files or downloads said files when they don't exist yet.
@@ -45,17 +46,31 @@ async function loadNominatimData(entry) {
         return readNominatimDataByQuery(entry.unlocode, entry.city)
     }
 
-    const subdivisionCode = entry.subdivisionCode
-    if (subdivisionCode) {
+    // Search for "/" replaced by ", " for entries like "Sangi/Cebu"
+    if (entry.city.includes("/")) {
+        await downloadByCommaQueryIfNeeded(entry)
+        const byCommaQuery = readNominatimDataByCommaQuery(entry.unlocode, entry.city)
+        if (byCommaQuery) {
+            return byCommaQuery
+        }
+    }
+
+    if (entry.subdivisionCode) {
         await downloadByRegionIfNeeded(entry)
         const byRegion = readNominatimDataByRegion(entry)
-        if (byRegion ) {
+        if (byRegion) {
             return { scrapeType: "byRegion", result: byRegion }
         }
     }
 
     await downloadByCityIfNeeded(entry)
-    return readNominatimDataByCity(entry.unlocode, entry.city)
+    const byCity = readNominatimDataByCity(entry.unlocode, entry.city)
+    if (byCity) {
+        return byCity
+    }
+
+    await downloadByQueryIfNeeded(entry, downloadCityName)
+    return readNominatimDataByQuery(entry.unlocode, entry.city)
 }
 
 function readNominatimDataByRegion(entry) {
@@ -71,7 +86,8 @@ function readNominatimDataByRegion(entry) {
     // Filter out results which aren't in the region after scraping by region.
     // Example: this goes wrong at https://nominatim.openstreetmap.org/search?format=jsonv2&accept-language=en&addressdetails=1&limit=20&city=Laocheng&country=CN&state=CN-HI
     // Which also returns data in HA even though the provided state is CN-HI.
-    const parsedAndFiltered = parsed.filter(nm => getSubdivisionCode(nm) === entry.subdivisionCode)
+    const expectedCode = SUBDIVISION_ALIASES[`${entry.country}|${entry.subdivisionCode}`] ?? entry.subdivisionCode
+    const parsedAndFiltered = parsed.filter(nm => getSubdivisionCode(nm) === expectedCode)
     const withoutUselessEntries = filterOutUselessEntries(parsedAndFiltered, country, entry.city)
     if (withoutUselessEntries.length === 0) {
         return undefined
@@ -83,20 +99,34 @@ export function readNominatimDataByCity(unlocode, cityName) {
     const country = unlocode.substring(0, 2)
     const location = unlocode.substring(2)
     const directoryRoot = `../../data/nominatim/${country}/${location}`
-    const byCityFileName = `${directoryRoot}/cityOnly/${unlocode}.json`
+    const byCityFileName = `${directoryRoot}/byCity/${unlocode}.json`
     const byCity = fs.readFileSync(byCityFileName, 'utf8')
     if (byCity === "[]") {
         return undefined
-    } else {
-        const withoutUselessEntries = filterOutUselessEntries(JSON.parse(byCity), country, cityName)
-        if (withoutUselessEntries.length === 0) {
-            return undefined
-        }
-
-        addConvenienceAttributes(withoutUselessEntries)
-
-        return {scrapeType: "byCity", result: withoutUselessEntries}
     }
+    const withoutUselessEntries = filterOutUselessEntries(JSON.parse(byCity), country, cityName)
+    if (withoutUselessEntries.length === 0) {
+        return undefined
+    }
+    addConvenienceAttributes(withoutUselessEntries)
+    return {scrapeType: "byCity", result: withoutUselessEntries}
+}
+
+export function readNominatimDataByCommaQuery(unlocode, cityName) {
+    const country = unlocode.substring(0, 2)
+    const location = unlocode.substring(2)
+    const directoryRoot = `../../data/nominatim/${country}/${location}`
+    const byCommaQueryFileName = `${directoryRoot}/byCommaQuery/${unlocode}.json`
+    const raw = fs.readFileSync(byCommaQueryFileName, 'utf8')
+    if (raw === "[]") {
+        return undefined
+    }
+    const withoutUselessEntries = filterOutUselessEntries(JSON.parse(raw), country, cityName)
+    if (withoutUselessEntries.length === 0) {
+        return undefined
+    }
+    addConvenienceAttributes(withoutUselessEntries)
+    return {scrapeType: "byCommaQuery", result: withoutUselessEntries}
 }
 
 export function readNominatimDataByQuery(unlocode, cityName) {
@@ -183,8 +213,9 @@ export function getSubdivisionCode(nominatimElement) {
         // All BD: pick 5 (some like BDKUS only have level 4, but that's wrong, so just never pick 4)
         return nominatimElement.address["ISO3166-2-lvl5"]?.substring(3)
     } else if (countryCode === "gb") {
-        // Level 4 is something like England or Scotland. That's not the level unlocodes work on, level 6 is what we really need.
-        return nominatimElement.address["ISO3166-2-lvl6"]?.substring(3)
+        // Level 4 is something like England or Scotland. That's not the level unlocodes work on.
+        // level 6 is what we really need, except northern Ireland (which uses level 7).
+        return nominatimElement.address["ISO3166-2-lvl6"]?.substring(3) ?? nominatimElement.address["ISO3166-2-lvl7"]?.substring(3)
     }
 
     return nominatimElement.address["ISO3166-2-lvl6"]?.substring(3) ??
