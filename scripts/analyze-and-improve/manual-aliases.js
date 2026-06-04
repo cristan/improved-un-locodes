@@ -57,6 +57,7 @@ export const ALIASES = {
     ESSXX: "ESHVC", // Sangenjo => Sanxenxo
     DKTYB: "DKTHN", // Tyborøn => Thyborøn
     DKHUR: "DKAAO", // Hurup => Hurup Thy
+    DEAUD: "DEME8", // "Anhalt Süd" was Meineweh's official name from 2010-01-01 to 2011-07-31. DEAUD was assigned in 2010-07.
     INWGC: "INWRA", // Warrangal => Warangal
     INGGA: "INGHA", // Gogha => Ghogha
     INVIG: "INVTZ", // Vizagapatanam => Visakhapatnam
