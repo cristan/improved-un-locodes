@@ -86,11 +86,8 @@ function readNominatimDataByRegion(entry) {
     // Filter out results which aren't in the region after scraping by region.
     // Example: this goes wrong at https://nominatim.openstreetmap.org/search?format=jsonv2&accept-language=en&addressdetails=1&limit=20&city=Laocheng&country=CN&state=CN-HI
     // Which also returns data in HA even though the provided state is CN-HI.
-    let parsedAndFiltered = parsed
-    if (entry.subdivisionCode) {
-        const expectedCode = SUBDIVISION_ALIASES[`${entry.country}|${entry.subdivisionCode}`] ?? entry.subdivisionCode
-        parsedAndFiltered = parsed.filter(nm => getSubdivisionCode(nm) === expectedCode)
-    }
+    const expectedCode = SUBDIVISION_ALIASES[`${entry.country}|${entry.subdivisionCode}`] ?? entry.subdivisionCode
+    const parsedAndFiltered = parsed.filter(nm => getSubdivisionCode(nm) === expectedCode)
     const withoutUselessEntries = filterOutUselessEntries(parsedAndFiltered, country, entry.city)
     if (withoutUselessEntries.length === 0) {
         return undefined
