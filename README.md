@@ -5,20 +5,20 @@ The main reason this project exists: coordinates in [the original UN/LOCODE list
 
 **1. Only 80% of locations have coordinates**
 
-UN/LOCODEs wihtout coordinates don't just include tiny villages, but world's most important cities like London (GBLON), Madrid (ESMAD), Luxembourg (LULUX) and Milano (ITMIL).
+UN/LOCODEs without coordinates don't just include tiny villages, but world's most important cities like Oakland (USOAK), Barcelona (ESBCN) and London (GBLON).
 
 **2. Many coordinates are just wrong**
 
 Quite a few coordinates have typos (ATWIS), but many are just flat out wrong (EGSCN)
 
-This project aims to solve most of these cases by combining the data with data from OpenStreetMap's [Nominatim API](https://nominatim.org/release-docs/latest/api/Overview/) and [Wikidata](https://www.wikidata.org/).
+This project aims to solve most of these cases by combining the data with data from OpenStreetMap's [Nominatim API](https://nominatim.org/release-docs/latest/api/Overview/) and [Wikidata](https://www.wikidata.org/). Cases where these disagree have been manually curated.
 
 **3. Multiple coordinate formats**
 
 Most UN/LOCODES coordinates look like USNYC: 4042N 07400W. However, entries in Bhutan like BTPDL have decimal coordinates: 26.8128N 89.1903E. This project solves this with 2 columns: the `Coordinates` column now has only the UN/LOCODE style degrees, while the `CoordinatesDecimal` column has a decimal representation.
 
 ## CSV with improved locations
-All this is solved with [code-list-improved.csv](data/code-list-improved.csv). It has corrected coordinates, all in the same format and way more of them (98.6%).
+All this is solved with [code-list-improved.csv](data/code-list-improved.csv). It has corrected coordinates, all in the same format and way more of them (98.6%; this includes all ports in World Port Index).
 
 # Other features
 Next to the improved UN/LOCODEs, there are other nifty things in this repo:
