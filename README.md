@@ -5,17 +5,17 @@ The main reason this project exists: coordinates in [the original UN/LOCODE list
 
 **1. Only 80% of locations have coordinates**
 
-UN/LOCODEs without coordinates don't just include tiny villages, but world's most important cities like Oakland (USOAK), Barcelona (ESBCN) and London (GBLON).
+UN/LOCODEs without coordinates don't just include tiny villages, but world's most important cities like Oakland ([USOAK](https://unlocode.info/USOAK)), Barcelona ([ESBCN](https://unlocode.info/ESBCN)) and London ([GBLON](https://unlocode.info/GBLON)).
 
 **2. Many coordinates are just wrong**
 
-Quite a few coordinates have typos (ATWIS), but many are just flat out wrong (EGSCN)
+Quite a few coordinates have typos ([ATWIS](https://unlocode.info/ATWIS)), but many are just flat out wrong ([EGSCN](https://unlocode.info/EGSCN))
 
 This project aims to solve most of these cases by combining the data with data from OpenStreetMap's [Nominatim API](https://nominatim.org/release-docs/latest/api/Overview/) and [Wikidata](https://www.wikidata.org/). Cases where these disagree have been manually curated.
 
 **3. Multiple coordinate formats**
 
-Most UN/LOCODES coordinates look like USNYC: 4042N 07400W. However, entries in Bhutan like BTPDL have decimal coordinates: 26.8128N 89.1903E. This project solves this with 2 columns: the `Coordinates` column now has only the UN/LOCODE style degrees, while the `CoordinatesDecimal` column has a decimal representation.
+Most UN/LOCODES coordinates look like [USNYC](https://unlocode.info/USNYC): 4042N 07400W. However, entries in Bhutan like BTPDL have decimal coordinates: 26.8128N 89.1903E. This project solves this with 2 columns: the `Coordinates` column now has only the UN/LOCODE style degrees, while the `CoordinatesDecimal` column has a decimal representation.
 
 ## CSV with improved locations
 All this is solved with [code-list-improved.csv](data/code-list-improved.csv). It has corrected coordinates, all in the same format and way more of them (98.6%; this includes all ports in World Port Index).
