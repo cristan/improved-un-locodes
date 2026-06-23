@@ -76,12 +76,10 @@ export const ALIASES = {
     GUAGA: "GUHGT", // Agana => Hagatna (should be spelled Hagåtña)
     IDBJU: "IDBNI", // Banjuwangi, Java => Banyuwangi
     IDSOC: "IDSKT", // Solo City => Surakarta (Solo is its local nickname)
-    MASEK: "MAERH", // Ksar Es Souk => Errachidia (that's the new name)
     PKHRU: "PKHPR", // Haripur Hazara => Haripur
     PKJHC: "PKJNG", // Jhang City => Jhang
     PLOAI: "PLLOK", // Omiankim => Lomianki
     SAEAM: "SANJN", // Nejran => Najran
-    TMCRZ: "TMTK5", // Tchardjou (or Çärjew / Chardzhou) => Türkmenabat (new name)
     NLMID: "NLMDL", // Middelburg => Middelburg
     ITVET: "ITVV2", // Vetrella => Vetralla
     ITCVT: "ITCCI", // Castelovati => Castelcovati
@@ -96,6 +94,13 @@ export const ALIASES = {
     COEBQ: "COSPC", // El Bosque port → Sociedad Portuaria Regional Cartagena (COSPC has UN/LOCODE coords matching WPI exactly)
     INFBD: "INFBE", // Faridabad => Faridabad
 
+    // Cities who have been renamed, but there already exists a new UN/LOCODE for the new name
+    AZKBD: "AZGAN", // Kirovabad => Ganja
+    TMCRZ: "TMTK5", // Tchardjou (or Çärjew / Chardzhou) => Türkmenabat
+    //MASEK: "MAERH", // Ksar Es Souk => Errachidia (doesn't have coordinates either)
+    //KPGEN: "KPWON", // Gensan => Wonsan (doesn't have coordinates either)
+    TMTAZ: "TMDHZ", // Tashauz => Dashhowuz
+
     // No mistakes, but entries which are parts of another entry, though you could argue against having unlocodes for such small locations
     ZAGTY: "ZAELS", // Gately is in East London (Oos-Londen)
     MYLPK: "MYPKG", // Is the Northport of Port Klang
@@ -109,6 +114,8 @@ export const ALIASES = {
 
     // San Lorenzo => Quebracho/San Lorenzo. ARQBR's coordinates also matches the coordinates of ARSLO in WPI
     // Nominatim finds something 2 houses big, so that's probably not it, even if it's in the correct region.
+    // Note that the entire world seems to use the ARSLO UN/LOCODE, so if either should be retired, it's probably ARQBR
+    // (it is a mystery what the Quebracho even is a reference to. An old Argentine hardwood harbor there?)
     ARSLO: "ARQBR",
 }
 
