@@ -97,8 +97,8 @@ export const ALIASES = {
     // Cities who have been renamed, but there already exists a new UN/LOCODE for the new name
     AZKBD: "AZGAN", // Kirovabad => Ganja
     TMCRZ: "TMTK5", // Tchardjou (or Çärjew / Chardzhou) => Türkmenabat
-    //MASEK: "MAERH", // Ksar Es Souk => Errachidia (doesn't have coordinates either)
-    //KPGEN: "KPWON", // Gensan => Wonsan (doesn't have coordinates either)
+    MASEK: "MAERH", // Ksar Es Souk => Errachidia
+    KPGEN: "KPWON", // Gensan => Wonsan
     TMTAZ: "TMDHZ", // Tashauz => Dashhowuz
 
     // No mistakes, but entries which are parts of another entry, though you could argue against having unlocodes for such small locations

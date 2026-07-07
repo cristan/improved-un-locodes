@@ -8,8 +8,11 @@ import {ALIASES} from "../manual-aliases.js";
 export async function detectCoordinates(unlocode, csvDatabase, wikidataDatabase, maxDistance) {
     if (ALIASES[unlocode]) {
         const detectedCoordinates = await detectCoordinates(ALIASES[unlocode], csvDatabase, wikidataDatabase, maxDistance)
-        detectedCoordinates.type = "Other UN/LOCODE"
-        detectedCoordinates.source = ALIASES[unlocode]
+        if (detectedCoordinates.type === "UN/LOCODE") {
+            detectedCoordinates.type = "Other UN/LOCODE"
+            detectedCoordinates.source = ALIASES[unlocode]
+        }
+        // Otherwise the alias target has no usable UN/LOCODE coordinates itself, so its coordinates came from where the source got it's coordinates from
         return detectedCoordinates
     }
 
