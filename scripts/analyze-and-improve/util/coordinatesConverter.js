@@ -67,9 +67,8 @@ export function convertToUnlocode(decimalLat, decimalLon) {
 }
 
 function convertToDegreesMinutes(decimal) {
-    const degrees = Math.floor(decimal);
-    const minutes = (decimal - degrees) * 60;
-    return [degrees, minutes.toFixed(0)];
+    const totalMinutes = Math.round(decimal * 60);
+    return [Math.floor(totalMinutes / 60), totalMinutes % 60];
 }
 
 function convertToDirection(coord, positiveSymbol, negativeSymbol) {
