@@ -319,6 +319,8 @@ export const UNLOCODE_BEST =[
     // WPI points to Alcan Harbor in Aleutians: https://msi.nga.mil/queryBreakout?publications/world-port-index?indexNumber=20170&output=html
     // No way to know which is correct, but it's not the result from Nominatim
     "USZAK",
+    "UAYUZ",// Pivdennyi just means "South" in Ukrainian, so that name wasn't doing us any favors
+    "CNJIX",// 蓟县 (Jixian), the former name of Jizhou District, Tianjin; See the official name section at https://www.wikidata.org/wiki/Q1205847
 
     // Places where the official coordinates match the ones at WPI (World Port Index) within 10km. These are probably fine.
     // WPI itself isn't redistributed by this project (NGA Pub 150's "no copyright claimed" notice sounds like a legal landmine).

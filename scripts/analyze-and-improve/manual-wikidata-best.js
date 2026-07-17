@@ -171,6 +171,10 @@ export const WIKIDATA_BEST = [
     "USBLX",// Q754583 = Bel Air town, county seat of Harford County (the well-known Bel Air). Pipeline picked a smaller Bel Air in western MD.
     "USWPJ",// "Westwood Village" specifically means the LA UCLA-area commercial district (Q14684258). Pipeline picked a Bay Area node.
     "UZAZN",// "Andizhan" = Russian spelling of Andijan. Unlocode = IATA AZN (Andizhan Airport Q978217). Q487656 is the city in Fergana Valley. The Unlocode coordinate points to central Uzbekistan (wrong).
+    "CNYUE",// There _is_ a Yueqing there https://www.openstreetmap.org/relation/16924968 but it's a small town, not in Zhejiang Sheng and not relevant for shipping, while the other one is. It also matches https://magicport.ai/ports/china/yueqing-port-cnyue
+    "JPCHF",// Source: https://magicport.ai/ports/japan/chofu-port-jpchf
+    "IRBAM",// Source: https://magicport.ai/ports/iran/amirabad-port-irbam
+    "PAMIT",
 
     // WPI (World Port Index) was used as a source of truth here
     "GBPRH",
