@@ -175,6 +175,8 @@ export const WIKIDATA_BEST = [
     "JPCHF",// Source: https://magicport.ai/ports/japan/chofu-port-jpchf
     "IRBAM",// Source: https://magicport.ai/ports/iran/amirabad-port-irbam
     "PAMIT",
+    "DEBCO",// Bockholdt => Bockholt. Matches the coordinates except for a typo: 5253N 01007E => 5253N 01047E
+    "PEPMC",
 
     // WPI (World Port Index) was used as a source of truth here
     "GBPRH",
