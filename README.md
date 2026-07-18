@@ -3,11 +3,11 @@ An enhanced UN/LOCODE dataset with significant improvements:
 # Significantly better coordinates
 The main reason this project exists: coordinates in [the original UN/LOCODE list](https://github.com/datasets/un-locode) have major problems:
 
-**1. Only 80% of locations have coordinates**
+**Only 80% of locations have coordinates**
 
 UN/LOCODEs without coordinates don't just include tiny villages, but world's most important cities like Oakland ([USOAK](https://unlocode.info/USOAK)), Barcelona ([ESBCN](https://unlocode.info/ESBCN)) and London ([GBLON](https://unlocode.info/GBLON)).
 
-**2. Many coordinates are just wrong**
+**Many coordinates are just wrong**
 
 Quite a few coordinates have typos ([ATWIS](https://unlocode.info/ATWIS)), but many are just flat out wrong ([EGSCN](https://unlocode.info/EGSCN))
 
