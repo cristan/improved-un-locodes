@@ -24,7 +24,6 @@ export const WIKIDATA_BEST = [
     "VESFX", // No port possible at the Nominatim coordinates
     "ESSAT",
     "EGAIS",
-    "ESSAT",
     "MYLBU",
     "IDLAT",
     "PRLAM",
@@ -49,7 +48,6 @@ export const WIKIDATA_BEST = [
     "PHWNP",
     "ASPPG",// Because of typo in the original. Hopefully will be fixed the next release
     "IDPNJ",// Port
-    "CAPTN",
     "VEMIV",
     "ESSCI",
     "GTSNJ",
@@ -85,7 +83,6 @@ export const WIKIDATA_BEST = [
     "ITZXG",
     "ITMRZ",
     "IT2LE",
-    "ITMRZ",
     "ITPSU",//Official coordinates point to Passerano, Roma, but the region is set to Asti.
     "ITPSP",
     "ITTQR",
@@ -136,7 +133,6 @@ export const WIKIDATA_BEST = [
     "ARXPD",
     "MXSCR",
     "MNLTI",
-    "MXSCR",
     "PKKHP",
     "NLZHN",
     "CKPZK",

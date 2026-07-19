@@ -214,7 +214,6 @@ export const UNLOCODE_BEST =[
     "USBK2",
     "USQBX",
     "USB86",
-    "USBKQ",
     "USBKQ", // Typo: Brook_s_ville
     "USUCQ", // Spelling is probably wrong
     "US4CS", // Spelling is probably wrong
@@ -275,7 +274,6 @@ export const UNLOCODE_BEST =[
     "USS98",
     "USGTX",
     "USYNR",
-    "USM6S",
     "USM6S", // Spelling is probably wrong
     "USUK7",
     "USV74",
