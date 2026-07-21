@@ -22,6 +22,7 @@ export const WIKIDATA_BEST = [
     "VEBAV",
     "VESFX", // No port possible at the Nominatim coordinates
     "ESSAT",
+    "ESCZA",// Wikidata has the coordinates of the city (though the Wikidata entry is also about the municipality). OpenStreetMap only seems to find the municipality
     "EGAIS",
     "MYLBU",
     "IDLAT",
