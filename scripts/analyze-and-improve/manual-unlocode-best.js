@@ -308,7 +308,6 @@ export const UNLOCODE_BEST =[
     "DEFUB",// There's actually a space in the city name!
     "ECVEI", // It's a little weird that Velasco Ibarra and El Empalme are the same city, but they are
     "GBMKO",// Tiny, but it matches
-    "GBNGO",// Two Newingtons in Kent, but the other is next to a rail, so I'd guess it would have gotten Rail as a function if that were the one
     "INISP",
     "THBPG",
     // The official dataset points to the Alcan border crossing.
