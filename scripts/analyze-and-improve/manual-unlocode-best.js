@@ -302,7 +302,6 @@ export const UNLOCODE_BEST =[
     "CNTZO",
     "USSUT",//atobviac
     "VNRDG",// oil platform at sea
-    "CAPTN",
     "MYWSP",// Caused by the hard name Westport/Port Klang
     "PHMAB",
     "CLLAJ",
