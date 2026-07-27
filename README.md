@@ -9,7 +9,7 @@ UN/LOCODEs without coordinates don't just include tiny villages, but world's mos
 
 **Many coordinates are just wrong**
 
-Quite a few coordinates have typos ([ATWIS](https://unlocode.info/ATWIS)), but many are just flat out wrong ([EGSCN](https://unlocode.info/EGSCN))
+Quite a few coordinates have typos ([BOSCS](https://unlocode.info/BOSCS)), but many are just flat out wrong ([EGSCN](https://unlocode.info/EGSCN))
 
 Many coordinates are automatically improved by combining the data with data from OpenStreetMap's [Nominatim API](https://nominatim.org/release-docs/latest/api/Overview/) and [Wikidata](https://www.wikidata.org/). This is then doublechecked against multiple alternative datasources and manually corrected if needed, resulting in an exceedingly accurate dataset.
 
