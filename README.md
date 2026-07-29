@@ -41,7 +41,7 @@ ATVIE,Wien
 ATVIE,Vienna
 ```
 
-This is much more usable than the [aliases](data/alias.csv) in the original.  Not only because of the improved user-friendliness, but mostly because of its sheer size. The official dataset has less than 100 aliases, this one has over 670.000.
+This is much more usable than the [aliases](data/alias.csv) in the original.  Not only because of the improved user-friendliness, but mostly because of its sheer size. The official dataset has less than 100 aliases, this one has over 670,000.
 
 # About UN/LOCODES
 The United Nations Code for Trade and Transport Locations is a code list maintained by UNECE (a United Nations agency) to facilitate trade. The list comes from the [UNECE page](http://www.unece.org/cefact/locode/welcome.html), released at least once a year. However, this dataset is based on [datasets/un-locode](https://github.com/datasets/un-locode), which is already much better than the original (different CSVs for different purposes instead of cramming it all in 1).
