@@ -460,6 +460,16 @@
     ]
   },
   {
+    "item": "http://www.wikidata.org/entity/Q2615863",
+    "itemLabel": "Sharana",
+    "lat": "33.171944444",
+    "lon": "68.786388888",
+    "unlocode": "AFSRO",
+    "subdivisionCodes": [
+      "AF-PKA"
+    ]
+  },
+  {
     "item": "http://www.wikidata.org/entity/Q989293",
     "itemLabel": "Tarinkot",
     "lat": "32.624167",
@@ -518,7 +528,7 @@
   },
   {
     "item": "http://www.wikidata.org/entity/Q36262",
-    "itemLabel": "St. John's",
+    "itemLabel": "Q36262",
     "lat": "17.121111111",
     "lon": "-61.844722222",
     "unlocode": "AGSJO",
@@ -27736,6 +27746,13 @@
     ]
   },
   {
+    "item": "http://www.wikidata.org/entity/Q140765831",
+    "itemLabel": "Montara oil field",
+    "lat": "-12.672361111",
+    "lon": "124.5395",
+    "unlocode": "AUMON"
+  },
+  {
     "item": "http://www.wikidata.org/entity/Q6907394",
     "itemLabel": "Moomba",
     "lat": "-28.11",
@@ -40388,7 +40405,7 @@
   },
   {
     "item": "http://www.wikidata.org/entity/Q95380",
-    "itemLabel": "Q95380",
+    "itemLabel": "Chimay",
     "lat": "50.0479266",
     "lon": "4.3173338",
     "unlocode": "BECHM",
@@ -40442,14 +40459,14 @@
     ]
   },
   {
-    "item": "http://www.wikidata.org/entity/Q2621830",
+    "item": "http://www.wikidata.org/entity/Q2400288",
     "itemLabel": "Clermont",
-    "lat": "50.6594",
-    "lon": "5.8847",
+    "lat": "50.2606",
+    "lon": "4.3167",
     "unlocode": "BECLM",
     "subdivisionCodes": [
       "BE-WAL",
-      "BE-WLG"
+      "BE-WNA"
     ]
   },
   {
@@ -64329,7 +64346,10 @@
     "itemLabel": "George Town",
     "lat": "23.504722222",
     "lon": "-75.769722222",
-    "unlocode": "BSGGT"
+    "unlocode": "BSGGT",
+    "subdivisionCodes": [
+      "BS-EX"
+    ]
   },
   {
     "item": "http://www.wikidata.org/entity/Q5589465",
@@ -64613,7 +64633,7 @@
   },
   {
     "item": "http://www.wikidata.org/entity/Q140147",
-    "itemLabel": "Byerastsye",
+    "itemLabel": "Brest",
     "lat": "52.084722222",
     "lon": "23.656944444",
     "unlocode": "BYBQT",
@@ -70101,18 +70121,8 @@
   {
     "item": "http://www.wikidata.org/entity/Q139694",
     "itemLabel": "Richmond",
-    "lat": "45.6666667",
-    "lon": "-72.15",
-    "unlocode": "CARCH",
-    "subdivisionCodes": [
-      "CA-QC"
-    ]
-  },
-  {
-    "item": "http://www.wikidata.org/entity/Q139694",
-    "itemLabel": "Richmond",
-    "lat": "45.66677",
-    "lon": "-72.1491",
+    "lat": "45.665555555",
+    "lon": "-72.147222222",
     "unlocode": "CARCH",
     "subdivisionCodes": [
       "CA-QC"
@@ -83372,16 +83382,6 @@
     "unlocode": "CNSRS",
     "subdivisionCodes": [
       "CN-JX"
-    ]
-  },
-  {
-    "item": "http://www.wikidata.org/entity/Q10912152",
-    "itemLabel": "Shuangshui Town",
-    "lat": "22.43501",
-    "lon": "112.99445",
-    "unlocode": "CNSSP",
-    "subdivisionCodes": [
-      "CN-GD"
     ]
   },
   {
@@ -102004,7 +102004,7 @@
   },
   {
     "item": "http://www.wikidata.org/entity/Q486543",
-    "itemLabel": "Alfeld (Leine)",
+    "itemLabel": "Alfeld",
     "lat": "51.988611111",
     "lon": "9.826944444",
     "unlocode": "DEALF",
@@ -132616,7 +132616,7 @@
   },
   {
     "item": "http://www.wikidata.org/entity/Q503226",
-    "itemLabel": "Harburg (Schwaben)",
+    "itemLabel": "Harburg",
     "lat": "48.786455556",
     "lon": "10.691731835",
     "unlocode": "DEHUY",
@@ -174386,7 +174386,7 @@
   },
   {
     "item": "http://www.wikidata.org/entity/Q81760",
-    "itemLabel": "Wittichenau",
+    "itemLabel": "Q81760",
     "lat": "51.38496",
     "lon": "14.24403",
     "unlocode": "DEWTU",
@@ -191954,7 +191954,7 @@
     "item": "http://www.wikidata.org/entity/Q273413",
     "itemLabel": "Écija",
     "lat": "37.541111111",
-    "lon": "-5.079166666",
+    "lon": "-5.079444444",
     "unlocode": "ESECJ",
     "subdivisionCodes": [
       "ES-AN",
@@ -195326,17 +195326,6 @@
     ]
   },
   {
-    "item": "http://www.wikidata.org/entity/Q49463230",
-    "itemLabel": "La Fuliola",
-    "lat": "41.72045",
-    "lon": "0.99821",
-    "unlocode": "ESLA9",
-    "subdivisionCodes": [
-      "ES-CT",
-      "ES-L"
-    ]
-  },
-  {
     "item": "http://www.wikidata.org/entity/Q102312393",
     "itemLabel": "Langreo",
     "lat": "43.29473461",
@@ -197991,7 +197980,7 @@
   },
   {
     "item": "http://www.wikidata.org/entity/Q23982180",
-    "itemLabel": "Q23982180",
+    "itemLabel": "Níjar",
     "lat": "36.96577831",
     "lon": "-2.206606998",
     "unlocode": "ESNIJ",
@@ -207966,8 +207955,8 @@
   {
     "item": "http://www.wikidata.org/entity/Q23992493",
     "itemLabel": "Santa Maria de Palautordera",
-    "lat": "41.7",
-    "lon": "2.45",
+    "lat": "41.693141",
+    "lon": "2.445888",
     "unlocode": "ESZLN",
     "subdivisionCodes": [
       "ES-B",
@@ -208508,18 +208497,8 @@
   {
     "item": "http://www.wikidata.org/entity/Q5832",
     "itemLabel": "Axum",
-    "lat": "14.1218",
-    "lon": "38.7315",
-    "unlocode": "ETAXU",
-    "subdivisionCodes": [
-      "ET-TI"
-    ]
-  },
-  {
-    "item": "http://www.wikidata.org/entity/Q5832",
-    "itemLabel": "Axum",
-    "lat": "14.125005",
-    "lon": "38.721522",
+    "lat": "14.116666666",
+    "lon": "38.733333333",
     "unlocode": "ETAXU",
     "subdivisionCodes": [
       "ET-TI"
@@ -217069,7 +217048,6 @@
     "subdivisionCodes": [
       "GB-BDG",
       "GB-ENG",
-      "GB-LND",
       "GB-UKM"
     ]
   },
@@ -222253,6 +222231,18 @@
     ]
   },
   {
+    "item": "http://www.wikidata.org/entity/Q1444234",
+    "itemLabel": "Loch Torridon",
+    "lat": "57.58",
+    "lon": "-5.76",
+    "unlocode": "GBLCD",
+    "subdivisionCodes": [
+      "GB-HLD",
+      "GB-SCT",
+      "GB-UKM"
+    ]
+  },
+  {
     "item": "http://www.wikidata.org/entity/Q180057",
     "itemLabel": "Lincoln",
     "lat": "53.25",
@@ -222992,18 +222982,6 @@
     "subdivisionCodes": [
       "GB-ENG",
       "GB-KEN",
-      "GB-UKM"
-    ]
-  },
-  {
-    "item": "http://www.wikidata.org/entity/Q84",
-    "itemLabel": "London",
-    "lat": "51.507222222",
-    "lon": "-0.1275",
-    "unlocode": "GBLON",
-    "subdivisionCodes": [
-      "GB-ENG",
-      "GB-LND",
       "GB-UKM"
     ]
   },
@@ -233888,7 +233866,7 @@
   },
   {
     "item": "http://www.wikidata.org/entity/Q216307",
-    "itemLabel": "Q216307",
+    "itemLabel": "Pyrgos",
     "lat": "37.673",
     "lon": "21.4395",
     "unlocode": "GRPYR",
@@ -244358,8 +244336,8 @@
   {
     "item": "http://www.wikidata.org/entity/Q2568315",
     "itemLabel": "Ponnani",
-    "lat": "10.7678774",
-    "lon": "75.9253017",
+    "lat": "10.7677",
+    "lon": "75.9259",
     "unlocode": "INPNN",
     "subdivisionCodes": [
       "IN-KL"
@@ -245188,8 +245166,8 @@
   {
     "item": "http://www.wikidata.org/entity/Q2722267",
     "itemLabel": "Tirur",
-    "lat": "10.9",
-    "lon": "75.92",
+    "lat": "10.9167",
+    "lon": "75.9245",
     "unlocode": "INTRU",
     "subdivisionCodes": [
       "IN-KL"
@@ -246571,16 +246549,6 @@
     "unlocode": "IRUIM",
     "subdivisionCodes": [
       "IR-04"
-    ]
-  },
-  {
-    "item": "http://www.wikidata.org/entity/Q129072",
-    "itemLabel": "Persepolis",
-    "lat": "29.934444",
-    "lon": "52.891389",
-    "unlocode": "IRWPS",
-    "subdivisionCodes": [
-      "IR-07"
     ]
   },
   {
@@ -257026,7 +256994,7 @@
   },
   {
     "item": "http://www.wikidata.org/entity/Q188547",
-    "itemLabel": "Castiglione della Pescaia",
+    "itemLabel": "Q188547",
     "lat": "42.765555555",
     "lon": "10.880833333",
     "unlocode": "ITCEQ",
@@ -283918,7 +283886,7 @@
   },
   {
     "item": "http://www.wikidata.org/entity/Q2683",
-    "itemLabel": "Q2683",
+    "itemLabel": "Parma",
     "lat": "44.801472222",
     "lon": "10.328",
     "unlocode": "ITPMF",
@@ -320610,8 +320578,8 @@
   {
     "item": "http://www.wikidata.org/entity/Q1842",
     "itemLabel": "Luxembourg",
-    "lat": "49.610555555",
-    "lon": "6.132777777",
+    "lat": "49.611388888",
+    "lon": "6.13",
     "unlocode": "LULUX",
     "subdivisionCodes": [
       "LU-LU"
@@ -322425,6 +322393,7 @@
     "lon": "-8.359167",
     "unlocode": "MLOLB",
     "subdivisionCodes": [
+      "ML-15",
       "ML-2"
     ]
   },
@@ -323977,7 +323946,7 @@
   },
   {
     "item": "http://www.wikidata.org/entity/Q657637",
-    "itemLabel": "Progreso",
+    "itemLabel": "Progreso de Castro",
     "lat": "21.282777777",
     "lon": "-89.663611111",
     "unlocode": "MXPGO",
@@ -330747,7 +330716,7 @@
   },
   {
     "item": "http://www.wikidata.org/entity/Q33512335",
-    "itemLabel": "Flushing",
+    "itemLabel": "Vlissingen",
     "lat": "51.4425",
     "lon": "3.57361",
     "unlocode": "NLVLI",
@@ -346350,8 +346319,8 @@
   {
     "item": "http://www.wikidata.org/entity/Q732548",
     "itemLabel": "Lagos",
-    "lat": "37.1",
-    "lon": "-8.666666666",
+    "lat": "37.102777777",
+    "lon": "-8.672777777",
     "unlocode": "PTLOS",
     "subdivisionCodes": [
       "PT-08"
@@ -366321,6 +366290,16 @@
     ]
   },
   {
+    "item": "http://www.wikidata.org/entity/Q4169541",
+    "itemLabel": "Dubovyazivka",
+    "lat": "51.134542285",
+    "lon": "33.375017839",
+    "unlocode": "UADBV",
+    "subdivisionCodes": [
+      "UA-59"
+    ]
+  },
+  {
     "item": "http://www.wikidata.org/entity/Q48256",
     "itemLabel": "Dnipro",
     "lat": "48.4675",
@@ -366823,8 +366802,8 @@
   {
     "item": "http://www.wikidata.org/entity/Q495475",
     "itemLabel": "Murchison Falls",
-    "lat": "2.277313888",
-    "lon": "31.683347222",
+    "lat": "2.278333333",
+    "lon": "31.685555555",
     "unlocode": "UGKBG"
   },
   {
@@ -404610,7 +404589,7 @@
   },
   {
     "item": "http://www.wikidata.org/entity/Q1537768",
-    "itemLabel": "Goose Creek",
+    "itemLabel": "Buenos Aires",
     "lat": "32.995555555",
     "lon": "-80.028888888",
     "unlocode": "USGSC",
@@ -427261,6 +427240,16 @@
     "itemLabel": "Marietta",
     "lat": "33.93528",
     "lon": "-97.11972",
+    "unlocode": "USMIR",
+    "subdivisionCodes": [
+      "US-OK"
+    ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q199793",
+    "itemLabel": "Marietta",
+    "lat": "33.935542",
+    "lon": "-97.12418",
     "unlocode": "USMIR",
     "subdivisionCodes": [
       "US-OK"
@@ -451351,8 +451340,8 @@
   {
     "item": "http://www.wikidata.org/entity/Q1000136",
     "itemLabel": "Speedway",
-    "lat": "39.7919",
-    "lon": "-86.25",
+    "lat": "39.788055555",
+    "lon": "-86.240833333",
     "unlocode": "USS8W",
     "subdivisionCodes": [
       "US-IN"
@@ -455415,8 +455404,8 @@
   {
     "item": "http://www.wikidata.org/entity/Q342428",
     "itemLabel": "Suffolk",
-    "lat": "36.7411",
-    "lon": "-76.6097",
+    "lat": "36.728194444",
+    "lon": "-76.583194444",
     "unlocode": "USSUF",
     "subdivisionCodes": [
       "US-VA"
@@ -463950,6 +463939,16 @@
     "unlocode": "USVF3",
     "subdivisionCodes": [
       "US-TX"
+    ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q3497425",
+    "itemLabel": "Travis Air Force Base",
+    "lat": "38.262777777",
+    "lon": "-121.9275",
+    "unlocode": "USVFB",
+    "subdivisionCodes": [
+      "US-CA"
     ]
   },
   {
