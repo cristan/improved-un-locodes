@@ -128,7 +128,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,AF,QYN,Qal'Eh-Ye Now,Qal'Eh-Ye Now,BDG,RL,--3-----,1001,,3348N 06856E,,"33.8041250,68.9360460",550,https://www.openstreetmap.org/node/4416236818#map=12/33.8041250/68.9360460
 ,AF,QAM,Qasim,Qasim,,RL,-----6--,1007,,3655N 07052E,,"36.9116185,70.8609696",217,https://www.openstreetmap.org/node/3981464557#map=12/36.9116185/70.8609696
 ,AF,SBF,Sardeh Band,Sardeh Band,,AI,---4----,9912,,3318N 06838E,,"33.3047683,68.6257885",N/A (no UN/LOCODE),https://www.openstreetmap.org/node/7714085459#map=12/33.3047683/68.6257885
-,AF,SRO,Sharona,Sharona,PKA,RL,-----6--,0901,,3313N 06883E,,"33.21667,69.38333",N/A (no Nominatim),UN/LOCODE
+,AF,SRO,Sharona,Sharona,PKA,RL,-----6--,0901,,3310N 06847E,,"33.171944444,68.786388888",N/A (hardcoded to Wikidata),http://www.wikidata.org/entity/Q2615863
 ,AF,SGA,Sheghnan,Sheghnan,,AI,---4----,9601,,3734N 07129E,,"37.5590341,71.4880538",N/A (no UN/LOCODE),https://www.openstreetmap.org/node/1137337383#map=12/37.5590341/71.4880538
 ,AF,SHE,Sherhan-Bandar,Sherhan-Bandar,,RL,--3-----,0901,,3712N 06905E,,"37.20000,69.08333",N/A (no Nominatim),UN/LOCODE
 ,AF,SDD,Shindand,Shindand,HER,RL,--3-----,0907,,3318N 06208E,,"33.30000,62.13333",2,UN/LOCODE
@@ -57607,7 +57607,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,GB,LBZ,Leighton Buzzard,Leighton Buzzard,CBF,AF,--3-----,1307,,5155N 00040W,,"51.9165794,-0.6620551",N/A (no UN/LOCODE),https://www.openstreetmap.org/node/20992635#map=12/51.9165794/-0.6620551
 ,GB,LCA,Lochawe,Lochawe,AGB,AA,123-----,0701,,5624N 00503W,,"56.40000,-5.05000",0,UN/LOCODE
 ,GB,LCC,Loch Carnan,Loch Carnan,ELS,RL,1-------,2301,,5720N 00715W,,"57.33333,-7.25000",4,UN/LOCODE
-,GB,LCD,Loch Torridon,Loch Torridon,HLD,RL,1-------,1201,,5758N 00576W,,"57.96667,-6.26667",N/A (no Nominatim),UN/LOCODE
+,GB,LCD,Loch Torridon,Loch Torridon,HLD,RL,1-------,1201,,5735N 00546W,,"57.58,-5.76",N/A (hardcoded to Wikidata),http://www.wikidata.org/entity/Q1444234
 ,GB,LCG,Loch Long,Loch Long,AGB,RL,1-------,0901,,5605N 00451W,,"56.08333,-4.85000",N/A (no Nominatim),UN/LOCODE
 ,GB,LCH,Lochwinnoch,Lochwinnoch,RFW,AF,--3-----,1401,,5547N 00438W,,"55.78333,-4.63333",1,UN/LOCODE
 ,GB,LCI,Lochailort,Lochailort,HLD,RL,--3-----,0907,,5653N 00540W,,"56.88333,-5.66667",1,UN/LOCODE
@@ -57801,7 +57801,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,GB,LOK,Little Oakley,Little Oakley,ESS,RL,1-------,0901,,5155N 00114E,,"51.91667,1.23333",0,UN/LOCODE
 ,GB,LOL,Lochaline,Lochaline,HLD,AF,1-------,2301,,5632N 00547W,,"56.53333,-5.78333",1,UN/LOCODE
 ,GB,LOM,Long Marston,Long Marston,NYK,RL,--3-----,0901,,5357N 00114W,,"53.9544241,-1.2365961",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/7657082
-,GB,LON,London,London,LND,AF,1---5---,0701,,5130N 00008W,,"51.507222222,-0.1275",N/A (no UN/LOCODE),http://www.wikidata.org/entity/Q84
+,GB,LON,London,London,LND,AF,1---5---,0701,,5130N 00008W,,"51.5074456,-0.1277653",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/175342
 ,GB,LOO,Longthorpe,Longthorpe,CAM,RL,--3-----,0907,,5234N 00017W,,"52.56667,-0.28333",1,UN/LOCODE
 ,GB,LOP,Lopen,Lopen,SOM,RL,--3-----,1601,,5055N 00249W,,"50.91667,-2.81667",1,UN/LOCODE
 ,GB,LOQ,Longley,Longley,SHF,RL,--3-----,1207,,5325N 00129W,,"53.41667,-1.48333",1,UN/LOCODE
@@ -93255,7 +93255,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,UA,CWC,Chernivtsi (Chernovtsy),Chernivtsi (Chernovtsy),77,AI,-234----,0501,,4818N 02556E,,"48.30000,25.93333",2,UN/LOCODE
 ,UA,CZA,Chop-Zakhon,Chop-Zakhon,,AI,-2------,9501,,,,,N/A,N/A
 ,UA,D26,Deliatyn (Delatyn),Deliatyn (Delatyn),26,RL,--3-----,1607,,4832N 02438E,,"48.53333,24.63333",1,UN/LOCODE
-,UA,DBV,Dubovyazivka,Dubovyazivka,,RL,-----6--,1001,,5176N 03322E,,"52.26667,33.36667",N/A (no Nominatim),UN/LOCODE
+,UA,DBV,Dubovyazivka,Dubovyazivka,,RL,-----6--,1001,,5108N 03323E,,"51.1324810,33.3784600",126,https://www.openstreetmap.org/node/2449850705#map=12/51.1324810/33.3784600
 ,UA,DDK,Dudarkov,Dudarkov,32,RL,-----6--,0901,,5027N 03057E,,"50.45000,30.95000",0,UN/LOCODE
 ,UA,DNE,Dorozhnoye,Dorozhnoye,43,RL,--3-----,0407,,4452N 03349E,,"44.86667,33.81667",N/A (no Nominatim),UN/LOCODE
 ,UA,DNK,Dnipro,Dnipro,12,AI,-2-4----,2007,,4827N 03459E,,"48.45000,34.98333",5,UN/LOCODE
@@ -93501,7 +93501,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,UG,GAB,Gaba,Gaba,,RL,--3-----,0507,,0006N 03255E,,"0.10000,32.91667",4,UN/LOCODE
 ,UG,JIN,Jinja,Jinja,,AI,1--4----,9501,,0026N 03312E,,"0.4353036,33.2055568",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/14705113
 ,UG,KAB,Kabale,Kabale,,RL,0-------,9601,,0115S 02959E,,"-1.2560641,29.9905385",N/A (no UN/LOCODE),https://www.openstreetmap.org/node/293901231#map=12/-1.2560641/29.9905385
-,UG,KBG,Kabalega Falls,Kabalega Falls,,AI,---4----,0001,,0217N 03141E,,"2.277313888,31.683347222",N/A (no UN/LOCODE),http://www.wikidata.org/entity/Q495475
+,UG,KBG,Kabalega Falls,Kabalega Falls,,AI,---4----,0001,,0217N 03141E,,"2.278333333,31.685555555",N/A (no UN/LOCODE),http://www.wikidata.org/entity/Q495475
 ,UG,KCU,Masindi,Masindi,,AI,---4----,9601,,0141N 03143E,,"1.6852537,31.7205937",N/A (no UN/LOCODE),https://www.openstreetmap.org/node/1277061228#map=12/1.6852537/31.7205937
 ,UG,KGM,Kitgum,Kitgum,,RL,--3-----,0201,,0317N 03252E,,"3.28333,32.86667",2,UN/LOCODE
 ,UG,KIS,Kisubi,Kisubi,106,RL,--3-5---,1401,,0001N 03205E,,"0.0171364,32.0874749",49,https://www.openstreetmap.org/node/9658058085#map=12/0.0171364/32.0874749
@@ -111381,7 +111381,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,US,VEZ,Calvert,Calvert,AL,RL,--3-----,0901,,3109N 08800W,,"31.15000,-88.00000",1,UN/LOCODE
 ,US,VF3,Farmersville,Farmersville,TX,RL,-----6--,1107,,3309N 09621W,,"33.15000,-96.35000",2,UN/LOCODE
 ,US,VFA,Red Valley,Red Valley,AZ,RL,--3-----,1307,,3636N 10903W,,"36.60000,-109.05000",3021,UN/LOCODE
-,US,VFB,Travis Air Force Base,Travis Air Force Base,CA,RL,--3-----,0901,,3826N 12194W,,"38.43333,-122.56667",N/A (no Nominatim),UN/LOCODE
+,US,VFB,Travis Air Force Base,Travis Air Force Base,CA,RL,--3-----,0901,,3816N 12156W,,"38.262777777,-121.9275",N/A (hardcoded to Wikidata),http://www.wikidata.org/entity/Q3497425
 ,US,VFC,Grove City,Grove City,MN,RL,--3-----,1307,,4509N 09440W,,"45.15000,-94.66667",1,UN/LOCODE
 ,US,VFD,Haverford,Haverford,PA,RL,-----6--,1007,,4000N 07517W,,"40.00000,-75.28333",2,UN/LOCODE
 ,US,VFE,Laverne,Laverne,OK,RL,--3-----,0901,,3642N 09953W,,"36.70000,-99.88333",1,UN/LOCODE
