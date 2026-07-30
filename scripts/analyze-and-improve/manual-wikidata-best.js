@@ -174,6 +174,11 @@ export const WIKIDATA_BEST = [
     "DEBCO",// Bockholdt => Bockholt. Matches the coordinates except for a typo: 5253N 01007E => 5253N 01047E
     "PEPMC",
 
+    // Entries being rescued from their invalid coordinates in the original
+    "GBLCD",
+    "AFSRO",
+    "USVFB",
+
     // WPI (World Port Index) was used as a source of truth here
     "GBPRH",
     "VNPHU",
