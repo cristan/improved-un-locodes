@@ -93,6 +93,7 @@ export const ALIASES = {
     INBRH: "INBRU", // Broach => Bharuch
     COEBQ: "COSPC", // El Bosque port → Sociedad Portuaria Regional Cartagena (COSPC has UN/LOCODE coords matching WPI exactly)
     INFBD: "INFBE", // Faridabad => Faridabad
+    BGLIA: "BGLKS", // Liaskovec => Lyaskovets
 
     // Cities who have been renamed, but there already exists a new UN/LOCODE for the new name
     AZKBD: "AZGAN", // Kirovabad => Ganja
