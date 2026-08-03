@@ -1,26 +1,28 @@
 import fs from "node:fs"
-import {runWikidataQuery} from "./util/wikidata.js";
+import {runQleverQuery} from "./util/wikidata.js";
 
 // P131* walks the admin chain transitively, so we reach the ISO-coded ancestor through
 // municipalities/districts that don't have their own P300 code.
 const sparqlQuery = `
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT DISTINCT ?item ?unlocode ?itemLabel ?coords (GROUP_CONCAT(DISTINCT ?code; SEPARATOR=", ") AS ?subdivisionCodes)
 WHERE {
   ?item wdt:P1937 ?unlocode.
   ?item wdt:P625 ?coords.
+  OPTIONAL { ?item rdfs:label ?itemLabel. FILTER(LANG(?itemLabel) = "en") }
   OPTIONAL {
     ?item wdt:P131* ?adminEntity.
     ?adminEntity wdt:P300 ?code.
   }
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
 }
 GROUP BY ?item ?unlocode ?itemLabel ?coords
 `
 
-const coordsRegex = /Point\(([-\d\.]*)\s([-\d\.]*)\)/
+const coordsRegex = /POINT\(([-\d\.]*)\s([-\d\.]*)\)/
 
 async function downloadFromWikidata() {
-    const response = await runWikidataQuery(sparqlQuery)
+    const response = await runQleverQuery(sparqlQuery)
 
     const simplifiedData = response
         .filter(result => {
@@ -34,12 +36,12 @@ async function downloadFromWikidata() {
         .map(result => {
             const item = {
                 item: result.item.value,
-                itemLabel: result.itemLabel.value,
+                itemLabel: result.itemLabel?.value ?? result.item.value.replace("http://www.wikidata.org/entity/", ""),
                 lat: extractCoordinates(result.coords.value).lat,
                 lon: extractCoordinates(result.coords.value).lon,
                 unlocode: result.unlocode.value,
             }
-            if (result.subdivisionCodes.value) {
+            if (result.subdivisionCodes?.value) {
                 // Sort so the JSON is stable across runs — GROUP_CONCAT's order isn't guaranteed.
                 item.subdivisionCodes = result.subdivisionCodes.value.split(", ").sort()
             }
@@ -64,9 +66,14 @@ async function downloadFromWikidata() {
 function extractCoordinates(coordsValue) {
     const match = coordsRegex.exec(coordsValue)
     return {
-        lat: match[2],
-        lon: match[1]
+        lat: stripTrailingZeros(match[2]),
+        lon: stripTrailingZeros(match[1])
     }
+}
+
+// QLever pads every coordinate to 6 decimals, which would claim more precision than Wikidata holds.
+function stripTrailingZeros(number) {
+    return number.replace(/(\.\d*[1-9])0+$|\.0+$/, "$1")
 }
 
 downloadFromWikidata()
