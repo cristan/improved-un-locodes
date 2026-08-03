@@ -174,10 +174,17 @@ export const WIKIDATA_BEST = [
     "DEBCO",// Bockholdt => Bockholt. Matches the coordinates except for a typo: 5253N 01007E => 5253N 01047E
     "PEPMC",
 
-    // Entries being rescued from their invalid coordinates in the original
+    // Entries being rescued from their invalid coordinates in the original dataset
     "GBLCD",
     "AFSRO",
     "USVFB",
+    "AUMON",
+    "BGBLO",// Lyuliakovo => Lyulyakovo
+    "CNMBI",// Mabian Island => Mabian Zhou
+    "DOOCO",// Ocoa Bay => Bahía de Ocoa
+    "EGBEH",// El Beheirah => Beheira Governorate (al-Buḥayra)
+    "EGKEN",// Kenna => Qena
+    "GBXLG",// Llangorse (English spelling) => Llangors (Welsh spelling)
 
     // WPI (World Port Index) was used as a source of truth here
     "GBPRH",
