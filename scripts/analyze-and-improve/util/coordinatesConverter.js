@@ -1,4 +1,4 @@
-const coordinatesRegex = /^(\d{2})(\d{2})([NS])\s+(\d{3})(\d{2})([EW])$/
+export const coordinatesRegex = /^(\d{2})(\d{2})([NS])\s+(\d{3})(\d{2})([EW])$/
 export const decimalRegex = /^(\d+\.\d+)([NS])\s(\d+\.\d+)([EW])$/
 
 const MAX_LATITUDE = 90
