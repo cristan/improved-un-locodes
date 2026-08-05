@@ -90981,7 +90981,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,SI,SVB,Srednja Vas v Bohinju,Srednja Vas v Bohinju,004,RL,--3-----,1601,,4617N 01355E,,"46.28333,13.91667",2,UN/LOCODE
 ,SI,SVC,Sevnica,Sevnica,110,RL,--3-----,0901,,4600N 01518E,,"46.00000,15.30000",1,UN/LOCODE
 ,SI,SVD,Smartno v Rozni Dolini,Smartno v Rozni Dolini,011,RL,--3-----,1601,,4617N 01514E,,"46.28333,15.23333",2,UN/LOCODE
-,SI,SVN,Svenica,Svenica,,RL,--3-----,1001,,4601N 01518E,,"46.009167,15.303889",N/A (hardcoded to Wikidata),http://www.wikidata.org/entity/Q15915
+,SI,SVN,Svenica,Svenica,,RL,--3-----,1001,,4600N 01518E,,"46.00000,15.30000",N/A (coordinate of another UN/LOCODE used),SISVC
 ,SI,SVT,Sveti Tomaz,Sveti Tomaz,205,RL,--3-----,1601,,4629N 01604E,,"46.48333,16.06667",1,UN/LOCODE
 ,SI,SZ5,Sodrazica,Sodrazica,104,RL,--3-----,1301,,4545N 01438E,,"45.75000,14.63333",1,UN/LOCODE
 ,SI,SZ9,Kapla,Kapla,190,RL,--3-----,1601,,4614N 01500E,,"46.23333,15.00000",3,UN/LOCODE
@@ -111716,7 +111716,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,US,VXB,Brushton,Brushton,NY,RL,--3-----,1607,,4449N 07430W,,"44.81667,-74.50000",2,UN/LOCODE
 ,US,VXE,Bee Cave,Bee Cave,TX,RL,--3-----,0901,,3018N 09757W,,"30.30000,-97.95000",1,UN/LOCODE
 ,US,VXI,Masontown,Masontown,WV,RL,-23-----,0901,,3933N 07947W,,"39.55000,-79.78333",1,UN/LOCODE
-,US,VXJ,Claves,Claves,OH,RL,1----6--,1001,,3992N 08444W,,,N/A,N/A
+,US,VXJ,Claves,Claves,OH,RL,1----6--,1001,,3909N 08444W,,"39.15000,-84.73333",N/A (coordinate of another UN/LOCODE used),USVCS
 ,US,VXL,Leon Valley,Leon Valley,TX,RL,--3-----,1301,,2929N 09837W,,"29.48333,-98.61667",1,UN/LOCODE
 ,US,VXO,Cottleville,Cottleville,MO,RL,--3-----,1707,,3844N 09039W,,"38.73333,-90.65000",2,UN/LOCODE
 ,US,VXQ,Courtland,Courtland,VA,RL,-----6--,0901,,3642N 07704W,,"36.70000,-77.06667",2,UN/LOCODE
