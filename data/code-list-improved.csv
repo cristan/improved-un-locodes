@@ -26050,7 +26050,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,DE,DLA,Dürrlauingen,Durrlauingen,BY,RL,--3-----,9811,,4828N 01026E,,"48.4667000,10.4333000",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/964238
 ,DE,DLB,Dahlenburg,Dahlenburg,NI,RL,--3-----,0212,,5311N 01045E,,"53.18333,10.75000",1,UN/LOCODE
 ,DE,DLD,Dillingen an der Donau,Dillingen an der Donau,BY,RL,--3-----,0901,,4834N 01030E,,"48.56667,10.50000",1,UN/LOCODE
-,DE,DLE,Badersleben,Badersleben,ST,RL,-----67-,0901,,5159N 01053E,,"51.984444,10.890833",N/A (hardcoded to Wikidata),http://www.wikidata.org/entity/Q798961
+,DE,DLE,Badersleben,Badersleben,ST,RL,-----67-,0901,,5159N 01053E,,"51.9795879,10.8870222",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/3992548
 ,DE,DLF,Altendorf,Altendorf,BY,RL,-23-----,0407,,4947N 01100E,,"49.78333,11.00000",2,UN/LOCODE
 ,DE,DLG,Dillingen,Dillingen,HE,RL,--3-----,0307,,5016N 00838E,,"50.26667,8.63333",1,UN/LOCODE
 ,DE,DLH,Delitzsch,Delitzsch,SN,RN,--3-----,0105,,5132N 01221E,,"51.5255661,12.3428570",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/444742
