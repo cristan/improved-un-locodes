@@ -87,7 +87,7 @@ export const WIKIDATA_BEST = [
     "ITPSP",
     "ITTQR",
     "ITCLM",
-    "ITSNN",
+    "ITSNN",// Is https://www.openstreetmap.org/node/1984008221#map=19/44.808370/10.913112
     "ITZTX",
     "ITZVB",
     "ITVIN",
