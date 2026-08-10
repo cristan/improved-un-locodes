@@ -216951,6 +216951,18 @@
     ]
   },
   {
+    "item": "http://www.wikidata.org/entity/Q673523",
+    "itemLabel": "Clovelly",
+    "lat": "50.9983",
+    "lon": "-4.3987",
+    "unlocode": "GBCVL",
+    "subdivisionCodes": [
+      "GB-DEV",
+      "GB-ENG",
+      "GB-UKM"
+    ]
+  },
+  {
     "item": "http://www.wikidata.org/entity/Q6225",
     "itemLabel": "Coventry",
     "lat": "52.416667",
@@ -231544,6 +231556,19 @@
     ]
   },
   {
+    "item": "http://www.wikidata.org/entity/Q6908110",
+    "itemLabel": "Moore",
+    "lat": "53.354",
+    "lon": "-2.633",
+    "unlocode": "GBXMO",
+    "subdivisionCodes": [
+      "GB-CHS",
+      "GB-ENG",
+      "GB-HAL",
+      "GB-UKM"
+    ]
+  },
+  {
     "item": "http://www.wikidata.org/entity/Q1025095",
     "itemLabel": "Yate",
     "lat": "51.540833",
@@ -236249,6 +236274,16 @@
     "unlocode": "HUFOT",
     "subdivisionCodes": [
       "HU-PE"
+    ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q911642",
+    "itemLabel": "Füzesabony",
+    "lat": "47.751",
+    "lon": "20.409",
+    "unlocode": "HUFUY",
+    "subdivisionCodes": [
+      "HU-HE"
     ]
   },
   {
@@ -242722,8 +242757,8 @@
   {
     "item": "http://www.wikidata.org/entity/Q178948",
     "itemLabel": "Khajuraho",
-    "lat": "24.85",
-    "lon": "79.933333",
+    "lat": "24.852796",
+    "lon": "79.925494",
     "unlocode": "INHJR",
     "subdivisionCodes": [
       "IN-MP"
@@ -359501,6 +359536,16 @@
     ]
   },
   {
+    "item": "http://www.wikidata.org/entity/Q15915",
+    "itemLabel": "Sevnica",
+    "lat": "46.009167",
+    "lon": "15.303889",
+    "unlocode": "SISVN",
+    "subdivisionCodes": [
+      "SI-110"
+    ]
+  },
+  {
     "item": "http://www.wikidata.org/entity/Q15928",
     "itemLabel": "Velenje",
     "lat": "46.366667",
@@ -362430,10 +362475,7 @@
     "itemLabel": "Mary",
     "lat": "37.6",
     "lon": "61.833333",
-    "unlocode": "TMMYP",
-    "subdivisionCodes": [
-      "TM-M"
-    ]
+    "unlocode": "TMMYP"
   },
   {
     "item": "http://www.wikidata.org/entity/Q487684",
@@ -366547,6 +366589,16 @@
     "unlocode": "UALZH",
     "subdivisionCodes": [
       "UA-05"
+    ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q4296117",
+    "itemLabel": "Myronivka",
+    "lat": "48.485556",
+    "lon": "38.258333",
+    "unlocode": "UAMIR",
+    "subdivisionCodes": [
+      "UA-14"
     ]
   },
   {
@@ -379187,6 +379239,16 @@
     "unlocode": "USBFX",
     "subdivisionCodes": [
       "US-CA"
+    ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q2042744",
+    "itemLabel": "Bangor",
+    "lat": "43.8594",
+    "lon": "-90.9592",
+    "unlocode": "USBG2",
+    "subdivisionCodes": [
+      "US-WI"
     ]
   },
   {
@@ -479966,16 +480028,6 @@
   {
     "item": "http://www.wikidata.org/entity/Q247843",
     "itemLabel": "Cardona",
-    "lat": "-33.867376",
-    "lon": "-57.371224",
-    "unlocode": "UYCDN",
-    "subdivisionCodes": [
-      "UY-SO"
-    ]
-  },
-  {
-    "item": "http://www.wikidata.org/entity/Q247843",
-    "itemLabel": "Cardona",
     "lat": "-33.873611",
     "lon": "-57.368056",
     "unlocode": "UYCDN",
@@ -480021,6 +480073,16 @@
     "unlocode": "UYCHY",
     "subdivisionCodes": [
       "UY-RO"
+    ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q18542396",
+    "itemLabel": "Cuenca del Plata Terminal",
+    "lat": "-34.906167",
+    "lon": "-56.218222",
+    "unlocode": "UYCPP",
+    "subdivisionCodes": [
+      "UY-MO"
     ]
   },
   {
@@ -480130,7 +480192,8 @@
     "lon": "-56.225161",
     "unlocode": "UYLPZ",
     "subdivisionCodes": [
-      "UY-CA"
+      "UY-CA",
+      "UY-CO"
     ]
   },
   {
@@ -480140,7 +480203,8 @@
     "lon": "-56.223333",
     "unlocode": "UYLPZ",
     "subdivisionCodes": [
-      "UY-CA"
+      "UY-CA",
+      "UY-CO"
     ]
   },
   {
@@ -480151,16 +480215,6 @@
     "unlocode": "UYMDO",
     "subdivisionCodes": [
       "UY-MA"
-    ]
-  },
-  {
-    "item": "http://www.wikidata.org/entity/Q844914",
-    "itemLabel": "Mercedes",
-    "lat": "-33.24227",
-    "lon": "-58.001877",
-    "unlocode": "UYMER",
-    "subdivisionCodes": [
-      "UY-SO"
     ]
   },
   {
@@ -485273,6 +485327,7 @@
     "lon": "28.189444",
     "unlocode": "ZAZAY",
     "subdivisionCodes": [
+      "UY-CL",
       "ZA-GP"
     ]
   },

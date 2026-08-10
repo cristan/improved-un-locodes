@@ -94,6 +94,8 @@ export const ALIASES = {
     COEBQ: "COSPC", // El Bosque port → Sociedad Portuaria Regional Cartagena (COSPC has UN/LOCODE coords matching WPI exactly)
     INFBD: "INFBE", // Faridabad => Faridabad
     BGLIA: "BGLKS", // Liaskovec => Lyaskovets
+    SISVN: "SISVC", // Svenica => Sevnica
+    USVXJ: "USVCS", // Claves => Cleves
 
     // Cities who have been renamed, but there already exists a new UN/LOCODE for the new name
     AZKBD: "AZGAN", // Kirovabad => Ganja
@@ -113,7 +115,7 @@ export const ALIASES = {
     // Also, WPI (IMO incorrectly) uses CAFRR as the UN/LOCODE for Fraser Mills, so another reason to borrow those locations.
     CAFRR: "CAFRA",
 
-    // San Lorenzo => Quebracho/San Lorenzo. ARQBR's coordinates also matches the coordinates of ARSLO in WPI
+    // San Lorenzo => Quebracho/San Lorenzo. ARQBR's coordinates also matches the coordinates of ARSLO in WPI.
     // Nominatim finds something 2 houses big, so that's probably not it, even if it's in the correct region.
     // Note that the entire world seems to use the ARSLO UN/LOCODE, so if either should be retired, it's probably ARQBR
     // (it is a mystery what the Quebracho even is a reference to. An old Argentine hardwood harbor there?)

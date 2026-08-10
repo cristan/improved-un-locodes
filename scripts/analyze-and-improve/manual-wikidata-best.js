@@ -139,7 +139,6 @@ export const WIKIDATA_BEST = [
     "MYMEA",
     "NGAKP",// 0308S 06049E is a typo: should have been 0308N 00649E
     "AEHIL",
-    "DEDLE",// Unlocode "5198N 10887E" has invalid minutes (98>60); should be ~5159N 01053E. Wikidata Q798961 has it right.
     "DEHAQ",// Unlocode "4947N 01145E" puts Haar in Upper Franconia, but Wikidata Q504820 (the only Haar in Bayern) is near München at 4807N 01144E.
     "NIMSP",// Unlocode "1155N 08690W" has invalid lon minutes (90>59); intended was likely "1155N 08609W" instead of "1155N 08690W".
     "DENEW",// No Unlocode coords. Nominatim's first RP-Neustadt is Neustadt an der Weinstraße, but the name "Neustadt (Wied)" unambiguously is Q676583.
@@ -151,7 +150,6 @@ export const WIKIDATA_BEST = [
     "FMTKK",// Nominatim picks (8.61,151.83) in the Chuuk Northwest Islands. State Q221684 is closer but broad; Weno (Q1009384) or Chuuk Intl Airport (Q166512, IATA=TKK) would be better targets.
     "GBCOY",// Sub=ESS + function=Port unambiguously means Coryton Refinery on the Thames (Q2127138). Pipeline picked Coryton village in Cornwall.
     "GLQUE",// Disko Qullissat is OSM-tagged as isolated_dwelling (abandoned mining town), which the loader filters out. Pipeline then falls to an island in Kujalleq with the same name. Q923319 is the real Qullissat on Disko.
-    "GREFP",// The Unlocode coordinate "2192N 03841W" has invalid lat minutes (92>59) and wrong sign, parses to South Atlantic. Q1223774 Efpalio (Central Greece) is correct.
     "IDKAT",// 6 Kaliangets in Indonesia; the famous Port of Kalianget (Q12504170, Sumenep/Madura) is Nominatim's 6th hit. Pipeline picked a random village in Banjarnegara, Central Java.
     "IDMXB",// Three Masambas in Indonesia. Q4194199 is the South Sulawesi town (matches the 3-letter code MXB, which is also IATA for the airport serving it). Pipeline picks a different Masamba in Poso Regency.
     "IDPJG",// Name explicitly says "(Lampung, Sumatra)". Q19746903 Port of Panjang at Lampung Bay matches; pipeline picked a Java Panjang.
@@ -173,18 +171,6 @@ export const WIKIDATA_BEST = [
     "PAMIT",
     "DEBCO",// Bockholdt => Bockholt. Matches the coordinates except for a typo: 5253N 01007E => 5253N 01047E
     "PEPMC",
-
-    // Entries being rescued from their invalid coordinates in the original dataset
-    "GBLCD",
-    "AFSRO",
-    "USVFB",
-    "AUMON",
-    "BGBLO",// Lyuliakovo => Lyulyakovo
-    "CNMBI",// Mabian Island => Mabian Zhou
-    "DOOCO",// Ocoa Bay => Bahía de Ocoa
-    "EGBEH",// El Beheirah => Beheira Governorate (al-Buḥayra)
-    "EGKEN",// Kenna => Qena
-    "GBXLG",// Llangorse (English spelling) => Llangors (Welsh spelling)
 
     // WPI (World Port Index) was used as a source of truth here
     "GBPRH",

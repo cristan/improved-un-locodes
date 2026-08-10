@@ -1,5 +1,17 @@
-const coordinatesRegex = /^(\d{2})(\d{2})([NS])\s+(\d{3})(\d{2})([EW])$/
+export const coordinatesRegex = /^(\d{2})(\d{2})([NS])\s+(\d{3})(\d{2})([EW])$/
 export const decimalRegex = /^(\d+\.\d+)([NS])\s(\d+\.\d+)([EW])$/
+
+const MAX_LATITUDE = 90
+const MAX_LONGITUDE = 180
+
+function toDecimal(degrees, minutes, direction, maxDegrees, negativeDirection) {
+    if (minutes >= 60 || degrees > maxDegrees) {
+        return undefined
+    }
+    const decimal = degrees + minutes / 60
+    return `${direction === negativeDirection ? "-" : ""}${decimal.toFixed(5)}`
+}
+
 export function convertToDecimal(input) {
     if (!input) {
         return ""
@@ -17,32 +29,19 @@ export function convertToDecimal(input) {
         }
     }
 
-    // Extract latitude and longitude parts
     const latMatch = input.match(coordinatesRegex)
-
-    // Check if the input format is valid
-    if (latMatch) {
-        // Extract degrees, minutes, and direction
-        const latDegrees = parseInt(latMatch[1])
-        const latMinutes = latMatch[2]
-        const latDirection = latMatch[3]
-        const lonDegrees = parseInt(latMatch[4])
-        const lonMinutes = latMatch[5]
-        const lonDirection = latMatch[6]
-
-        // Calculate decimal coordinates with proper sign for direction
-        const decimalLat = `${latDirection === 'S' ? "-" : ""}${(latDegrees + (latMinutes / 60)).toFixed(5)}`
-        const decimalLon = `${lonDirection === 'W' ? "-" : ""}${(lonDegrees + (lonMinutes / 60)).toFixed(5)}`
-
-        // Return the result as an object
-        return {
-            lat: decimalLat,
-            lon: decimalLon
-        };
-    } else {
+    if (!latMatch) {
         console.warn(`Invalid coordinate format ${input}`)
         return undefined
     }
+
+    const lat = toDecimal(parseInt(latMatch[1]), parseInt(latMatch[2]), latMatch[3], MAX_LATITUDE, 'S')
+    const lon = toDecimal(parseInt(latMatch[4]), parseInt(latMatch[5]), latMatch[6], MAX_LONGITUDE, 'W')
+    if (lat === undefined || lon === undefined) {
+        return undefined
+    }
+
+    return {lat, lon}
 }
 
 export function convertNmToUnlocodeText(nm) {
