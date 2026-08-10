@@ -161,3 +161,6 @@ Examples:
 - ISKEF / ISKEV — both relate to Keflavík; which "owns" Keflavík airport vs Keflavík town is unclear without inspection.
 
 Before tagging, scan for sibling codes in the same country with related names. Decide what each one represents *before* picking the Wikidata target for any of them.
+
+## Doublecheck if we've gone through this before
+Doublecheck manual-wikidata-best.js and manual-unlocode-best.js. If it's there, there is probably a good reason why we've chosen one over the other.
