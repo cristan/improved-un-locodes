@@ -172,6 +172,13 @@ export const WIKIDATA_BEST = [
     "DEBCO",// Bockholdt => Bockholt. Matches the coordinates except for a typo: 5253N 01007E => 5253N 01047E
     "PEPMC",
 
+    // entries to prevent coordinates in the wrong hemisphere
+    "DEWNT",// Wedlenstedt => Wedtlenstedt
+    "GUSAN",// Santa Rita is the old name of Sånta Rita-Sumai
+    "ZAMUL",// Muldersdrif => Muldersdrift
+    "KRDGU",// Tongdaemun-Gu => Dongdaemun District
+    "LKHET",// Hettimulla
+
     // WPI (World Port Index) was used as a source of truth here
     "GBPRH",
     "VNPHU",
