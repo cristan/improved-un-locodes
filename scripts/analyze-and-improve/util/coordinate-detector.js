@@ -27,6 +27,9 @@ export async function detectCoordinates(unlocode, csvDatabase, wikidataDatabase,
 
     // When Wikidata is marked as best, or there are no alternatives, choose Wikidata
     if (WIKIDATA_BEST.includes(unlocode) || (!decimalCoordinates && !nominatimData && wikiDataEntry)) {
+        if (!wikiDataEntry) {
+            throw new Error(`${unlocode} is marked in WIKIDATA_BEST, but it doesn't exist in wikidata.json!`)
+        }
         return {...wikiDataEntry, type: "Wikidata", decimalCoordinates: {lat: wikiDataEntry.lat, lon: wikiDataEntry.lon}}
     }
 
