@@ -32311,7 +32311,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,DE,WNP,Wenigenlupnitz,Wenigenlupnitz,TH,RL,--3-----,1301,,5059N 01026E,,"50.98333,10.43333",1,UN/LOCODE
 ,DE,WNR,Wilnsdorf,Wilnsdorf,NW,RL,--3-----,9805,,5049N 00806E,,"50.8157280,8.1043638",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/163259
 ,DE,WNS,Windesheim,Windesheim,RP,RL,-23-----,0607,,4954N 00749E,,"49.90000,7.81667",1,UN/LOCODE
-,DE,WNT,Wedlenstedt,Wedlenstedt,NI,RL,1-3-----,0901,,5215N 01024W,,"52.25000,-10.40000",N/A (no Nominatim),UN/LOCODE
+,DE,WNT,Wedlenstedt,Wedlenstedt,NI,RL,1-3-----,0901,,5217N 01025E,,"52.275,10.4108",N/A (hardcoded to Wikidata),http://www.wikidata.org/entity/Q2554011
 ,DE,WNU,Weissenthurm,Weissenthurm,RP,RL,123-----,0601,,5025N 00727E,,"50.41667,7.45000",0,UN/LOCODE
 ,DE,WNW,Wallendorf,Wallendorf,ST,RL,--3--6--,1207,,5122N 01205E,,"51.36667,12.08333",1,UN/LOCODE
 ,DE,WNZ,Weissnausslitz,Weissnausslitz,SN,RL,--3-----,1207,,5108N 01421E,,"51.13333,14.35000",0,UN/LOCODE
@@ -56840,7 +56840,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,GB,GTH,Greatham,Greatham,HAM,AF,--3-----,9704,,5104N 00054W,,"51.0693996,-0.8999108",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/3344963
 ,GB,GTL,Greetland,Greetland,CLD,QQ,--3-----,1401,,5341N 00152W,,"53.68333,-1.86667",1,UN/LOCODE
 ,GB,GTM,Grantham,Grantham,LIN,AF,--3-----,9511,XGM,5255N 00039W,,"52.9131920,-0.6438974",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/9255885
-,GB,GTN,Garston,Garston,LIV,AF,1-------,1401,,5320N 00254W,,"53.33333,-2.90000",2,UN/LOCODE
+,GB,GTN,Garston,Garston,LIV,AF,1-------,1401,,5320N 00254W,,"53.33333,-2.90000",250,UN/LOCODE
 ,GB,GTO,Great Torrington,Great Torrington,,AF,--3-----,0212,,5057N 00409W,,"50.95000,-4.15000",1,UN/LOCODE
 ,GB,GTP,Goldthorpe,Goldthorpe,BNS,RL,-23-----,1401,,5331N 00118W,,"53.51667,-1.30000",2,UN/LOCODE
 ,GB,GTR,Great Brickhill,Great Brickhill,BKM,AF,--3-----,9704,,5158N 00041W,,"51.9687967,-0.6874392",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/3768803
@@ -59671,7 +59671,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,GB,TID,Titchfield,Titchfield,HAM,RL,--3-----,0201,,5050N 00113W,,"50.83333,-1.21667",2,UN/LOCODE
 ,GB,TIG,Tighnabruaich,Tighnabruaich,AGB,AA,1-3-----,0701,,5554N 00514W,,"55.90000,-5.23333",0,UN/LOCODE
 ,GB,TIH,Tile Hill,Tile Hill,WAR,RL,--3-----,1201,,5223N 00135W,,"52.38333,-1.58333",2,UN/LOCODE
-,GB,TIL,Tilbury,Tilbury,ESS,AF,1-------,9511,,5128N 00021E,,"51.4606,0.3582",N/A (no UN/LOCODE),http://www.wikidata.org/entity/Q648432
+,GB,TIL,Tilbury,Tilbury,ESS,AF,1-------,9511,,5128N 00021E,,"51.46,0.345",N/A (no UN/LOCODE),http://www.wikidata.org/entity/Q1419586
 ,GB,TIM,Timsbury,Timsbury,BAS,RL,--3-----,0501,,5119N 00229W,,"51.31667,-2.48333",1,UN/LOCODE
 ,GB,TIN,Tain,Tain,HLD,RL,-23-----,0701,,5748N 00404W,,"57.80000,-4.06667",1,UN/LOCODE
 ,GB,TIP,Tiptree,Tiptree,ESS,RL,--3-----,0201,,5148N 00044E,,"51.80000,0.73333",2,UN/LOCODE
@@ -60406,7 +60406,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,GB,XOX,Oxenhope,Oxenhope,BRD,RL,-----6--,0907,,5349N 00157W,,"53.8109528,-1.9515126",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/7185164
 ,GB,XPA,Parkend,Parkend,CMA,RL,-----6--,0907,,5146N 00233W,,"51.7688325,-2.5569150",N/A (no UN/LOCODE),https://www.openstreetmap.org/node/29370939#map=12/51.7688325/-2.5569150
 ,GB,XPB,Preston Brook,Preston Brook,HAL,RL,-----6--,0907,,5319N 00238W,,"53.3165240,-2.6394342",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/1433231
-,GB,XPE,Peters Green,Peters Green,HRT,RL,-----6--,0907,,5185N 00034W,,,N/A,N/A
+,GB,XPE,Peters Green,Peters Green,HRT,RL,-----6--,0907,,5152N 00021W,,"51.858496,-0.343065",N/A (hardcoded to Wikidata),http://www.wikidata.org/entity/Q138511386
 ,GB,XPI,Pinxton,Pinxton,DBY,RL,-----6--,0907,,5306N 00119W,,"53.0948693,-1.3242259",15,https://www.openstreetmap.org/relation/946750
 ,GB,XPP,Chipperfield,Chipperfield,HEF,RL,-----6--,0907,,5143N 00030W,,"51.7103421,-0.4942651",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/3666098
 ,GB,XPT,Pitsea,Pitsea,ESS,RL,-----6--,0907,,5134N 00030E,,"51.5642607,0.5062597",47,https://www.openstreetmap.org/way/122670560#map=12/51.5642607/0.5062597
@@ -61838,7 +61838,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,GU,HGT,Hagatna,Hagatna,,AA,--3-----,1601,,1328N 14444E,,"13.46667,144.73333",N/A (no Nominatim),UN/LOCODE
 ,GU,INA,Inarajan,Inarajan,,RL,--3-----,1207,,1316N 14444E,,"13.26667,144.73333",N/A (no Nominatim),UN/LOCODE
 ,GU,PIT,Piti,Piti,,RL,--3-----,1707,,1326N 14441E,,"13.43333,144.68333",N/A (no Nominatim),UN/LOCODE
-,GU,SAN,Santa Rita,Santa Rita,,RL,-----6--,0901,,1323N 14440W,,"13.38333,-144.66667",N/A (no Nominatim),UN/LOCODE
+,GU,SAN,Santa Rita,Santa Rita,,RL,-----6--,0901,,1323N 14440E,,"13.386111,144.668889",N/A (hardcoded to Wikidata),http://www.wikidata.org/entity/Q1780381
 ,GU,SJA,Sinajana,Sinajana,,RL,--3-----,1407,,1327N 14445E,,"13.45000,144.75000",N/A (no Nominatim),UN/LOCODE
 ,GU,TMG,Tamuning,Tamuning,,AA,--3-----,1601,,1329N 14446E,,"13.48333,144.76667",N/A (no Nominatim),UN/LOCODE
 ,GU,TMN,Tumon,Tumon,,AA,--3-----,1601,,1330N 14448E,,"13.50000,144.80000",N/A (no Nominatim),UN/LOCODE
@@ -65038,7 +65038,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,IN,ABU,Abu Road,Abu Road,RJ,RL,-23-----,1207,,2429N 07247E,,"24.48333,72.78333",0,UN/LOCODE
 ,IN,ACH,Achra,Achra,MH,AA,1-------,0006,,1612N 07327E,,"16.1924800,73.4449800",N/A (no UN/LOCODE),https://www.openstreetmap.org/node/342119636#map=12/16.1924800/73.4449800
 ,IN,ACK,Acharapakkam,Acharapakkam,TN,AA,--3-----,1601,,1223N 07948E,,"12.38333,79.80000",3,UN/LOCODE
-,IN,ACT,Ambala Cantonment,Ambala Cantonment,HR,RL,-----6--,1001,,3036N 07684E,,,N/A,N/A
+,IN,ACT,Ambala Cantonment,Ambala Cantonment,HR,RL,-----6--,1001,,3022N 07651E,,"30.361914,76.848078",N/A (hardcoded to Wikidata),http://www.wikidata.org/entity/Q589866
 ,IN,ADC,Ccipl-SEZ/Ahmadabad,Ccipl-SEZ/Ahmadabad,GJ,RL,-----6--,1001,,2302N 07237E,,"23.03333,72.61667",N/A (no Nominatim),UN/LOCODE
 ,IN,ADE,Andheri East,Andheri East,MH,RL,-23-----,1401,,1907N 07250E,,"19.11667,72.83333",2,UN/LOCODE
 ,IN,ADG,Gipl-SEZ/Ahmadabad,Gipl-SEZ/Ahmadabad,GJ,RL,-----6--,1001,,2302N 07237E,,"23.03333,72.61667",N/A (no Nominatim),UN/LOCODE
@@ -66543,7 +66543,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,IR,NUJ,Nojeh,Nojeh,,RL,---4----,0907,,3845N 04702E,,"38.7516514,47.0284207",1065,https://www.openstreetmap.org/node/1864531757#map=12/38.7516514/47.0284207
 ,IR,OMH,Urmieh,Urmieh,,AI,---4----,0607,,3733N 04506E,,"37.55000,45.10000",N/A (no Nominatim),UN/LOCODE
 ,IR,OMI,Omidiyeh,Omidiyeh,06,RL,---4----,0907,,3045N 04942E,,"30.7568821,49.7017752",18,https://www.openstreetmap.org/relation/16776135
-,IR,OSM,Mosul,Mosul,,RL,0-------,9012,,3622N 04307E,,"36.366667,43.116667",N/A (no UN/LOCODE),http://www.wikidata.org/entity/Q83317
+,IR,OSM,Mosul,Mosul,,RL,0-------,9012,,3621N 04308E,,"36.341667,43.129167",N/A (no UN/LOCODE),http://www.wikidata.org/entity/Q83317
 ,IR,PFQ,Parsabad,Parsabad,,RL,---4----,0907,,3939N 04754E,,"39.65000,47.90000",2,UN/LOCODE
 ,IR,PGU,Asaloyeh,Asaloyeh,,RL,---4----,0907,,2729N 05237E,,"27.48333,52.61667",N/A (no Nominatim),UN/LOCODE
 ,IR,PSR,Piran Shahr,Piran Shahr,,RL,-----6--,1007,,3641N 04508E,,"36.68333,45.13333",N/A (no Nominatim),UN/LOCODE
@@ -74990,7 +74990,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,KR,DCN,Daecheon,Daecheon,44,AF,1-------,1207,,3619N 12630E,,"36.31667,126.50000",6,UN/LOCODE
 ,KR,DDC,Dongducheon,Dongducheon,41,AF,-23-----,0601,,3754N 12704E,,"37.9030856,127.0605175",43,https://www.openstreetmap.org/relation/2409163
 ,KR,DDO,Dokdo,Dokdo,47,AF,1-------,0507,,3714N 13151E,,"37.23333,131.85000",2,UN/LOCODE
-,KR,DGU,Tongdaemun-Gu,Tongdaemun-Gu,11,RL,-----6--,1401,,3734S 12702E,,"-37.56667,127.03333",N/A (no Nominatim),UN/LOCODE
+,KR,DGU,Tongdaemun-Gu,Tongdaemun-Gu,11,RL,-----6--,1401,,3734N 12702E,,"37.57418,127.03988",N/A (hardcoded to Wikidata),http://www.wikidata.org/entity/Q50382
 ,KR,DHS,Daeheuksando,Daeheuksando,46,AF,1-------,1207,,3441N 12526E,,"34.68333,125.43333",N/A (no Nominatim),UN/LOCODE
 ,KR,DRS,Dorasan/Paju,Dorasan/Paju,41,AF,-23-----,0601,,3754N 12642E,,"37.9005300,126.7014400",18,https://www.openstreetmap.org/node/415152584#map=12/37.9005300/126.7014400
 ,KR,DSG,Dalseong-gun/Daegu,Dalseong-gun/Daegu,27,AF,-23-----,0601,,3547N 12826E,,"35.7753000,128.4312000",12,https://www.openstreetmap.org/relation/3972253
@@ -75526,7 +75526,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,LK,HAT,Hatton,Hatton,,RL,-23-----,0601,,0653N 08035E,,"6.88333,80.58333",2,UN/LOCODE
 ,LK,HBA,Hambantota,Hambantota,,RL,1-------,1101,,0607N 08107E,,"6.11667,81.11667",1,UN/LOCODE
 ,LK,HDL,Hendala,Hendala,,RL,-----6--,1201,,0659N 07952E,,"6.98333,79.86667",3,UN/LOCODE
-,LK,HET,Hettimulla,Hettimulla,,RL,-----6--,1107,,0716N 08005W,,"7.26667,-80.08333",N/A (no Nominatim),UN/LOCODE
+,LK,HET,Hettimulla,Hettimulla,,RL,-----6--,1107,,0716N 08005E,,"7.266389,80.082222",N/A (hardcoded to Wikidata),http://www.wikidata.org/entity/Q27449133
 ,LK,HIM,Hingurakgoda,Hingurakgoda,,RL,---4----,0907,,0801N 08057E,,"8.01667,80.95000",3,UN/LOCODE
 ,LK,HOM,Homagama,Homagama,1,RL,--3-----,1501,,0650N 08005E,,"6.83333,80.08333",9,UN/LOCODE
 ,LK,HRN,Hirana,Hirana,,RL,-----6--,1007,,0644N 07954E,,"6.73333,79.90000",4,UN/LOCODE
@@ -92271,7 +92271,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,TN,HMM,Al Hammamat,Al Hammamat,,RL,123--6--,0601,,3624N 01037E,,"36.40000,10.61667",0,UN/LOCODE
 ,TN,ISI,Isis,Isis,,RL,------7-,0907,,3437N 01225E,,"34.61667,12.41667",N/A (no Nominatim),UN/LOCODE
 ,TN,J8T,Jebel Jelloud,Jebel Jelloud,11,RL,--3-----,1601,,3646N 01012E,,"36.76667,10.20000",N/A (no Nominatim),UN/LOCODE
-,TN,JAR,Jarjis,Jarjis,,RL,1-------,0106,,3330N 01106W,a.k.a Zarzis,"33.50000,-11.10000",N/A (no Nominatim),UN/LOCODE
+,TN,JAR,Jarjis,Jarjis,,RL,1-------,0106,,3330N 01107E,a.k.a Zarzis,"33.50000,11.11667",N/A (coordinate of another UN/LOCODE used),TNZRZ
 ,TN,JEM,Jammal,Jammal,,RL,--3-----,0201,,3538N 01045E,,"35.63333,10.75000",N/A (no Nominatim),UN/LOCODE
 ,TN,JUL,Jundubah,Jundubah,,RL,--3-----,0607,,3630N 00846E,,"36.50000,8.76667",N/A (no Nominatim),UN/LOCODE
 ,TN,KEB,Kebili,Kebili,73,RL,1----6--,0901,,3342N 00858E,,"33.70000,8.96667",1,UN/LOCODE
@@ -115540,7 +115540,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,ZA,MTP,Mitchells Plain,Mitchells Plain,WC,RL,--3-----,1707,,3403S 01837E,,"-34.05000,18.61667",0,UN/LOCODE
 ,ZA,MTW,Mtwalume,Mtwalume,KZN,RL,--3-----,1301,,3029S 03038E,,"-30.48333,30.63333",1,UN/LOCODE
 ,ZA,MTZ,Mtunzini,Mtunzini,KZN,RL,--3-----,1807,,2857S 03145E,,"-28.95000,31.75000",1,UN/LOCODE
-,ZA,MUL,Muldersdrif,Muldersdrif,GT,RL,--3-----,0901,,2602N 02751E,,"26.03333,27.85000",N/A (no Nominatim),UN/LOCODE
+,ZA,MUL,Muldersdrif,Muldersdrif,GT,RL,--3-----,0901,,2602S 02751E,,"-26.0333,27.85",N/A (hardcoded to Wikidata),http://www.wikidata.org/entity/Q6933861
 ,ZA,MUR,Murraysburg,Murraysburg,WC,RL,-----6--,1601,,3157S 02346E,,"-31.95000,23.76667",2,UN/LOCODE
 ,ZA,MWR,Motswari,Motswari,,AI,---4----,0001,,,,,N/A,N/A
 ,ZA,MWT,Maydon Whart,Maydon Whart,NL,RL,1-3-----,0901,,,,,N/A,N/A
