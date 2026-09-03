@@ -96,6 +96,7 @@ export const ALIASES = {
     BGLIA: "BGLKS", // Liaskovec => Lyaskovets
     SISVN: "SISVC", // Svenica => Sevnica
     USVXJ: "USVCS", // Claves => Cleves
+    TNJAR: "TNZRZ", // Jarjis => Zarzis (the remarks even say: "a.k.a Zarzis")
 
     // Cities who have been renamed, but there already exists a new UN/LOCODE for the new name
     AZKBD: "AZGAN", // Kirovabad => Ganja
@@ -127,4 +128,5 @@ export const DUPLICATES = {
     DKKK4: "DKAYB",
     MYMEA: "MYMKZ",
     INPAV: "INPPV",
+    JOAQB: "JOAQJ",// JOAQB will be removed in favor of JOAQJ
 }
