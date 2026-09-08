@@ -129,4 +129,24 @@ export const DUPLICATES = {
     MYMEA: "MYMKZ",
     INPAV: "INPPV",
     JOAQB: "JOAQJ",// JOAQB will be removed in favor of JOAQJ
+
+    // The same location filed a second time under the wrong country
+    ASAPI: "WSAPW",
+    BMHBI: "BSHBI",
+    GBPPC: "USEPU",
+    GYCAY: "GFCAY",
+    MNORD: "CNORD",
+    MNUQA: "CNULA",
+    SIGSH: "SKGEM",
+    SYBEN: "LYBEN",
+    SZAGN: "CHAGO",
+    SZKLB: "CHK3L",
+    THHOP: "TWHOP",
+    TLKOE: "IDKOE",
+    USZ9T: "MXZIT",
+    ZAKUU: "TZKSL",
+    ZANYB: "ZMYMB",
+    // CZOMO: "RS???", // There doesn't even exit a UN/LOCODE in the correct country (Serbia)
+    // BABUD: "HR???", // There doesn't even exit a UN/LOCODE in the correct country (Croatia)
+    // SZEPA: "CH???", // The coordinates point to somewhere in Switserland. There is a place called Epagny there, so I guess this is meant. There is none in Eswatini (Swaziland)
 }
