@@ -171,6 +171,18 @@ export const WIKIDATA_BEST = [
     "PAMIT",
     "DEBCO",// Bockholdt => Bockholt. Matches the coordinates except for a typo: 5253N 01007E => 5253N 01047E
     "PEPMC",
+    "AUCUN",
+    "GBMCE",
+    "DKAAI",
+    "ESVLU",
+    "CHNBA",
+    "ECWGL",
+    "MYTRB",
+    "ILKAU",
+    "IRHDR",
+    "ILMEN",
+    "ESSSD",
+    "VNOTW",
 
     // entries to prevent coordinates in the wrong hemisphere
     "DEWNT",// Wedlenstedt => Wedtlenstedt
