@@ -2903,7 +2903,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,AU,CUG,Cudal,Cudal,NSW,AI,---4----,9912,,3317S 14844E,,"-33.2864481,148.7405707",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/6057992
 ,AU,CUI,Curtis Island,Curtis Island,QLD,RL,--3-----,1801,,2337S 15109E,,"-23.6169400,151.1530600",13,https://www.openstreetmap.org/node/6036336039#map=12/-23.6169400/151.1530600
 ,AU,CUL,Columboola,Columboola,QLD,RL,-23-----,1401,,2641S 15020E,,"-26.68333,150.33333",1,UN/LOCODE
-,AU,CUN,Caufield North,Caufield North,VIC,RL,1-------,1101,,3752S 01451E,,"-37.86667,14.85000",N/A (no Nominatim),UN/LOCODE
+,AU,CUN,Caufield North,Caufield North,VIC,RL,1-------,1101,,3752S 14502E,,"-37.873,145.025",N/A (hardcoded to Wikidata),http://www.wikidata.org/entity/Q2943098
 ,AU,CUQ,Coen,Coen,QLD,AI,---4----,9912,,1349S 14321E,,"-13.8091150,143.3510185",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/11677444
 ,AU,CUR,Currumbin Waters,Currumbin Waters,QLD,RL,--3-----,0901,,2809S 15327E,,"-28.15000,153.45000",1,UN/LOCODE
 ,AU,CUY,Cue,Cue,WA,AI,---4----,9601,,2725S 11754E,,"-27.4242648,117.8971651",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/11690058
@@ -7339,7 +7339,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,BH,GBQ,Al Muharraq,Al Muharraq,15,AA,1-------,1101,,2615N 05036E,,"26.25000,50.60000",2,UN/LOCODE
 ,BH,ISA,ISA Air Base,ISA Air Base,14,RL,---4----,1601,,2555N 05035E,,"25.91667,50.58333",N/A (no Nominatim),UN/LOCODE
 ,BH,JAL,Jidd 'Ali,Jidd 'Ali,,RL,-----6--,1201,,2610N 05033E,,"26.16667,50.55000",N/A (no Nominatim),UN/LOCODE
-,BH,JDF,Jidhafs,Jidhafs,17,RL,--3-----,1601,,2613N 02032E,,"26.21667,20.53333",N/A (no Nominatim),UN/LOCODE
+,BH,JDF,Jidhafs,Jidhafs,17,RL,--3-----,1601,,2613N 05032E,,"26.2163449,50.5407172",2987,https://www.openstreetmap.org/node/2363180279#map=12/26.2163449/50.5407172
 ,BH,KBS,Khalifa Bin Salman Port,Khalifa Bin Salman Port,15,AA,1-------,1101,,2612N 05037E,,"26.20000,50.61667",10,UN/LOCODE
 ,BH,KFC,King Fahed Causeway,King Fahed Causeway,17,AA,-------B,1101,,2611N 05019E,,"26.18333,50.31667",N/A (no Nominatim),UN/LOCODE
 ,BH,MIN,Mina Sulman Port,Mina Sulman Port,13,AA,1-------,1101,,2612N 05037E,,"26.20000,50.61667",N/A (no Nominatim),UN/LOCODE
@@ -17714,7 +17714,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,CH,MZU,Menznau,Menznau,LU,RL,-23-----,0601,,4705N 00802E,,"47.08333,8.03333",1,UN/LOCODE
 ,CH,N66,Choindez,Choindez,JU,RL,1----6--,1401,,4719N 00723E,,"47.31667,7.38333",1,UN/LOCODE
 ,CH,NAT,Naters,Naters,VS,RL,--3-----,1701,,4620N 00759E,,"46.33333,7.98333",1,UN/LOCODE
-,CH,NBA,Niedererlinsbach,Niedererlinsbach,SO,RL,--3-----,1207,,4724N 08000E,,"47.40000,80.00000",N/A (no Nominatim),UN/LOCODE
+,CH,NBA,Niedererlinsbach,Niedererlinsbach,SO,RL,--3-----,1207,,4724N 00800E,,"47.398333,8.008333",N/A (hardcoded to Wikidata),http://www.wikidata.org/entity/Q689567
 ,CH,NBB,Nussbaumen bei Baden,Nussbaumen bei Baden,AG,RL,--3-----,0407,,4729N 00817E,,"47.48333,8.28333",1,UN/LOCODE
 ,CH,NBK,Nebikon,Nebikon,LU,RL,--3-----,9805,,4711N 00758E,,"47.1896500,7.9738020",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/1682899
 ,CH,NDB,Niederbipp,Niederbipp,BE,RL,1----6--,0901,,4716N 00741E,,"47.26667,7.68333",1,UN/LOCODE
@@ -32989,7 +32989,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,DK,AAF,Aalbaek,Aalbaek,81,RL,-----6--,0901,,5735N 01024E,,"57.58333,10.40000",1,UN/LOCODE
 ,DK,AAG,Bjaeverskov,Bjaeverskov,85,RL,-----6--,0901,,5527N 01202E,,"55.45000,12.03333",1,UN/LOCODE
 ,DK,AAH,Barrit,Barrit,83,RL,-----6--,0901,,5543N 00954E,,"55.71667,9.90000",1,UN/LOCODE
-,DK,AAI,Oelsted,Oelsted,84,RL,-----6--,0901,,5555N 12043E,,"55.91667,120.71667",N/A (no Nominatim),UN/LOCODE
+,DK,AAI,Oelsted,Oelsted,84,RL,-----6--,0901,,5555N 01204E,,"55.9222,12.0692",N/A (hardcoded to Wikidata),http://www.wikidata.org/entity/Q308147
 ,DK,AAJ,Ebberup,Ebberup,83,RL,-----6--,0901,,5514N 00958E,,"55.23333,9.96667",1,UN/LOCODE
 ,DK,AAK,Fanoe,Fanoe,83,RL,-----6--,0901,,5526N 00823E,,"55.43333,8.38333",N/A (no Nominatim),UN/LOCODE
 ,DK,AAL,Aalborg,Aalborg,,AF,12345---,9606,,5703N 00955E,,"57.0462626,9.9215263",N/A (no UN/LOCODE),https://www.openstreetmap.org/node/2247730880#map=12/57.0462626/9.9215263
@@ -33809,7 +33809,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,DO,POP,Puerto Plata,Puerto Plata,,AI,1-------,9601,,1948N 07042W,,"19.7976564,-70.6932607",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/7380607
 ,DO,PUD,Puerto Duarte,Puerto Duarte,,RL,0-------,9506,,,,,N/A,N/A
 ,DO,PUJ,Punta Cana Apt,Punta Cana Apt,,RL,--34----,0601,,1834N 06821W,,"18.56667,-68.35000",N/A (no Nominatim),UN/LOCODE
-,DO,PUO,Puerto Libertador,Puerto Libertador,,QQ,1-------,8103,,0753N 07540W,,"7.888056,-75.671667",N/A (no UN/LOCODE),http://www.wikidata.org/entity/Q2433456
+,DO,PUO,Puerto Libertador,Puerto Libertador,,QQ,1-------,8103,,,,,N/A,N/A
 ,DO,PVA,Puerto Viejo de Azua,Puerto Viejo de Azua,,RL,1-------,0212,,1820N 07050W,,"18.33333,-70.83333",2,UN/LOCODE
 ,DO,SAL,Salcedo,Salcedo,,RL,--3-----,0607,,1925N 07023W,,"19.41667,-70.38333",6,UN/LOCODE
 ,DO,SAM,Santa Bárbara de Samaná,Santa Barbara de Samana,,RL,--3-----,0207,,1912N 06919W,,"19.20000,-69.31667",2,UN/LOCODE
@@ -34134,7 +34134,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,EC,VIC,Viche,Viche,,RL,-----6--,1107,,0039N 07932W,,"0.6576525,-79.5411681",4152,https://www.openstreetmap.org/relation/2669726
 ,EC,VIL,"Puerto Villamil, Isla Isabela","Puerto Villamil, Isla Isabela",W,AI,1-------,1101,,0056S 09101W,,"-0.93333,-91.01667",N/A (no Nominatim),UN/LOCODE
 ,EC,VLC,Valencia,Valencia,R,RL,-23-----,1401,,0057S 07920W,,"-0.95000,-79.33333",2,UN/LOCODE
-,EC,WGL,Isle Baltra,Isle Baltra,,RL,---4----,0901,,4431N 07913W,,"44.51667,-79.21667",N/A (no Nominatim),UN/LOCODE
+,EC,WGL,Isle Baltra,Isle Baltra,,RL,---4----,0901,,0027S 09016W,,"-0.45,-90.266667",N/A (hardcoded to Wikidata),http://www.wikidata.org/entity/Q200772
 ,EC,WSE,Santa Cecillia,Santa Cecillia,,RL,---4----,0901,,0004N 07700W,,"0.070833,-76.991667",N/A (no UN/LOCODE),http://www.wikidata.org/entity/Q25037255
 ,EC,XMS,Macas,Macas,S,RL,---4----,0907,,0219S 07807W,,"-2.31667,-78.11667",1,UN/LOCODE
 ,EC,YGU,Yaguachi,Yaguachi,G,RL,--3--6--,1001,,0207S 07941W,,"-2.11667,-79.68333",3,UN/LOCODE
@@ -38295,7 +38295,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,ES,SSA,Sant Sadurní d'Anoia,Sant Sadurni d'Anoia,,RL,--3-----,0212,,4125N 00147E,,"41.41667,1.78333",1,UN/LOCODE
 ,ES,SSB,Arroyo de San Servan,Arroyo de San Servan,BA,RL,-----6--,1001,,3851N 00627W,,"38.85000,-6.45000",1,UN/LOCODE
 ,ES,SSC,Sonseca,Sonseca,TO,RL,--3-----,0507,,3942N 00356W,,"39.70000,-3.93333",4,UN/LOCODE
-,ES,SSD,Llissá de Vall,Llissa de Vall,B,RL,--3-----,1001,,4636N 00215E,,"46.60000,2.25000",N/A (no Nominatim),UN/LOCODE
+,ES,SSD,Llissá de Vall,Llissa de Vall,B,RL,--3-----,1001,,4136N 00215E,,"41.593611,2.243055",N/A (hardcoded to Wikidata),http://www.wikidata.org/entity/Q15428
 ,ES,SSE,Sant Feliu Sasserra,Sant Feliu Sasserra,B,RL,--3-----,0907,,4157N 00201E,,"41.9447451,2.0213124",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/343441
 ,ES,SSG,San Sebastian de la Gomera,San Sebastian de la Gomera,,AI,1--4----,9704,,2805N 01707W,,"28.0910382,-17.1110077",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/340733
 ,ES,SSL,Salas,Salas,O,RL,--3-----,1001,,4324N 00616W,,"43.40000,-6.26667",3,UN/LOCODE
@@ -38822,7 +38822,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,ES,VLR,Villar del Arzobispo,Villar del Arzobispo,V,RL,--3---7-,1501,,3944N 00049W,,"39.73333,-0.81667",1,UN/LOCODE
 ,ES,VLS,Vierlas,Vierlas,,RL,-23-----,0607,,4156N 00141W,,"41.93333,-1.68333",1,UN/LOCODE
 ,ES,VLT,Villafuertes,Villafuertes,BU,RL,--3-----,1301,,4211N 00348W,,"42.18333,-3.80000",1,UN/LOCODE
-,ES,VLU,Vilauer (Vilaür),Vilauer (Vilaur),GI,RL,--3-----,1007,,0257N 04208E,,"2.95000,42.13333",N/A (no Nominatim),UN/LOCODE
+,ES,VLU,Vilauer (Vilaür),Vilauer (Vilaur),GI,RL,--3-----,1007,,4209N 00257E,,"42.145,2.956945",N/A (hardcoded to Wikidata),http://www.wikidata.org/entity/Q12177
 ,ES,VLV,La Vilavella,La Vilavella,CS,RL,--3-----,1001,,3952N 00011W,,"39.86667,-0.18333",1,UN/LOCODE
 ,ES,VLZ,Villariezo,Villariezo,BU,RL,--3-----,0901,,4216N 00344W,,"42.26667,-3.73333",0,UN/LOCODE
 ,ES,VM2,Villamena,Villamena,GR,RL,--3-----,1407,,3659N 00335W,,"36.98333,-3.58333",3,UN/LOCODE
@@ -57965,7 +57965,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,GB,MBY,Melton Mowbray,Melton Mowbray,LEC,AF,--3-----,9511,,5246N 00053W,,"52.7645663,-0.8868896",N/A (no UN/LOCODE),https://www.openstreetmap.org/node/26679128#map=12/52.7645663/-0.8868896
 ,GB,MCA,Much Hadham,Much Hadham,HRT,RL,--3-----,0607,,5151N 00004E,,"51.85000,0.06667",0,UN/LOCODE
 ,GB,MCD,Macduff,Macduff,ABD,AF,1-------,1401,,5740N 00229W,,"57.66667,-2.48333",1,UN/LOCODE
-,GB,MCE,Mitchem,Mitchem,SRY,RL,-----6--,1001,,5141N 17440W,,"51.68333,-174.66667",N/A (no Nominatim),UN/LOCODE
+,GB,MCE,Mitchem,Mitchem,SRY,RL,-----6--,1001,,5124N 00009W,,"51.4009,-0.1517",N/A (hardcoded to Wikidata),http://www.wikidata.org/entity/Q687798
 ,GB,MCH,Malpas,Malpas,CHW,RL,--3--6--,1307,,5301N 00246W,,"53.01667,-2.76667",1,UN/LOCODE
 ,GB,MCL,Macclesfield,Macclesfield,CHE,AF,1-------,1307,XMZ,5316N 00208W,,"53.2606635,-2.1255158",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/1402218
 ,GB,MCM,Macmerry,Macmerry,ELN,RL,--3--6--,0607,,5556N 00254W,,"55.93333,-2.90000",1,UN/LOCODE
@@ -60956,7 +60956,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,GR,ANK,Anatoliko,Anatoliko,54,RL,--3-----,1501,,4040N 02243E,,"40.6631595,22.7113438",87,https://www.openstreetmap.org/node/146293584#map=12/40.6631595/22.7113438
 ,GR,ANL,Agnontas Skopelos,Agnontas Skopelos,43,AA,1-------,1307,,3905N 02342E,,"39.08333,23.70000",1,UN/LOCODE
 ,GR,ANM,Nea Makri,Nea Makri,A1,RL,--3-----,1707,,3805N 02359E,,"38.08333,23.98333",0,UN/LOCODE
-,GR,ANO,Aeginio,Aeginio,,RL,--3-----,0907,,4031N 03233E,,"40.51667,32.55000",N/A (no Nominatim),UN/LOCODE
+,GR,ANO,Aeginio,Aeginio,,RL,--3-----,0907,,4030N 02232E,,"40.50000,22.53333",N/A (coordinate of another UN/LOCODE used),GRAIN
 ,GR,ANP,Antiparos,Antiparos,,AI,1-------,1307,,3658N 02500E,,"36.9630884,25.0027452",11,https://www.openstreetmap.org/relation/5318822
 ,GR,ANR,Drymos,Drymos,54,RL,--3-----,1501,,4046N 02257E,,"40.76667,22.95000",2,UN/LOCODE
 ,GR,ANS,Nea Smyrni,Nea Smyrni,A1,RL,--3-----,1501,,3757N 02343E,,"37.95000,23.71667",0,UN/LOCODE
@@ -61503,7 +61503,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,GR,SCH,Schimatari,Schimatari,03,RL,--3-----,1601,,3821N 02335E,,"38.35000,23.58333",0,UN/LOCODE
 ,GR,SCR,Stavrochorion,Stavrochorion,57,RL,1-------,0901,,3504N 02557E,,"35.0624997,25.9429365",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/11247345
 ,GR,SDH,Soúda,Souda,94,AA,1-3-----,1607,,3531N 02408E,,"35.51667,24.13333",7,UN/LOCODE
-,GR,SDS,Sindhos,Sindhos,,RL,--3-----,0106,,4040N 00228E,,"40.66667,2.46667",N/A (no Nominatim),UN/LOCODE
+,GR,SDS,Sindhos,Sindhos,,RL,--3-----,0106,,4040N 02248E,,"40.66667,22.80000",N/A (coordinate of another UN/LOCODE used),GRSIS
 ,GR,SER,Sériphos,Seriphos,82,AI,1-------,0212,,3709N 02430E,,"37.15000,24.50000",3,UN/LOCODE
 ,GR,SFD,Sofades,Sofades,41,RL,--3-----,1401,,3920N 02206E,,"39.33333,22.10000",1,UN/LOCODE
 ,GR,SFN,Souflíon,Souflion,,RL,123-----,0601,,4112N 02619E,,"41.20000,26.31667",N/A (no Nominatim),UN/LOCODE
@@ -63873,7 +63873,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,ID,PSU,Putussibau,Putussibau,,AI,---4----,0001,,0052N 11255E,,"0.8710285,112.9224326",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/10622094
 +,ID,PTK,Padang Tikar,Padang Tikar,KB,RL,1-3-----,2407,,0040S 10916E,,"-0.66667,109.26667",1,UN/LOCODE
 ,ID,PTL,"Pantoloan, Sv","Pantoloan, Sv",,RL,1-------,9506,,,,,N/A,N/A
-,ID,PTO,Port Okha,Port Okha,,RL,0-------,9012,,2228N 06905E,,"22.466667,69.083333",N/A (no UN/LOCODE),http://www.wikidata.org/entity/Q111387057
+,ID,PTO,Port Okha,Port Okha,,RL,0-------,9012,,,,,N/A,N/A
 ,ID,PUB,Purbalingga,Purbalingga,JT,RL,--3-----,1501,,0723S 10922E,,"-7.3894314,109.3632598",54,https://www.openstreetmap.org/node/10957525369#map=12/-7.3894314/109.3632598
 ,ID,PUG,Pulo Gadung,Pulo Gadung,JK,RL,--3-----,0907,,0611S 10654E,,"-6.18333,106.90000",0,UN/LOCODE
 ,ID,PUM,"Pomalaa, Sulawesi","Pomalaa, Sulawesi",,AI,1-34----,0207,,0402S 12135E,,"-4.03333,121.58333",3,UN/LOCODE
@@ -64792,7 +64792,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,IL,K8B,Kiryat-Bialik,Kiryat-Bialik,HA,RL,--3-----,1601,,3250N 03505E,,"32.83333,35.08333",1,UN/LOCODE
 ,IL,KAN,Kannot,Kannot,,RL,--3-----,0201,,3147N 03444E,,"31.78333,34.73333",3,UN/LOCODE
 ,IL,KAQ,Kafr Qasem,Kafr Qasem,M,RL,--3-----,1601,,3206N 03458E,,"32.10000,34.96667",N/A (no Nominatim),UN/LOCODE
-,IL,KAU,Kaukab Abu El-Hija,Kaukab Abu El-Hija,Z,RL,--3-----,1907,,3249N 01458E,,"32.81667,14.96667",N/A (no Nominatim),UN/LOCODE
+,IL,KAU,Kaukab Abu El-Hija,Kaukab Abu El-Hija,Z,RL,--3-----,1907,,3250N 03515E,,"32.831389,35.248889",N/A (hardcoded to Wikidata),http://www.wikidata.org/entity/Q2604424
 ,IL,KAZ,Katzir-Harish,Katzir-Harish,HA,RL,--3-----,1601,,3229N 03506E,,"32.48333,35.10000",N/A (no Nominatim),UN/LOCODE
 ,IL,KBL,Kefar Blum,Kefar Blum,Z,RL,--3-----,1601,,3310N 03536E,,"33.16667,35.60000",N/A (no Nominatim),UN/LOCODE
 ,IL,KBN,Kefar Bin Nun,Kefar Bin Nun,M,RL,--3-----,1601,,3151N 03456E,,"31.85000,34.93333",N/A (no Nominatim),UN/LOCODE
@@ -64841,7 +64841,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,IL,MBA,Mazkeret Batya,Mazkeret Batya,TA,RL,--3-----,1301,,3151N 03450E,,"31.85000,34.83333",1,UN/LOCODE
 ,IL,MEG,Megiddo,Megiddo,,RL,--3-----,0901,,3234N 03511E,,"32.56667,35.18333",1,UN/LOCODE
 ,IL,MEH,Haifa Meshakef,Haifa Meshakef,Z,AC,-----6--,1301,,3248N 03459E,,"32.80000,34.98333",N/A (no Nominatim),UN/LOCODE
-,IL,MEN,Sha'ar Menashe,Sha'ar Menashe,,RL,--34----,1007,,3727N 03501E,,"37.45000,35.01667",N/A (no Nominatim),UN/LOCODE
+,IL,MEN,Sha'ar Menashe,Sha'ar Menashe,,RL,--34----,1007,,3227N 03501E,,"32.45,35.016667",N/A (hardcoded to Wikidata),http://www.wikidata.org/entity/Q166862
 ,IL,MES,Mesilot,Mesilot,,RL,--3-----,0901,,3230N 03528E,,"32.50000,35.46667",1,UN/LOCODE
 ,IL,MGA,Ma'galim,Ma'galim,,RL,--3-----,1101,,3250N 03459E,,"32.8329859,34.9793306",163,https://www.openstreetmap.org/relation/2658695
 ,IL,MGD,Megadim,Megadim,HA,RL,--3-----,1601,,3243N 03457E,,"32.71667,34.95000",2,UN/LOCODE
@@ -66496,7 +66496,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,IR,GNH,Ganaveh,Ganaveh,,RL,-----6--,1007,,2935N 05031E,,"29.5818086,50.5183165",101,https://www.openstreetmap.org/node/704278453#map=12/29.5818086/50.5183165
 ,IR,GSM,Gheshm,Gheshm,,AI,---4----,0001,,2646N 05546E,,"26.77,55.77",N/A (no UN/LOCODE),http://www.wikidata.org/entity/Q240719
 ,IR,HDM,Hamadan,Hamadan,,AI,---4----,0001,,3448N 04831E,,"34.7992888,48.5152464",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/8188090
-,IR,HDR,Havadarya,Havadarya,22,RL,---4----,0907,,4628N 02449E,,"46.46667,24.81667",N/A (no Nominatim),UN/LOCODE
+,IR,HDR,Havadarya,Havadarya,22,RL,---4----,0907,,2710N 05610E,,"27.159445,56.171945",N/A (hardcoded to Wikidata),http://www.wikidata.org/entity/Q20448445
 ,IR,HEJ,Henjam,Henjam,,RL,0-------,9506,,,,,N/A,N/A
 ,IR,HOR,Hormuz,Hormuz,,RL,0-------,9506,,2706N 05627E,,"27.0955031,56.4527390",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/9080266
 ,IR,IAQ,Bahregan,Bahregan,,AI,---4----,0001,,2950N 05016E,,"29.840074,50.272701",N/A (no UN/LOCODE),http://www.wikidata.org/entity/Q3448885
@@ -68129,7 +68129,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,IT,DDE,Credaro,Credaro,BG,RL,--3-----,1801,,4539N 00955E,,"45.65000,9.91667",1,UN/LOCODE
 ,IT,DDG,Desenzano del Garda,Desenzano del Garda,BS,RL,-23-----,1607,,4528N 01032E,,"45.46667,10.53333",1,UN/LOCODE
 ,IT,DDI,Piuro,Piuro,SO,RL,--3-----,1207,,4619N 00925E,,"46.31667,9.41667",2,UN/LOCODE
-,IT,DDO,Dogana do Ortonovo,Dogana do Ortonovo,,RL,--3-----,9805,,4404N 01002E,,"44.06859,10.03142",N/A (no UN/LOCODE),http://www.wikidata.org/entity/Q24572120
+,IT,DDO,Dogana do Ortonovo,Dogana do Ortonovo,,RL,--3-----,9805,,4404N 01002E,,"44.070737,10.031066",N/A (no UN/LOCODE),http://www.wikidata.org/entity/Q24572120
 ,IT,DDR,Roddino,Roddino,CN,RL,--3-----,1207,,4434N 00801E,,"44.56667,8.01667",1,UN/LOCODE
 ,IT,DEG,Dego,Dego,SV,RL,--3-----,0407,,4427N 00819E,,"44.45000,8.31667",1,UN/LOCODE
 ,IT,DEI,Castiglione dei Pepoli,Castiglione dei Pepoli,BO,RL,-23-----,0407,,4408N 01109E,,"44.13333,11.15000",1,UN/LOCODE
@@ -69325,7 +69325,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,IT,MIT,Marina di Camerota,Marina di Camerota,,AA,1-3-----,1301,,4000N 01522E,,"40.00000,15.36667",1,UN/LOCODE
 ,IT,MIV,Monte Vidon Combatte,Monte Vidon Combatte,FM,RL,--3-----,1207,,4302N 01337E,,"43.03333,13.61667",2,UN/LOCODE
 ,IT,MIZ,Marsiliana,Marsiliana,GR,RL,--3-----,1307,,4232N 01121E,,"42.53333,11.35000",1,UN/LOCODE
-,IT,MJC,Mollicciara,Mollicciara,,RL,0-------,9307,,4405N 01001E,,"44.0875,10.01037",N/A (no UN/LOCODE),http://www.wikidata.org/entity/Q18460606
+,IT,MJC,Mollicciara,Mollicciara,,RL,0-------,9307,,4405N 01001E,,"44.090573,10.008676",N/A (no UN/LOCODE),http://www.wikidata.org/entity/Q18460606
 ,IT,MJO,Majano,Majano,UD,RL,--3-----,0901,,4611N 01304E,,"46.18333,13.06667",0,UN/LOCODE
 ,IT,ML2,Mascalucia,Mascalucia,CT,RL,--3-----,1207,,3734N 01503E,,"37.56667,15.05000",1,UN/LOCODE
 ,IT,ML3,Murelle,Murelle,PD,RL,--3-----,1301,,4529N 01159E,,"45.48333,11.98333",1,UN/LOCODE
@@ -78343,7 +78343,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,MY,TP8,Tapah,Tapah,08,RL,--3-----,1601,,0411N 10116E,,"4.18333,101.26667",2,UN/LOCODE
 ,MY,TPG,Taiping,Taiping,,AI,---4----,0001,,0451N 10045E,,"4.8546772,100.7438831",N/A (no UN/LOCODE),https://www.openstreetmap.org/node/254074065#map=12/4.8546772/100.7438831
 ,MY,TPP,Tanjung Pelepas,Tanjung Pelepas,01,RL,123-----,0601,,0122N 10333E,,"1.36667,103.55000",1,UN/LOCODE
-,MY,TRB,Teluk Rubiah,Teluk Rubiah,08,RL,1-3-----,1701,,4949N 10037E,,"49.81667,100.61667",N/A (no Nominatim),UN/LOCODE
+,MY,TRB,Teluk Rubiah,Teluk Rubiah,08,RL,1-3-----,1701,,0410N 10037E,,"4.167431,100.618585",N/A (hardcoded to Wikidata),http://www.wikidata.org/entity/Q7697913
 ,MY,TRM,Telok Ramunia,Telok Ramunia,,QQ,1-------,8103,,0122N 10415E,,"1.371944,104.2475",N/A (no UN/LOCODE),http://www.wikidata.org/entity/Q7697912
 ,MY,TSR,Tanjong Surat,Tanjong Surat,,QQ,1-------,8103,,0128N 10403E,,"1.4714946,104.0576926",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/15711783
 ,MY,TTE,Tandjung Tengelili,Tandjung Tengelili,,QQ,1-------,8103,,,,,N/A,N/A
@@ -78459,7 +78459,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,NA,RUA,Ruacana,Ruacana,KU,RL,1----6--,1001,,1726S 01421E,,"-17.43333,14.35000",1,UN/LOCODE
 ,NA,SWP,Swakopmund,Swakopmund,,AI,---45---,9805,,2241S 01432E,,"-22.6768424,14.5289720",N/A (no UN/LOCODE),https://www.openstreetmap.org/node/33364835#map=12/-22.6768424/14.5289720
 ,NA,SZM,Sesriem,Sesriem,,AI,---4----,0001,,2429S 01548E,,"-24.4871301,15.7984921",N/A (no UN/LOCODE),https://www.openstreetmap.org/node/4289452797#map=12/-24.4871301/15.7984921
-,NA,TCY,Terrace Bay,Terrace Bay,,AI,---4----,0001,,4848N 08706W,,"48.801667,-87.103611",N/A (no UN/LOCODE),http://www.wikidata.org/entity/Q2405170
+,NA,TCY,Terrace Bay,Terrace Bay,,AI,---4----,0001,,,,,N/A,N/A
 ,NA,TSB,Tsumeb,Tsumeb,,AI,---4----,9601,,1915S 01743E,,"-19.2484020,17.7087503",N/A (no UN/LOCODE),https://www.openstreetmap.org/way/218896252#map=12/-19.2484020/17.7087503
 ,NA,UIS,Uis,Uis,ER,RL,--3-----,1801,,2113S 01451E,,"-21.21667,14.85000",2,UN/LOCODE
 ,NA,VFG,Ariamsvlei,Ariamsvlei,KA,RL,--3-----,1601,,2807S 01949E,,"-28.11667,19.81667",2,UN/LOCODE
@@ -83104,7 +83104,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,PG,CGC,Cape Gloucester,Cape Gloucester,,AI,---4----,9601,,0527S 14825E,,"-5.45,148.42",N/A (no UN/LOCODE),http://www.wikidata.org/entity/Q1702791
 ,PG,CMU,Kundiawa,Kundiawa,,AI,---4----,9601,,0601S 14458E,,"-6.0190251,144.9722522",N/A (no UN/LOCODE),https://www.openstreetmap.org/node/1450460156#map=12/-6.0190251/144.9722522
 ,PG,CPI,Cape Orford,Cape Orford,,AI,---4----,0001,,,,,N/A,N/A
-,PG,CPN,Cape Rodney,Cape Rodney,,AI,---4----,9601,,3616S 17448E,,"-36.265245,174.797888",N/A (no UN/LOCODE),http://www.wikidata.org/entity/Q3457285
+,PG,CPN,Cape Rodney,Cape Rodney,,AI,---4----,9601,,,,,N/A,N/A
 ,PG,CVB,Chungribu,Chungribu,,AI,---4----,0001,,0448S 14443E,,"-4.7957585,144.7172005",N/A (no UN/LOCODE),https://www.openstreetmap.org/node/7417606269#map=12/-4.7957585/144.7172005
 ,PG,CVL,Cape Vogel,Cape Vogel,,AI,---4----,9601,,0942S 15002E,,"-9.69917,150.02572",N/A (no UN/LOCODE),http://www.wikidata.org/entity/Q19460830
 ,PG,DAF,Daup,Daup,,AI,---4----,0001,,0444S 14557E,,"-4.7415706,145.9494677",N/A (no UN/LOCODE),https://www.openstreetmap.org/node/9613382376#map=12/-4.7415706/145.9494677
@@ -114900,7 +114900,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,VN,ONB,Nha Be Oil Port,Nha Be Oil Port,SG,RL,1-3-----,1307,,1042N 10644E,,"10.70000,106.73333",N/A (no Nominatim),UN/LOCODE
 ,VN,OPC,Quang Ngai,Quang Ngai,43,RL,--3-----,1707,,1500N 10842E,,"14.9953739,108.6917290",18,https://www.openstreetmap.org/relation/1890793
 ,VN,OSP,Saigon Petro Oil Terminal,Saigon Petro Oil Terminal,SG,RL,1-3-----,1307,,1045N 10647E,,"10.75000,106.78333",N/A (no Nominatim),UN/LOCODE
-,VN,OTW,B12 Oil Terminal,B12 Oil Terminal,13,RL,1-------,1101,,2057N 10303E,,"20.95000,103.05000",N/A (no Nominatim),UN/LOCODE
+,VN,OTW,B12 Oil Terminal,B12 Oil Terminal,13,RL,1-------,1101,,2058N 10704E,,"20.963,107.0621",N/A (hardcoded to Wikidata),http://www.wikidata.org/entity/Q141418455
 ,VN,PGO,Phu Giáo,Phu Giao,57,RL,-----6--,1201,,1118N 10652E,,"11.3071441,106.8607982",17,https://www.openstreetmap.org/relation/15350067
 ,VN,PHA,Phan Rang,Phan Rang,,AI,1--4----,9501,,1134N 10859E,,"11.5678786,108.9894409",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/16074981
 ,VN,PHB,Phú Bai,Phu Bai,26,RL,1-3-----,1001,,1622N 10744E,,"16.36667,107.73333",8,UN/LOCODE
@@ -116074,3 +116074,4 @@ X,CN,TIZ,Taizhou,Taizhou,JS,XX,1-3-----,0907,,3229N 11954E,Use CNTZO,"32.48333,1
 X,RE,PDG,Pointe des Galets,Pointe des Galets,,XX,--3-----,1807,,2055S 05517E,Use REPD2,"-20.91667,55.28333",N/A,REPD2
 X,TH,SGZ,Songkhla,Songkhla,90,XX,1-3-----,1801,,0714N 10034E,Use THSGK,"7.23333,100.56667",N/A,THSGK
 X,CN,ZAP,Zhapu Pt,Zhapu Pt,ZJ,XX,1-------,1407,,3035N 12105E,Use CNZPU,"30.58333,121.08333",N/A,CNZPU
+X,NO,STM,Straumen,Straumen,18,XX,--3-----,2201,,6721N 01536E,Use NOST2,"67.35000,15.60000",N/A,NOST2
