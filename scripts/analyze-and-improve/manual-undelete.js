@@ -9,4 +9,5 @@ export const DELETIONS_STILL_IN_USE = {
     REPDG: "REPD2", // Pointe des Galets
     THSGZ: "THSGK", // Songkhla. Still used at https://portcode.net/thailand/songkhla/songkhla-deepsea-port/
     CNZAP: "CNZPU", // Zhapu. Still used at https://www.marinetraffic.com/en/ais/details/ports/17421?name=ZHAPU&country=China
+    NOSTM: "NOST2", // Straumen. Still used at https://www.marinetraffic.com/en/ais/details/ports/13382?name=STRAUMEN&country=Norway
 }
