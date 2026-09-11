@@ -97,6 +97,8 @@ export const ALIASES = {
     SISVN: "SISVC", // Svenica => Sevnica
     USVXJ: "USVCS", // Claves => Cleves
     TNJAR: "TNZRZ", // Jarjis => Zarzis (the remarks even say: "a.k.a Zarzis")
+    GRSDS: "GRSIS", // Sindhos => Síndos
+    GRANO: "GRAIN", // Aeginio => Aiginion
 
     // Cities who have been renamed, but there already exists a new UN/LOCODE for the new name
     AZKBD: "AZGAN", // Kirovabad => Ganja
