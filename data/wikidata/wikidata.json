@@ -298,7 +298,7 @@
   },
   {
     "item": "http://www.wikidata.org/entity/Q958621",
-    "itemLabel": "Chaghcharan",
+    "itemLabel": "Firuzkoh",
     "lat": "34.5225",
     "lon": "65.251667",
     "unlocode": "AFCCN",
@@ -42020,7 +42020,7 @@
   },
   {
     "item": "http://www.wikidata.org/entity/Q208713",
-    "itemLabel": "Ixelles",
+    "itemLabel": "Q208713",
     "lat": "50.833056",
     "lon": "4.366945",
     "unlocode": "BEESE",
@@ -46155,7 +46155,7 @@
   },
   {
     "item": "http://www.wikidata.org/entity/Q219244",
-    "itemLabel": "Koekelberg",
+    "itemLabel": "Q219244",
     "lat": "50.860556",
     "lon": "4.331667",
     "unlocode": "BEKOE",
@@ -49120,7 +49120,7 @@
   },
   {
     "item": "http://www.wikidata.org/entity/Q180775",
-    "itemLabel": "Molenbeek-Saint-Jean",
+    "itemLabel": "Q180775",
     "lat": "50.854722",
     "lon": "4.338611",
     "unlocode": "BEMSJ",
@@ -52199,7 +52199,7 @@
   },
   {
     "item": "http://www.wikidata.org/entity/Q12887",
-    "itemLabel": "Schaerbeek",
+    "itemLabel": "Q12887",
     "lat": "50.8675",
     "lon": "4.373611",
     "unlocode": "BESBK",
@@ -52231,7 +52231,7 @@
   },
   {
     "item": "http://www.wikidata.org/entity/Q12887",
-    "itemLabel": "Schaerbeek",
+    "itemLabel": "Q12887",
     "lat": "50.8675",
     "lon": "4.373611",
     "unlocode": "BESCH",
@@ -74148,8 +74148,7 @@
     "lon": "7.566667",
     "unlocode": "CHBNN",
     "subdivisionCodes": [
-      "CH-BL",
-      "DE-RP"
+      "CH-BL"
     ]
   },
   {
@@ -88458,8 +88457,7 @@
     "lon": "7.096389",
     "unlocode": "DE3AS",
     "subdivisionCodes": [
-      "DE-RP",
-      "DE-ST"
+      "DE-RP"
     ]
   },
   {
@@ -89384,7 +89382,7 @@
   },
   {
     "item": "http://www.wikidata.org/entity/Q376180",
-    "itemLabel": "Kastorf (Herzogtum-Lauenburg)",
+    "itemLabel": "Kastorf",
     "lat": "53.749167",
     "lon": "10.570555",
     "unlocode": "DE53C",
@@ -100309,8 +100307,7 @@
     "lon": "7.0725",
     "unlocode": "DEACE",
     "subdivisionCodes": [
-      "DE-RP",
-      "DE-ST"
+      "DE-RP"
     ]
   },
   {
@@ -164672,16 +164669,6 @@
   {
     "item": "http://www.wikidata.org/entity/Q2042684",
     "itemLabel": "Sietzsch",
-    "lat": "51.48983",
-    "lon": "12.17775",
-    "unlocode": "DESZC",
-    "subdivisionCodes": [
-      "DE-ST"
-    ]
-  },
-  {
-    "item": "http://www.wikidata.org/entity/Q2042684",
-    "itemLabel": "Sietzsch",
     "lat": "51.490556",
     "lon": "12.178056",
     "unlocode": "DESZC",
@@ -195561,17 +195548,6 @@
     "subdivisionCodes": [
       "ES-B",
       "ES-CT"
-    ]
-  },
-  {
-    "item": "http://www.wikidata.org/entity/Q24010475",
-    "itemLabel": "Lerma",
-    "lat": "42.026029",
-    "lon": "-3.756279",
-    "unlocode": "ESLEM",
-    "subdivisionCodes": [
-      "ES-BU",
-      "ES-CL"
     ]
   },
   {
@@ -262887,6 +262863,7 @@
     "unlocode": "ITDMP",
     "subdivisionCodes": [
       "IT-88",
+      "IT-CA",
       "IT-SU"
     ]
   },
@@ -267486,6 +267463,7 @@
     "unlocode": "ITGL5",
     "subdivisionCodes": [
       "IT-88",
+      "IT-CA",
       "IT-SU"
     ]
   },
@@ -288037,7 +288015,7 @@
   },
   {
     "item": "http://www.wikidata.org/entity/Q20604",
-    "itemLabel": "Trevi",
+    "itemLabel": "Q20604",
     "lat": "42.877453",
     "lon": "12.747751",
     "unlocode": "ITREV",
@@ -292663,8 +292641,8 @@
   {
     "item": "http://www.wikidata.org/entity/Q258810",
     "itemLabel": "Salorno sulla Strada del Vino",
-    "lat": "46.233333",
-    "lon": "11.2",
+    "lat": "46.239167",
+    "lon": "11.212222",
     "unlocode": "ITSLN",
     "subdivisionCodes": [
       "IT-32",
@@ -318304,7 +318282,7 @@
   },
   {
     "item": "http://www.wikidata.org/entity/Q239421",
-    "itemLabel": "Nakuru",
+    "itemLabel": "Q239421",
     "lat": "-0.283333",
     "lon": "36.066667",
     "unlocode": "KENUU",
@@ -321972,7 +321950,7 @@
   },
   {
     "item": "http://www.wikidata.org/entity/Q503469",
-    "itemLabel": "Cahul, satul Gotești",
+    "itemLabel": "Cahul",
     "lat": "45.9075",
     "lon": "28.194445",
     "unlocode": "MDCAH",
@@ -324416,7 +324394,7 @@
   },
   {
     "item": "http://www.wikidata.org/entity/Q3175243",
-    "itemLabel": "San Cristóbal de la Barranca",
+    "itemLabel": "San Cristóbal de la Barranca Municipality",
     "lat": "21.05",
     "lon": "-103.5",
     "unlocode": "MXSCB",
@@ -355162,6 +355140,16 @@
     ]
   },
   {
+    "item": "http://www.wikidata.org/entity/Q176325",
+    "itemLabel": "Oktyabrsky",
+    "lat": "54.483333",
+    "lon": "53.483333",
+    "unlocode": "RUOKT",
+    "subdivisionCodes": [
+      "RU-BA"
+    ]
+  },
+  {
     "item": "http://www.wikidata.org/entity/Q4334074",
     "itemLabel": "Ol'ga",
     "lat": "43.716667",
@@ -358232,8 +358220,8 @@
   {
     "item": "http://www.wikidata.org/entity/Q466027",
     "itemLabel": "Yanbu",
-    "lat": "24.088264",
-    "lon": "38.058194",
+    "lat": "24.089444",
+    "lon": "38.061945",
     "unlocode": "SAYNB",
     "subdivisionCodes": [
       "SA-03"
@@ -358651,9 +358639,7 @@
     "lon": "18.400556",
     "unlocode": "SEFLX",
     "subdivisionCodes": [
-      "SE-AB",
-      "SE-C",
-      "SE-U"
+      "SE-AB"
     ]
   },
   {
@@ -359214,12 +359200,7 @@
     "itemLabel": "Spånga",
     "lat": "59.791667",
     "lon": "17.086944",
-    "unlocode": "SESPA",
-    "subdivisionCodes": [
-      "SE-AB",
-      "SE-C",
-      "SE-U"
-    ]
+    "unlocode": "SESPA"
   },
   {
     "item": "http://www.wikidata.org/entity/Q2325731",
@@ -433207,10 +433188,20 @@
     ]
   },
   {
-    "item": "http://www.wikidata.org/entity/Q122573545",
+    "item": "http://www.wikidata.org/entity/Q7055986",
     "itemLabel": "North Long Beach",
     "lat": "33.860016",
     "lon": "-118.185625",
+    "unlocode": "USNL3",
+    "subdivisionCodes": [
+      "US-CA"
+    ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q7055986",
+    "itemLabel": "North Long Beach",
+    "lat": "33.864386",
+    "lon": "-118.176896",
     "unlocode": "USNL3",
     "subdivisionCodes": [
       "US-CA"
