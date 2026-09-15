@@ -88789,7 +88789,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,RU,OHO,Okhotsk,Okhotsk,,QQ,1-------,9207,,5922N 14313E,,"59.3619947,143.2146511",N/A (no UN/LOCODE),https://www.openstreetmap.org/way/163924366#map=12/59.3619947/143.2146511
 ,RU,OKA,"Okha, Sakhalin","Okha, Sakhalin",,RL,12------,0207,,5334N 14300E,,"53.56667,143.00000",4,UN/LOCODE
 ,RU,OKR,Kronstadt,Kronstadt,SPE,RL,-----6--,1407,,6000N 02946E,,"60.00000,29.76667",1,UN/LOCODE
-,RU,OKT,Oktyabr'skiy,Oktyabr'skiy,,AI,1-34----,0401,,5026N 03621E,,"50.4377349,36.3552503",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/7584366
+,RU,OKT,Oktyabr'skiy,Oktyabr'skiy,,AI,1-34----,0401,,5429N 05329E,,"54.483333,53.483333",N/A (no UN/LOCODE),http://www.wikidata.org/entity/Q176325
 ,RU,OKU,Okulovka,Okulovka,NGR,RL,-23-----,1807,,5822N 03318E,,"58.36667,33.30000",1,UN/LOCODE
 ,RU,OKZ,Okruzhnoe,Okruzhnoe,SAK,RL,1-------,0901,,5019N 14348E,,"50.31667,143.80000",N/A (no Nominatim),UN/LOCODE
 ,RU,OLB,Bukhta Ol'ga,Bukhta Ol'ga,KAM,RL,1-------,1501,,5433N 16107E,,"54.55000,161.11667",N/A (no Nominatim),UN/LOCODE
@@ -90329,7 +90329,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,SE,SOO,Söderhamn,Soderhamn,X,AI,1234----,9601,,6118N 01704E,,"61.2998501,17.0607599",N/A (no UN/LOCODE),https://www.openstreetmap.org/node/27558251#map=12/61.2998501/17.0607599
 ,SE,SOR,Söråker,Soraker,Y,AA,123-----,1601,,6230N 01730E,,"62.50000,17.50000",1,UN/LOCODE
 ,SE,SOV,Södra Vi,Sodra Vi,H,RL,--3-----,1101,,5745N 01548E,,"57.75000,15.80000",1,UN/LOCODE
-,SE,SPA,Spånga,Spanga,AB,AF,-23-----,8312,,5948N 01705E,,"59.791667,17.086944",N/A (no UN/LOCODE),http://www.wikidata.org/entity/Q10676705
+,SE,SPA,Spånga,Spanga,AB,AF,-23-----,8312,,5925N 01342E,,"59.4176077,13.6975264",N/A (no UN/LOCODE),https://www.openstreetmap.org/node/6304169620#map=12/59.4176077/13.6975264
 ,SE,SPG,Skärplinge,Skarplinge,C,RL,--3--6--,0601,,6028N 01745E,,"60.46667,17.75000",1,UN/LOCODE
 ,SE,SPH,Sparreholm,Sparreholm,D,RL,-23-----,0901,,5904N 01649E,,"59.06667,16.81667",1,UN/LOCODE
 ,SE,SPK,Skarpnäck,Skarpnack,AB,RL,--3-----,0701,,5916N 01807E,,"59.26667,18.11667",1,UN/LOCODE
