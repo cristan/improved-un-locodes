@@ -220,6 +220,11 @@ export const UNLOCODE_BEST =[
     "UAYUZ",// Pivdennyi just means "South" in Ukrainian, so that name wasn't doing us any favors
     "CNJIX",// 蓟县 (Jixian), the former name of Jizhou District, Tianjin; See the official name section at https://www.wikidata.org/wiki/Q1205847
 
+    // Mafang, Guangdong. About 18 km from the official coordinates there's a Mafang Beijiang Bridge (https://maps.app.goo.gl/1aKAFZjmLLJFvB176)
+    //  and a Mafang industrial zone, so they're probably right.
+    // Without this override, Nominatim finds a Mafang in Beijing, which is inland while CNSHM is marked to have a port.
+    "CNSHM",
+
     // Places where the official coordinates match the ones at WPI (World Port Index) within 10km. These are probably fine.
     // WPI itself isn't redistributed by this project (NGA Pub 150's "no copyright claimed" notice sounds like a legal landmine).
     "RULES",  // UC↔WPI 2.2km
