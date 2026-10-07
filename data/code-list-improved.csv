@@ -89210,7 +89210,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,SA,DMM,Ad Dammam,Ad Dammam,04,RL,12345---,2107,,2630N 05012E,,"26.50000,50.20000",12,UN/LOCODE
 ,SA,EAM,Nejran,Nejran,10,AS,--34----,9401,,1730N 04411E,,"17.50000,44.18333",N/A (coordinate of another UN/LOCODE used),SANJN
 ,SA,EJH,Wedjh,Wedjh,,AI,1--4----,9601,,2617N 03625E,,"26.283333,36.416667",N/A (no UN/LOCODE),http://www.wikidata.org/entity/Q27251
-,SA,ELQ,Gassim,Gassim,,AI,---4----,9401,,2548N 04252E,,"25.80632,42.87323",N/A (no UN/LOCODE),http://www.wikidata.org/entity/Q1105411
+,SA,ELQ,Gassim,Gassim,,AI,---4----,9401,,2622N 04358E,,"26.361389,43.965833",N/A (no UN/LOCODE),http://www.wikidata.org/entity/Q1105411
 ,SA,FJJ,Fiji,Fiji,02,RL,-----6--,1001,,2416N 03834E,,"24.26667,38.56667",N/A (no Nominatim),UN/LOCODE
 ,SA,GIZ,Jizan,Jizan,,AI,1--4----,2107,,1654N 04230E,,"16.90000,42.50000",6,UN/LOCODE
 ,SA,HAD,Al Hadithah,Al Hadithah,12,RL,--3-----,1707,,3127N 03709E,,"31.45000,37.15000",1,UN/LOCODE
@@ -100679,7 +100679,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,US,HB9,Hebert,Hebert,TX,RL,------7-,1301,,2959N 09403W,,"29.98333,-94.05000",1,UN/LOCODE
 ,US,HBA,Hobart,Hobart,IN,RL,--3-----,9307,,4132N 08715W,,"41.5322592,-87.2550353",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/127195
 !,US,HBB,Hilbert,Hilbert,WI,RL,--3-----,9307,,4408N 08810W,,"44.1394110,-88.1586094",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/251443
-,US,HBC,Hanus Bay,Hanus Bay,AK,AI,---4----,0001,,6657S 06730W,,"-66.95,-67.5",N/A (no UN/LOCODE),http://www.wikidata.org/entity/Q141253
+,US,HBC,Hanus Bay,Hanus Bay,AK,AI,---4----,0001,,5725N 13502W,,"57.412778,-135.033333",N/A (no UN/LOCODE),http://www.wikidata.org/entity/Q49378990
 ,US,HBD,Harbeson,Harbeson,DE,RL,--3-----,9307,,3843N 07517W,,"38.7248347,-75.2849123",N/A (no UN/LOCODE),https://www.openstreetmap.org/node/158625229#map=12/38.7248347/-75.2849123
 ,US,HBE,Hobe Sound,Hobe Sound,FL,RL,--3-----,9307,,2705N 08008W,,"27.0804920,-80.1399180",N/A (no UN/LOCODE),https://www.openstreetmap.org/way/33614306#map=12/27.0804920/-80.1399180
 ,US,HBF,Harrodsburg,Harrodsburg,KY,RL,--3-----,9307,,3746N 08451W,,"37.7622980,-84.8432852",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/130732
@@ -108713,7 +108713,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,US,RTB,Port Barre,Port Barre,LA,RL,--3-----,0701,,3033N 09157W,,"30.55000,-91.95000",1,UN/LOCODE
 ,US,RTC,Firestone,Firestone,CO,RL,-23-----,0607,,4007N 10456W,,"40.11667,-104.93333",1,UN/LOCODE
 ,US,RTD,Rotunda,Rotunda,FL,AI,---4----,0001,,3920N 07638W,,"39.3363240,-76.6305486",N/A (no UN/LOCODE),https://www.openstreetmap.org/way/111666058#map=12/39.3363240/-76.6305486
-,US,RTE,Marguerite Bay,Marguerite Bay,AK,AI,---4----,0001,,6830S 06830W,,"-68.5,-68.5",N/A (no UN/LOCODE),http://www.wikidata.org/entity/Q141727
+,US,RTE,Marguerite Bay,Marguerite Bay,AK,AI,---4----,0001,,,,,N/A,N/A
 ,US,RTF,Great Falls,Great Falls,SC,RL,--3-----,0901,,3434N 08054W,,"34.56667,-80.90000",1,UN/LOCODE
 ,US,RTG,Carthage,Carthage,IL,RL,--3-----,0701,,4024N 09108W,,"40.40000,-91.13333",2,UN/LOCODE
 ,US,RTH,Rutherford,Rutherford,CA,RL,-23-----,9705,,3828N 12225W,,"38.4585210,-122.4224790",N/A (no UN/LOCODE),https://www.openstreetmap.org/node/150969211#map=12/38.4585210/-122.4224790
