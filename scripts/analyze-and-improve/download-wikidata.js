@@ -1,28 +1,42 @@
 import fs from "node:fs"
 import {runQleverQuery} from "./util/wikidata.js";
 
-// P131* walks the admin chain transitively, so we reach the ISO-coded ancestor through
-// municipalities/districts that don't have their own P300 code.
-const sparqlQuery = `
+const locationsQuery = `
 PREFIX wdt: <http://www.wikidata.org/prop/direct/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-SELECT DISTINCT ?item ?unlocode ?itemLabel ?coords (GROUP_CONCAT(DISTINCT ?code; SEPARATOR=", ") AS ?subdivisionCodes)
+SELECT DISTINCT ?item ?unlocode ?itemLabel ?coords
 WHERE {
   ?item wdt:P1937 ?unlocode.
   ?item wdt:P625 ?coords.
   OPTIONAL { ?item rdfs:label ?itemLabel. FILTER(LANG(?itemLabel) = "en") }
-  OPTIONAL {
-    ?item wdt:P131* ?adminEntity.
-    ?adminEntity wdt:P300 ?code.
-  }
 }
-GROUP BY ?item ?unlocode ?itemLabel ?coords
+`
+
+// Walking the admin chain reaches the ISO-coded ancestor through municipalities and districts
+// that don't have their own P300 code.
+const maxAdminChainLength = 6
+const adminChain = Array.from({length: maxAdminChainLength + 1}, (_, hops) => hops === 0
+    ? "{ ?item wdt:P300 ?code }"
+    : `{ ?item ${Array(hops).fill("wdt:P131").join("/")} ?ancestor . ?ancestor wdt:P300 ?code }`)
+    .join("\n  UNION ")
+
+const subdivisionCodesQuery = `
+PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+SELECT ?item (GROUP_CONCAT(DISTINCT ?code; SEPARATOR=", ") AS ?subdivisionCodes)
+WHERE {
+  ?item wdt:P1937 ?unlocode .
+  ${adminChain}
+}
+GROUP BY ?item
 `
 
 const coordsRegex = /POINT\(([-\d\.]*)\s([-\d\.]*)\)/
 
 async function downloadFromWikidata() {
-    const response = await runQleverQuery(sparqlQuery)
+    const response = await runQleverQuery(locationsQuery)
+    // Sort so the JSON is stable across runs — GROUP_CONCAT's order isn't guaranteed.
+    const subdivisionCodesPerItem = new Map((await runQleverQuery(subdivisionCodesQuery))
+        .map(result => [result.item.value, result.subdivisionCodes.value.split(", ").sort()]))
 
     const simplifiedData = response
         .filter(result => {
@@ -41,9 +55,9 @@ async function downloadFromWikidata() {
                 lon: extractCoordinates(result.coords.value).lon,
                 unlocode: result.unlocode.value,
             }
-            if (result.subdivisionCodes?.value) {
-                // Sort so the JSON is stable across runs — GROUP_CONCAT's order isn't guaranteed.
-                item.subdivisionCodes = result.subdivisionCodes.value.split(", ").sort()
+            const subdivisionCodes = subdivisionCodesPerItem.get(result.item.value)
+            if (subdivisionCodes) {
+                item.subdivisionCodes = subdivisionCodes
             }
             return item
         })
