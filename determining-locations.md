@@ -44,6 +44,10 @@ There are actually quite a few UN/LOCODEs for airports. Note that "Apt" in a nam
 
 Also, note that the UN/LOCODE dataset started out as the IATA dataset. So if the function is Airport and the last 3 characters of the UN/LOCODE is an IATA of an airport of the same name as the UN/LOCODE and it is in the country of the UN/LOCODE, then you have a hit. The UN/LOCODE then means the location the airport is named after.
 
+When the status is AI (code adopted by IATA) and the function includes Airport, it is **very likely** that the entry came from the IATA dataset and the last 3 characters are its IATA code. Some of these are old IATA codes though: the airport may have closed since, and the code may have been reassigned to an airport elsewhere.
+
+A small share isn't IATA at all. Typical cases are towns served by an airport elsewhere, often with a remark like "cf US MBS Apt", and US entries that use the FAA code instead. So when the IATA code points to an airport with a different name, double-check before trusting it.
+
 ## Investigate
 For example: [MASEK](https://unlocode.info/MASEK) (Ksar Es Souk) is the old name of Errachidia. However, Errachidia already has its own UN/LOCODE ([MAERH](https://unlocode.info/MAERH)), so MASEK actually shouldn't exist anymore.
 
