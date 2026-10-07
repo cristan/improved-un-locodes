@@ -37,6 +37,8 @@ Still: a subdivision can give a good indication which location is meant.
 ## Functions
 Look at the functions. For example: if it is defined as a port (function 1), it's a safe bet it needs to be next to a sea or a river.
 
+A missing function is a weaker hint, since functions are often incomplete, especially in the US. Port Tampa ([USPOT](https://unlocode.info/USPOT)) only has the rail function, even though it literally has "Port" in its name.
+
 ## Airports
 There are actually quite a few UN/LOCODEs for airports. Note that "Apt" in a name means Airport. In those cases, the UN/LOCODE means an actual airport.
 
