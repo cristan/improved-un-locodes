@@ -19027,7 +19027,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,CN,BIN,Binzhou,Binzhou,SD,RL,--3-----,9901,,3723N 11758E,,"37.3821206,117.9647262",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/4434116
 ,CN,BIY,Beiyao,Beiyao,GD,RL,1-------,1401,,3442N 11229E,,"34.6967254,112.4911297",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/9974966
 ,CN,BJD,Beijingdong Railway Station,Beijingdong Railway Station,BJ,AS,-2------,1601,,3954N 11629E,,"39.901389,116.478611",N/A (no UN/LOCODE),http://www.wikidata.org/entity/Q3269619
-,CN,BJO,Beijiao,Beijiao,FJ,RL,--3-----,0907,,2256N 11312E,,"22.9313027,113.2014950",778,https://www.openstreetmap.org/relation/17096298
+,CN,BJO,Beijiao,Beijiao,FJ,RL,--3-----,0907,,2621N 11955E,,"26.35000,119.91667",4,UN/LOCODE
 ,CN,BJS,Beijing,Beijing,BJ,AS,-23456--,1601,,3955N 11624E,,"39.91667,116.40000",4,UN/LOCODE
 ,CN,BJX,Beijingxi Railway Station,Beijingxi Railway Station,BJ,AS,-2------,1601,,3954N 11619E,,"39.893544,116.314922",N/A (no UN/LOCODE),http://www.wikidata.org/entity/Q523887
 ,CN,BJZ,Beijing Railway Station,Beijing Railway Station,BJ,AS,-2------,1601,,,,,N/A,N/A
@@ -20098,7 +20098,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,CN,SHJ,Shajing,Shajing,GD,RL,--3-----,9805,,2244N 11348E,,"22.7362054,113.8065995",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/10490915
 ,CN,SHK,Shekou Pt,Shekou Pt,GD,AS,1-------,1601,,2229N 11355E,,"22.48333,113.91667",N/A (no Nominatim),UN/LOCODE
 ,CN,SHL,Shuolong,Shuolong,GX,AS,1-------,1601,,2248N 10648E,,"22.80000,106.80000",3,UN/LOCODE
-,CN,SHM,Mafang,Mafang,GD,AS,1-------,1407,,4004N 11700E,,"40.0592368,117.0053845",1902,https://www.openstreetmap.org/relation/20256324
+,CN,SHM,Mafang,Mafang,GD,AS,1-------,1407,,2321N 11241E,,"23.35000,112.68333",1902,UN/LOCODE
 ,CN,SHN,Shiwan,Shiwan,HN,RL,--3-----,0607,,2718N 11257E,,"27.2993052,112.9494216",128,https://www.openstreetmap.org/node/4311556098#map=12/27.2993052/112.9494216
 ,CN,SHO,Shajiao,Shajiao,GD,RL,1-------,9901,,2304N 11256E,,"23.0706114,112.9365225",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/19985711
 ,CN,SHP,Qinhuangdao Pt,Qinhuangdao Pt,HE,AS,1-------,1601,,3955N 11935E,,"39.91667,119.58333",N/A (no Nominatim),UN/LOCODE
