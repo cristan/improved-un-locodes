@@ -13,6 +13,9 @@ export async function runQleverQuery(query) {
     })
 
     const json = await fromQlever.json();
+    if (json.exception) {
+        throw new Error(`QLever failed: ${json.exception}`)
+    }
     return json.results.bindings;
 }
 
