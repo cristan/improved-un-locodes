@@ -74534,7 +74534,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,JP,TYO,Tokyo,Tokyo,13,AF,12345---,0401,,3541N 13945E,,"35.68333,139.75000",39,UN/LOCODE
 ,JP,TYP,Tsuyoshi,Tsuyoshi,42,AF,1-------,9907,,,,,N/A,N/A
 ,JP,TYR,Toyoura,Toyoura,33,AF,1-------,9907,,4235N 14043E,,"42.5834863,140.7116417",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/4087848
-,JP,TYS,Toyosatu,Toyosatu,25,RL,--3-----,1007,,3512N 11823E,,"35.20000,118.38333",N/A (no Nominatim),UN/LOCODE
+,JP,TYS,Toyosatu,Toyosatu,25,RL,--3-----,1007,,3512N 13614E,,"35.200361,136.229944",N/A (hardcoded to Wikidata),http://www.wikidata.org/entity/Q937037
 ,JP,TYU,Tayui,Tayui,42,AF,1-------,9907,,,,,N/A,N/A
 ,JP,TYW,Toyokawa,Toyokawa,23,AF,--3-----,1207,,3449N 13724E,,"34.81667,137.40000",2,UN/LOCODE
 ,JP,TZA,Taiza,Taiza,26,AF,1-------,9907,,3544N 13505E,,"35.7347373,135.0912647",N/A (no UN/LOCODE),https://www.openstreetmap.org/node/7499857883#map=12/35.7347373/135.0912647
