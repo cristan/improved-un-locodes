@@ -34845,7 +34845,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,ES,AHI,Alhaurín de la Torre,Alhaurin de la Torre,,RL,--3-----,0212,,3640N 00433W,,"36.66667,-4.55000",1,UN/LOCODE
 ,ES,AHJ,Ahín,Ahin,,RL,--3-----,0212,,3954N 00020W,,"39.90000,-0.33333",1,UN/LOCODE
 ,ES,AHL,Ahigal,Ahigal,CC,RL,--3-----,1001,,4011N 00611W,,"40.18333,-6.18333",1,UN/LOCODE
-,ES,AHM,Aldahermosa,Aldahermosa,J,RL,--3-----,1001,,3050N 00308W,,"30.83333,-3.13333",N/A (no Nominatim),UN/LOCODE
+,ES,AHM,Aldahermosa,Aldahermosa,J,RL,--3-----,1001,,3820N 00308W,,"38.33333,-3.13333",N/A (coordinate of another UN/LOCODE used),ESADH
 ,ES,AHP,Alhama,Alhama,,RL,0-------,9307,,3839N 00002W,,"38.6460614,-0.0396752",N/A (no UN/LOCODE),https://www.openstreetmap.org/node/1242138507#map=12/38.6460614/-0.0396752
 ,ES,AHS,Anllares,Anllares,LE,RL,--3-----,1601,,4251N 00632W,,"42.85000,-6.53333",1,UN/LOCODE
 ,ES,AHZ,Archidona,Archidona,,RL,--3-----,9501,,3706N 00423W,,"37.0945779,-4.3906561",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/346009
@@ -83240,7 +83240,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,PG,KUL,Kumul,Kumul,,RL,1-----7-,0207,,0806S 14434E,,"-8.10000,144.56667",229,UN/LOCODE
 ,PG,KUP,Kupiano,Kupiano,,AI,---4----,9601,,1004S 14811E,,"-10.0747220,148.1838983",N/A (no UN/LOCODE),https://www.openstreetmap.org/node/7791819748#map=12/-10.0747220/148.1838983
 ,PG,KUQ,Kuri,Kuri,,AI,---4----,0001,,0708S 14317E,,"-7.1275134,143.2778916",N/A (no UN/LOCODE),https://www.openstreetmap.org/node/938711436#map=12/-7.1275134/143.2778916
-,PG,KUX,Kuyol,Kuyol,,RL,---4----,0907,,3829N 12602E,,"38.48333,126.03333",N/A (no Nominatim),UN/LOCODE
+,PG,KUX,Kuyol,Kuyol,,RL,---4----,0907,,0522S 14137E,,"-5.37236,141.62403",N/A (hardcoded to Wikidata),http://www.wikidata.org/entity/Q35272096
 ,PG,KUY,Kamusi,Kamusi,,AI,---4----,0001,,0726S 14307E,,"-7.4257071,143.1231321",N/A (no UN/LOCODE),https://www.openstreetmap.org/node/1684197393#map=12/-7.4257071/143.1231321
 ,PG,KVE,Kitava,Kitava,,AI,---4----,0001,,0837S 15120E,,"-8.6220689,151.3329423",N/A (no UN/LOCODE),https://www.openstreetmap.org/way/43847468#map=12/-8.6220689/151.3329423
 ,PG,KVG,Kavieng,Kavieng,,AI,1--4----,9601,,0234S 15048E,,"-2.5734740,150.7952240",N/A (no UN/LOCODE),https://www.openstreetmap.org/node/2135442533#map=12/-2.5734740/150.7952240
@@ -83330,7 +83330,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,PG,OBX,Obo,Obo,,AI,---4----,0001,,0735S 14119E,,"-7.5895277,141.3237531",N/A (no UN/LOCODE),https://www.openstreetmap.org/node/12371631783#map=12/-7.5895277/141.3237531
 ,PG,OGE,Ogeranang,Ogeranang,,AI,---4----,0001,,0628S 14722E,,"-6.4655499,147.3636436",N/A (no UN/LOCODE),https://www.openstreetmap.org/node/7806258455#map=12/-6.4655499/147.3636436
 ,PG,OKP,Oksapmin,Oksapmin,,AI,---4----,0001,,0513S 14213E,,"-5.2237929,142.2216916",N/A (no UN/LOCODE),https://www.openstreetmap.org/way/708393617#map=12/-5.2237929/142.2216916
-,PG,OKV,Okao,Okao,,RL,---4----,0907,,0355S 11612E,,"-3.91667,116.20000",N/A (no Nominatim),UN/LOCODE
+,PG,OKV,Okao,Okao,,RL,---4----,0907,,0533S 14102E,,"-5.55636,141.03287",N/A (hardcoded to Wikidata),http://www.wikidata.org/entity/Q35285602
 ,PG,OLQ,Olsobip,Olsobip,,AI,---4----,0001,,0523S 14131E,,"-5.3873447,141.5165158",N/A (no UN/LOCODE),https://www.openstreetmap.org/node/7501554640#map=12/-5.3873447/141.5165158
 ,PG,OML,Omkalai,Omkalai,,AI,---4----,0001,,,,,N/A,N/A
 ,PG,ONB,Ononge,Ononge,,AI,---4----,0001,,0840S 14716E,,"-8.6676219,147.2625670",N/A (no UN/LOCODE),https://www.openstreetmap.org/node/13679734200#map=12/-8.6676219/147.2625670
@@ -87972,7 +87972,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,RO,SGV,Snagov,Snagov,,RL,-23-----,0601,,4442N 02611E,,"44.70000,26.18333",1,UN/LOCODE
 ,RO,SHA,Faget,Faget,DJ,RL,--3-----,1601,,4420N 02336E,,"44.33333,23.60000",2,UN/LOCODE
 ,RO,SIM,Sighetu Marmatiei,Sighetu Marmatiei,,AC,-2------,8309,,4756N 02353E,,"47.9283242,23.8915583",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/10744322
-,RO,SIN,Sinnicolau Mare,Sinnicolau Mare,TM,RL,--3-----,0907,,4640N 02037E,,"46.66667,20.61667",N/A (no Nominatim),UN/LOCODE
+,RO,SIN,Sinnicolau Mare,Sinnicolau Mare,TM,RL,--3-----,0907,,4605N 02038E,,"46.08333,20.63333",N/A (coordinate of another UN/LOCODE used),ROSUM
 ,RO,SIR,Siret,Siret,SV,RL,--3-----,0907,,4757N 02604E,,"47.9520660,26.0718698",37,https://www.openstreetmap.org/way/75510958#map=12/47.9520660/26.0718698
 ,RO,SIT,Simeria,Simeria,HD,AC,-23-----,0401,,4549N 02303E,,"45.81667,23.05000",4,UN/LOCODE
 ,RO,SJS,Simleu Silvaniei,Simleu Silvaniei,SJ,RL,--3-----,1101,,4714N 02248E,,"47.2305359,22.7933051",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/10743053
