@@ -18,6 +18,7 @@ export const ALIASES = {
     RUKDT: "RUOKR", // Kronshtadt => Kronstadt
     CZRPR: "CZRVR", // Roznov pod Radhosthem => Roznov pod Radhostem
     ECSDO: "ECSGO", // Santo Domingo de los Colorados => Santo Domingo
+    ESAHM: "ESADH", // Aldahermosa => Aldeahermosa
     ESBAZ: "ESBLZ", // Bazalote => Balazote
     ESCBB: "ESCLL", // Castilbisbal => Castellbisbal
     ESCRI: "ESZBA", // Cierbena => Zierbena
@@ -99,6 +100,7 @@ export const ALIASES = {
     TNJAR: "TNZRZ", // Jarjis => Zarzis (the remarks even say: "a.k.a Zarzis")
     GRSDS: "GRSIS", // Sindhos => Síndos
     GRANO: "GRAIN", // Aeginio => Aiginion
+    ROSIN: "ROSUM", // Sinnicolau Mare => Sannicolau Mare
 
     // Cities who have been renamed, but there already exists a new UN/LOCODE for the new name
     AZKBD: "AZGAN", // Kirovabad => Ganja
