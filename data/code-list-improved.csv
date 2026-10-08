@@ -63623,7 +63623,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,ID,KIS,Kisaran,Kisaran,SA,RL,--3-----,1101,,0259N 09937E,,"2.98333,99.61667",1,UN/LOCODE
 ,ID,KJN,Kajang,Kajang,,RL,--3-----,9811,,0733S 11133E,,"-7.5424127,111.5434368",N/A (no UN/LOCODE),https://www.openstreetmap.org/node/1308645479#map=12/-7.5424127/111.5434368
 ,ID,KKA,"Kuala Kapuas, Kl","Kuala Kapuas, Kl",,RL,1-------,9506,,0301S 11423E,,"-3.0089407,114.3876186",N/A (no UN/LOCODE),https://www.openstreetmap.org/node/6018742010#map=12/-3.0089407/114.3876186
-,ID,KKB,"Kunak, Borneo","Kunak, Borneo",,RL,1-------,8103,,0441N 11815E,,"4.683333,118.25",N/A (no UN/LOCODE),http://www.wikidata.org/entity/Q1011975
+,ID,KKB,"Kunak, Borneo","Kunak, Borneo",,RL,1-------,8103,,,,,N/A,N/A
 ,ID,KL3,Kletek,Kletek,NT,RL,--3-----,1501,,0935S 12456E,,"-9.58333,124.93333",7,UN/LOCODE
 ,ID,KLA,Klari,Klari,JB,RL,--3-----,1501,,0619S 10722E,,"-6.31667,107.36667",4,UN/LOCODE
 ,ID,KLD,Kelapagading,Kelapagading,JK,RL,--3-----,1601,,0609S 10652E,,"-6.15000,106.86667",N/A (no Nominatim),UN/LOCODE
