@@ -9,7 +9,7 @@ CAFRR "Fraser Mills" is actually named "Fraser River" in the UN/LOCODE dataset; 
 ## Don't blindly trust UN/LOCODE's spelling
 WPI's spelling and the Wikidata spelling don't always match. (EGRSH: UN/LOCODE name "Ras Shukheir"; WPI name "Ras Shukhier"; https://www.wikidata.org/wiki/Q7294676: "Ras Shokeir")
 
-- Assume the code in front of you is the only one that could apply to a place. They come in clusters — CAFRA (road) / CAFRR (port); ISKEF / ISKEV for Keflavík, and which one is "the" code is often genuinely unclear. Look for siblings before tagging, without assuming either one owns the place.
+- Don't assume the code in front of you is the only one that could apply to a place. They come in clusters — CAFRA (road) / CAFRR (port); ISKEF / ISKEV for Keflavík, and which one is "the" code is often genuinely unclear. Look for siblings before tagging, without assuming either one owns the place.
 
 ## Don't guess Q numbers from memory
 The Q-number space is large and irregular. Items get merged, deleted, renumbered, and labels collide across unrelated entities. Numbers recalled from training have been confidently wrong:
@@ -135,7 +135,8 @@ Don't tag a city's Wikidata item with an `X Pt` UN/LOCODE. CNHBG "Harbin Pt" is 
 3. Check `P17` (country). Matches the UN/LOCODE country prefix?
 4. Check `P131*` (admin entity, transitive). Falls under the UN/LOCODE's subdivision code?
 5. Check `P1937` is empty. If already set, you're duplicating — investigate why.
-6. Read the English description. Two lines usually settles the "right entity?" question fast.
+6. Check no other code in this country has a near-identical name. If one does and its coordinates hold up, the entry in front of you is a typo of it — use `ALIASES`.
+7. Read the English description. Two lines usually settles the "right entity?" question fast.
 
 ## When automation gives up: one-at-a-time review
 There is no SPARQL-and-script technique that gets the right answer for every UN/LOCODE without manual review. Cases where automation breaks:
