@@ -317171,6 +317171,16 @@
     ]
   },
   {
+    "item": "http://www.wikidata.org/entity/Q937037",
+    "itemLabel": "Toyosato",
+    "lat": "35.200361",
+    "lon": "136.229944",
+    "unlocode": "JPTYS",
+    "subdivisionCodes": [
+      "JP-25"
+    ]
+  },
+  {
     "item": "http://www.wikidata.org/entity/Q389495",
     "itemLabel": "Toyokawa",
     "lat": "34.826778",
