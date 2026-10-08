@@ -186464,6 +186464,17 @@
     ]
   },
   {
+    "item": "http://www.wikidata.org/entity/Q5390839",
+    "itemLabel": "Aldeahermosa",
+    "lat": "38.327778",
+    "lon": "-3.126945",
+    "unlocode": "ESADH",
+    "subdivisionCodes": [
+      "ES-AN",
+      "ES-J"
+    ]
+  },
+  {
     "item": "http://www.wikidata.org/entity/Q107452183",
     "itemLabel": "Alcocero de Mola",
     "lat": "42.473768",
@@ -335943,6 +335954,13 @@
     "unlocode": "PGKNL"
   },
   {
+    "item": "http://www.wikidata.org/entity/Q35272096",
+    "itemLabel": "Kuyol Airport",
+    "lat": "-5.37236",
+    "lon": "141.62403",
+    "unlocode": "PGKUX"
+  },
+  {
     "item": "http://www.wikidata.org/entity/Q1017358",
     "itemLabel": "Kavieng",
     "lat": "-2.566667",
@@ -336031,6 +336049,13 @@
     "subdivisionCodes": [
       "PG-WPD"
     ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q35285602",
+    "itemLabel": "Okao Airport",
+    "lat": "-5.55636",
+    "lon": "141.03287",
+    "unlocode": "PGOKV"
   },
   {
     "item": "http://www.wikidata.org/entity/Q1017376",
