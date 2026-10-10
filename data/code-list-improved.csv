@@ -22106,7 +22106,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,CZ,LSK,Leskovec,Leskovec,72,RL,--3-----,1701,,4917N 01800E,,"49.28333,18.00000",0,UN/LOCODE
 ,CZ,LST,Libstát,Libstat,LI,RL,-----6--,0907,,5034N 01525E,,"50.56667,15.41667",1,UN/LOCODE
 ,CZ,LTC,Litomerice,Litomerice,,AA,-23-----,9701,,5032N 01408E,,"50.5340795,14.1317985",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/439670
-,CZ,LTN,Lestina,Lestina,52,RL,--3-----,1801,,4952N 01656E,,"49.8687854,16.9274822",136,https://www.openstreetmap.org/node/1599401609#map=12/49.8687854/16.9274822
+,CZ,LTN,Lestina,Lestina,52,RL,--3-----,1801,,5026N 01514E,,"50.43333,15.23333",0,UN/LOCODE
 ,CZ,LTV,Litovel,Litovel,,RL,-----6--,0601,,4942N 01704E,,"49.70000,17.06667",1,UN/LOCODE
 ,CZ,LUA,Luzna,Luzna,JC,RL,--3-----,0901,,5007N 01346E,,"50.1237702,13.7700423",105,https://www.openstreetmap.org/node/1601331081#map=12/50.1237702/13.7700423
 ,CZ,LUE,Lukavice,Lukavice,KR,RL,--3-----,0901,,5012N 01618E,,"50.20000,16.30000",0,UN/LOCODE
@@ -22139,7 +22139,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,CZ,MCV,Mocovice,Mocovice,ST,RL,--3-----,0901,,4954N 01521E,,"49.90000,15.35000",1,UN/LOCODE
 ,CZ,MDL,Modlany,Modlany,US,RL,--3-----,0901,,5039N 01354E,,"50.65000,13.90000",0,UN/LOCODE
 ,CZ,MDR,Modrice,Modrice,JM,RL,--3-----,0407,,4908N 01637E,,"49.13333,16.61667",1,UN/LOCODE
-,CZ,MDY,Mydlovary,Mydlovary,32,RL,--3-----,1807,,4906N 01421E,,"49.0918843,14.3542441",126,https://www.openstreetmap.org/relation/437937
+,CZ,MDY,Mydlovary,Mydlovary,32,RL,--3-----,1807,,4951N 01303E,,"49.85000,13.05000",1,UN/LOCODE
 ,CZ,MED,Medlesic,Medlesic,PA,RL,--3-----,0901,,,,,N/A,N/A
 ,CZ,MEE,Mutenice,Mutenice,JM,RL,--3-----,0507,,4855N 01701E,,"48.91667,17.01667",2,UN/LOCODE
 ,CZ,MEJ,Menín,Menin,JM,RL,--3-----,1401,,4905N 01643E,,"49.08333,16.71667",2,UN/LOCODE
@@ -22249,7 +22249,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,CZ,NMT,Nemetice,Nemetice,31,RL,--3-----,2001,,4912N 01353E,,"49.20000,13.88333",0,UN/LOCODE
 ,CZ,NMY,Nemcicky,Nemcicky,JM,RL,--3-----,0701,,4856N 01605E,,"48.93333,16.08333",2,UN/LOCODE
 ,CZ,NOB,Novy Bor,Novy Bor,,AA,-23-----,0212,,5046N 01435E,,"50.76667,14.58333",2,UN/LOCODE
-,CZ,NOE,Nová Ves,Nova Ves,63,RL,--3-----,1707,,4915N 01548E,,"49.2520055,15.7998232",13,https://www.openstreetmap.org/relation/442578
+,CZ,NOE,Nová Ves,Nova Ves,63,RL,--3-----,1707,,4915N 01548E,,"49.2485164,15.8038483",12,https://www.openstreetmap.org/node/1586662864#map=12/49.2485164/15.8038483
 ,CZ,NOU,Noutonice,Noutonice,ST,RL,--3-----,1501,,5010N 01417E,,"50.16667,14.28333",0,UN/LOCODE
 ,CZ,NOV,Krenovice,Krenovice,JM,RL,--3-----,1501,,4922N 01421E,,"49.3672906,14.3428919",128,https://www.openstreetmap.org/node/1599176538#map=12/49.3672906/14.3428919
 ,CZ,NPH,Neplachov,Neplachov,JC,RL,--3--6--,1201,,4908N 01438E,,"49.13333,14.63333",2,UN/LOCODE
