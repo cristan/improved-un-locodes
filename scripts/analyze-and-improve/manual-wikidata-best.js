@@ -187,6 +187,11 @@ export const WIKIDATA_BEST = [
     "PGOKV",
     "PGKUX",
     "JPTYS", // Typo in the UN/LOCODE name: Toyosatu => Toyosato
+    "GBYRK",
+    "GBBSH",
+    "GBHEV",
+    "GBSTD",
+    "GBWRY",
 
     // entries to prevent coordinates in the wrong hemisphere
     "DEWNT",// Wedlenstedt => Wedtlenstedt

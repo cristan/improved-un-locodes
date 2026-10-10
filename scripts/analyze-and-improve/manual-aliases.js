@@ -138,6 +138,7 @@ export const DUPLICATES = {
     // The same location filed a second time under the wrong country
     ASAPI: "WSAPW",
     BMHBI: "BSHBI",
+    GBANO: "VGRAD",
     GBPPC: "USEPU",
     GYCAY: "GFCAY",
     MNORD: "CNORD",

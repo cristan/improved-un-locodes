@@ -57,6 +57,23 @@ export const UNLOCODE_BEST =[
     "FIKVL",
     "FISPJ",
     "FIUPK",
+
+    // Points to "Road Town" on the British Virgin Islands. Kinda weird since that has its own country code.
+    // In fact: VGRAD exists and should be used instead.
+    // Still: nominatim doesn't find anything what else it likely could be, so let's keep the official coordinates.
+    "GBANO",
+    "GBWMD",// West Mainland. A region, so this tripped our script up
+    "GBTRS",// South Harris. A region, so this tripped our script up
+    "GBWYR",// Wyre. Is an island
+    "GBSQK",// Saint Martins. Is an island
+    "GBVLY",// Anglesey. Is an island
+    "GBOLL",// Coll. Is an island
+    "GBISY",// Islay. Is an island
+    "GBAIS",// St Agnes. Is an island
+    "GBWB7",// West Brompton. A residential area in West London
+    "GBBEY",
+    "GBWTE",// Westerleigh
+    "GBBYM",// Ballymena
     "GBYBR",
     "GBRGP",// Little weird to have a unlocode for a park, but otherwise it checks out
     "GBSRX",
