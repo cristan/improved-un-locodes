@@ -214,8 +214,10 @@ export function getSubdivisionCode(nominatimElement) {
         return nominatimElement.address["ISO3166-2-lvl5"]?.substring(3)
     } else if (countryCode === "gb") {
         // Level 4 is something like England or Scotland. That's not the level unlocodes work on.
-        // level 6 is what we really need, except northern Ireland (which uses level 7).
-        return nominatimElement.address["ISO3166-2-lvl6"]?.substring(3) ?? nominatimElement.address["ISO3166-2-lvl7"]?.substring(3)
+        // Level 6 is correct whenever it is present.
+        // Northern Ireland only has level 7.
+        // The metropolitan and London boroughs only have level 8.
+        return nominatimElement.address["ISO3166-2-lvl6"]?.substring(3) ?? nominatimElement.address["ISO3166-2-lvl7"]?.substring(3) ?? nominatimElement.address["ISO3166-2-lvl8"]?.substring(3)
     }
 
     return nominatimElement.address["ISO3166-2-lvl6"]?.substring(3) ??
