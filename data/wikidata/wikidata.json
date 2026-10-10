@@ -64719,8 +64719,8 @@
   {
     "item": "http://www.wikidata.org/entity/Q955992",
     "itemLabel": "Kobryn",
-    "lat": "52.2125",
-    "lon": "24.356667",
+    "lat": "52.208661",
+    "lon": "24.354326",
     "unlocode": "BYKBY",
     "subdivisionCodes": [
       "BY-BR"
@@ -87331,8 +87331,8 @@
   {
     "item": "http://www.wikidata.org/entity/Q697263",
     "itemLabel": "Bräunrode",
-    "lat": "51.633056",
-    "lon": "11.4",
+    "lat": "51.6422",
+    "lon": "11.4049",
     "unlocode": "DE234",
     "subdivisionCodes": [
       "DE-ST"
@@ -231341,6 +231341,18 @@
     ]
   },
   {
+    "item": "http://www.wikidata.org/entity/Q1506018",
+    "itemLabel": "Westray",
+    "lat": "59.3",
+    "lon": "-3",
+    "unlocode": "GBWRY",
+    "subdivisionCodes": [
+      "GB-ORK",
+      "GB-SCT",
+      "GB-UKM"
+    ]
+  },
+  {
     "item": "http://www.wikidata.org/entity/Q1002453",
     "itemLabel": "Westhill",
     "lat": "57.154",
@@ -327002,7 +327014,7 @@
   },
   {
     "item": "http://www.wikidata.org/entity/Q2750772",
-    "itemLabel": "Nnewi",
+    "itemLabel": "nnewi",
     "lat": "6.010522",
     "lon": "6.910347",
     "unlocode": "NGNNW",
@@ -332801,8 +332813,8 @@
   {
     "item": "http://www.wikidata.org/entity/Q984008",
     "itemLabel": "Greytown",
-    "lat": "-41.083333",
-    "lon": "175.45",
+    "lat": "-41.08",
+    "lon": "175.461",
     "unlocode": "NZGRT",
     "subdivisionCodes": [
       "NZ-WGN"
@@ -376015,7 +376027,7 @@
     "item": "http://www.wikidata.org/entity/Q599716",
     "itemLabel": "Aliquippa",
     "lat": "40.615",
-    "lon": "-80.263055",
+    "lon": "-80.26",
     "unlocode": "USAQP",
     "subdivisionCodes": [
       "US-PA"
