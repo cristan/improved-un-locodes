@@ -54818,7 +54818,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,GB,AII,Airlie,Airlie,ANS,RL,--3-----,1401,,5638N 00306W,,"56.63333,-3.10000",1,UN/LOCODE
 ,GB,AIN,Aintree,Aintree,LIV,AF,--3-----,1401,,5328N 00256W,,"53.46667,-2.93333",2,UN/LOCODE
 ,GB,AIR,Airdrie,Airdrie,NLK,AF,--3-----,1401,,5551N 00359W,,"55.85000,-3.98333",2,UN/LOCODE
-,GB,AIS,St Agnes,St Agnes,CON,RL,1-------,1307,,5018N 00512W,,"50.2951351,-5.2009211",93,https://www.openstreetmap.org/relation/5877856
+,GB,AIS,St Agnes,St Agnes,CON,RL,1-------,1307,,4953N 00620W,,"49.88333,-6.33333",93,UN/LOCODE
 ,GB,AIT,Aith,Aith,ZET,AA,1-3-----,0701,,6017N 00123W,,"60.28333,-1.38333",0,UN/LOCODE
 ,GB,AKA,Acklam,Acklam,NYK,RL,0-------,2407,,5403N 00048W,,"54.0452210,-0.8069315",61,https://www.openstreetmap.org/relation/7827268
 ,GB,AKF,Bankfoot,Bankfoot,PKN,RL,--3-----,0907,,5630N 00330W,,"56.50000,-3.50000",1,UN/LOCODE
@@ -54880,7 +54880,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,GB,ANG,Annalong,Annalong,NMD,AA,1-3-----,0701,,5406N 00554W,,"54.10000,-5.90000",1,UN/LOCODE
 ,GB,ANH,Arminghall,Arminghall,NFK,RL,--3-----,0701,,5235N 00119E,,"52.58333,1.31667",1,UN/LOCODE
 ,GB,ANN,Annan,Annan,DGY,AA,123-----,0701,,5459N 00316W,,"54.98333,-3.26667",1,UN/LOCODE
-,GB,ANO,Road Town,Road Town,,RL,1-------,1601,,5340N 00144W,,"53.6584247,-1.7267211",6593,https://www.openstreetmap.org/way/436798245#map=12/53.6584247/-1.7267211
+,GB,ANO,Road Town,Road Town,,RL,1-------,1601,,1825N 06437W,,"18.41667,-64.61667",6593,UN/LOCODE
 ,GB,ANP,Annfield Plain,Annfield Plain,DUR,RL,--3-----,1301,,5451N 00144W,,"54.85000,-1.73333",1,UN/LOCODE
 ,GB,ANR,Llandre,Llandre,CGN,RL,--3-----,1301,,5227N 00401W,,"52.45000,-4.01667",2,UN/LOCODE
 ,GB,ANS,Anstruther,Anstruther,FIF,AA,1-3-----,0701,,5613N 00242W,,"56.21667,-2.70000",1,UN/LOCODE
@@ -55134,7 +55134,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,GB,BEV,Beverley,Beverley,ERY,AF,--3-----,1401,,5350N 00025W,,"53.83333,-0.41667",1,UN/LOCODE
 ,GB,BEW,Beaworthy,Beaworthy,DEV,RL,--3-----,0701,,5046N 00411W,,"50.76667,-4.18333",1,UN/LOCODE
 ,GB,BEX,Bexley,Bexley,BEX,AF,-23-----,1401,,5126N 00009E,,"51.43333,0.15000",1,UN/LOCODE
-,GB,BEY,Bromley,Bromley,KEN,AF,--3-----,9704,,5106N 00051E,,"51.0938993,0.8528776",67,https://www.openstreetmap.org/node/1210695167#map=12/51.0938993/0.8528776
+,GB,BEY,Bromley,Bromley,KEN,AF,--3-----,9704,,5124N 00001E,,"51.40000,0.01667",67,UN/LOCODE
 ,GB,BEZ,Bearley,Bearley,WAR,RL,--3-----,0407,,5214N 00143W,,"52.23333,-1.71667",2,UN/LOCODE
 ,GB,BFA,Blandford Saint Mary,Blandford Saint Mary,DOR,RL,--3-----,1101,,5051N 00210W,,"50.85000,-2.16667",N/A (no Nominatim),UN/LOCODE
 ,GB,BFB,Braefoot Bay,Braefoot Bay,FIF,AF,1-------,2301,,5603N 00319W,,"56.05000,-3.31667",1,UN/LOCODE
@@ -55400,7 +55400,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,GB,BSE,Bury Saint Edmunds,Bury Saint Edmunds,SFK,AF,--34----,1101,BEQ,5214N 00043E,,"52.23333,0.71667",N/A (no Nominatim),UN/LOCODE
 ,GB,BSF,Bassingfield,Bassingfield,NTT,AF,--3-----,9907,,5255N 00104W,,"52.91667,-1.06667",2,UN/LOCODE
 ,GB,BSG,Brislington,Brislington,BST,AF,--3-----,0501,,5126N 00232W,,"51.43333,-2.53333",1,UN/LOCODE
-,GB,BSH,Brighton,Brighton,ESX,AF,1--4----,9511,,5047N 00018E,,"50.7886580,0.3062875",N/A (no UN/LOCODE),https://www.openstreetmap.org/way/487007119#map=12/50.7886580/0.3062875
+,GB,BSH,Brighton,Brighton,ESX,AF,1--4----,9511,,5049N 00008W,,"50.820833,-0.1375",N/A (no UN/LOCODE),http://www.wikidata.org/entity/Q131491
 ,GB,BSI,Bognor Regis,Bognor Regis,WSX,AA,123-----,0701,,5047N 00041W,,"50.78333,-0.68333",1,UN/LOCODE
 ,GB,BSK,Bradley Stoke,Bradley Stoke,SGC,RL,-23--6--,0601,,5132N 00233W,,"51.53333,-2.55000",0,UN/LOCODE
 ,GB,BSL,Bosley,Bosley,CHE,AF,1-------,1307,,5311N 00207W,,"53.18333,-2.11667",1,UN/LOCODE
@@ -55534,7 +55534,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,GB,BYH,Betws-yn-rhos,Betws-yn-rhos,CWY,RL,--3-----,0701,,5315N 00339W,,"53.25000,-3.65000",1,UN/LOCODE
 ,GB,BYI,Brynsiencyn,Brynsiencyn,AGY,RL,1-------,0901,,5311N 00414W,,"53.18333,-4.23333",2,UN/LOCODE
 ,GB,BYL,Bulwell/Nottingham,Bulwell/Nottingham,NTT,RL,--3-----,0201,,5259N 00109W,,"52.98333,-1.15000",4,UN/LOCODE
-,GB,BYM,Ballymena,Ballymena,ANN,AF,-23-----,9804,,5444N 00557W,,"54.7407450,-5.9520613",25,https://www.openstreetmap.org/relation/4483340
+,GB,BYM,Ballymena,Ballymena,ANN,AF,-23-----,9804,,5452N 00617W,,"54.86667,-6.28333",25,UN/LOCODE
 ,GB,BYN,Broadmayne,Broadmayne,DOR,RL,1-------,0901,,5041N 00223W,,"50.68333,-2.38333",1,UN/LOCODE
 ,GB,BYP,Ballintoy,Ballintoy,ANN,RL,1-------,0901,,5514N 00621W,,"55.23333,-6.35000",0,UN/LOCODE
 ,GB,BYQ,Bushey,Bushey,HRT,RL,--3-----,0201,,5138N 00021W,,"51.63333,-0.35000",1,UN/LOCODE
@@ -56964,7 +56964,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,GB,HER,Hurstpierpoint,Hurstpierpoint,WSX,AF,--3-----,9704,,5056N 00011W,,"50.9334630,-0.1781416",N/A (no UN/LOCODE),https://www.openstreetmap.org/node/679972778#map=12/50.9334630/-0.1781416
 ,GB,HES,Heston,Heston,HNS,AF,--3-----,1401,,5129N 00022W,,"51.4854573,-0.3719561",N/A (no UN/LOCODE),https://www.openstreetmap.org/node/31036372#map=12/51.4854573/-0.3719561
 ,GB,HET,Herston,Herston,DOR,RL,--3-----,0901,,5036N 00158W,,"50.6078334,-1.9749344",N/A (no UN/LOCODE),https://www.openstreetmap.org/node/12730674365#map=12/50.6078334/-1.9749344
-,GB,HEV,Hove,Hove,ESX,AF,--3-----,9511,,5047N 00018E,,"50.7886580,0.3062875",N/A (no UN/LOCODE),https://www.openstreetmap.org/way/487007119#map=12/50.7886580/0.3062875
+,GB,HEV,Hove,Hove,ESX,AF,--3-----,9511,,5050N 00010W,,"50.831111,-0.1725",N/A (no UN/LOCODE),http://www.wikidata.org/entity/Q989616
 ,GB,HEW,Henlow,Henlow,CBF,AF,--3-----,1307,,5202N 00017W,,"52.0323139,-0.2892463",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/4075689
 ,GB,HEY,Chertsey,Chertsey,SRY,AF,--3-----,9511,,5124N 00030W,,"51.3922960,-0.5038294",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/9274290
 ,GB,HF5,Heathfield,Heathfield,ESX,RL,--3-----,1501,,5057N 00016E,,"50.95000,0.26667",3,UN/LOCODE
@@ -57344,7 +57344,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,GB,ISS,Liss,Liss,HAM,AF,--3-----,9704,,5102N 00054W,,"51.0415389,-0.8994550",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/3344969
 ,GB,IST,Islington,Islington,ISL,AF,--3-----,1401,,5132N 00006W,,"51.53333,-0.10000",1,UN/LOCODE
 ,GB,ISW,Isleworth,Isleworth,HNS,AF,--3-----,1401,QIF,5128N 00020W,,"51.46667,-0.33333",1,UN/LOCODE
-,GB,ISY,Islay,Islay,AGB,RL,1-------,0901,,5552N 00357W,,"55.8586803,-3.9480243",144,https://www.openstreetmap.org/node/704508524#map=12/55.8586803/-3.9480243
+,GB,ISY,Islay,Islay,AGB,RL,1-------,0901,,5548N 00615W,,"55.80000,-6.25000",144,UN/LOCODE
 ,GB,ITA,Binstead,Binstead,IOW,RL,--3-----,1201,,5044N 00111W,,"50.7250824,-1.1820205",N/A (no UN/LOCODE),https://www.openstreetmap.org/node/3730920063#map=12/50.7250824/-1.1820205
 ,GB,ITC,Itchenor,Itchenor,WSX,AF,1-------,9511,,5048N 00052W,,"50.7997820,-0.8737383",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/2990942
 ,GB,ITH,Innerleithen,Innerleithen,SCB,RL,--3-----,1401,,5537N 00303W,,"55.61667,-3.05000",1,UN/LOCODE
@@ -58465,7 +58465,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,GB,OKW,Oakworth,Oakworth,BRD,AF,--3-----,1401,,5350N 00158W,,"53.83333,-1.96667",2,UN/LOCODE
 ,GB,OLD,Old,Old,NTH,AF,--3-----,9704,,5221N 00050W,,"52.3563851,-0.8394718",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/1742754
 ,GB,OLH,Shouldham,Shouldham,NFK,RL,--3-----,1307,,5239N 00029E,,"52.65000,0.48333",1,UN/LOCODE
-,GB,OLL,Coll,Coll,AGB,RL,1-------,2301,,5816N 00619W,,"58.2729100,-6.3147747",185,https://www.openstreetmap.org/node/498442054#map=12/58.2729100/-6.3147747
+,GB,OLL,Coll,Coll,AGB,RL,1-------,2301,,5637N 00631W,,"56.61667,-6.51667",185,UN/LOCODE
 ,GB,OLN,Olney,Olney,BKM,AF,--3-----,9704,,5210N 00042W,,"52.1648634,-0.7075558",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/5345291
 ,GB,OLP,Osterley Park,Osterley Park,HNS,AQ,--3-----,0601,,5129N 00021W,,"51.48333,-0.35000",N/A (no Nominatim),UN/LOCODE
 ,GB,OLR,Ollerton,Ollerton,NTT,RL,-23-----,0701,,5312N 00101W,,"53.20000,-1.01667",0,UN/LOCODE
@@ -59413,7 +59413,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,GB,SPU,Sherbourne,Sherbourne,WAR,AF,--3-----,9811,,5215N 00137W,,"52.2505658,-1.6169803",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/2877407
 ,GB,SPW,Spencers Wood,Spencers Wood,WOK,AF,--3-----,0507,,5123N 00057W,,"51.38333,-0.95000",2,UN/LOCODE
 ,GB,SPY,Shapinsay,Shapinsay,ORK,AI,1-------,0212,,5903N 00251W,,"59.05000,-2.85000",1,UN/LOCODE
-,GB,SQK,Saint Martins,Saint Martins,CON,RL,1-3-----,1307,,5050N 00008W,,"50.8334225,-0.1273120",447,https://www.openstreetmap.org/way/1185276849#map=12/50.8334225/-0.1273120
+,GB,SQK,Saint Martins,Saint Martins,CON,RL,1-3-----,1307,,4957N 00617W,,"49.95000,-6.28333",447,UN/LOCODE
 ,GB,SQN,Sonning,Sonning,WOK,AF,--3-----,0507,,5128N 00054W,,"51.46667,-0.90000",1,UN/LOCODE
 ,GB,SQW,Sway,Sway,HAM,RL,--3--6--,1201,,5047N 00136W,,"50.78333,-1.60000",0,UN/LOCODE
 ,GB,SQZ,Scampton,Scampton,LIN,AI,---4----,0212,,5318N 00034W,,"53.30000,-0.56667",1,UN/LOCODE
@@ -59465,7 +59465,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,GB,STA,Southwater,Southwater,WSX,AF,--3-----,9704,,5101N 00021W,,"51.0242057,-0.3523171",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/2951347
 ,GB,STB,Strabane,Strabane,STB,AF,-23-----,0401,,5448N 00728W,,"54.80000,-7.46667",3,UN/LOCODE
 ,GB,STC,South Cave,South Cave,ERY,AF,--3-----,1401,,5346N 00036W,,"53.76667,-0.60000",0,UN/LOCODE
-,GB,STD,Strood,Strood,KEN,AF,0-------,9511,,5104N 00039E,,"51.0585740,0.6470424",N/A (no UN/LOCODE),https://www.openstreetmap.org/node/485664189#map=12/51.0585740/0.6470424
+,GB,STD,Strood,Strood,KEN,AF,0-------,9511,,5124N 00029E,,"51.393,0.478",N/A (no UN/LOCODE),http://www.wikidata.org/entity/Q1808441
 ,GB,STE,Street,Street,SOM,AF,--3-----,9511,,5108N 00244W,,"51.1267494,-2.7397217",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/2910711
 ,GB,STF,Stratford,Stratford,NWM,AF,--3-----,1401,,5132N 00000E,,"51.53333,0.00000",1,UN/LOCODE
 ,GB,STG,Seething,Seething,NFK,AF,--3-----,9704,,5232N 00125E,,"52.5266644,1.4160655",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/1022356
@@ -59762,7 +59762,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,GB,TRO,Trefor,Trefor,,RL,1-------,0901,,5300N 00424W,,"53.00000,-4.40000",2,UN/LOCODE
 ,GB,TRP,Thorpe,Thorpe,SRY,RL,-23-----,0701,,5125N 00031W,,"51.41667,-0.51667",1,UN/LOCODE
 ,GB,TRR,Trearddur,Trearddur,AGY,AA,1-3-----,0701,,5317N 00437W,,"53.28333,-4.61667",0,UN/LOCODE
-,GB,TRS,South Harris,South Harris,ELS,RL,1-------,0901,,5325N 00131W,,"53.4144021,-1.5117258",594,https://www.openstreetmap.org/way/136139860#map=12/53.4144021/-1.5117258
+,GB,TRS,South Harris,South Harris,ELS,RL,1-------,0901,,5801N 00621W,,"58.01667,-6.35000",594,UN/LOCODE
 ,GB,TRT,Thornton,Thornton,ERY,RL,--3-----,1201,,5354N 00051W,,"53.90000,-0.85000",0,UN/LOCODE
 ,GB,TRU,Truro,Truro,CON,AF,1-------,9511,,5016N 00503W,,"50.2633381,-5.0510525",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/5821558
 ,GB,TRV,Tarvin,Tarvin,CHW,RL,--3-----,1307,,5312N 00246W,,"53.20000,-2.76667",0,UN/LOCODE
@@ -59921,7 +59921,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,GB,VGN,Virginia Water,Virginia Water,SRY,AF,--3-----,9704,,5124N 00034W,,"51.4033624,-0.5661711",N/A (no UN/LOCODE),https://www.openstreetmap.org/node/7440484#map=12/51.4033624/-0.5661711
 ,GB,VID,Vidlin,Vidlin,ZET,AA,1-3-----,0701,,6022N 00108W,,"60.36667,-1.13333",0,UN/LOCODE
 ,GB,VJL,Longmanhill,Longmanhill,ABD,RL,--3-----,1301,,5739N 00226W,,"57.65000,-2.43333",0,UN/LOCODE
-,GB,VLY,Anglesey,Anglesey,AGY,RL,---4----,0907,,5248N 00139W,,"52.7974622,-1.6439330",200,https://www.openstreetmap.org/relation/6947223
+,GB,VLY,Anglesey,Anglesey,AGY,RL,---4----,0907,,5315N 00432W,,"53.25000,-4.53333",200,UN/LOCODE
 ,GB,VMA,Craven Arms,Craven Arms,SHR,RL,-----6--,1107,,5226N 00250W,,"52.4396520,-2.8356405",384,https://www.openstreetmap.org/relation/7062170
 ,GB,VOB,Vobster,Vobster,SOM,AF,--3-----,9704,,5114N 00226W,,"51.2398215,-2.4257677",N/A (no UN/LOCODE),https://www.openstreetmap.org/node/3090812882#map=12/51.2398215/-2.4257677
 ,GB,VOE,Voe,Voe,ZET,RL,1-------,0901,,6021N 00115W,,"60.35000,-1.25000",1,UN/LOCODE
@@ -59954,7 +59954,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,GB,WAW,Warwick,Warwick,CMA,AF,--3-----,9511,,5217N 00135W,,"52.2821379,-1.5905593",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/176448
 ,GB,WAX,West Auckland,West Auckland,DUR,RL,1-3--6--,0901,,5438N 00144W,,"54.63333,-1.73333",1,UN/LOCODE
 ,GB,WAY,Wallasey,Wallasey,WRL,AF,--3-----,1401,,5326N 00304W,,"53.43333,-3.06667",2,UN/LOCODE
-,GB,WB7,West Brompton,West Brompton,HMF,RL,--3-----,1301,,5413N 00034W,,"54.2215983,-0.5667497",305,https://www.openstreetmap.org/node/13175767478#map=12/54.2215983/-0.5667497
+,GB,WB7,West Brompton,West Brompton,HMF,RL,--3-----,1301,,5129N 00012W,,"51.48333,-0.20000",305,UN/LOCODE
 ,GB,WBC,Wombourne,Wombourne,STS,AF,--3-----,9811,,5232N 00211W,,"52.5385482,-2.1842453",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/6924456
 ,GB,WBD,Wimbledon,Wimbledon,MRT,AF,-23-----,1401,,5126N 00013W,,"51.43333,-0.21667",1,UN/LOCODE
 ,GB,WBE,Waterbeach,Waterbeach,CAM,RL,--3-----,0201,,5215N 00011E,,"52.25000,0.18333",2,UN/LOCODE
@@ -60139,7 +60139,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,GB,WLY,Warley,Warley,,AF,0-------,9511,,5343N 00155W,,"53.7199311,-1.9151607",N/A (no UN/LOCODE),https://www.openstreetmap.org/node/30935708#map=12/53.7199311/-1.9151607
 ,GB,WLZ,Walls Shetland,Walls Shetland,ZET,AA,1-3-----,2301,,6013N 00134W,,"60.21667,-1.56667",1,UN/LOCODE
 ,GB,WMB,Wemyss Bay,Wemyss Bay,IVC,AF,1-------,1401,,5553N 00454W,,"55.88333,-4.90000",1,UN/LOCODE
-,GB,WMD,West Mainland,West Mainland,ZET,RL,1-------,0901,,5231N 00201W,,"52.5153087,-2.0206248",857,https://www.openstreetmap.org/way/1343811331#map=12/52.5153087/-2.0206248
+,GB,WMD,West Mainland,West Mainland,ZET,RL,1-------,0901,,6013N 00123W,,"60.21667,-1.38333",857,UN/LOCODE
 ,GB,WME,Wormley,Wormley,SRY,RL,-23-----,0701,,5108N 00039W,,"51.13333,-0.65000",0,UN/LOCODE
 ,GB,WMF,Walmer,Walmer,KEN,AF,1-3-----,9811,,5112N 00124E,,"51.2068884,1.3999154",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/2599220
 ,GB,WMG,Woolmer Green,Woolmer Green,HRT,AF,--3-----,9704,,5151N 00011W,,"51.8524598,-0.1809900",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/3564086
@@ -60224,7 +60224,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,GB,WRS,Worsley,Worsley,SLF,AF,--3-----,1401,,5330N 00223W,,"53.4999331,-2.3783778",N/A (no UN/LOCODE),https://www.openstreetmap.org/node/8098546540#map=12/53.4999331/-2.3783778
 ,GB,WRT,Warton,Warton,LAN,AF,--3-----,9811,,5409N 00249W,,"54.1418787,-2.8123655",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/8198194
 ,GB,WRW,West Norwood,West Norwood,CRY,RL,-----6--,0901,,5125N 00000W,,"51.41667,-0.00000",7,UN/LOCODE
-,GB,WRY,Westray,Westray,ORK,AF,1--4----,9511,,5439N 00319W,,"54.6582374,-3.3167083",N/A (no UN/LOCODE),https://www.openstreetmap.org/way/485310230#map=12/54.6582374/-3.3167083
+,GB,WRY,Westray,Westray,ORK,AF,1--4----,9511,,5918N 00300W,,"59.3,-3",N/A (no UN/LOCODE),http://www.wikidata.org/entity/Q1506018
 ,GB,WS9,West Lothian,West Lothian,WLN,RL,--3-----,1807,,5555N 00330W,,"55.91667,-3.50000",8,UN/LOCODE
 ,GB,WSA,Woodbury Salterton,Woodbury Salterton,DEV,RL,--3-----,0701,,5041N 00324W,,"50.68333,-3.40000",1,UN/LOCODE
 ,GB,WSB,Wraysbury,Wraysbury,WNM,AF,--3-----,0507,,5127N 00033W,,"51.45000,-0.55000",1,UN/LOCODE
@@ -60253,7 +60253,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,GB,WTB,Whitby,Whitby,NYK,AF,1-------,1501,,5429N 00037W,,"54.48333,-0.61667",0,UN/LOCODE
 ,GB,WTC,Whitchurch,Whitchurch,HAM,AF,-23-----,0701,,5114N 00121W,,"51.23333,-1.35000",1,UN/LOCODE
 ,GB,WTD,Wanstead,Wanstead,RDB,AF,-23-----,1401,,5135N 00002E,,"51.5756739,0.0277989",21,https://www.openstreetmap.org/node/27731568#map=12/51.5756739/0.0277989
-,GB,WTE,Westerleigh,Westerleigh,GLS,RL,1-------,1501,,5149N 00203W,,"51.8137106,-2.0507298",43,https://www.openstreetmap.org/node/510608996#map=12/51.8137106/-2.0507298
+,GB,WTE,Westerleigh,Westerleigh,GLS,RL,1-------,1501,,5130N 00225W,,"51.50000,-2.41667",43,UN/LOCODE
 ,GB,WTF,Whittlesford,Whittlesford,CAM,AF,--3-----,9811,,5207N 00009E,,"52.1096821,0.1548583",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/1633811
 ,GB,WTG,Westhoughton,Westhoughton,BOL,AF,-23-----,1401,,5333N 00231W,,"53.55000,-2.51667",0,UN/LOCODE
 ,GB,WTH,Withnell,Withnell,LAN,AF,--3-----,9704,,5342N 00233W,,"53.6932682,-2.5469933",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/6993507
@@ -60326,7 +60326,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,GB,WYL,Whyteleafe,Whyteleafe,SRY,AF,-23-----,0401,,5119N 00005W,,"51.31667,-0.08333",1,UN/LOCODE
 ,GB,WYM,Wylam,Wylam,NBL,AF,--3-----,9704,,5459N 00149W,,"54.9808661,-1.8195970",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/8426495
 ,GB,WYO,Weybourne,Weybourne,NFK,RL,-23-----,0701,,5256N 00108E,,"52.93333,1.13333",1,UN/LOCODE
-,GB,WYR,Wyre,Wyre,ORK,AA,1-3-----,0701,,5354N 00250W,,"53.9000859,-2.8389532",582,https://www.openstreetmap.org/relation/148604
+,GB,WYR,Wyre,Wyre,ORK,AA,1-3-----,0701,,5908N 00258W,,"59.13333,-2.96667",582,UN/LOCODE
 ,GB,WYS,Westbury on Severn,Westbury on Severn,GLS,AQ,123--6--,0601,,5149N 00225W,,"51.81667,-2.41667",1,UN/LOCODE
 ,GB,WYW,Westley Waterless,Westley Waterless,CAM,RL,--3-----,1201,,5211N 00022E,,"52.18333,0.36667",0,UN/LOCODE
 ,GB,WYX,West Bay,West Bay,,RL,1-------,0901,,5042N 00245W,,"50.70000,-2.75000",1,UN/LOCODE
@@ -60453,7 +60453,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,GB,YON,Huntington,Huntington,YOR,RL,--3-----,0901,,5400N 00103W,,"54.00000,-1.05000",1,UN/LOCODE
 ,GB,YOS,Lydd on Sea,Lydd on Sea,KEN,RL,1-3-----,0907,,5056N 00057E,,"50.93333,0.95000",2,UN/LOCODE
 ,GB,YRD,Yardley,Yardley,BIR,AF,--3-----,1401,,5228N 00149W,,"52.46667,-1.81667",0,UN/LOCODE
-,GB,YRK,York,York,NYK,AF,1-------,9511,QQY,5404N 00142W,,"54.0609807,-1.6988474",N/A (no UN/LOCODE),https://www.openstreetmap.org/node/9655692242#map=12/54.0609807/-1.6988474
+,GB,YRK,York,York,NYK,AF,1-------,9511,QQY,5357N 00105W,,"53.95,-1.083333",N/A (no UN/LOCODE),http://www.wikidata.org/entity/Q42462
 ,GB,YRM,Yarm,Yarm,STT,RL,--3-----,0907,,5430N 00121W,,"54.50000,-1.35000",1,UN/LOCODE
 ,GB,YRO,Swynnerton,Swynnerton,STS,RL,--3-----,1107,,5255N 00213W,,"52.91667,-2.21667",0,UN/LOCODE
 ,GB,YSD,Ystradowen,Ystradowen,VGL,RL,--3-----,1401,,5129N 00325W,,"51.48333,-3.41667",1,UN/LOCODE
