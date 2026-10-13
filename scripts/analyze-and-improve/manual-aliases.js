@@ -134,6 +134,7 @@ export const DUPLICATES = {
     INPAV: "INPPV",
     JOAQB: "JOAQJ",// JOAQB will be removed in favor of JOAQJ
     JPOFU: "JPOFO", // Ofunatu => Ofunato
+    GBZAP: "GBCYO",
 
     // The same location filed a second time under the wrong country
     ASAPI: "WSAPW",
