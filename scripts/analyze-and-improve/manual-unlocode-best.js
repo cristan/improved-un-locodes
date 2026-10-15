@@ -77,6 +77,7 @@ export const UNLOCODE_BEST =[
     "GBYBR",
     "GBRGP",// Little weird to have a unlocode for a park, but otherwise it checks out
     "GBSRX",
+    "GBMKL",// Market Hill vs Markethill
     "GHKPA",
     "GRTEM",
     "GTMAG",
