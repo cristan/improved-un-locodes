@@ -58044,7 +58044,7 @@ Change,Country,Location,Name,NameWoDiacritics,Subdivision,Status,Function,Date,I
 ,GB,MKF,Milford,Milford,SRY,RL,--3-----,1401,,5110N 00038W,,"51.16667,-0.63333",1,UN/LOCODE
 ,GB,MKH,Market Harborough,Market Harborough,LEC,AF,--3-----,9704,XQM,5229N 00055W,,"52.4777114,-0.9208575",N/A (no UN/LOCODE),https://www.openstreetmap.org/node/25626681#map=12/52.4777114/-0.9208575
 ,GB,MKI,Muirkirk,Muirkirk,EAY,RL,--3--6--,0607,,5531N 00404W,,"55.51667,-4.06667",1,UN/LOCODE
-,GB,MKL,Market Hill,Market Hill,ARM,RL,--3-----,0507,,5428N 00658W,,"54.4600231,-6.9663801",34,https://www.openstreetmap.org/node/3715489019#map=12/54.4600231/-6.9663801
+,GB,MKL,Market Hill,Market Hill,ARM,RL,--3-----,0507,,5418N 00631W,,"54.30000,-6.51667",34,UN/LOCODE
 ,GB,MKO,Monkton,Monkton,STY,RL,-23--6--,0601,,5458N 00130W,,"54.96667,-1.50000",1,UN/LOCODE
 ,GB,MKR,Market Rasen,Market Rasen,LIN,RL,--3-----,0002,,5323N 00020W,,"53.3879115,-0.3376729",N/A (no UN/LOCODE),https://www.openstreetmap.org/relation/1309241
 ,GB,MKS,Marks Tey,Marks Tey,ESS,RL,--3-----,0901,,5152N 00047E,,"51.86667,0.78333",1,UN/LOCODE
