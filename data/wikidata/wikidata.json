@@ -1115,6 +1115,48 @@
     "unlocode": "AQABA"
   },
   {
+    "item": "http://www.wikidata.org/entity/Q243307",
+    "itemLabel": "Amundsen–Scott South Pole Station",
+    "lat": "-89.9975",
+    "lon": "139.2728",
+    "unlocode": "AQAMS"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q715071",
+    "itemLabel": "Captain Arturo Prat Base",
+    "lat": "-62.478717",
+    "lon": "-59.663603",
+    "unlocode": "AQAPT"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q638234",
+    "itemLabel": "Henryk Arctowski Station",
+    "lat": "-62.159773",
+    "lon": "-58.473322",
+    "unlocode": "AQARC"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q809827",
+    "itemLabel": "Artigas Base",
+    "lat": "-62.175",
+    "lon": "-58.86167",
+    "unlocode": "AQART"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q809827",
+    "itemLabel": "Artigas Base",
+    "lat": "-62.18444",
+    "lon": "-58.85194",
+    "unlocode": "AQART"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q809827",
+    "itemLabel": "Artigas Base",
+    "lat": "-62.184551",
+    "lon": "-58.902442",
+    "unlocode": "AQART"
+  },
+  {
     "item": "http://www.wikidata.org/entity/Q2357907",
     "itemLabel": "Belgrano II Base",
     "lat": "-77.874444",
@@ -1122,11 +1164,39 @@
     "unlocode": "AQBEL"
   },
   {
+    "item": "http://www.wikidata.org/entity/Q815995",
+    "itemLabel": "Bellingshausen Station",
+    "lat": "-62.198056",
+    "lon": "-58.960555",
+    "unlocode": "AQBHN"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1047169",
+    "itemLabel": "Casey Station",
+    "lat": "-66.282343",
+    "lon": "110.526792",
+    "unlocode": "AQCAS"
+  },
+  {
     "item": "http://www.wikidata.org/entity/Q1368174",
     "itemLabel": "Esperanza Base",
     "lat": "-63.396959",
     "lon": "-56.998054",
     "unlocode": "AQESP"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q403020",
+    "itemLabel": "Gabriel de Castilla",
+    "lat": "-62.977197",
+    "lon": "-60.675745",
+    "unlocode": "AQGDC"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q403043",
+    "itemLabel": "Juan Carlos I Antarctic Base",
+    "lat": "-62.663409",
+    "lon": "-60.388146",
+    "unlocode": "AQJCP"
   },
   {
     "item": "http://www.wikidata.org/entity/Q498627",
@@ -1148,6 +1218,34 @@
     "lat": "-62.95",
     "lon": "-60.633333",
     "unlocode": "AQPFS"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1136714",
+    "itemLabel": "Scott Base",
+    "lat": "-77.84891",
+    "lon": "166.76624",
+    "unlocode": "AQSBA"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1136714",
+    "itemLabel": "Scott Base",
+    "lat": "-77.849437",
+    "lon": "166.767281",
+    "unlocode": "AQSBA"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1136714",
+    "itemLabel": "Scott Base",
+    "lat": "-77.85",
+    "lon": "166.75",
+    "unlocode": "AQSBA"
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q211014",
+    "itemLabel": "Vostok Station",
+    "lat": "-78.464167",
+    "lon": "106.86583",
+    "unlocode": "AQVOS"
   },
   {
     "item": "http://www.wikidata.org/entity/Q2351223",
@@ -22912,7 +23010,7 @@
   },
   {
     "item": "http://www.wikidata.org/entity/Q3108740",
-    "itemLabel": "Glenelg",
+    "itemLabel": "Q3108740",
     "lat": "-34.982",
     "lon": "138.516",
     "unlocode": "AUGGG",
@@ -74172,8 +74270,8 @@
   {
     "item": "http://www.wikidata.org/entity/Q78",
     "itemLabel": "Basel",
-    "lat": "47.560556",
-    "lon": "7.590555",
+    "lat": "47.558056",
+    "lon": "7.587778",
     "unlocode": "CHBSL",
     "subdivisionCodes": [
       "CH-BS"
@@ -111623,7 +111721,10 @@
     "itemLabel": "Q56957054",
     "lat": "49.541025",
     "lon": "6.379237",
-    "unlocode": "DEBUB"
+    "unlocode": "DEBUB",
+    "subdivisionCodes": [
+      "DE-SL"
+    ]
   },
   {
     "item": "http://www.wikidata.org/entity/Q179252",
@@ -118648,7 +118749,7 @@
   },
   {
     "item": "http://www.wikidata.org/entity/Q31981901",
-    "itemLabel": "Eberswalde",
+    "itemLabel": "Eberswalde town center",
     "lat": "52.83421",
     "lon": "13.82181",
     "unlocode": "DEEBW",
@@ -121641,8 +121742,7 @@
     "lon": "6.159722",
     "unlocode": "DEETN",
     "subdivisionCodes": [
-      "DE-NW",
-      "NL-GE"
+      "DE-NW"
     ]
   },
   {
@@ -134821,7 +134921,7 @@
   },
   {
     "item": "http://www.wikidata.org/entity/Q554771",
-    "itemLabel": "Jessen (Elster)",
+    "itemLabel": "Jessen",
     "lat": "51.791667",
     "lon": "12.955556",
     "unlocode": "DEJSA",
@@ -186281,6 +186381,17 @@
     ]
   },
   {
+    "item": "http://www.wikidata.org/entity/Q8184139",
+    "itemLabel": "Aboño",
+    "lat": "43.5578",
+    "lon": "-5.72278",
+    "unlocode": "ESAB9",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
+    ]
+  },
+  {
     "item": "http://www.wikidata.org/entity/Q126540816",
     "itemLabel": "Entitat Oest d'Abrera",
     "lat": "41.516945",
@@ -187495,6 +187606,17 @@
     ]
   },
   {
+    "item": "http://www.wikidata.org/entity/Q624774",
+    "itemLabel": "Les Arriondes",
+    "lat": "43.385833",
+    "lon": "-5.190833",
+    "unlocode": "ESANS",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
+    ]
+  },
+  {
     "item": "http://www.wikidata.org/entity/Q12383684",
     "itemLabel": "As Neves",
     "lat": "42.08835",
@@ -187743,6 +187865,17 @@
     ]
   },
   {
+    "item": "http://www.wikidata.org/entity/Q5015858",
+    "itemLabel": "Cabueñes",
+    "lat": "43.523916",
+    "lon": "-5.605478",
+    "unlocode": "ESAS8",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
+    ]
+  },
+  {
     "item": "http://www.wikidata.org/entity/Q24003020",
     "itemLabel": "Astorga",
     "lat": "42.457633",
@@ -187827,6 +187960,17 @@
     "subdivisionCodes": [
       "ES-PV",
       "ES-SS"
+    ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1430901",
+    "itemLabel": "Asturias Airport",
+    "lat": "43.563611",
+    "lon": "-6.034722",
+    "unlocode": "ESAST",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
     ]
   },
   {
@@ -187947,6 +188091,28 @@
     "subdivisionCodes": [
       "ES-CT",
       "ES-GI"
+    ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q102309114",
+    "itemLabel": "Avilés",
+    "lat": "43.555521",
+    "lon": "-5.922011",
+    "unlocode": "ESAVS",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
+    ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q102309114",
+    "itemLabel": "Avilés",
+    "lat": "43.558577",
+    "lon": "-5.92479",
+    "unlocode": "ESAVS",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
     ]
   },
   {
@@ -188320,6 +188486,17 @@
     "subdivisionCodes": [
       "ES-AN",
       "ES-SE"
+    ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q8772841",
+    "itemLabel": "El Berrón",
+    "lat": "43.385",
+    "lon": "-5.70306",
+    "unlocode": "ESBE7",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
     ]
   },
   {
@@ -189605,6 +189782,17 @@
     ]
   },
   {
+    "item": "http://www.wikidata.org/entity/Q737389",
+    "itemLabel": "Carreño",
+    "lat": "43.55161",
+    "lon": "-5.789446",
+    "unlocode": "ESCAO",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
+    ]
+  },
+  {
     "item": "http://www.wikidata.org/entity/Q24012551",
     "itemLabel": "Calasparra",
     "lat": "38.22997",
@@ -189961,6 +190149,17 @@
     "subdivisionCodes": [
       "ES-AR",
       "ES-TE"
+    ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q113671968",
+    "itemLabel": "Cangas del Narcea",
+    "lat": "43.176203",
+    "lon": "-6.548861",
+    "unlocode": "ESCDN",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
     ]
   },
   {
@@ -190630,6 +190829,17 @@
     ]
   },
   {
+    "item": "http://www.wikidata.org/entity/Q113644229",
+    "itemLabel": "Carreña",
+    "lat": "43.31737",
+    "lon": "-4.84609",
+    "unlocode": "ESCNB",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
+    ]
+  },
+  {
     "item": "http://www.wikidata.org/entity/Q24001996",
     "itemLabel": "Cenicero",
     "lat": "42.4813",
@@ -190767,6 +190977,17 @@
     "subdivisionCodes": [
       "ES-GA",
       "ES-PO"
+    ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q24012279",
+    "itemLabel": "Q24012279",
+    "lat": "43.3514",
+    "lon": "-5.12916",
+    "unlocode": "ESCON",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
     ]
   },
   {
@@ -191270,6 +191491,17 @@
     ]
   },
   {
+    "item": "http://www.wikidata.org/entity/Q653895",
+    "itemLabel": "Corvera de Asturias",
+    "lat": "43.517838",
+    "lon": "-5.887757",
+    "unlocode": "ESCVS",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
+    ]
+  },
+  {
     "item": "http://www.wikidata.org/entity/Q24015160",
     "itemLabel": "Calaceite",
     "lat": "41.016512",
@@ -191549,6 +191781,17 @@
     "subdivisionCodes": [
       "ES-GA",
       "ES-LU"
+    ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q5777570",
+    "itemLabel": "Colloto",
+    "lat": "43.377",
+    "lon": "-5.798",
+    "unlocode": "ESDFR",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
     ]
   },
   {
@@ -192489,6 +192732,17 @@
     "subdivisionCodes": [
       "ES-AR",
       "ES-Z"
+    ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q8580865",
+    "itemLabel": "L'Entregu",
+    "lat": "43.287285",
+    "lon": "-5.637687",
+    "unlocode": "ESETG",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
     ]
   },
   {
@@ -193495,6 +193749,17 @@
     ]
   },
   {
+    "item": "http://www.wikidata.org/entity/Q102272865",
+    "itemLabel": "Grau",
+    "lat": "43.389292",
+    "lon": "-6.069905",
+    "unlocode": "ESGAD",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
+    ]
+  },
+  {
     "item": "http://www.wikidata.org/entity/Q940842",
     "itemLabel": "Gádor",
     "lat": "36.953074",
@@ -193855,6 +194120,17 @@
     "subdivisionCodes": [
       "ES-AN",
       "ES-J"
+    ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q80349557",
+    "itemLabel": "Xixón City",
+    "lat": "43.545032",
+    "lon": "-5.662104",
+    "unlocode": "ESGIJ",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
     ]
   },
   {
@@ -194314,6 +194590,17 @@
     "subdivisionCodes": [
       "ES-CL",
       "ES-SG"
+    ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q818366",
+    "itemLabel": "Gozón",
+    "lat": "43.606224",
+    "lon": "-5.847308",
+    "unlocode": "ESGZN",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
     ]
   },
   {
@@ -194864,6 +195151,17 @@
     ]
   },
   {
+    "item": "http://www.wikidata.org/entity/Q24013904",
+    "itemLabel": "L'Infiestu",
+    "lat": "43.348333",
+    "lon": "-5.364167",
+    "unlocode": "ESIFS",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
+    ]
+  },
+  {
     "item": "http://www.wikidata.org/entity/Q23999318",
     "itemLabel": "Igualada",
     "lat": "41.581111",
@@ -195302,6 +195600,28 @@
     ]
   },
   {
+    "item": "http://www.wikidata.org/entity/Q24014091",
+    "itemLabel": "Juzbado",
+    "lat": "41.07791",
+    "lon": "-5.8614",
+    "unlocode": "ESJZB",
+    "subdivisionCodes": [
+      "ES-CL",
+      "ES-SA"
+    ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q24014091",
+    "itemLabel": "Juzbado",
+    "lat": "41.078285",
+    "lon": "-5.862836",
+    "unlocode": "ESJZB",
+    "subdivisionCodes": [
+      "ES-CL",
+      "ES-SA"
+    ]
+  },
+  {
     "item": "http://www.wikidata.org/entity/Q24012761",
     "itemLabel": "Carabaña",
     "lat": "40.25424",
@@ -195363,6 +195683,17 @@
     "subdivisionCodes": [
       "ES-CT",
       "ES-L"
+    ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q950996",
+    "itemLabel": "Lada",
+    "lat": "43.302025",
+    "lon": "-5.707551",
+    "unlocode": "ESLAD",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
     ]
   },
   {
@@ -195593,6 +195924,17 @@
     ]
   },
   {
+    "item": "http://www.wikidata.org/entity/Q1018102",
+    "itemLabel": "La Felguera",
+    "lat": "43.309349",
+    "lon": "-5.692143",
+    "unlocode": "ESLFG",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
+    ]
+  },
+  {
     "item": "http://www.wikidata.org/entity/Q24001132",
     "itemLabel": "La Granadella",
     "lat": "41.35",
@@ -195795,6 +196137,17 @@
     "subdivisionCodes": [
       "ES-AN",
       "ES-CA"
+    ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q987679",
+    "itemLabel": "Lugo de Llanera",
+    "lat": "43.442223",
+    "lon": "-5.81794",
+    "unlocode": "ESLLL",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
     ]
   },
   {
@@ -196132,6 +196485,28 @@
     "subdivisionCodes": [
       "ES-CM",
       "ES-CR"
+    ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q56849753",
+    "itemLabel": "Ḷḷuarca",
+    "lat": "43.5448",
+    "lon": "-6.5327",
+    "unlocode": "ESLUA",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
+    ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q113628535",
+    "itemLabel": "Llugones",
+    "lat": "43.40272",
+    "lon": "-5.81215",
+    "unlocode": "ESLUG",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
     ]
   },
   {
@@ -197402,6 +197777,17 @@
     ]
   },
   {
+    "item": "http://www.wikidata.org/entity/Q23995118",
+    "itemLabel": "Mieres del Camino (town)",
+    "lat": "43.248766",
+    "lon": "-5.772869",
+    "unlocode": "ESMRE",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
+    ]
+  },
+  {
     "item": "http://www.wikidata.org/entity/Q24011344",
     "itemLabel": "Maracena",
     "lat": "37.20724",
@@ -197880,6 +198266,28 @@
     ]
   },
   {
+    "item": "http://www.wikidata.org/entity/Q55697166",
+    "itemLabel": "Nava",
+    "lat": "43.358341",
+    "lon": "-5.505605",
+    "unlocode": "ESNAS",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
+    ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q23994013",
+    "itemLabel": "Navia",
+    "lat": "43.53544",
+    "lon": "-6.71935",
+    "unlocode": "ESNAV",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
+    ]
+  },
+  {
     "item": "http://www.wikidata.org/entity/Q23993988",
     "itemLabel": "Navacerrada",
     "lat": "40.72905",
@@ -198038,6 +198446,28 @@
     "subdivisionCodes": [
       "ES-C",
       "ES-GA"
+    ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q24013908",
+    "itemLabel": "Noreña",
+    "lat": "43.39364",
+    "lon": "-5.70662",
+    "unlocode": "ESNOR",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
+    ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q105623081",
+    "itemLabel": "Q105623081",
+    "lat": "43.364082",
+    "lon": "-4.574022",
+    "unlocode": "ESNRG",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
     ]
   },
   {
@@ -198452,6 +198882,17 @@
     ]
   },
   {
+    "item": "http://www.wikidata.org/entity/Q141749979",
+    "itemLabel": "Q141749979",
+    "lat": "43.29884",
+    "lon": "-5.82447",
+    "unlocode": "ESOLG",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
+    ]
+  },
+  {
     "item": "http://www.wikidata.org/entity/Q23994098",
     "itemLabel": "Oliana",
     "lat": "42.065206",
@@ -198820,6 +199261,17 @@
     "subdivisionCodes": [
       "ES-B",
       "ES-CT"
+    ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q21414421",
+    "itemLabel": "Oviedo City",
+    "lat": "43.363416",
+    "lon": "-5.842296",
+    "unlocode": "ESOVO",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
     ]
   },
   {
@@ -199542,6 +199994,17 @@
     ]
   },
   {
+    "item": "http://www.wikidata.org/entity/Q126168463",
+    "itemLabel": "Payares",
+    "lat": "43.017949",
+    "lon": "-5.772642",
+    "unlocode": "ESPJA",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
+    ]
+  },
+  {
     "item": "http://www.wikidata.org/entity/Q23993852",
     "itemLabel": "Pinto",
     "lat": "40.24147",
@@ -199559,6 +200022,28 @@
     "unlocode": "ESPJO",
     "subdivisionCodes": [
       "ES-MD"
+    ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q108132525",
+    "itemLabel": "La Pola",
+    "lat": "43.16089",
+    "lon": "-5.82878",
+    "unlocode": "ESPLA",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
+    ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q112583031",
+    "itemLabel": "La Pola Somiedo",
+    "lat": "43.093038",
+    "lon": "-6.254603",
+    "unlocode": "ESPLD",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
     ]
   },
   {
@@ -199924,6 +200409,17 @@
     ]
   },
   {
+    "item": "http://www.wikidata.org/entity/Q1657106",
+    "itemLabel": "Posada",
+    "lat": "43.439456",
+    "lon": "-5.850534",
+    "unlocode": "ESPSL",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
+    ]
+  },
+  {
     "item": "http://www.wikidata.org/entity/Q952756",
     "itemLabel": "Panes",
     "lat": "43.323894",
@@ -200028,6 +200524,28 @@
     "lat": "43.24538",
     "lon": "-5.5629",
     "unlocode": "ESPVN",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
+    ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q114051153",
+    "itemLabel": "Pruvia",
+    "lat": "43.442374",
+    "lon": "-5.783078",
+    "unlocode": "ESPVU",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
+    ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q5196982",
+    "itemLabel": "Porceyo",
+    "lat": "43.501293",
+    "lon": "-5.707168",
+    "unlocode": "ESPYO",
     "subdivisionCodes": [
       "ES-AS",
       "ES-O"
@@ -200402,6 +200920,17 @@
     "subdivisionCodes": [
       "ES-CT",
       "ES-L"
+    ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q24012261",
+    "itemLabel": "Ribadesella",
+    "lat": "43.46145",
+    "lon": "-5.05955",
+    "unlocode": "ESRBS",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
     ]
   },
   {
@@ -201434,6 +201963,17 @@
     ]
   },
   {
+    "item": "http://www.wikidata.org/entity/Q5196052",
+    "itemLabel": "Salinas",
+    "lat": "43.575573",
+    "lon": "-5.96128",
+    "unlocode": "ESSCN",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
+    ]
+  },
+  {
     "item": "http://www.wikidata.org/entity/Q126488498",
     "itemLabel": "l'Esquirol",
     "lat": "42.028716",
@@ -201770,6 +202310,17 @@
     "subdivisionCodes": [
       "ES-IB",
       "ES-PM"
+    ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q6119148",
+    "itemLabel": "San Xuan",
+    "lat": "43.588056",
+    "lon": "-5.935556",
+    "unlocode": "ESSJX",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
     ]
   },
   {
@@ -202113,6 +202664,17 @@
     ]
   },
   {
+    "item": "http://www.wikidata.org/entity/Q65296278",
+    "itemLabel": "Espina",
+    "lat": "43.508056",
+    "lon": "-5.381389",
+    "unlocode": "ESSPL",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
+    ]
+  },
+  {
     "item": "http://www.wikidata.org/entity/Q13941",
     "itemLabel": "Santa Perpètua de Mogoda",
     "lat": "41.5375",
@@ -202286,6 +202848,17 @@
     ]
   },
   {
+    "item": "http://www.wikidata.org/entity/Q3470603",
+    "itemLabel": "Sama de Grado",
+    "lat": "43.31311",
+    "lon": "-6.017379",
+    "unlocode": "ESSSM",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
+    ]
+  },
+  {
     "item": "http://www.wikidata.org/entity/Q24012531",
     "itemLabel": "Santomera",
     "lat": "38.061086",
@@ -202325,6 +202898,17 @@
     "subdivisionCodes": [
       "ES-CN",
       "ES-TF"
+    ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q113674849",
+    "itemLabel": "Q113674849",
+    "lat": "43.419985",
+    "lon": "-5.811625",
+    "unlocode": "ESSV6",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
     ]
   },
   {
@@ -203212,6 +203796,17 @@
     ]
   },
   {
+    "item": "http://www.wikidata.org/entity/Q24012253",
+    "itemLabel": "Tinéu",
+    "lat": "43.33765",
+    "lon": "-6.41452",
+    "unlocode": "ESTNE",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
+    ]
+  },
+  {
     "item": "http://www.wikidata.org/entity/Q24012238",
     "itemLabel": "Baltanás",
     "lat": "41.93775",
@@ -203322,6 +203917,17 @@
     ]
   },
   {
+    "item": "http://www.wikidata.org/entity/Q24012255",
+    "itemLabel": "Tapia",
+    "lat": "43.57019",
+    "lon": "-6.94383",
+    "unlocode": "ESTPC",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
+    ]
+  },
+  {
     "item": "http://www.wikidata.org/entity/Q949880",
     "itemLabel": "Torre-Pacheco",
     "lat": "37.743133",
@@ -203340,6 +203946,17 @@
     "subdivisionCodes": [
       "ES-CL",
       "ES-P"
+    ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q54809153",
+    "itemLabel": "Trubia",
+    "lat": "43.345951",
+    "lon": "-5.970029",
+    "unlocode": "ESTRB",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
     ]
   },
   {
@@ -203472,6 +204089,17 @@
     "subdivisionCodes": [
       "ES-GA",
       "ES-OR"
+    ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q126129281",
+    "itemLabel": "Trubia",
+    "lat": "43.499192",
+    "lon": "-5.747485",
+    "unlocode": "ESTRU",
+    "subdivisionCodes": [
+      "ES-AS",
+      "ES-O"
     ]
   },
   {
@@ -207226,6 +207854,17 @@
     ]
   },
   {
+    "item": "http://www.wikidata.org/entity/Q219828",
+    "itemLabel": "Zona Franca de Barcelona",
+    "lat": "41.3333",
+    "lon": "2.13861",
+    "unlocode": "ESZFB",
+    "subdivisionCodes": [
+      "ES-B",
+      "ES-CT"
+    ]
+  },
+  {
     "item": "http://www.wikidata.org/entity/Q24011372",
     "itemLabel": "Fuente Vaqueros",
     "lat": "37.219634",
@@ -207343,6 +207982,17 @@
     "subdivisionCodes": [
       "ES-AN",
       "ES-SE"
+    ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q6171528",
+    "itemLabel": "Zona Franca",
+    "lat": "36.502182",
+    "lon": "-6.264606",
+    "unlocode": "ESZFR",
+    "subdivisionCodes": [
+      "ES-AN",
+      "ES-CA"
     ]
   },
   {
@@ -213419,8 +214069,8 @@
   {
     "item": "http://www.wikidata.org/entity/Q213154",
     "itemLabel": "Aberystwyth",
-    "lat": "52.414262",
-    "lon": "-4.081528",
+    "lat": "52.414444",
+    "lon": "-4.081667",
     "unlocode": "GBAYW",
     "subdivisionCodes": [
       "GB-CGN",
@@ -221604,6 +222254,18 @@
     "subdivisionCodes": [
       "GB-AGB",
       "GB-SCT",
+      "GB-UKM"
+    ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q724182",
+    "itemLabel": "St Ives",
+    "lat": "50.21",
+    "lon": "-5.48",
+    "unlocode": "GBIVS",
+    "subdivisionCodes": [
+      "GB-CON",
+      "GB-ENG",
       "GB-UKM"
     ]
   },
@@ -329120,6 +329782,16 @@
     ]
   },
   {
+    "item": "http://www.wikidata.org/entity/Q2351878",
+    "itemLabel": "De Pol",
+    "lat": "53.1403",
+    "lon": "6.50944",
+    "unlocode": "NLDPO",
+    "subdivisionCodes": [
+      "NL-DR"
+    ]
+  },
+  {
     "item": "http://www.wikidata.org/entity/Q60444",
     "itemLabel": "Drachten",
     "lat": "53.1",
@@ -329171,7 +329843,7 @@
   },
   {
     "item": "http://www.wikidata.org/entity/Q992737",
-    "itemLabel": "Den Hoorn, North Holland",
+    "itemLabel": "Den Hoorn",
     "lat": "53.025",
     "lon": "4.7511",
     "unlocode": "NLDTK",
@@ -330059,6 +330731,16 @@
     "unlocode": "NLMID",
     "subdivisionCodes": [
       "NL-ZE"
+    ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1943433",
+    "itemLabel": "Molenwaard",
+    "lat": "51.8913",
+    "lon": "4.7718",
+    "unlocode": "NLMLW",
+    "subdivisionCodes": [
+      "NL-ZH"
     ]
   },
   {
@@ -357279,7 +357961,7 @@
   },
   {
     "item": "http://www.wikidata.org/entity/Q4126027",
-    "itemLabel": "Q4126027",
+    "itemLabel": "Vorsino",
     "lat": "55.230347",
     "lon": "36.658683",
     "unlocode": "RUVRS",
@@ -358145,8 +358827,8 @@
   {
     "item": "http://www.wikidata.org/entity/Q3692",
     "itemLabel": "Riyadh",
-    "lat": "24.65",
-    "lon": "46.71",
+    "lat": "24.638333",
+    "lon": "46.715",
     "unlocode": "SARUH",
     "subdivisionCodes": [
       "SA-01"
@@ -363000,7 +363682,7 @@
   },
   {
     "item": "http://www.wikidata.org/entity/Q2248722",
-    "itemLabel": "Ahmetli district",
+    "itemLabel": "Ahmetli",
     "lat": "38.528889",
     "lon": "27.944722",
     "unlocode": "TRAHM",
@@ -363011,8 +363693,8 @@
   {
     "item": "http://www.wikidata.org/entity/Q209905",
     "itemLabel": "Akhisar",
-    "lat": "38.924053",
-    "lon": "27.840189",
+    "lat": "38.923889",
+    "lon": "27.84",
     "unlocode": "TRAHS",
     "subdivisionCodes": [
       "TR-45"
@@ -364060,7 +364742,7 @@
   },
   {
     "item": "http://www.wikidata.org/entity/Q1827015",
-    "itemLabel": "Gördes district",
+    "itemLabel": "Gördes",
     "lat": "38.933056",
     "lon": "28.288611",
     "unlocode": "TRGDS",
@@ -364553,6 +365235,16 @@
     "itemLabel": "Kula",
     "lat": "38.545833",
     "lon": "28.649444",
+    "unlocode": "TRKLA",
+    "subdivisionCodes": [
+      "TR-45"
+    ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q64831",
+    "itemLabel": "Kula",
+    "lat": "38.547222",
+    "lon": "28.649722",
     "unlocode": "TRKLA",
     "subdivisionCodes": [
       "TR-45"
@@ -365423,6 +366115,16 @@
     ]
   },
   {
+    "item": "http://www.wikidata.org/entity/Q16052713",
+    "itemLabel": "Soma",
+    "lat": "39.188333",
+    "lon": "27.608889",
+    "unlocode": "TRSMA",
+    "subdivisionCodes": [
+      "TR-45"
+    ]
+  },
+  {
     "item": "http://www.wikidata.org/entity/Q1948344",
     "itemLabel": "Simav district",
     "lat": "39.083333",
@@ -365677,6 +366379,16 @@
     "itemLabel": "Ula district",
     "lat": "37.102222",
     "lon": "28.417778",
+    "unlocode": "TRULA",
+    "subdivisionCodes": [
+      "TR-48"
+    ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q1803032",
+    "itemLabel": "Ula district",
+    "lat": "37.115278",
+    "lon": "28.427222",
     "unlocode": "TRULA",
     "subdivisionCodes": [
       "TR-48"
@@ -366004,6 +366716,16 @@
     "unlocode": "TWCYI",
     "subdivisionCodes": [
       "TW-CYQ"
+    ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q713314",
+    "itemLabel": "Guishan District",
+    "lat": "25.033333",
+    "lon": "121.35",
+    "unlocode": "TWGUE",
+    "subdivisionCodes": [
+      "TW-TAO"
     ]
   },
   {
@@ -433245,7 +433967,7 @@
   },
   {
     "item": "http://www.wikidata.org/entity/Q430316",
-    "itemLabel": "Q430316",
+    "itemLabel": "National City",
     "lat": "32.678056",
     "lon": "-117.099167",
     "unlocode": "USNLN",
@@ -437799,7 +438521,7 @@
   },
   {
     "item": "http://www.wikidata.org/entity/Q488134",
-    "itemLabel": "Ontario",
+    "itemLabel": "Ontario, California",
     "lat": "34.052778",
     "lon": "-117.627778",
     "unlocode": "USONT",
@@ -480880,6 +481602,13 @@
       "UZ-BU",
       "UZ-NW"
     ]
+  },
+  {
+    "item": "http://www.wikidata.org/entity/Q237",
+    "itemLabel": "Vatican City",
+    "lat": "41.904",
+    "lon": "12.453",
+    "unlocode": "VAVAT"
   },
   {
     "item": "http://www.wikidata.org/entity/Q41474",
