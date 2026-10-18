@@ -193,6 +193,7 @@ export const WIKIDATA_BEST = [
     "GBSTD",
     "GBWRY",
     "TWGUE",
+    "NLZHU",
 
     // entries to prevent coordinates in the wrong hemisphere
     "DEWNT",// Wedlenstedt => Wedtlenstedt
