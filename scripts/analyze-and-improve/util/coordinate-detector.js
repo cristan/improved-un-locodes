@@ -58,6 +58,19 @@ export async function detectCoordinates(unlocode, csvDatabase, wikidataDatabase,
     if (decimalCoordinates) {
         const closestHit = findClosestNominatimHit(nominatimResult, decimalCoordinates)
         const firstDist = getDistanceFromLatLonInKm(decimalCoordinates.lat, decimalCoordinates.lon, firstNominatimResult.lat, firstNominatimResult.lon)
+
+        if (nominatimData.scrapeType === "byRegion" && closestHit.distance >= 10) {
+            // A place with the same name right at the coordinates means the region is wrong, not the coordinates (like NLNEV)
+            await downloadByCityIfNeeded(entry)
+            const nominatimDataByCity = readNominatimDataByCity(unlocode, entry.city)?.result
+            if (nominatimDataByCity) {
+                const closestByCity = findClosestNominatimHit(nominatimDataByCity, decimalCoordinates)
+                if (closestByCity.distance < 5) {
+                    return getUnlocodeResult(entry, decimalCoordinates, closestByCity.hit)
+                }
+            }
+        }
+
         if (firstDist < 100 || closestHit.distance < 25) {
             if (closestHit.distance < 10) {
                 return getUnlocodeResult(entry, decimalCoordinates, closestHit.hit)
