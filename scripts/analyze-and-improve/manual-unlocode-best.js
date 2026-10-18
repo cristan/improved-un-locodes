@@ -242,6 +242,8 @@ export const UNLOCODE_BEST =[
     //  and a Mafang industrial zone, so they're probably right.
     // Without this override, Nominatim finds a Mafang in Beijing, which is inland while CNSHM is marked to have a port.
     "CNSHM",
+    "NLZBI",// Ooy which points to Ooij. There also is an NLOOY for Ooij, but that doesn't have coordinates.
+    "NLRED",// Ried which points to Riel. There also is an NLRIE for Riel, but that doesn't have coordinates.
 
     // Places where the official coordinates match the ones at WPI (World Port Index) within 10km. These are probably fine.
     // WPI itself isn't redistributed by this project (NGA Pub 150's "no copyright claimed" notice sounds like a legal landmine).
