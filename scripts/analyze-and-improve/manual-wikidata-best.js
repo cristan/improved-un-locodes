@@ -63,7 +63,7 @@ export const WIKIDATA_BEST = [
     "CNYSA",
     "COPBO",// Deceiving one! Coordinates do point to a Puerto Bolívar, but the wrong one. Source: https://www.vesselfinder.com/ports/COPBO001
     "DEEGE",
-    "DKFRE",// Much biggger, so seems more likely
+    "DKFRE",// Much bigger, so seems more likely
     "DKGRI",// Same
     "DKNKV",// Same
     "DKVJN",
