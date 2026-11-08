@@ -101,6 +101,7 @@ export const ALIASES = {
     GRSDS: "GRSIS", // Sindhos => Síndos
     GRANO: "GRAIN", // Aeginio => Aiginion
     ROSIN: "ROSUM", // Sinnicolau Mare => Sannicolau Mare
+    TWSIJ: "TWHSI", // Sijhih => Hsichih, both old spellings of Xizhi (汐止)
 
     // Cities who have been renamed, but there already exists a new UN/LOCODE for the new name
     AZKBD: "AZGAN", // Kirovabad => Ganja

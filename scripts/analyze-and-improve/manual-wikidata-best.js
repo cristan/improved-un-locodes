@@ -194,6 +194,12 @@ export const WIKIDATA_BEST = [
     "GBWRY",
     "TWGUE",
     "NLZHU",
+    "TWANG",// 2505N 12160E is decimal degrees (25.05, 121.60), which points to Nangang District in Taipei. The subdivision KHH points to Nangang Village (南港里), a much smaller urban village in Kaohsiung.
+    "TWCMJ",// CMJ is the IATA code of Qimei Airport, named after Cimei Township (七美鄉). Nominatim finds Yuemeichi in Changhua instead.
+    "TWHOP",// Heping Industrial Harbour (和平工業專用港) in Heping Village, Hualien. Nominatim finds a Hoping Community in New Taipei instead.
+    "TWWUK",// Wu-ku is the Wade-Giles spelling of Wugu District (五股區). Nominatim finds Wulai District instead.
+    "TWTXG",// Searching for Taichung within Taichung makes Nominatim find a wind turbine factory at the port instead of the city.
+    "TWYLN",// Yunlin County (雲林縣): there's no city called Yunlin. Nominatim finds a high-speed rail substation in it instead.
 
     // entries to prevent coordinates in the wrong hemisphere
     "DEWNT",// Wedlenstedt => Wedtlenstedt
