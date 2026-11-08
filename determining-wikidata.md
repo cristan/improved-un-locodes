@@ -135,7 +135,9 @@ Don't tag a city's Wikidata item with an `X Pt` UN/LOCODE. CNHBG "Harbin Pt" is 
 3. Check `P17` (country). Matches the UN/LOCODE country prefix?
 4. Check `P131*` (admin entity, transitive). Falls under the UN/LOCODE's subdivision code?
 5. Check `P1937` is empty. If already set, you're duplicating — investigate why.
-6. Check no other code in this country has a near-identical name. If one does and its coordinates hold up, the entry in front of you is a typo of it — use `ALIASES`.
+6. Check no other code in this country has a near-identical name, like TWNAN "Nantou" and TWNTU "Nan-t'ou". If one does, tag both or neither.
+   A Wikidata tag has sway over which of the two becomes the de facto code, and picking that winner isn't up to us.
+   When neither is tagged, add each one to `UNLOCODE_BEST` when its own coordinates hold up, or to `ALIASES` to copy the coordinates of its twin when they don't.
 7. Read the English description. Two lines usually settles the "right entity?" question fast.
 
 ## When automation gives up: one-at-a-time review
